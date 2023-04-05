@@ -15,6 +15,8 @@ summary: "Learn what's new with BlueXP administration features: BlueXP accounts,
 [.lead]
 Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more.
 
+//All links and images must use the absolute URL.
+
 //tag::whats-new[]
 == 4 April 2023
 
@@ -26,7 +28,7 @@ BlueXP _deployment modes_ enable you to use BlueXP in a way that meets your busi
 * Restricted mode
 * Private mode
 
-link:concept-modes.html[Learn more about these deployment modes].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html[Learn more about these deployment modes].
 
 NOTE: The introduction of restricted mode replaces the option to enable or disable the SaaS platform. You can enable restricted mode at the time of account creation. It can't be enabled or disabled later.
 
