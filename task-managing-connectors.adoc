@@ -135,7 +135,7 @@ system configuration backup settings modify -destination ""
 
 == Edit a Connector's URIs
 
-Add and remove the URIs for a Connector.
+Add and remove the Uniform Resource Identifier (URI) for a Connector.
 
 .Steps
 
