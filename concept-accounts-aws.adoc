@@ -56,7 +56,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to a
 
 Adding new AWS credentials to BlueXP provides the permissions needed to create and manage an FSx for ONTAP working environment or to create a Connector.
 
-* link:https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector[Learn how to add AWS credentials to BlueXP for Amazon FSx for ONTAP^]
+* link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector[Learn how to add AWS credentials to BlueXP for Amazon FSx for ONTAP^]
 
 * link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
 
