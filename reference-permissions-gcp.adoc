@@ -23,7 +23,7 @@ You'll need to apply this custom role to a service account that gets attached to
 
 * link:task-set-up-permissions-google.html[Set up permissions for standard mode]
 * link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Set up permissions for restricted mode]
-* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions[Set up permissions for private mode]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions[Set up permissions for private mode]
 
 You also need to ensure that the role is up to date as new permissions are added in subsequent releases.
 
