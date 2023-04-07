@@ -1,5 +1,5 @@
 settings:
-  name: Set up and administration
+  name: Setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -9,7 +9,7 @@ settings:
   rss_page: "whats-new.html"
 sidebar:
   entries:
-    - title: Set up and administration docs
+    - title: Setup and administration docs
       url: /index.html
     - title: Release notes
       entries:
