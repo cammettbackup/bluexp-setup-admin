@@ -67,7 +67,7 @@ When you use BlueXP in standard mode, a Connector is required for the following 
 * Operational resiliency ^1^
 * StorageGRID
 
-^1^ While you can access these services without a Connector, a Connector is required to initiate actions.
+^1^ While you can access these services without a Connector, a Connector is required to initiate actions from the services.
 
 == Connectors must be operational at all times
 
