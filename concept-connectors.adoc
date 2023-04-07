@@ -110,7 +110,7 @@ A BlueXP Account Admin can create a Connector directly from BlueXP, from your cl
 
 == Permissions
 
-Specific permissions are needed to create the Connector directly from BlueXP and another set of permissions are needed for the Connector instance itself. If you create the Connector in AWS or Azure directly from BlueXP, then BlueXP creates the Connector with the permissions that it needs. There's nothing else that you need to do.
+Specific permissions are needed to create the Connector directly from BlueXP and another set of permissions are needed for the Connector instance itself. If you create the Connector in AWS or Azure directly from BlueXP, then BlueXP creates the Connector with the permissions that it needs.
 
 To learn how to set up permissions, refer to the following pages:
 
@@ -134,7 +134,7 @@ We typically update the Connector software each month to introduce new features 
 
 The Connector automatically updates its software to the latest version, as long as it has outbound internet access to obtain the software update. If you're using BlueXP in private mode, then you'll need to manually upgrade the Connector.
 
-link:task-managing-connectors.html[Learn how to manually upgrade the Connector software]
+link:task-managing-connectors.html[Learn how to manually upgrade the Connector software].
 
 == Operating system and VM maintenance
 
