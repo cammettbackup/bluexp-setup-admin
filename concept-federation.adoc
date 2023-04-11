@@ -15,12 +15,12 @@ summary: Identity federation enables single sign-on with BlueXP so that users ca
 [.lead]
 _Identity federation_ enables single sign-on with BlueXP so that users can log in using credentials from your corporate identity. To get started, learn how identity federation works with BlueXP and then review an overview of the setup process.
 
-== Using NSS with identity federation
+== Identity federation with NSS credentials
 
 If you use your NetApp Support Site (NSS) credentials to log in to BlueXP, you should not follow the instructions on this page to set up identity federation. You should do the following instead:
 
 * Download and complete the https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1[NetApp Federation Request Form^]
-* Email the NetApp Federation Request Form to mailto:ng-identity-federation@netapp.com with the Subject: Federation Request - Company Name (email address only used for initial submission)
+* Submit the form to the email address specified in the form
 
 The NetApp Identity and Access Management team will review your request.
 
@@ -56,7 +56,7 @@ BlueXP supports service provider initiated (SP-initiated) SSO only. Identity pro
 
 Before you set up a connection between BlueXP and your identity management provider, you should understand the steps that you'll need to take so that you can prepare accordingly.
 
-These steps are specific to users who log in to BlueXP using a NetApp cloud login.
+These steps are specific to users who log in to BlueXP using a NetApp cloud login. If you use your NSS credentials to log in to BlueXP, <<Identity federation with NSS credentials,learn how to set up identity federation with NSS credentials>>.
 
 === SAML identity provider
 
