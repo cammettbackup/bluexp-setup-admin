@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-limitations.html
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens
 summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 ---
 
@@ -18,6 +18,15 @@ Known limitations identify platforms, devices, or functions that are not support
 These limitations are specific to BlueXP set up and administration: the Connector, the SaaS platform, and more.
 
 == Connector limitations
+
+=== Default EC2 instance settings should not be changed
+
+When you deploy the Connector in AWS, the following EC2 instance settings are configured by default:
+
+* IMDSv2 is set to optional
+* HttpTokens is set to optional
+
+These settings should not be changed to required. Changing these settings to required impacts the Connector and Cloud Volumes ONTAP availability.
 
 === Possible conflict with IP addresses in the 172 range
 
