@@ -20,7 +20,11 @@ As you use the BlueXP web-based console that's provided through the SaaS layer, 
 | Endpoints
 | Purpose
 
-| \https://console.bluexp.netapp.com | Your web browser contacts this URL when using the web-based console.
+| 
+\https://console.bluexp.netapp.com
+\https://*.console.bluexp.netapp.com  
+
+| Your web browser contacts these URLs when you use the BlueXP web-based console.
 
 a|
 AWS services (amazonaws.com):
@@ -76,7 +80,8 @@ AWS services (amazonaws.com):
 
 .Related links
 
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in AWS]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in Azure]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in Google Cloud]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation[Endpoints contacted during manual installation of the Connector]
+* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console[Prepare networking for user access to BlueXP console (restricted mode)]
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in AWS (standard mode)]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in Azure (standard mode)]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations[Endpoints that the Connector contacts in Google Cloud (standard mode)]
+* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation[Endpoints contacted during manual installation of the Connector (standard mode)]
