@@ -207,7 +207,7 @@ a|
 | Cloud Volumes ONTAP service account | Custom | Service project a|
 * storage.admin
 * member: BlueXP service account as serviceAccount.user
-| N/A | (Optional) For data tiering and Cloud Backup
+| N/A | (Optional) For data tiering and BlueXP backup and recovery
 
 | Google APIs service agent | Google Cloud | Service project a|
 (Default) Editor

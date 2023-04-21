@@ -187,11 +187,11 @@ BlueXP supports the following storage and data services with restricted mode:
 
 | Azure NetApp Files | Full support
 
-| Cloud Backup | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode. 
+| Backup and recovery | Supported in Government regions and commercial regions with restricted mode. Not supported in sovereign regions with restricted mode. 
 
 The following features are not supported: Applications, Virtual Machines, and Kubernetes.
 
-| Cloud Data Sense a| Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode. 
+| Classification a| Supported in Government regions with restricted mode. Not supported in commercial regions or in sovereign regions with restricted mode. 
 
 The following limitations apply:
 
@@ -201,7 +201,7 @@ The following limitations apply:
 
 | Cloud Volumes ONTAP | Full support
 
-| Digital Wallet | You can use the Digital Wallet with the supported licensing options listed below for restricted mode.
+| Digital wallet | You can use the digital wallet with the supported licensing options listed below for restricted mode.
 
 | On-premises ONTAP clusters | Discovery with a Connector and discovery without a Connector (direct discovery) are both supported. 
 
@@ -280,13 +280,13 @@ BlueXP supports the following storage and data services with private mode when t
 | Supported services
 | Notes
 
-| Cloud Backup | Supported in AWS and Azure commercial regions. 
+| Backup and recovery | Supported in AWS and Azure commercial regions. 
 
 Not supported in Google Cloud or in https://aws.amazon.com/federal/us-intelligence-community/[AWS C2S/SC2S^] or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
 | Cloud Volumes ONTAP | Because there's no internet access, the following features aren't available: automated software upgrades, AutoSupport, and AWS cost information.
 
-| Digital Wallet | You can use the Digital Wallet with the supported licensing options listed below for private mode.
+| Digital wallet | You can use the digital wallet with the supported licensing options listed below for private mode.
 
 | On-premises ONTAP clusters | Requires connectivity from the cloud (where the Connector is installed) to the on-premises environment.
 
@@ -302,12 +302,12 @@ BlueXP supports the following storage and data services with private mode when t
 | Supported services
 | Notes
 
-| Cloud Backup 
+| Backup and recovery
 | Only back up and restore of on-prem ONTAP volumes to StorageGRID systems is supported.
 
 https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html[Learn how to back up on-prem ONTAP data to StorageGRID^]
 
-| Cloud Data Sense
+| Classification
 a| 
 * The only supported data sources are the ones that you can discover locally.
 +
@@ -317,7 +317,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 + 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations[View the feature limitations^]
 
-| Digital Wallet | You can use the Digital Wallet with the supported licensing options listed below for private mode.
+| Digital wallet | You can use the digital wallet with the supported licensing options listed below for private mode.
 
 | On-premises ONTAP clusters | Discovery without a Connector (direct discovery) is not supported. 
 
@@ -328,9 +328,9 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-da
 Supported licensing options::
 Only BYOL is supported with private mode. 
 +
-For Cloud Volumes ONTAP BYOL, only node-based licensing is supported. Capacity-based licensing is not supported. Because an outbound internet connection isn't available, you will need to manually upload your Cloud Volumes ONTAP licensing file in the Digital Wallet.
+For Cloud Volumes ONTAP BYOL, only node-based licensing is supported. Capacity-based licensing is not supported. Because an outbound internet connection isn't available, you will need to manually upload your Cloud Volumes ONTAP licensing file in the BlueXP digital wallet.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses[Learn how to add licenses to the Digital Wallet^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses[Learn how to add licenses to the BlueXP digital wallet^]
 
 How to get started with private mode::
 Private mode is available by downloading the "offline" installer from the NetApp Support Site.
@@ -343,37 +343,43 @@ The following table can help you quickly identify which BlueXP services and feat
 
 Note that some services might be supported with limitations. For more details about how these services are supported with restricted mode and private mode, refer to the sections above.
 
-[options="header",cols="33h,33,33"]
+[options="header",cols="19,27,27,27"]
 |===
 
+| Product area
 | BlueXP service or feature
 | Restricted mode
 | Private mode
 
+.11+| *Working environments*
 | Amazon FSx for ONTAP | Yes | No
 | Amazon S3 | No | No
-| AppTemplate | No | No
 | Azure Blob | No | No
 | Azure NetApp Files | Yes | No 
-| Cloud Backup | Yes | Yes 
-| Cloud Data Sense | Yes | Yes
-| Cloud Sync | No | No 
-| Cloud Tiering | No | No 
 | Cloud Volumes ONTAP | Yes | Yes 
 | Cloud Volumes Service for Google Cloud | No | No
-| Compute | No | No
-| Digital Advisor | No | No 
-| Digital Wallet | Yes | Yes
-| E-Series | No | No
-| Economic efficiency | No | No
-| Global File Cache | No | No
 | Google Cloud Storage | No | No
 | Kubernetes clusters | No | No
 | On-prem ONTAP clusters | Yes | Yes
-| Operational resiliency | No | No
-| Ransomware Protection | No | No
-| Replication | Yes | Yes 
+| E-Series | No | No
 | StorageGRID | No | No 
+
+.13+| *Services*
+| Backup and recovery | Yes | Yes 
+| Classification | Yes | Yes
+| Cloud ops | No | No
+| Copy and sync | No | No
+| Digital advisor | No | No 
+| Digital wallet | Yes | Yes
+| Economic efficiency | No | No
+| Edge caching | No | No
+| Operational resiliency | No | No
+| Ransomware protection | No | No
+| Remediation | No | No
+| Replication | Yes | Yes
+| Tiering | No | No
+
+.4+| *Features*
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 

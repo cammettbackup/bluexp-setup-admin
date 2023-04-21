@@ -46,18 +46,18 @@ For standard regions, the permissions are spread across two policies. Two polici
 
 The first policy provides permissions for the following services:
 
-* Cloud Backup
-* Cloud Data Sense
-* Cloud Tiering
+* Amazon S3 bucket discovery
+* Backup and recovery
+* Classification
 * Cloud Volumes ONTAP
 * FSx for ONTAP
-* S3 bucket discovery
+* Tiering
 
 The second policy provides permissions for the following services:
  
-* AppTemplate tagging
-* Global File Cache
+* Edge caching
 * Kubernetes
+* Remediation
 
 // start tabbed area
 [role="tabbed-block"]
@@ -699,24 +699,48 @@ The second policy provides permissions for the following services:
 
 The following sections describe how the permissions are used for each BlueXP service. This information can be helpful if your corporate policies dictate that permissions are only provided as needed.
 
-=== AppTemplate tags
+=== Amazon FSx for ONTAP
 
-The Connector makes the following API requests to manage tags on AWS resources when you use the AppTemplate Tagging service:
+The Connector makes the following API requests to manage Amazon FSx for ONTAP:
 
-//tag::app-template-permissions[]
+* ec2:DescribeInstances
+* ec2:DescribeInstanceStatus
+* ec2:DescribeInstanceAttribute
+* ec2:DescribeRouteTables
+* ec2:DescribeImages
 * ec2:CreateTags
-* ec2:DeleteTags
+* ec2:DescribeVolumes
+* ec2:DescribeSecurityGroups
+* ec2:DescribeNetworkInterfaces
+* ec2:DescribeSubnets
+* ec2:DescribeVpcs
+* ec2:DescribeDhcpOptions
+* ec2:DescribeSnapshots
+* ec2:DescribeKeyPairs
+* ec2:DescribeRegions
 * ec2:DescribeTags
-* tag:getResources
-* tag:getTagKeys
-* tag:getTagValues
-* tag:TagResources
-* tag:UntagResources
-//end::app-template-permissions[]
+* ec2:DescribeIamInstanceProfileAssociations
+* ec2:DescribeReservedInstancesOfferings
+* ec2:DescribeVpcEndpoints
+* ec2:DescribeVpcs
+* ec2:DescribeVolumesModifications
+* ec2:DescribePlacementGroups
+* kms:List*
+* kms:Describe*
+* kms:CreateGrant
+* kms:ListAliases
+* fsx:Describe*
+* fsx:List*
 
-=== Cloud Backup
+=== Amazon S3 bucket discovery
 
-The Connector makes the following API requests to deploy the restore instance for Cloud Backup:
+The Connector makes the following API request to discover Amazon S3 buckets:
+
+s3:GetEncryptionConfiguration
+
+=== Backup and recovery
+
+The Connector makes the following API requests to deploy the restore instance for BlueXP backup and recovery:
 
 //tag::backup-permissions-restore[]
 * ec2:StartInstances
@@ -823,9 +847,9 @@ The Connector makes the following API requests if you use a different AWS accoun
 * s3:PutBucketOwnershipControls
 //end::backup-permissions-cross-account[]
 
-=== Cloud Data Sense
+=== Classification
 
-The Connector makes the following API requests to deploy the Cloud Data Sense instance:
+The Connector makes the following API requests to deploy the BlueXP classification instance:
 
 //tag::data-sense-instance-permissions[]
 * ec2:DescribeInstances
@@ -854,7 +878,7 @@ The Connector makes the following API requests to deploy the Cloud Data Sense in
 * ec2:DescribeIamInstanceProfileAssociations
 //end::data-sense-instance-permissions[]
 
-The Connector makes the following API requests to scan S3 buckets when you use Cloud Data Sense:
+The Connector makes the following API requests to scan S3 buckets when you use BlueXP classification:
 
 //tag::data-sense-permissions[]
 * iam:AddRoleToInstanceProfile
@@ -874,27 +898,6 @@ The Connector makes the following API requests to scan S3 buckets when you use C
 * s3:PutObject
 * sts:AssumeRole
 //end::data-sense-permissions[]
-
-=== Cloud Tiering
-
-The Connector makes the following API requests to tier data to Amazon S3 when you use Cloud Tiering.
-
-//tag::tiering-permissions[]
-[cols=3*,options="header"]
-|===
-
-| Action
-| Used for set up?
-| Used for daily operations?
-
-| s3:CreateBucket | Yes | No
-| s3:PutLifecycleConfiguration | Yes | No
-| s3:GetLifecycleConfiguration | Yes | Yes
-| ec2:DescribeRegions | Yes | No
-| ec2:DescribeVpcEndpoints | Yes | No
-
-|===
-//end::tiering-permissions[]
 
 === Cloud Volumes ONTAP
 
@@ -1046,48 +1049,15 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 
 |===
 
-=== Global File Cache
+=== Edge caching
 
-The Connector makes the following API requests to deploy Global File Cache instances during deployment:
+The Connector makes the following API requests to deploy BlueXP edge caching instances during deployment:
 
 //tag::gfc-permissions[]
 * cloudformation:DescribeStacks
 * cloudwatch:GetMetricStatistics
 * cloudformation:ListStacks
 //end::gfc-permissions[]
-
-=== FSx for ONTAP
-
-The Connector makes the following API requests to manage FSx for ONTAP:
-
-* ec2:DescribeInstances
-* ec2:DescribeInstanceStatus
-* ec2:DescribeInstanceAttribute
-* ec2:DescribeRouteTables
-* ec2:DescribeImages
-* ec2:CreateTags
-* ec2:DescribeVolumes
-* ec2:DescribeSecurityGroups
-* ec2:DescribeNetworkInterfaces
-* ec2:DescribeSubnets
-* ec2:DescribeVpcs
-* ec2:DescribeDhcpOptions
-* ec2:DescribeSnapshots
-* ec2:DescribeKeyPairs
-* ec2:DescribeRegions
-* ec2:DescribeTags
-* ec2:DescribeIamInstanceProfileAssociations
-* ec2:DescribeReservedInstancesOfferings
-* ec2:DescribeVpcEndpoints
-* ec2:DescribeVpcs
-* ec2:DescribeVolumesModifications
-* ec2:DescribePlacementGroups
-* kms:List*
-* kms:Describe*
-* kms:CreateGrant
-* kms:ListAliases
-* fsx:Describe*
-* fsx:List*
 
 === Kubernetes
 
@@ -1100,11 +1070,20 @@ The Connector makes the following API requests to discover and manage Amazon EKS
 * iam:GetInstanceProfile
 //end::kubernetes-permissions[]
 
-=== S3 bucket discovery
+=== Remediation
 
-The Connector makes the following API request to discover Amazon S3 buckets:
+The Connector makes the following API requests to manage tags on AWS resources when you use BlueXP remediation:
 
-s3:GetEncryptionConfiguration
+//tag::app-template-permissions[]
+* ec2:CreateTags
+* ec2:DeleteTags
+* ec2:DescribeTags
+* tag:getResources
+* tag:getTagKeys
+* tag:getTagValues
+* tag:TagResources
+* tag:UntagResources
+//end::app-template-permissions[]
 
 == Change log
 
@@ -1112,6 +1091,6 @@ As permissions are added and removed, we'll note them in the sections below.
 
 === 14 February, 2023
 
-The following permission is now required for Cloud Tiering:
+The following permission is now required for BlueXP tiering:
 
 ec2:DescribeVpcEndpoints
