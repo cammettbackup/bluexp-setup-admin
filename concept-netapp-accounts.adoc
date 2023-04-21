@@ -39,7 +39,7 @@ When you associate a user, you assign them a role:
 
 * _Account Admin_: Can perform any action in BlueXP.
 * _Workspace Admin_: Can create and manage resources in the assigned workspace.
-* _Compliance Viewer_: Can only view Cloud Data Sense compliance information and generate reports for systems that they have permission to access.
+* _Compliance Viewer_: Can only view compliance information for BlueXP classification and generate reports for workspaces that they have permission to access.
 
 link:reference-user-roles.html[Learn more about these roles].
 
@@ -59,7 +59,7 @@ link:task-setting-up-netapp-accounts.html[Learn how to add a workspace].
 
 A Connector executes the actions that BlueXP needs to perform in order to manage your data infrastructure. The Connector runs on a virtual machine instance that you deploy in your cloud provider or on an on-premises host that you configured.
 
-You can use a Connector with more than one BlueXP service. For example, if you're using a Connector to manage Cloud Volumes ONTAP, you can use that same Connector with another service like Cloud Tiering.
+You can use a Connector with more than one BlueXP service. For example, if you're using a Connector to manage Cloud Volumes ONTAP, you can use that same Connector with another service like BlueXP tiering.
 
 link:concept-connectors.html[Learn more about Connectors].
 
