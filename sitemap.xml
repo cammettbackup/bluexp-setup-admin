@@ -36,7 +36,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html</loc>
       
-      <lastmod>2023-04-07T20:00:15+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -71,21 +71,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html</loc>
       
-      <lastmod>2023-04-04T13:45:18+00:00</lastmod>
+      <lastmod>2023-04-21T15:46:47+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html</loc>
       
-      <lastmod>2023-04-03T17:36:53+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -162,21 +162,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html</loc>
       
-      <lastmod>2023-04-07T13:52:55+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html</loc>
       
-      <lastmod>2023-04-07T13:52:55+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html</loc>
       
-      <lastmod>2023-04-07T13:52:55+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -190,21 +190,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html</loc>
       
-      <lastmod>2023-04-04T17:33:09+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html</loc>
       
-      <lastmod>2023-04-04T17:33:09+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html</loc>
       
-      <lastmod>2023-04-04T17:33:09+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -218,21 +218,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-whats-next-private-mode.html</loc>
       
-      <lastmod>2023-03-30T18:21:39+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-whats-next-restricted-mode.html</loc>
       
-      <lastmod>2023-03-30T18:21:39+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -246,7 +246,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin//search.html</loc>
       
-      <lastmod>2023-04-19T16:46:08+00:00</lastmod>
+      <lastmod>2023-04-21T15:55:53+00:00</lastmod>
       
     </url>
   
@@ -463,14 +463,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html</loc>
       
-      <lastmod>2023-04-03T22:21:28+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -610,7 +610,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-permissions-google.html</loc>
       
-      <lastmod>2023-03-30T19:04:55+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
@@ -659,28 +659,28 @@
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-amazon-s3.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html</loc>
       
-      <lastmod>2023-04-05T15:57:11+00:00</lastmod>
+      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   

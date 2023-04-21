@@ -1929,7 +1929,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-07 13:52:55 +0000">04/07/2023</time>
+    <time datetime="2023-04-21 15:27:01 +0000">04/21/2023</time>
     
   
 
@@ -2013,13 +2013,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Cloud Backup</p>
+<p>Amazon S3 bucket discovery</p>
 </li>
 <li>
-<p>Cloud Data Sense</p>
+<p>Backup and recovery</p>
 </li>
 <li>
-<p>Cloud Tiering</p>
+<p>Classification</p>
 </li>
 <li>
 <p>Cloud Volumes ONTAP</p>
@@ -2028,7 +2028,7 @@
 <p>FSx for ONTAP</p>
 </li>
 <li>
-<p>S3 bucket discovery</p>
+<p>Tiering</p>
 </li>
 </ul>
 </div>
@@ -2038,13 +2038,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>AppTemplate tagging</p>
-</li>
-<li>
-<p>Global File Cache</p>
+<p>Edge caching</p>
 </li>
 <li>
 <p>Kubernetes</p>
+</li>
+<li>
+<p>Remediation</p>
 </li>
 </ul>
 </div>
@@ -2702,43 +2702,112 @@
 <p>The following sections describe how the permissions are used for each BlueXP service. This information can be helpful if your corporate policies dictate that permissions are only provided as needed.</p>
 </div>
 <div class="sect2">
-<h3 id="apptemplate-tags">AppTemplate tags</h3>
+<h3 id="amazon-fsx-for-ontap">Amazon FSx for ONTAP</h3>
 <div class="paragraph">
-<p>The Connector makes the following API requests to manage tags on AWS resources when you use the AppTemplate Tagging service:</p>
+<p>The Connector makes the following API requests to manage Amazon FSx for ONTAP:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
+<p>ec2:DescribeInstances</p>
+</li>
+<li>
+<p>ec2:DescribeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:DescribeInstanceAttribute</p>
+</li>
+<li>
+<p>ec2:DescribeRouteTables</p>
+</li>
+<li>
+<p>ec2:DescribeImages</p>
+</li>
+<li>
 <p>ec2:CreateTags</p>
 </li>
 <li>
-<p>ec2:DeleteTags</p>
+<p>ec2:DescribeVolumes</p>
+</li>
+<li>
+<p>ec2:DescribeSecurityGroups</p>
+</li>
+<li>
+<p>ec2:DescribeNetworkInterfaces</p>
+</li>
+<li>
+<p>ec2:DescribeSubnets</p>
+</li>
+<li>
+<p>ec2:DescribeVpcs</p>
+</li>
+<li>
+<p>ec2:DescribeDhcpOptions</p>
+</li>
+<li>
+<p>ec2:DescribeSnapshots</p>
+</li>
+<li>
+<p>ec2:DescribeKeyPairs</p>
+</li>
+<li>
+<p>ec2:DescribeRegions</p>
 </li>
 <li>
 <p>ec2:DescribeTags</p>
 </li>
 <li>
-<p>tag:getResources</p>
+<p>ec2:DescribeIamInstanceProfileAssociations</p>
 </li>
 <li>
-<p>tag:getTagKeys</p>
+<p>ec2:DescribeReservedInstancesOfferings</p>
 </li>
 <li>
-<p>tag:getTagValues</p>
+<p>ec2:DescribeVpcEndpoints</p>
 </li>
 <li>
-<p>tag:TagResources</p>
+<p>ec2:DescribeVpcs</p>
 </li>
 <li>
-<p>tag:UntagResources</p>
+<p>ec2:DescribeVolumesModifications</p>
+</li>
+<li>
+<p>ec2:DescribePlacementGroups</p>
+</li>
+<li>
+<p>kms:List*</p>
+</li>
+<li>
+<p>kms:Describe*</p>
+</li>
+<li>
+<p>kms:CreateGrant</p>
+</li>
+<li>
+<p>kms:ListAliases</p>
+</li>
+<li>
+<p>fsx:Describe*</p>
+</li>
+<li>
+<p>fsx:List*</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="cloud-backup">Cloud Backup</h3>
+<h3 id="amazon-s3-bucket-discovery">Amazon S3 bucket discovery</h3>
 <div class="paragraph">
-<p>The Connector makes the following API requests to deploy the restore instance for Cloud Backup:</p>
+<p>The Connector makes the following API request to discover Amazon S3 buckets:</p>
+</div>
+<div class="paragraph">
+<p>s3:GetEncryptionConfiguration</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="backup-and-recovery">Backup and recovery</h3>
+<div class="paragraph">
+<p>The Connector makes the following API requests to deploy the restore instance for BlueXP backup and recovery:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3020,9 +3089,9 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="cloud-data-sense">Cloud Data Sense</h3>
+<h3 id="classification">Classification</h3>
 <div class="paragraph">
-<p>The Connector makes the following API requests to deploy the Cloud Data Sense instance:</p>
+<p>The Connector makes the following API requests to deploy the BlueXP classification instance:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3101,7 +3170,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>The Connector makes the following API requests to scan S3 buckets when you use Cloud Data Sense:</p>
+<p>The Connector makes the following API requests to scan S3 buckets when you use BlueXP classification:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3155,53 +3224,6 @@
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="cloud-tiering">Cloud Tiering</h3>
-<div class="paragraph">
-<p>The Connector makes the following API requests to tier data to Amazon S3 when you use Cloud Tiering.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Action</th>
-<th class="tableblock halign-left valign-top">Used for set up?</th>
-<th class="tableblock halign-left valign-top">Used for daily operations?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">s3:CreateBucket</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutLifecycleConfiguration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetLifecycleConfiguration</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeRegions</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescribeVpcEndpoints</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sect2">
 <h3 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h3>
@@ -3776,9 +3798,9 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="global-file-cache">Global File Cache</h3>
+<h3 id="edge-caching">Edge caching</h3>
 <div class="paragraph">
-<p>The Connector makes the following API requests to deploy Global File Cache instances during deployment:</p>
+<p>The Connector makes the following API requests to deploy BlueXP edge caching instances during deployment:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -3790,100 +3812,6 @@
 </li>
 <li>
 <p>cloudformation:ListStacks</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="fsx-for-ontap">FSx for ONTAP</h3>
-<div class="paragraph">
-<p>The Connector makes the following API requests to manage FSx for ONTAP:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>ec2:DescribeInstances</p>
-</li>
-<li>
-<p>ec2:DescribeInstanceStatus</p>
-</li>
-<li>
-<p>ec2:DescribeInstanceAttribute</p>
-</li>
-<li>
-<p>ec2:DescribeRouteTables</p>
-</li>
-<li>
-<p>ec2:DescribeImages</p>
-</li>
-<li>
-<p>ec2:CreateTags</p>
-</li>
-<li>
-<p>ec2:DescribeVolumes</p>
-</li>
-<li>
-<p>ec2:DescribeSecurityGroups</p>
-</li>
-<li>
-<p>ec2:DescribeNetworkInterfaces</p>
-</li>
-<li>
-<p>ec2:DescribeSubnets</p>
-</li>
-<li>
-<p>ec2:DescribeVpcs</p>
-</li>
-<li>
-<p>ec2:DescribeDhcpOptions</p>
-</li>
-<li>
-<p>ec2:DescribeSnapshots</p>
-</li>
-<li>
-<p>ec2:DescribeKeyPairs</p>
-</li>
-<li>
-<p>ec2:DescribeRegions</p>
-</li>
-<li>
-<p>ec2:DescribeTags</p>
-</li>
-<li>
-<p>ec2:DescribeIamInstanceProfileAssociations</p>
-</li>
-<li>
-<p>ec2:DescribeReservedInstancesOfferings</p>
-</li>
-<li>
-<p>ec2:DescribeVpcEndpoints</p>
-</li>
-<li>
-<p>ec2:DescribeVpcs</p>
-</li>
-<li>
-<p>ec2:DescribeVolumesModifications</p>
-</li>
-<li>
-<p>ec2:DescribePlacementGroups</p>
-</li>
-<li>
-<p>kms:List*</p>
-</li>
-<li>
-<p>kms:Describe*</p>
-</li>
-<li>
-<p>kms:CreateGrant</p>
-</li>
-<li>
-<p>kms:ListAliases</p>
-</li>
-<li>
-<p>fsx:Describe*</p>
-</li>
-<li>
-<p>fsx:List*</p>
 </li>
 </ul>
 </div>
@@ -3911,12 +3839,37 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="s3-bucket-discovery">S3 bucket discovery</h3>
+<h3 id="remediation">Remediation</h3>
 <div class="paragraph">
-<p>The Connector makes the following API request to discover Amazon S3 buckets:</p>
+<p>The Connector makes the following API requests to manage tags on AWS resources when you use BlueXP remediation:</p>
 </div>
-<div class="paragraph">
-<p>s3:GetEncryptionConfiguration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:CreateTags</p>
+</li>
+<li>
+<p>ec2:DeleteTags</p>
+</li>
+<li>
+<p>ec2:DescribeTags</p>
+</li>
+<li>
+<p>tag:getResources</p>
+</li>
+<li>
+<p>tag:getTagKeys</p>
+</li>
+<li>
+<p>tag:getTagValues</p>
+</li>
+<li>
+<p>tag:TagResources</p>
+</li>
+<li>
+<p>tag:UntagResources</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3930,7 +3883,7 @@
 <div class="sect2">
 <h3 id="14-february-2023">14 February, 2023</h3>
 <div class="paragraph">
-<p>The following permission is now required for Cloud Tiering:</p>
+<p>The following permission is now required for BlueXP tiering:</p>
 </div>
 <div class="paragraph">
 <p>ec2:DescribeVpcEndpoints</p>

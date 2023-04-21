@@ -1929,7 +1929,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-07 20:00:15 +0000">04/07/2023</time>
+    <time datetime="2023-04-21 15:27:01 +0000">04/21/2023</time>
     
   
 
@@ -1968,31 +1968,31 @@
 <li>
 <p>Amazon FSx for NetApp ONTAP working environment creation</p>
 <div class="paragraph">
-<p>While a Connector isn&#8217;t required to create a working environment, it is required to create and manage volumes, replicate data, and integrate FSx for ONTAP with BlueXP services, such as Data Sense and Cloud Sync.</p>
+<p>While a Connector isn&#8217;t required to create a working environment, it is required to create and manage volumes, replicate data, and integrate FSx for ONTAP with services such as BlueXP classification and BlueXP copy and sync.</p>
 </div>
 </li>
 <li>
 <p>Azure NetApp Files</p>
 <div class="paragraph">
-<p>While a Connector isn&#8217;t required to set up and manage Azure NetApp Files, a Connector is required if you want to use Cloud Data Sense to scan Azure NetApp Files data.</p>
+<p>While a Connector isn&#8217;t required to set up and manage Azure NetApp Files, a Connector is required if you want to use BlueXP classification to scan Azure NetApp Files data.</p>
 </div>
-</li>
-<li>
-<p>Cloud Sync</p>
 </li>
 <li>
 <p>Cloud Volumes Service for Google Cloud</p>
 </li>
 <li>
-<p>Digital Advisor</p>
+<p>Copy and sync</p>
 </li>
 <li>
-<p>Digital Wallet</p>
+<p>Digital advisor</p>
+</li>
+<li>
+<p>Digital wallet</p>
 <div class="paragraph">
-<p>In almost all cases, you can add a license to the Digital Wallet without a Connector.</p>
+<p>In almost all cases, you can add a license to the digital wallet without a Connector.</p>
 </div>
 <div class="paragraph">
-<p>The only time that a Connector is required to add a license to the Digital Wallet is for Cloud Volumes ONTAP <em>node-based</em> licenses. A Connector is required in this case because the data is taken from the licenses installed on Cloud Volumes ONTAP systems.</p>
+<p>The only time that a Connector is required to add a license to the digital wallet is for Cloud Volumes ONTAP <em>node-based</em> licenses. A Connector is required in this case because the data is taken from the licenses installed on Cloud Volumes ONTAP systems.</p>
 </div>
 </li>
 <li>
@@ -2026,13 +2026,10 @@
 <p>Azure Blob discovery</p>
 </li>
 <li>
-<p>Cloud Backup</p>
+<p>Backup and recovery</p>
 </li>
 <li>
-<p>Cloud Data Sense</p>
-</li>
-<li>
-<p>Cloud Tiering</p>
+<p>Classification</p>
 </li>
 <li>
 <p>Cloud Volumes ONTAP</p>
@@ -2044,7 +2041,7 @@
 <p>Economic efficiency <sup>1</sup></p>
 </li>
 <li>
-<p>Global File Cache</p>
+<p>Edge caching</p>
 </li>
 <li>
 <p>Google Cloud Storage discovery</p>
@@ -2059,7 +2056,10 @@
 <p>Operational resiliency <sup>1</sup></p>
 </li>
 <li>
-<p>StorageGRID</p>
+<p>StorageGRID systems</p>
+</li>
+<li>
+<p>Tiering</p>
 </li>
 </ul>
 </div>
@@ -2263,7 +2263,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>You have a multi-cloud environment (AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.</p>
+<p>You have a multi-cloud environment (for example, AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.</p>
 </li>
 <li>
 <p>A service provider might use one BlueXP account to provide services for their customers, while using another account to provide disaster recovery for one of their business units. Each account would have separate Connectors.</p>
