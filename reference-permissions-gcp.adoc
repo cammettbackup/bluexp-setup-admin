@@ -346,7 +346,7 @@ includedPermissions:
 - compute.subnetworks.useExternalIp
 - compute.instances.addAccessConfig
 
-| To enable Cloud Data Sense.
+| To enable BlueXP classification.
 
 |
 - container.clusters.get
@@ -377,7 +377,7 @@ includedPermissions:
 - cloudkms.keyRings.list
 - cloudkms.keyRings.setIamPolicy
 
-| To select your own customer-managed keys in the Cloud Backup activation wizard instead of using the default Google-managed encryption keys.
+| To select your own customer-managed keys in the BlueXP backup and recovery activation wizard instead of using the default Google-managed encryption keys.
 
 |===
 
@@ -403,4 +403,4 @@ The following permissions were added to the policy:
 * cloudkms.keyRings.getIamPolicy
 * cloudkms.keyRings.setIamPolicy
 
-These permissions are required for Cloud Backup.
+These permissions are required for BlueXP backup and recovery.

@@ -170,19 +170,6 @@ You also need to ensure that the role is up to date as new permissions are added
 
 The following sections describe how the permissions are used for each BlueXP service. This information can be helpful if your corporate policies dictate that permissions are only provided as needed.
 
-=== AppTemplate tags
-
-The Connector makes the following API requests to manage tags on Azure resources when you use the AppTemplate Tagging service:
-
-//tag::app-template-permissions[]
-* Microsoft.Resources/resources/read
-* Microsoft.Resources/subscriptions/operationresults/read
-* Microsoft.Resources/subscriptions/resourceGroups/read
-* Microsoft.Resources/subscriptions/resourcegroups/resources/read
-* Microsoft.Resources/tags/read
-* Microsoft.Resources/tags/write
-//end::app-template-permissions[]
-
 === Azure NetApp Files
 
 The Connector makes the following API requests to manage Azure NetApp Files working environments:
@@ -193,9 +180,9 @@ The Connector makes the following API requests to manage Azure NetApp Files work
 * Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete
 
-=== Cloud Backup
+=== Backup and recovery
 
-The Connector makes the following API requests for backup and restore operations:
+The Connector makes the following API requests for BlueXP backup and recovery:
 
 //tag::backup-permissions[]
 * Microsoft.Compute/virtualMachines/read
@@ -248,9 +235,9 @@ The Connector makes the following API requests when you use the Search & Restore
 * Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action
 //end::backup-search-restore-permissions[]
 
-=== Cloud Data Sense
+=== Classification
 
-The Connector makes the following API requests when you use Cloud Data Sense.
+The Connector makes the following API requests when you use BlueXP classification.
 
 //tag::data-sense-permissions[]
 [cols=3*,options="header"]
@@ -308,26 +295,6 @@ The Connector makes the following API requests when you use Cloud Data Sense.
 
 |===
 //tag::data-sense-permissions[]
-
-=== Cloud Tiering
-
-The Connector makes the following API requests when you set up Cloud Tiering.
-
-//tag::tiering-permissions-setup[]
-* Microsoft.Storage/storageAccounts/listkeys/action
-* Microsoft.Resources/subscriptions/resourceGroups/read
-* Microsoft.Resources/subscriptions/locations/read
-//end::tiering-permissions-setup[]
-
-The Connector makes the following API requests for daily operations.
-
-//tag::tiering-permissions-operations[]
-* Microsoft.Storage/storageAccounts/blobServices/containers/read
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
-* Microsoft.Storage/storageAccounts/managementPolicies/read
-* Microsoft.Storage/storageAccounts/managementPolicies/write
-* Microsoft.Storage/storageAccounts/read
-//end::tiering-permissions-operations[]
 
 === Cloud Volumes ONTAP
 
@@ -485,9 +452,9 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 
 |===
 
-=== Global File Cache
+=== Edge caching
 
-The Connector makes the following API requests when you use Global File Cache:
+The Connector makes the following API requests when you use BlueXP edge caching:
 
 //tag::gfc-permissions[]
 * Microsoft.Insights/Metrics/Read
@@ -514,13 +481,46 @@ The Connector makes the following API requests to discover and manage clusters r
 * Microsoft.ContainerService/managedClusters/listClusterUserCredential/action
 //end::kubernetes-permissions[]
 
+=== Remediation
+
+The Connector makes the following API requests to manage tags on Azure resources when you use BlueXP remediation:
+
+//tag::app-template-permissions[]
+* Microsoft.Resources/resources/read
+* Microsoft.Resources/subscriptions/operationresults/read
+* Microsoft.Resources/subscriptions/resourceGroups/read
+* Microsoft.Resources/subscriptions/resourcegroups/resources/read
+* Microsoft.Resources/tags/read
+* Microsoft.Resources/tags/write
+//end::app-template-permissions[]
+
+=== Tiering
+
+The Connector makes the following API requests when you set up BlueXP tiering.
+
+//tag::tiering-permissions-setup[]
+* Microsoft.Storage/storageAccounts/listkeys/action
+* Microsoft.Resources/subscriptions/resourceGroups/read
+* Microsoft.Resources/subscriptions/locations/read
+//end::tiering-permissions-setup[]
+
+The Connector makes the following API requests for daily operations.
+
+//tag::tiering-permissions-operations[]
+* Microsoft.Storage/storageAccounts/blobServices/containers/read
+* Microsoft.Storage/storageAccounts/blobServices/containers/write
+* Microsoft.Storage/storageAccounts/managementPolicies/read
+* Microsoft.Storage/storageAccounts/managementPolicies/write
+* Microsoft.Storage/storageAccounts/read
+//end::tiering-permissions-operations[]
+
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
 
 === 23 March, 2023
 
-The "Microsoft.Storage/storageAccounts/delete" permission is no longer needed for Cloud Data Sense.
+The "Microsoft.Storage/storageAccounts/delete" permission is no longer needed for BlueXP classification.
 
 This permission is still required for Cloud Volumes ONTAP.
 
@@ -531,7 +531,7 @@ The following permissions were added to the JSON policy:
 * Microsoft.Storage/storageAccounts/listAccountSas/action
 * Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action
 +
-These permissions are required for Cloud Backup.
+These permissions are required for BlueXP backup and recovery.
 
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
@@ -543,11 +543,11 @@ The following permissions were added to the JSON policy:
 
 * Microsoft.Storage/storageAccounts/blobServices/containers/write
 +
-This permission is required for Cloud Backup and Cloud Tiering.
+This permission is required for BlueXP backup and recovery and BlueXP tiering.
 
 * Microsoft.Network/publicIPAddresses/delete
 +
-This permissions is required for Cloud Backup.
+This permission is required for BlueXP backup and recovery.
 
 The following permissions were removed from the JSON policy because they are no longer required:
 

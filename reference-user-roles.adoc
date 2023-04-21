@@ -15,7 +15,7 @@ summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter A
 [.lead]
 The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users.
 
-The Compliance Viewer role is for read-only Cloud Data Sense access.
+The Compliance Viewer role is for read-only BlueXP classification access.
 
 [cols=5*,options="header",cols="24,19,19,19,19"]
 |===
@@ -36,7 +36,7 @@ The Compliance Viewer role is for read-only Cloud Data Sense access.
 
 | Switch between workspaces | Yes | Yes | Yes | No
 
-| View Data Sense scan results | Yes | Yes | Yes | No
+| View BlueXP classification scan results | Yes | Yes | Yes | No
 
 | Delete working environments | Yes | No | No | No
 

@@ -35,26 +35,27 @@ Discover, deploy, and manage storage, whether it's in AWS, Azure, Google Cloud, 
 ** ONTAP clusters
 ** StorageGRID systems
 
+* Orchestrate and protect https://bluexp.netapp.com/solutions/kubernetes[Kubernetes persistent data^]
+
 Mobility::
 Move data where it's needed by syncing, copying, tiering, and caching data.
 
-** https://bluexp.netapp.com/cloud-sync-service[Cloud Sync^]
-** https://bluexp.netapp.com/cloud-tiering[Cloud Tiering^]
-** https://bluexp.netapp.com/global-file-cache[Global File Cache^]
+** https://bluexp.netapp.com/cloud-sync-service[Copy and sync^]
+** https://bluexp.netapp.com/global-file-cache[Edge caching^]
+** https://bluexp.netapp.com/cloud-tiering[Tiering^]
 
 Protection::
 Use automated protection mechanisms to protect data against data loss, unplanned outages, ransomware, and other cyber threats.
 
-** https://bluexp.netapp.com/cloud-backup[Cloud Backup^]
+** https://bluexp.netapp.com/cloud-backup[Backup and recovery^]
 ** https://bluexp.netapp.com/replication[Replication^]
-** https://bluexp.netapp.com/ransomware-protection[Ransomware Protection^]
-** https://bluexp.netapp.com/k8s[Kubernetes^]
 
 Analysis and control::
 Use tools to monitor, map, and optimize your data storage and infrastructure.
 
-** https://bluexp.netapp.com/netapp-cloud-data-sense[Cloud Data Sense^]
-** https://bluexp.netapp.com/digital-advisor[Digital Advisor^]
+** https://bluexp.netapp.com/netapp-cloud-data-sense[Classification^]
+** https://bluexp.netapp.com/digital-advisor[Digital advisor^]
+** https://bluexp.netapp.com/ransomware-protection[Ransomware protection^]
 
 https://bluexp.netapp.com/[Learn more about how you can use BlueXP to help your organization^]
 
@@ -94,6 +95,6 @@ link:concept-modes.html[Learn more about BlueXP deployment modes].
 
 == SOC 2 Type 2 certification
 
-An independent certified public accountant firm and services auditor examined BlueXP, Cloud Sync, Cloud Tiering, Cloud Data Sense, and Cloud Backup (BlueXP platform), and affirmed that they have achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
+An independent certified public accountant firm and services auditor examined BlueXP and affirmed that it achieved SOC 2 Type 2 reports based on the applicable Trust Services criteria.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/[View NetApp's SOC 2 reports^]

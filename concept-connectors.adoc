@@ -23,23 +23,23 @@ You can use the following BlueXP features and services without a Connector:
 
 * Amazon FSx for NetApp ONTAP working environment creation
 +
-While a Connector isn't required to create a working environment, it is required to create and manage volumes, replicate data, and integrate FSx for ONTAP with BlueXP services, such as Data Sense and Cloud Sync.
+While a Connector isn't required to create a working environment, it is required to create and manage volumes, replicate data, and integrate FSx for ONTAP with services such as BlueXP classification and BlueXP copy and sync.
 
 * Azure NetApp Files
 +
-While a Connector isn't required to set up and manage Azure NetApp Files, a Connector is required if you want to use Cloud Data Sense to scan Azure NetApp Files data.
-
-* Cloud Sync
+While a Connector isn't required to set up and manage Azure NetApp Files, a Connector is required if you want to use BlueXP classification to scan Azure NetApp Files data.
 
 * Cloud Volumes Service for Google Cloud
 
-* Digital Advisor
+* Copy and sync
 
-* Digital Wallet
+* Digital advisor
+
+* Digital wallet
 +
-In almost all cases, you can add a license to the Digital Wallet without a Connector.
+In almost all cases, you can add a license to the digital wallet without a Connector.
 +
-The only time that a Connector is required to add a license to the Digital Wallet is for Cloud Volumes ONTAP _node-based_ licenses. A Connector is required in this case because the data is taken from the licenses installed on Cloud Volumes ONTAP systems.
+The only time that a Connector is required to add a license to the digital wallet is for Cloud Volumes ONTAP _node-based_ licenses. A Connector is required in this case because the data is taken from the licenses installed on Cloud Volumes ONTAP systems.
 
 * Direct discovery of on-premises ONTAP clusters
 +
@@ -54,18 +54,18 @@ When you use BlueXP in standard mode, a Connector is required for the following 
 * Amazon FSx for ONTAP management features
 * Amazon S3 discovery
 * Azure Blob discovery
-* Cloud Backup
-* Cloud Data Sense
-* Cloud Tiering
+* Backup and recovery
+* Classification
 * Cloud Volumes ONTAP
 * E-Series systems
 * Economic efficiency ^1^
-* Global File Cache
+* Edge caching
 * Google Cloud Storage discovery
 * Kubernetes clusters
 * On-premises ONTAP cluster integration with BlueXP data services
 * Operational resiliency ^1^
-* StorageGRID
+* StorageGRID systems
+* Tiering
 
 ^1^ While you can access these services without a Connector, a Connector is required to initiate actions from the services.
 
@@ -162,7 +162,7 @@ In some cases, you might only need one Connector, but you might find yourself ne
 
 Here are a few examples:
 
-* You have a multi-cloud environment (AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.
+* You have a multi-cloud environment (for example, AWS and Azure) and you prefer to have one Connector in AWS and another in Azure. Each manages the Cloud Volumes ONTAP systems running in those environments.
 
 * A service provider might use one BlueXP account to provide services for their customers, while using another account to provide disaster recovery for one of their business units. Each account would have separate Connectors.
 
