@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-prepare-restricted-mode.html
 keywords: restricted mode requirements, requirements, install options, restricted mode networking, dark site, restricted mode permissions, permissions for restricted mode, networking for restricted mode
-summary: You need to prepare your environment before you deploy BlueXP in restricted mode. For example, you should review host requirements, prepare networking, set up permissions, and more.
+summary: Prepare your environment before you deploy BlueXP in restricted mode. For example, you need to review host requirements, prepare networking, set up permissions, and more.
 ---
 
 = Prepare for deployment in restricted mode
@@ -13,7 +13,7 @@ summary: You need to prepare your environment before you deploy BlueXP in restri
 :imagesdir: ./media/
 
 [.lead]
-You need to prepare your environment before you deploy BlueXP in restricted mode. For example, you should review host requirements, prepare networking, set up permissions, and more.
+Prepare your environment before you deploy BlueXP in restricted mode. For example, you need to review host requirements, prepare networking, set up permissions, and more.
 
 == Understand how restricted mode works
 
