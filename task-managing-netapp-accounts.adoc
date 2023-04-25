@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-managing-netapp-accounts.html
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account
-summary: After you perform initial setup, you can administer your account settings later by managing users, service accounts, workspaces, and Connectors.
+summary: When you create a BlueXP account, it only includes a single admin user and a workspace. You can manage the account to fit your organization's needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
 ---
 
 = Manage your BlueXP account
@@ -13,9 +13,9 @@ summary: After you perform initial setup, you can administer your account settin
 :imagesdir: ./media/
 
 [.lead]
-You can administer your account by managing users, service accounts, workspaces, and Connectors.
+When you create a BlueXP account, it only includes a single admin user and a workspace. You can manage the account to fit your organization's needs by adding users, creating service accounts for automation purposes, by adding workspaces, and more.
 
-link:concept-netapp-accounts.html[Learn more about how BlueXP accounts work].
+link:concept-netapp-accounts.html[Learn how BlueXP accounts work].
 
 == Manage your account with the Tenancy API
 

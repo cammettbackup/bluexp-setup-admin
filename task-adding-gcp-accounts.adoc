@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-adding-gcp-accounts.html
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys
-summary: You can manage the Google Cloud credentials that are associated with the Connector VM instance.
+summary: You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for BlueXP services.
 ---
 
 = Manage Google Cloud credentials and subscriptions for BlueXP
@@ -13,7 +13,7 @@ summary: You can manage the Google Cloud credentials that are associated with th
 :imagesdir: ./media/
 
 [.lead]
-You can manage the Google Cloud credentials that are associated with the Connector VM instance.
+You can manage the Google Cloud credentials that are associated with the Connector VM instance by associating a marketplace subscription and by troubleshooting the subscription process. Both of these tasks ensure that you can use your marketplace subscription to pay for BlueXP services.
 
 == Associate a Marketplace subscription with Google Cloud credentials
 

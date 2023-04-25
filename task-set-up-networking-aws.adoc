@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-set-up-networking-aws.html
 keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, vpc, subnet
-summary: Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment.
+summary: Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 ---
 
 = Set up AWS networking
@@ -13,7 +13,7 @@ summary: Set up your networking so the Connector can manage resources and proces
 :imagesdir: ./media/
 
 [.lead]
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. 
+Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
 == VPC and subnet 
 

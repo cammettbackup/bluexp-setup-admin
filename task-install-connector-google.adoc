@@ -60,7 +60,9 @@ The form is owned and hosted by Google. Your credentials are not provided to Net
 
 * *Network*: Choose whether to enable a public IP address and optionally specify a proxy configuration.
 
-* *Firewall Policy*: Choose whether to create a new firewall policy or whether to select an existing firewall policy that allows inbound HTTP, HTTPS, and SSH access.
+* *Firewall Policy*: Choose whether to create a new firewall policy or whether to select an existing firewall policy that allows the required inbound and outbound rules.
++
+link:reference-ports-gcp.html[Firewall rules in Google Cloud]
 
 * *Review*: Review your selections to verify that your set up is correct.
 

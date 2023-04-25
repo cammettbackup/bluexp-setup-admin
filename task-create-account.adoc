@@ -13,7 +13,7 @@ summary: When you sign up to BlueXP, you're prompted to create an account for yo
 :imagesdir: ./media/
 
 [.lead]
-When you sign up to BlueXP, you're prompted to create an account for your organization. This account might be all that you need, but if your business requires multiple accounts, then you'll need to create additional accounts by using the Tenancy API. 
+When you sign up to BlueXP, you're prompted to create an account for your organization. This account might be all that you need, but if your business requires multiple accounts, then you'll need to create additional accounts by using the Tenancy API.
 
 Use the following API call to create an additional BlueXP account:
 

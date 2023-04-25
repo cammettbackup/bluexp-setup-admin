@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-log-in-private-mode.html
 keywords: logging in, log in, sign in, signing in, private mode, private mode log in, local log in, connector log in, log in connector
-summary: When you use BlueXP in private mode, you'll need to log in to the BlueXP console from the user interface that runs locally on the Connector.
+summary: When you use BlueXP in private mode, you need to log in to the BlueXP console from the user interface that runs locally on the Connector.
 ---
 
 = Log in to BlueXP (private mode)
@@ -13,7 +13,7 @@ summary: When you use BlueXP in private mode, you'll need to log in to the BlueX
 :imagesdir: ./media/
 
 [.lead]
-When you use BlueXP in private mode, you'll need to log in to the BlueXP console from the user interface that runs locally on the Connector.
+When you use BlueXP in private mode, you need to log in to the BlueXP console from the user interface that runs locally on the Connector.
 
 .Log in options
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-provide-permissions-google.html
 keywords: google cloud permissions, permissions, gcp permissions, service account, gcp service account
-summary: If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up.
+summary: If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Google Cloud.
 ---
 
 = Provide Google Cloud permissions to BlueXP
@@ -13,7 +13,7 @@ summary: If you manually installed the Connector software on your own Linux host
 :imagesdir: ./media/
 
 [.lead]
-If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up.
+If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Google Cloud.
 
 link:task-set-up-permissions-google.html[Learn how to set up these permissions].
 

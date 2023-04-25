@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-install-options-google.html
 keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install
-summary: There are a few different ways to create a Connector in Google Cloud. Directly from BlueXP is the most common way.
+summary: There are a few different ways to create a Connector in Google Cloud. Directly from BlueXP is the most common way. The installation option that you choose determines how you prepare for deployment.
 ---
 
 = Connector installation options in Google Cloud
@@ -13,7 +13,7 @@ summary: There are a few different ways to create a Connector in Google Cloud. D
 :imagesdir: ./media/
 
 [.lead]
-There are a few different ways to create a Connector in Google Cloud. Directly from BlueXP is the most common way.
+There are a few different ways to create a Connector in Google Cloud. Directly from BlueXP is the most common way. The installation option that you choose determines how you prepare for deployment.
 
 The following installation options are available:
 

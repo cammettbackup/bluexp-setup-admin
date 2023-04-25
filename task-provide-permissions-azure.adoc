@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-provide-permissions-azure.html
 keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions
-summary: If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up.
+summary: If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
 ---
 
 = Provide Azure permissions to BlueXP
@@ -13,7 +13,7 @@ summary: If you created the Connector from the Azure Marketplace or manually ins
 :imagesdir: ./media/
 
 [.lead]
-If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up.
+If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
 
 link:task-set-up-permissions-azure.html[Learn how to set up these permissions].
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-finding-system-id.html
 keywords: system id, id, BlueXP system id, connector system id
-summary: To help you get started, your NetApp representative might ask you for the system ID for a Connector. The ID is typically used for licensing and troubleshooting purposes.
+summary: To help you get started, your NetApp representative might ask you for the system ID of your Connector. The ID is typically used for licensing and troubleshooting purposes.
 ---
 
 = Find the system ID for a Connector
@@ -13,7 +13,7 @@ summary: To help you get started, your NetApp representative might ask you for t
 :imagesdir: ./media/
 
 [.lead]
-To help you get started, your NetApp representative might ask you for the system ID for a Connector. The ID is typically used for licensing and troubleshooting purposes.
+To help you get started, your NetApp representative might ask you for the system ID of your Connector. The ID is typically used for licensing and troubleshooting purposes.
 
 .Steps
 
