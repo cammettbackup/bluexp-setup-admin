@@ -18,6 +18,18 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 7 May 2023
+
+=== Connector 3.9.29
+
+* The Connector is now supported in two new regions:
+
+** The Qatar region in Google Cloud.
+** The Sweden Central region in Microsoft Azure.
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
+
 == 4 April 2023
 
 === Deployment modes
