@@ -13,7 +13,7 @@ summary: Set up Azure permissions so that you can use BlueXP to manage your data
 :imagesdir: ./media/
 
 [.lead]
-Set up Azure permissions so that you can use BlueXP to manage your data and storage infrastructure in Azure. How you set up permissions depends on the installation option that you're planning to use.
+Set up permissions in Azure so that you can deploy the Connector with the permissions that it needs to manage your data and storage infrastructure. How you set up permissions depends on the installation option that you're planning to use.
 
 You can choose from the following installation options:
 

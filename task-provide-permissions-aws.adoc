@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-provide-permissions-aws.html
 keywords: aws permissions, set up aws permissions, iam role, json policy, bluexp policy, aws marketplace, aws access key, access key, iam policy, permissions
-summary: If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up.
+summary: If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
 ---
 
 = Provide AWS permissions to BlueXP
@@ -13,7 +13,7 @@ summary: If you manually installed the Connector software on your own Linux host
 :imagesdir: ./media/
 
 [.lead]
-If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up.
+If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
 
 link:task-set-up-permissions-aws.html[Learn how to set up these permissions].
 

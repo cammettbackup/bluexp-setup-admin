@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-enable-apis-google.html
 keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, permissions, cloud permission, aws permissions, iam role, keys, aws keys, aws marketplace, marketplace install, manuall install, connector installer
-summary: Deploy a Connector in AWS so that BlueXP can manage resources and processes within your public cloud environment.
+summary: Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 ---
 
 = Enable Google Cloud APIs
@@ -13,7 +13,7 @@ summary: Deploy a Connector in AWS so that BlueXP can manage resources and proce
 :imagesdir: ./media/
 
 [.lead]
-Several APIs are required to deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
+Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 
 .Step
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-ports-aws.html
 keywords: ports, security group, http, https, inbound, outbound
-summary: The AWS security group for the Connector requires both inbound and outbound rules.
+summary: The AWS security group for the Connector requires both inbound and outbound rules. BlueXP automatically creates this security group when you create a Connector from BlueXP. You need to set up this security group for all other installation options.
 ---
 
 = Security group rules in AWS
@@ -13,7 +13,7 @@ summary: The AWS security group for the Connector requires both inbound and outb
 :imagesdir: ./media/
 
 [.lead]
-The AWS security group for the Connector requires both inbound and outbound rules.
+The AWS security group for the Connector requires both inbound and outbound rules. BlueXP automatically creates this security group when you create a Connector from BlueXP. You need to set up this security group for all other installation options.
 
 == Inbound rules
 

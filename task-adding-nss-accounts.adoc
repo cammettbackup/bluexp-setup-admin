@@ -13,7 +13,7 @@ summary: Provide the credentials for your NetApp Support Site (NSS) accounts to 
 :imagesdir: ./media/
 
 [.lead]
-Provide the credentials for your NetApp Support Site (NSS) accounts to register for support, enable key workflows for Cloud Volumes ONTAP, and more. These NSS credentials are associated with the entire BlueXP account.
+Provide BlueXP with the credentials for your NetApp Support Site (NSS) accounts to register for support, enable key workflows for Cloud Volumes ONTAP, and more. These NSS credentials are associated with the entire BlueXP account.
 
 NOTE: BlueXP also supports associating one NSS account per BlueXP user. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].
 
