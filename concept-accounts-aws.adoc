@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-accounts-aws.html
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials
-summary: Learn how BlueXP uses AWS credentials and permissions so that you can manage the credentials for one or more AWS accounts. For example, you might want to learn about adding additional AWS credentials to BlueXP.
+summary: Learn how BlueXP uses AWS credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
 ---
 
 = AWS credentials and permissions
@@ -13,7 +13,7 @@ summary: Learn how BlueXP uses AWS credentials and permissions so that you can m
 :imagesdir: ./media/
 
 [.lead]
-Learn how BlueXP uses AWS credentials and permissions so that you can manage the credentials for one or more AWS accounts. For example, you might want to learn about adding additional AWS credentials to BlueXP.
+Learn how BlueXP uses AWS credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more AWS accounts in BlueXP. For example, you might want to learn about when to add additional AWS credentials to BlueXP.
 
 == Initial AWS credentials
 
