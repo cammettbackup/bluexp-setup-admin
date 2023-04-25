@@ -13,7 +13,7 @@ summary: You might want to learn more about the Connector before you deploy it, 
 :imagesdir: ./media/
 
 [.lead]
-You might want to learn more about the Connector before you deploy it, or if you need to troubleshoot any issues.
+You might want to learn more about the Connector's configuration before you deploy it, or if you need to troubleshoot any issues.
 
 == Default configuration with internet access
 

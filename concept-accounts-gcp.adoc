@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-accounts-gcp.html
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project
-summary: You should understand how BlueXP uses Google Cloud credentials and permissions so that you can manage credentials for one or more Google Cloud projects.
+summary: Learn how BlueXP uses Google Cloud credentials and permissions so that you can manage credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
 ---
 
 = Google Cloud projects, permissions, and accounts
@@ -13,7 +13,7 @@ summary: You should understand how BlueXP uses Google Cloud credentials and perm
 :imagesdir: ./media/
 
 [.lead]
-You should understand how BlueXP uses Google Cloud credentials and permissions so that you can manage credentials for one or more Google Cloud projects.
+Learn how BlueXP uses Google Cloud credentials and permissions so that you can manage credentials for one or more Google Cloud projects. For example, you might want to learn about the service account that's associated with the Connector VM.
 
 == Project and permissions for BlueXP
 
@@ -23,7 +23,7 @@ Two sets of permissions must be in place before you deploy a Connector directly 
 
 . You need to deploy a Connector using a Google account that has permissions to launch the Connector VM instance from BlueXP.
 
-. When deploying the Connector, you are prompted to select a https://cloud.google.com/iam/docs/service-accounts[service account^] for the VM instance. BlueXP gets permissions from the service account to create and manage Cloud Volumes ONTAP systems on your behalf. Permissions are provided by attaching a custom role to the service account.
+. When deploying the Connector, you are prompted to select a https://cloud.google.com/iam/docs/service-accounts[service account^] for the VM instance. BlueXP gets permissions from the service account to create and manage Cloud Volumes ONTAP systems on your behalf, and more. Permissions are provided by attaching a custom role to the service account.
 
 The following image depicts the permission requirements described in numbers 1 and 2 above:
 

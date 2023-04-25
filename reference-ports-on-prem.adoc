@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-ports-on-prem.html
 keywords: networking, network, requirements, ports, on-prem, linux, http, https
-summary: The Connector uses the following inbound ports when installed manually on an on-premises Linux host.
+summary: The Connector uses inbound ports when installed manually on an on-premises Linux host. You might need to refer to these ports for planning purposes.
 ---
 
 = Ports for the on-prem Connector
@@ -13,7 +13,7 @@ summary: The Connector uses the following inbound ports when installed manually 
 :imagesdir: ./media/
 
 [.lead]
-The Connector uses the following _inbound_ ports when installed manually on an on-premises Linux host.
+The Connector uses _inbound_ ports when installed manually on an on-premises Linux host. You might need to refer to these ports for planning purposes.
 
 These inbound rules apply to all BlueXP deployment models.
 

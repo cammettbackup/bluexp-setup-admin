@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-user-roles.html
 keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin
-summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users.
+summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users. You can assign one of these roles when you associate a new user with your BlueXP account.
 ---
 
 = Roles
@@ -13,7 +13,7 @@ summary: The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter A
 :imagesdir: ./media/
 
 [.lead]
-The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users.
+The Account Admin, Workspace Admin, Compliance Viewer, and SnapCenter Admin roles provide specific permissions to users. You can assign one of these roles when you associate a new user with your BlueXP account.
 
 The Compliance Viewer role is for read-only BlueXP classification access.
 

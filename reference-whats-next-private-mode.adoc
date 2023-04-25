@@ -22,3 +22,7 @@ For help, refer to the following documentation:
 * https://docs.netapp.com/us-en/cloud-manager-replication/index.html[Replicate data^]
 * https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html[Scan on-prem ONTAP volume data using BlueXP classification^]
 * https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html[Back up on-prem ONTAP volume data to StorageGRID using BlueXP backup and recovery^]
+
+.Related link
+
+link:concept-modes.html[BlueXP deployment modes]

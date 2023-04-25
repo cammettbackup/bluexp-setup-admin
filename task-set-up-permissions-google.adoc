@@ -13,7 +13,7 @@ summary: Set up Google Cloud permissions so that you can use BlueXP to manage yo
 :imagesdir: ./media/
 
 [.lead]
-Set up Google Cloud permissions so that you can use BlueXP to manage your data and storage infrastructure in Google Cloud.
+Set up permissions in Google Cloud so that you can deploy the Connector with the permissions that it needs to manage your data and storage infrastructure.
 
 You need to set up Google Cloud permissions as follows:
 
