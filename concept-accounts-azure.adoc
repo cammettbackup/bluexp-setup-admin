@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials
-summary: Learn how BlueXP uses Azure credentials and permissions so that you can manage the credentials for one or more Azure subscriptions. For example, you might want to learn about adding additional Azure credentials to BlueXP.
+summary: Learn how BlueXP uses Azure credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 ---
 
 = Azure credentials and permissions
@@ -13,7 +13,7 @@ summary: Learn how BlueXP uses Azure credentials and permissions so that you can
 :imagesdir: ./media/
 
 [.lead]
-Learn how BlueXP uses Azure credentials and permissions so that you can manage the credentials for one or more Azure subscriptions. For example, you might want to learn about adding additional Azure credentials to BlueXP.
+Learn how BlueXP uses Azure credentials and permissions to perform actions on your behalf. Understanding these details can be helpful as you manage the credentials for one or more Azure subscriptions. For example, you might want to learn when to add additional Azure credentials to BlueXP.
 
 == Initial Azure credentials
 
