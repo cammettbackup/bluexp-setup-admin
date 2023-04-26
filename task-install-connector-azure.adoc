@@ -34,6 +34,10 @@ Create a Connector directly from the BlueXP web-based console, from the Azure Ma
 ** Credentials
 ** HTTPS certificate
 
+* An SSH public key, if you want to use that authentication method for the Connector virtual machine. The other option for the authentication method is to use a password. 
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux[Learn about connecting to a Linux VM in Azure^]
+
 * If you don't want BlueXP to automatically create an Azure role for the Connector, then you'll need to create your own link:reference-permissions-azure.html[using the policy on this page].
 +
 These permissions are for the Connector instance itself. It's a different set of permissions than what you previously set up to simply deploy the Connector.
@@ -68,6 +72,10 @@ link:task-set-up-permissions-azure.html[Learn how to obtain these values for a s
 . Follow the steps in the wizard to create the Connector:
 
 * *VM Authentication*: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method for the Connector virtual machine that you're creating.
++
+The authentication method for the virtual machine can be a password or an SSH public key.
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux[Learn about connecting to a Linux VM in Azure^]
 
 * *Details*: Enter a name for the instance, specify tags, and choose whether you want BlueXP to create a new role that has the required permissions, or if you want to select an existing role that you set up with link:reference-permissions-azure.html[the required permissions].
 +
