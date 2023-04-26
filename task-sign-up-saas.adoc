@@ -33,7 +33,7 @@ Both options support a federated connection, which enables single sign-on using 
 +
 You can skip the sign up page if you have an NSS account. BlueXP will sign you up as part of this initial login.
 
-. If you don't have an NSS account and you want to sign up using a NetApp cloud login, select *Sign up*.
+. If you don't have an NSS account and you want to sign up by creating a NetApp cloud login, select *Sign up*.
 
 . On the *Sign up* page, enter the required information to create a NetApp cloud login.
 +
