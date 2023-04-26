@@ -1930,7 +1930,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-25 15:47:14 +0000">04/25/2023</time>
+    <time datetime="2023-04-26 15:44:55 +0000">04/26/2023</time>
     
   
 
@@ -1979,6 +1979,12 @@
 <p>HTTPS certificate</p>
 </li>
 </ul>
+</div>
+</li>
+<li>
+<p>An SSH public key, if you want to use that authentication method for the Connector virtual machine. The other option for the authentication method is to use a password.</p>
+<div class="paragraph">
+<p><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux" target="_blank" rel="noopener">Learn about connecting to a Linux VM in Azure</a></p>
 </div>
 </li>
 <li>
@@ -2057,7 +2063,13 @@ If you&#8217;re already logged in to an Azure account, then BlueXP will automati
 <div class="ulist">
 <ul>
 <li>
-<p><strong>VM Authentication</strong>: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method.</p>
+<p><strong>VM Authentication</strong>: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method for the Connector virtual machine that you&#8217;re creating.</p>
+<div class="paragraph">
+<p>The authentication method for the virtual machine can be a password or an SSH public key.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux" target="_blank" rel="noopener">Learn about connecting to a Linux VM in Azure</a></p>
+</div>
 </li>
 <li>
 <p><strong>Details</strong>: Enter a name for the instance, specify tags, and choose whether you want BlueXP to create a new role that has the required permissions, or if you want to select an existing role that you set up with <a href="reference-permissions-azure.html">the required permissions</a>.</p>
