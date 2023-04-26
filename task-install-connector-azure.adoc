@@ -67,7 +67,7 @@ link:task-set-up-permissions-azure.html[Learn how to obtain these values for a s
 
 . Follow the steps in the wizard to create the Connector:
 
-* *VM Authentication*: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method.
+* *VM Authentication*: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method for the Connector virtual machine that you're creating.
 
 * *Details*: Enter a name for the instance, specify tags, and choose whether you want BlueXP to create a new role that has the required permissions, or if you want to select an existing role that you set up with link:reference-permissions-azure.html[the required permissions].
 +
