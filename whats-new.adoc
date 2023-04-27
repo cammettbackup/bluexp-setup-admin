@@ -22,10 +22,11 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.29
 
-* The Connector is now supported in two new regions:
+* The Connector is now supported in the Qatar region in Google Cloud.
 
-** The Qatar region in Google Cloud.
-** The Sweden Central region in Microsoft Azure.
+* The Connector is also supported in two new Microsoft Azure regions:
+** Australia East
+** Sweden Central
 
 +
 https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
