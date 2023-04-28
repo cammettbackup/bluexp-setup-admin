@@ -53,9 +53,9 @@ If you plan to manually install the Connector on your own Linux host, the instal
 
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
 
-=== Endpoints contacted for day-to-day operations
+=== Endpoints contacted from the Connector
 
-The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment.
+The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
 
 [cols=2*,options="header,autowidth"]
 |===
