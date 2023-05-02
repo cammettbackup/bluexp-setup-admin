@@ -86,6 +86,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023[Learn about ONTAP on-prem cluster enhancements^]
+//end::whats-new[]
 
 == 5 March 2023
 
@@ -121,7 +122,6 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[See how 
 * This release of the Connector includes Cloud Volumes ONTAP enhancements.
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023[Learn about Cloud Volumes ONTAP enhancements^]
-//end::whats-new[]
 
 == 5 February 2023
 
