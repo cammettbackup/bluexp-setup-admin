@@ -1,3 +1,10 @@
+//tag::quick[]
+* A dedicated host running Ubuntu 22.04 or CentOS 7.6 to 7.9
+* 4 CPUs
+* 14 GB of RAM
+* Docker Engine 19.3.1 or later
+//end::quick[]
+
 //tag::start[]
 Dedicated host::
 The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.

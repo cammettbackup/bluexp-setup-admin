@@ -46,10 +46,7 @@ The Connector software must run on a host that meets specific requirements. If y
 The key requirements are as follows:
 
 [role="quick-margin-list"]
-* A dedicated host running CentOS or Red Hat Enterprise Linux
-* 4 CPUs
-* 14 GB of RAM
-* Docker Engine
+include::_include/os-reqs.adoc[tag=quick]
 
 [role="quick-margin-para"]
 link:reference-host-requirements-google.html[Learn more about these host requirements].
