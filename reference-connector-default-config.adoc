@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-connector-default-config.html
-keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu
 summary: You might want to learn more about the Connector before you deploy it, or if you need to troubleshoot any issues.
 ---
 
@@ -24,7 +24,7 @@ The following configuration details apply if you deployed the Connector from Blu
 If you deployed the Connector from BlueXP or from the cloud provider's marketplace, note the following:
 
 * The EC2 instance type is t3.xlarge.
-* The operating system for the image is Red Hat Enterprise Linux 7.6 (HVM).
+* The operating system for the image is Ubuntu 22.04.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
 * The user name for the EC2 Linux instance is ec2-user.
@@ -35,17 +35,17 @@ The operating system does not include a GUI. You must use a terminal to access t
 If you deployed the Connector from BlueXP or from the cloud provider's marketplace, note the following:
 
 * The VM type is DS3 v2.
-* The operating system for the image is CentOS 7.6.
+* The operating system for the image is Ubuntu 22.04.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
 * The default system disk is a 100 GiB premium SSD disk.
 
 === Google Cloud details
 
-If you deployed the Connector from BlueXP or from the cloud provider's marketplace, note the following:
+If you deployed the Connector from BlueXP, note the following:
 
 * The VM instance is n2-standard-4.
-* The operating system for the image is Red Hat Enterprise Linux 8.6.
+* The operating system for the image is Ubuntu 22.04.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
 * The default system disk is a 100 GiB SSD persistent disk.

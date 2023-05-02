@@ -1,0 +1,48 @@
+//tag::start[]
+Dedicated host::
+The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.
+
+Supported operating systems::
+* Ubuntu 22.04
+* CentOS 7.6, 7.7, 7.8, and 7.9
+
++
+The Connector is supported on English-language versions of these operating systems.
+
+Hypervisor::
+A bare metal or hosted hypervisor that is certified to run Ubuntu or CentOS is required.
+
+CPU:: 4 cores or 4 vCPUs
+
+RAM:: 14 GB
+//end::start[]
+
+//tag::aws-ec2[]
+AWS EC2 instance type::
+An instance type that meets the CPU and RAM requirements above. We recommend t3.xlarge.
+//end::aws-ec2[]
+
+//tag::aws-key-pair[]
+Key pair::
+When you create the Connector from BlueXP or from the AWS Marketplace, you'll need to select an EC2 key pair to use with the instance.
+//end::aws-key-pair[]
+
+//tag::azure-vm[]
+Azure VM size::
+An instance type that meets the CPU and RAM requirements above. We recommend DS3 v2.
+//end::azure-vm[]
+
+//tag::google-machine[]
+Google Cloud machine type::
+An instance type that meets the CPU and RAM requirements above. We recommend n2-standard-4.
++
+The Connector is supported in Google Cloud on a VM instance with an OS that supports https://cloud.google.com/compute/shielded-vm/docs/shielded-vm[Shielded VM features^]
+//end::google-machine[]
+
+//tag::end[]
+Disk space in /opt:: 100 GiB of space must be available
+
+Disk space in /var:: 20 GiB of space must be available
+
+Docker Engine:: Docker Engine version 19.3.1 or later is required on the host before you install the Connector. https://docs.docker.com/engine/install/[View installation instructions^]
+//end::end[]
