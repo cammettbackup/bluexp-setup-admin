@@ -24,5 +24,8 @@ Several Google Cloud APIs must be enabled before you can deploy the Connector an
 * Cloud Resource Manager API
 * Compute Engine API
 * Identity and Access Management (IAM) API
+* Cloud Key Management Service (KMS) API
++
+(Required only if you are planning to use BlueXP backup and recovery with customer-managed encryption keys (CMEK))
 
 https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud documentation: Enabling APIs^]
