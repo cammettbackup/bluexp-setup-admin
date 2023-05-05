@@ -29,12 +29,12 @@ You also have the option to manually install the Connector on your own Linux hos
 * Red Hat Enterprise Linux 8.6 and 8.7 are no longer supported with new Connector deployments. 
 +
 These versions are not supported with new deployments because Red Hat no longer supports Docker, which is required for the Connector. If you have an existing Connector running on RHEL 8.6 or 8.7, NetApp will continue to support your configuration.
++
+Red Hat 7.6, 7.7, 7.8, and 7.9 are still supported with new and existing Connectors.
 
 * The Connector is now supported in the Qatar region in Google Cloud.
 
-* The Connector is also supported in two new Microsoft Azure regions:
-** Australia East
-** Sweden Central
+* The Connector is also supported in the Sweden Central region in Microsoft Azure.
 
 +
 https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
