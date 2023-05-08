@@ -18,6 +18,31 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 7 May 2023
+
+=== Connector 3.9.29
+
+* Ubuntu 22.04 is the new operating system for the Connector when you deploy a Connector from BlueXP or from your cloud provider's marketplace. 
++
+You also have the option to manually install the Connector on your own Linux host that's running Ubuntu 22.04.
+
+* Red Hat Enterprise Linux 8.6 and 8.7 are no longer supported with new Connector deployments. 
++
+These versions are not supported with new deployments because Red Hat no longer supports Docker, which is required for the Connector. If you have an existing Connector running on RHEL 8.6 or 8.7, NetApp will continue to support your configuration.
++
+Red Hat 7.6, 7.7, 7.8, and 7.9 are still supported with new and existing Connectors.
+
+* The Connector is now supported in the Qatar region in Google Cloud.
+
+* The Connector is also supported in the Sweden Central region in Microsoft Azure.
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
+
+* This release of the Connector includes Cloud Volumes ONTAP enhancements.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023[Learn about Cloud Volumes ONTAP enhancements^]
+
 == 4 April 2023
 
 === Deployment modes
@@ -46,14 +71,6 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 +
 https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
 
-* You can now discover VMware vCenter Servers in BlueXP.
-+
-After you discover a VMware vCenter Server that's running in AWS or on your premises, you can open the working environment to view details about the datastores and virtual machines that are associated with the server.
-+
-The only requirement is a Connector that has a connection to a VMware vCenter Server that is running version 7.0 or later. 
-+
-To get started, select *Add Working Environment*, select *Amazon Web Services* or *On-Premises*, and then select *VMware vCenter Server*. Enter the domain name or IP address for the server, and then enter the user name and password for the admin user.
-
 * You can now manage the user credentials that are associated with your BlueXP login: ONTAP credentials and NetApp Support Site (NSS) credentials.
 +
 When you go to *Settings > Credentials*, you can view the credentials, update the credentials, and delete them. For example, if you change the password for these credentials, then you'll need to update the password in BlueXP.
@@ -69,6 +86,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
 ** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023[Learn about ONTAP on-prem cluster enhancements^]
+//end::whats-new[]
 
 == 5 March 2023
 
@@ -81,10 +99,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 * You can view and manage active and resolved support cases directly from BlueXP. You can manage the cases associated with your NSS account and with your company.
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases[Learn how to manage your support cases].
-
-* The Connector is now supported on a host that's running Red Hat Enterprise Linux 8.7.
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html[View system requirements for the Connector].
 
 * The Connector is now supported in any cloud environment that has complete isolation from the internet. You can then use the BlueXP console that's running on the Connector to deploy Cloud Volumes ONTAP in the same location and to discover on-premises ONTAP clusters (if you have a connection from your cloud environment to on your on-premises environment). You can also use BlueXP backup and recovery to back up Cloud Volumes ONTAP volumes in AWS and Azure commercial regions. No other BlueXP services are supported in this type of deployment, except for the BlueXP digital wallet.
 +
@@ -104,7 +118,6 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[See how 
 * This release of the Connector includes Cloud Volumes ONTAP enhancements.
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023[Learn about Cloud Volumes ONTAP enhancements^]
-//end::whats-new[]
 
 == 5 February 2023
 
@@ -414,14 +427,6 @@ We redesigned the Credentials page for ease of use and to match the current look
 === A new Notification Service has been added
 
 The Notification service has been introduced so you can view the status of Cloud Manager operations that you have initiated during your current login session. You can verify whether the operation was successful, or if it failed. link:task-monitor-cm-operations.html[See how to monitor operations in your account].
-
-== 1 August 2021
-
-=== RHEL 7.9 support with the Connector
-
-The Connector is now supported on a host that's running Red Hat Enterprise Linux 7.9.
-
-link:task-installing-linux.html[View system requirements for the Connector].
 
 == 7 July 2021
 
