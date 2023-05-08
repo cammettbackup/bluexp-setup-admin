@@ -13,12 +13,15 @@ Supported operating systems::
 * Ubuntu 22.04
 * CentOS 7.6, 7.7, 7.8, and 7.9
 * Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
-
++
+The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
 The Connector is supported on English-language versions of these operating systems.
 
 Hypervisor::
-A bare metal or hosted hypervisor that is certified to run Ubuntu or CentOS is required.
+A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.
++
+https://access.redhat.com/certified-hypervisors[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
 
 CPU:: 4 cores or 4 vCPUs
 
