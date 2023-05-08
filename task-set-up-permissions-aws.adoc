@@ -40,7 +40,7 @@ With either option, the first step is to create an IAM policy. This policy conta
 
 If needed, you can restrict the IAM policy by using the IAM `Condition` element. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html[AWS documentation: Condition element^]
 
-TIP: When BlueXP creates the Connector, it applies a new set of permissions to the Connector instance that enables the Connector to AWS resources.
+TIP: When BlueXP creates the Connector, it applies a new set of permissions to the Connector instance that enables the Connector to manage AWS resources.
 
 .Steps
 
