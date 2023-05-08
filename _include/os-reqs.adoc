@@ -1,5 +1,5 @@
 //tag::quick[]
-* A dedicated host running Ubuntu 22.04 or CentOS 7.6, 7.7, 7.8, or 7.9
+* A dedicated host running Ubuntu 22.04, CentOS 7.6 to 7.9, or RHEL 7.6 to 7.9
 * 4 CPUs
 * 14 GB of RAM
 * Docker Engine 19.3.1 or later
@@ -12,6 +12,7 @@ The Connector is not supported on a host that is shared with other applications.
 Supported operating systems::
 * Ubuntu 22.04
 * CentOS 7.6, 7.7, 7.8, and 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9
 
 +
 The Connector is supported on English-language versions of these operating systems.
