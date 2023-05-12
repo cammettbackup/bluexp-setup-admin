@@ -81,7 +81,6 @@ You also need to ensure that the role is up to date as new permissions are added
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -156,9 +155,10 @@ You also need to ensure that the role is up to date as new permissions are added
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -215,8 +215,6 @@ The Connector makes the following API requests for BlueXP backup and recovery:
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Resources/deployments/delete
-* Microsoft.Network/publicIPAddresses/delete
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
 * Microsoft.ManagedIdentity/userAssignedIdentities/assign/action
 //end::backup-permissions[]
 
@@ -325,8 +323,9 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Microsoft.Compute/virtualMachines/delete | Yes | Yes | Yes
 | Microsoft.Resources/deployments/delete | Yes | No | No
 
-| Enable deployment from a VHD
+.2+| Enable deployment from a VHD
 | Microsoft.Compute/images/read | Yes | No | No
+| Microsoft.Compute/images/write | Yes | No | No
 
 .4+| Create and manage network interfaces in the target subnet
 | Microsoft.Network/networkInterfaces/read | Yes | Yes | No
@@ -396,12 +395,13 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read | Yes | No | No
 | Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write | Yes | Yes | No
 
-.8+| Manage a load balancer for HA pairs
+.9+| Manage a load balancer for HA pairs
 | Microsoft.Network/loadBalancers/read | Yes | Yes | No
 | Microsoft.Network/loadBalancers/write | Yes | No | No
 | Microsoft.Network/loadBalancers/delete | No | Yes | Yes
 | Microsoft.Network/loadBalancers/backendAddressPools/read | Yes | No | No
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | Yes | No | No
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | Yes | Yes | No
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | Yes | No | No
 | Microsoft.Network/loadBalancers/probes/read | Yes | No | No
 | Microsoft.Network/loadBalancers/probes/join/action | Yes | No | No
@@ -508,7 +508,6 @@ The Connector makes the following API requests for daily operations.
 
 //tag::tiering-permissions-operations[]
 * Microsoft.Storage/storageAccounts/blobServices/containers/read
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
 * Microsoft.Storage/storageAccounts/managementPolicies/read
 * Microsoft.Storage/storageAccounts/managementPolicies/write
 * Microsoft.Storage/storageAccounts/read
@@ -517,6 +516,18 @@ The Connector makes the following API requests for daily operations.
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 12 May, 2023
+
+The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP management:
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+The following permissions were removed from the JSON policy because they are no longer required:
+
+* Microsoft.Storage/storageAccounts/blobServices/containers/write
+* Microsoft.Network/publicIPAddresses/delete
 
 === 23 March, 2023
 
@@ -536,21 +547,3 @@ These permissions are required for BlueXP backup and recovery.
 * Microsoft.Network/loadBalancers/backendAddressPools/join/action
 +
 This permission is required for Cloud Volumes ONTAP deployment.
-
-=== 1 December, 2022
-
-The following permissions were added to the JSON policy:
-
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
-+
-This permission is required for BlueXP backup and recovery and BlueXP tiering.
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-This permission is required for BlueXP backup and recovery.
-
-The following permissions were removed from the JSON policy because they are no longer required:
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* Microsoft.Storage/storageAccounts/regeneratekey/action
