@@ -1930,7 +1930,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-21 15:27:01 +0000">04/21/2023</time>
+    <time datetime="2023-05-12 13:55:05 +0000">05/12/2023</time>
     
   
 
@@ -2038,7 +2038,6 @@
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -2113,9 +2112,10 @@
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -2253,12 +2253,6 @@
 </li>
 <li>
 <p>Microsoft.Resources/deployments/delete</p>
-</li>
-<li>
-<p>Microsoft.Network/publicIPAddresses/delete</p>
-</li>
-<li>
-<p>Microsoft.Storage/storageAccounts/blobServices/containers/write</p>
 </li>
 <li>
 <p>Microsoft.ManagedIdentity/userAssignedIdentities/assign/action</p>
@@ -2659,8 +2653,14 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Enable deployment from a VHD</p></td>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Enable deployment from a VHD</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft.Compute/images/read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft.Compute/images/write</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
@@ -2964,7 +2964,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="8"><p class="tableblock">Manage a load balancer for HA pairs</p></td>
+<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">Manage a load balancer for HA pairs</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft.Network/loadBalancers/read</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
@@ -2992,6 +2992,12 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft.Network/loadBalancers/backendAddressPools/join/action</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microsoft.Network/loadBalancers/frontendIPConfigurations/read</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 </tr>
 <tr>
@@ -3311,9 +3317,6 @@
 <p>Microsoft.Storage/storageAccounts/blobServices/containers/read</p>
 </li>
 <li>
-<p>Microsoft.Storage/storageAccounts/blobServices/containers/write</p>
-</li>
-<li>
 <p>Microsoft.Storage/storageAccounts/managementPolicies/read</p>
 </li>
 <li>
@@ -3332,6 +3335,35 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>As permissions are added and removed, we&#8217;ll note them in the sections below.</p>
+</div>
+<div class="sect2">
+<h3 id="12-may-2023">12 May, 2023</h3>
+<div class="paragraph">
+<p>The following permissions were added to the JSON policy because they are required for Cloud Volumes ONTAP management:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Microsoft.Compute/images/write</p>
+</li>
+<li>
+<p>Microsoft.Network/loadBalancers/frontendIPConfigurations/read</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following permissions were removed from the JSON policy because they are no longer required:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Microsoft.Storage/storageAccounts/blobServices/containers/write</p>
+</li>
+<li>
+<p>Microsoft.Network/publicIPAddresses/delete</p>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect2">
 <h3 id="23-march-2023">23 March, 2023</h3>
@@ -3363,44 +3395,6 @@
 <div class="paragraph">
 <p>This permission is required for Cloud Volumes ONTAP deployment.</p>
 </div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="1-december-2022">1 December, 2022</h3>
-<div class="paragraph">
-<p>The following permissions were added to the JSON policy:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Microsoft.Storage/storageAccounts/blobServices/containers/write</p>
-<div class="paragraph">
-<p>This permission is required for BlueXP backup and recovery and BlueXP tiering.</p>
-</div>
-</li>
-<li>
-<p>Microsoft.Network/publicIPAddresses/delete</p>
-<div class="paragraph">
-<p>This permission is required for BlueXP backup and recovery.</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following permissions were removed from the JSON policy because they are no longer required:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Microsoft.Compute/images/write</p>
-</li>
-<li>
-<p>Microsoft.Network/loadBalancers/frontendIPConfigurations/read</p>
-</li>
-<li>
-<p>Microsoft.Storage/storageAccounts/regeneratekey/action</p>
 </li>
 </ul>
 </div>
