@@ -15,6 +15,18 @@ summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for B
 [.lead]
 Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate or through an annual contract. If you purchased a license from NetApp, you also need to subscribe to the PAYGO offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
 
+A marketplace subscription enables charging for the following BlueXP services with restricted mode:
+
+* Backup and recovery
+* Classification
+* Cloud Volumes ONTAP
+
+.Before you begin
+
+Subscribing to BlueXP involves associating a marketplace subscription with cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector.
+
+link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
+
 // start tabbed area
 
 [role="tabbed-block"]
@@ -27,6 +39,8 @@ Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP ser
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
 . Click the action menu for a set of credentials and then select *Associate Subscription*.
++
+You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
 image:screenshot_associate_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
@@ -65,6 +79,8 @@ NOTE: In Azure, annual contracts are not supported with government regions.
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
 . Click the action menu for a set of credentials and then select *Associate Subscription*.
++
+You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
 image:screenshot_azure_add_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
