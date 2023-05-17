@@ -23,9 +23,9 @@ A marketplace subscription enables charging for the following BlueXP services wi
 
 .Before you begin
 
-Subscribing to BlueXP involves associating a marketplace subscription with cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector.
+Subscribing to BlueXP involves associating a marketplace subscription with cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
 
-link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
+.Steps
 
 // start tabbed area
 
@@ -34,7 +34,6 @@ link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode
 
 .AWS
 --
-.Steps
 
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
@@ -74,8 +73,6 @@ video::video_subscribing_aws.mp4[width=848, height=480]
 
 NOTE: In Azure, annual contracts are not supported with government regions.
 
-.Steps
-
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
 . Click the action menu for a set of credentials and then select *Associate Subscription*.
@@ -112,7 +109,6 @@ video::video_subscribing_azure.mp4[width=848, height=480]
 
 .Google Cloud
 --
-.Steps
 
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
@@ -170,3 +166,8 @@ image:screenshot_gcp_associate.gif[A screenshot of the subscription assignment p
 
 ====
 // end tabbed area
+
+.Related links
+
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html[Manage BYOL capacity-based licenses for Cloud Volumes ONTAP^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for BlueXP data services^]
