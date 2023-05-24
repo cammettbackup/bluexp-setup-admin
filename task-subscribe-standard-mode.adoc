@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-subscribe-standard-mode.html
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract
-summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate or through an annual contract. If you purchased a license from NetApp, you also need to subscribe to the PAYGO offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
+summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate or through an annual contract. If you purchased a license from NetApp, you also need to subscribe to the marketplace offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
 ---
 
 = Subscribe to BlueXP (standard mode)
@@ -13,7 +13,18 @@ summary: Subscribe to BlueXP from your cloud provider's marketplace to pay for B
 :imagesdir: ./media/
 
 [.lead]
-Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract. If you purchased a license from NetApp (BYOL), you also need to subscribe to the PAYGO offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
+Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract. If you purchased a license from NetApp (BYOL), you also need to subscribe to the marketplace offering. Your license is always charged first, but you'll be charged at the hourly rate if you exceed your licensed capacity or if the license's term expires.
+
+A marketplace subscription enables charging for the following BlueXP services:
+
+* Backup and recovery
+* Classification
+* Cloud Volumes ONTAP
+* Tiering
+
+.Before you begin
+
+Subscribing to BlueXP involves associating a marketplace subscription with the cloud credentials that are associated with a Connector. If you followed the "Get started with standard mode" workflow, then you should already have a Connector. To learn more, view the link:task-quick-start-standard-mode.html[Quick start for BlueXP in standard mode].
 
 // start tabbed area
 
@@ -27,6 +38,8 @@ Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP ser
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
 . Click the action menu for a set of credentials and then select *Associate Subscription*.
++
+You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
 image:screenshot_associate_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
@@ -62,6 +75,8 @@ video::video_subscribing_aws.mp4[width=848, height=480]
 . In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
 
 . Click the action menu for a set of credentials and then select *Associate Subscription*.
++
+You must select credentials that are associated with a Connector. You can't associate a marketplace subscription with credentials that are associated with BlueXP.
 +
 image:screenshot_azure_add_subscription.png[A screenshot of the action menu for a set of existing credentials.]
 
@@ -151,3 +166,11 @@ image:screenshot_gcp_associate.gif[A screenshot of the subscription assignment p
 
 ====
 // end tabbed area
+
+.Related links
+
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html[Manage BYOL capacity-based licenses for Cloud Volumes ONTAP^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html[Manage BYOL licenses for BlueXP data services^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions for BlueXP]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions for BlueXP]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions for BlueXP]
