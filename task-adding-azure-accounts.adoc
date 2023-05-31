@@ -283,7 +283,7 @@ To pay for Cloud Volumes ONTAP at an hourly rate (PAYGO), these Azure credential
 
 .Result
 
-You can now switch to different set of credentials from the Details and Credentials page https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[when creating a new working environment^]
+You can now switch to different set of credentials from the Details and Credentials page https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html[when creating a new working environment^]
 
 image:screenshot_accounts_switch_azure.gif[A screenshot that shows selecting between credentials after selecting Edit Credentials in the Details & Credentials page.]
 

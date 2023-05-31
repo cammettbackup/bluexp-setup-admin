@@ -49,7 +49,7 @@ The Support Dashboard enables you to add and manage your NetApp Support Site acc
 
 . In the upper right of the BlueXP console, select the Help icon, and select *Support*.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png[A screenshot of the Help menu where Support is the first option listed]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png[A screenshot of the Help menu where Support is the first option listed]
 
 . Select *NSS Management > Add NSS Account*.
 
@@ -73,9 +73,9 @@ The same is true if you have pre-existing customer-level NSS accounts and try to
 
 * Upon successful login, NetApp will store the NSS user name. 
 +
-This is a system-generated ID that maps to your email. On the *NSS Management* page, you can display your email from the image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png[An icon of three horizontal dots] menu.
+This is a system-generated ID that maps to your email. On the *NSS Management* page, you can display your email from the image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png[An icon of three horizontal dots] menu.
 
-* If you ever need to refresh your login credential tokens, there is also an *Update Credentials* option in the image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png[An icon of three horizontal dots] menu. 
+* If you ever need to refresh your login credential tokens, there is also an *Update Credentials* option in the image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png[An icon of three horizontal dots] menu. 
 +
 Using this option prompts you to log in again. Note that the token for these accounts expire after 90 days. A notification will be posted to alert you of this.
 
@@ -83,10 +83,10 @@ Using this option prompts you to log in again. Note that the token for these acc
 
 Users can now select the account when creating new Cloud Volumes ONTAP systems, when registering existing Cloud Volumes ONTAP systems, and when registering for support.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[Launching Cloud Volumes ONTAP in Google Cloud^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html[Registering pay-as-you-go systems^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html[Launching Cloud Volumes ONTAP in Google Cloud^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-registering.html[Registering pay-as-you-go systems^]
 
 == Update an NSS account for the new authentication method
 

@@ -21,7 +21,7 @@ link:concept-netapp-accounts.html[Learn how BlueXP accounts work].
 
 If you want to manage your account settings by sending API requests, then you'll need to use the _Tenancy_ API. This API is different than the BlueXP API, which you use to create and manage Cloud Volumes ONTAP working environments.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html[View endpoints for the Tenancy API^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html[View endpoints for the Tenancy API^]
 
 == Create and manage users
 
@@ -139,9 +139,9 @@ The client secret is visible only once and is not stored anywhere by BlueXP. Cop
 
 === Obtain a bearer token for a service account
 
-In order to make API calls to the https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html[Tenancy API^], you'll need to obtain a bearer token for a service account.
+In order to make API calls to the https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html[Tenancy API^], you'll need to obtain a bearer token for a service account.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html[Learn how to create a service account token^]
+https://docs.netapp.com/us-en/bluexp-automation/platform/create_service_token.html[Learn how to create a service account token^]
 
 === Copy the client ID
 

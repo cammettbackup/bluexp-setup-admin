@@ -23,7 +23,7 @@ When you create the Connector, you need to specify the VNet and subnet where the
 
 The Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
 
 == Connections to target networks
 
@@ -121,4 +121,4 @@ There's no incoming traffic to the Connector, unless you initiate it or if the C
 
 == IP address limitation
 
-There's a possible conflict with IP addresses in the 172 range. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html[Learn more about this limitation].
+There's a possible conflict with IP addresses in the 172 range. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html[Learn more about this limitation].

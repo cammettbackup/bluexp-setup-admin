@@ -29,7 +29,7 @@ Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to crea
 
 * Add AWS credentials to BlueXP for FSx for ONTAP
 +
-Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
+Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
 
 == How to rotate credentials
 
@@ -155,7 +155,7 @@ Be sure to do the following:
 * Select *Another AWS account* and enter the ID of the BlueXP SaaS: 952013314444
 * Create a policy that includes the permissions required to create a Connector.
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
+** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
 ** link:task-set-up-permissions-aws.html[View the Connector deployment policy]
 
 . Copy the Role ARN of the IAM role so that you can paste it in BlueXP in the next step.
@@ -192,7 +192,7 @@ You can now use the credentials when creating a new Connector.
 
 == Add credentials to BlueXP for Amazon FSx for ONTAP
 
-For details, refer to the https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[BlueXP documentation for Amazon FSx for ONTAP^]
+For details, refer to the https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[BlueXP documentation for Amazon FSx for ONTAP^]
 
 [[subscribe]]
 == Associate an AWS subscription
