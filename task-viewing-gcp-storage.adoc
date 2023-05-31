@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["A screenshot that shows the acti
 
 . Select *Sync data* to synchronize data to or from Google Cloud Storage buckets.
 +
-For more details, see https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html[the overview for BlueXP copy and sync^]
+For more details, see https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html[the overview for BlueXP copy and sync^]
 +
 . Select *Enter Working Environment* to view details about the buckets in your Google account.
 +
