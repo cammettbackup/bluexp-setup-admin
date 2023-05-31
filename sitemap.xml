@@ -13,674 +13,674 @@
   
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html</loc>
       
       <lastmod>2023-04-25T20:30:44+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-azure.html</loc>
       
       <lastmod>2023-04-25T20:30:44+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-gcp.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-gcp.html</loc>
       
-      <lastmod>2023-04-25T20:30:44+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html</loc>
-      
-      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-federation.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html</loc>
       
       <lastmod>2023-04-11T19:46:41+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-install-options-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-aws.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-install-options-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-azure.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-install-options-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html</loc>
       
-      <lastmod>2023-04-28T14:14:24+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-overview.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html</loc>
       
       <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/</loc>
       
       <lastmod>2023-04-06T19:21:16+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/legal-notices.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/legal-notices.html</loc>
       
       <lastmod>2023-04-06T19:21:16+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-checklist-cm.html</loc>
       
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html</loc>
       
       <lastmod>2023-05-02T16:17:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-host-requirements-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-host-requirements-aws.html</loc>
       
       <lastmod>2023-05-02T16:17:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-host-requirements-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-host-requirements-azure.html</loc>
       
       <lastmod>2023-05-02T16:17:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-host-requirements-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-host-requirements-google.html</loc>
       
       <lastmod>2023-05-02T16:17:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-host-requirements-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-host-requirements-on-prem.html</loc>
       
       <lastmod>2023-05-02T16:17:48+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html</loc>
       
       <lastmod>2023-04-13T19:47:58+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html</loc>
       
       <lastmod>2023-04-28T14:24:18+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html</loc>
       
       <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html</loc>
       
       <lastmod>2023-05-12T13:55:05+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html</loc>
       
       <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html</loc>
       
-      <lastmod>2023-03-13T15:33:44+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-on-prem.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-whats-next-restricted-mode.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-whats-next.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin//search.html</loc>
+      
+      <lastmod>2023-05-31T13:38:21+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html</loc>
       
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-whats-next-private-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html</loc>
       
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-whats-next-restricted-mode.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-whats-next.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html</loc>
       
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin//search.html</loc>
-      
-      <lastmod>2023-05-23T18:04:53+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-connectors-gov.html</loc>
       
-      <lastmod>2023-04-03T22:21:28+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html</loc>
-      
-      <lastmod>2023-04-03T22:21:28+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html</loc>
       
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-configuring-proxy.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-azure.html</loc>
       
-      <lastmod>2023-03-31T14:31:52+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-create-account.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-create-connectors-gov.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-gcp.html</loc>
       
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html</loc>
-      
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html</loc>
-      
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html</loc>
-      
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-enable-apis-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-enable-apis-google.html</loc>
       
       <lastmod>2023-05-02T15:20:30+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-finding-system-id.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-finding-system-id.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html</loc>
       
-      <lastmod>2023-03-09T19:45:15+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html</loc>
       
       <lastmod>2023-04-26T15:44:55+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html</loc>
       
       <lastmod>2023-04-05T14:03:34+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html</loc>
       
-      <lastmod>2023-03-22T17:04:43+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-private-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-private-mode.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-https-cert.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-https-cert.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-installing-linux.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-aws-mktp.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-launching-azure-mktp.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-log-in-private-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html</loc>
-      
-      <lastmod>2023-03-22T17:12:11+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-aws-mktp.html</loc>
-      
-      <lastmod>2023-03-22T17:12:11+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-launching-azure-mktp.html</loc>
-      
-      <lastmod>2023-03-22T17:12:11+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-log-in-private-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-log-in-restricted-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-log-in-restricted-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-subscriptions.html</loc>
       
       <lastmod>2023-04-13T17:06:44+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html</loc>
       
       <lastmod>2023-03-31T18:15:11+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html</loc>
       
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html</loc>
-      
-      <lastmod>2023-04-25T15:47:14+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html</loc>
       
       <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-prepare-private-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-private-mode.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html</loc>
       
       <lastmod>2023-05-08T12:54:16+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-prepare-restricted-mode.html</loc>
-      
-      <lastmod>2023-05-08T12:54:16+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-provide-permissions-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-provide-permissions-aws.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-provide-permissions-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-provide-permissions-azure.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-provide-permissions-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-provide-permissions-google.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-provide-permissions-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-provide-permissions-on-prem.html</loc>
       
       <lastmod>2023-03-30T18:21:39+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html</loc>
       
       <lastmod>2023-05-02T16:48:47+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html</loc>
       
       <lastmod>2023-05-02T16:48:47+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html</loc>
       
       <lastmod>2023-05-08T12:54:16+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html</loc>
       
       <lastmod>2023-05-02T16:34:54+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-restricted-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html</loc>
       
-      <lastmod>2023-04-28T14:24:18+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html</loc>
-      
-      <lastmod>2023-04-28T14:14:24+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html</loc>
       
-      <lastmod>2023-04-28T14:14:24+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html</loc>
-      
-      <lastmod>2023-04-28T14:14:24+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-permissions-aws.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-aws.html</loc>
       
       <lastmod>2023-05-12T13:55:32+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-permissions-azure.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-azure.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-permissions-google.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-google.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-permissions-on-prem.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-on-prem.html</loc>
       
       <lastmod>2023-04-25T15:47:14+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-setting-up-netapp-accounts.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-setting-up-netapp-accounts.html</loc>
       
-      <lastmod>2023-03-22T17:12:11+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-sign-up-saas.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-sign-up-saas.html</loc>
       
       <lastmod>2023-04-26T15:46:19+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-subscribe-restricted-mode.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-subscribe-restricted-mode.html</loc>
       
-      <lastmod>2023-05-17T19:47:30+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-subscribe-standard-mode.html</loc>
-      
-      <lastmod>2023-05-17T19:47:30+00:00</lastmod>
+      <lastmod>2023-05-24T22:59:23+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-support-registration.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-subscribe-standard-mode.html</loc>
       
-      <lastmod>2022-11-10T18:33:02+00:00</lastmod>
+      <lastmod>2023-05-24T22:59:23+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-amazon-s3.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html</loc>
       
       <lastmod>2023-04-21T15:27:01+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-azure-blob.html</loc>
       
-      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html</loc>
-      
-      <lastmod>2023-04-21T15:27:01+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html</loc>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-gcp-storage.html</loc>
       
-      <lastmod>2023-05-08T13:06:20+00:00</lastmod>
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html</loc>
+      
+      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
       
     </url>
   

@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="Manage AWS credentials and subscriptions for BlueXP | NetApp Documentation" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
 	<meta property="og:description" content="Add and manage AWS credentials so that BlueXP has the permissions that it needs to deploy and manage cloud resources in your AWS accounts. If you manage mult..." />
-  <meta property="og:image" content="https://docs.netapp.com/us-en/cloud-manager-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -18,32 +18,32 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Add and manage AWS credentials so that BlueXP has the permissions that it needs to deploy and manage cloud resources in your AWS accounts. If you manage mult...">
   <meta name="keywords" content=" permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials"><!-- Icons -->
-  <link rel="icon" href="/us-en/cloud-manager-setup-admin/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/cloud-manager-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
   <!-- Combined CSS -->
-  <link rel="stylesheet" type="text/css" href="/us-en/cloud-manager-setup-admin/css/netappdocs.css">
+  <link rel="stylesheet" type="text/css" href="/us-en/bluexp-setup-admin/css/netappdocs.css">
 
   
-  <link rel="stylesheet" href="/us-en/cloud-manager-setup-admin/css/landing-page.css" type="text/css">
-  <link rel="stylesheet" href="/us-en/cloud-manager-setup-admin/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
-  <link rel="canonical" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/task-adding-aws-accounts.html" />
-  <link rel='stylesheet' href='/us-en/cloud-manager-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-adding-aws-accounts.html" />
+  <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
       var adobe = document.createElement("script");
@@ -89,18 +89,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/cloud-manager-setup-admin/js/na-search.js'></script><script src='/us-en/cloud-manager-setup-admin/js/na-pagenav.js'></script><script src='/us-en/cloud-manager-setup-admin/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/us-en/bluexp-setup-admin/js/na-search.js'></script><script src='/us-en/bluexp-setup-admin/js/na-pagenav.js'></script><script src='/us-en/bluexp-setup-admin/js/na-utility.js'></script>
  <!--  
-  <link rel='stylesheet' href='/us-en/cloud-manager-setup-admin/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/us-en/cloud-manager-setup-admin/css/prism-netapp.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/prism-netapp.css' type='text/css'>
  -->
 
-  <!-- <script src='/us-en/cloud-manager-setup-admin/js/na-utility.js'></script> -->
-  <script src='/us-en/cloud-manager-setup-admin/js/clouddocs.js'></script>
-  <script src='/us-en/cloud-manager-setup-admin/js/jquery.navgoco.min.js'></script>
+  <!-- <script src='/us-en/bluexp-setup-admin/js/na-utility.js'></script> -->
+  <script src='/us-en/bluexp-setup-admin/js/clouddocs.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- <script src='/us-en/cloud-manager-setup-admin/js/toc.js'></script> -->
-  <!-- <script src='/us-en/cloud-manager-setup-admin/js/customscripts.js'></script> --><script>
+  <!-- <script src='/us-en/bluexp-setup-admin/js/toc.js'></script> -->
+  <!-- <script src='/us-en/bluexp-setup-admin/js/customscripts.js'></script> --><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -138,7 +138,7 @@
 
           $(".sidebar-nav-container").on("scroll", function() {
             $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
-              path    : "/us-en/cloud-manager-setup-admin"  
+              path    : "/us-en/bluexp-setup-admin"  
             });
           });
           $(function() {
@@ -161,11 +161,11 @@
           });
       });
   </script>
-  <script src='/us-en/cloud-manager-setup-admin/js/custom-dropdown.js'></script>
-  <script src='/us-en/cloud-manager-setup-admin/js/FileSaver.min.js'></script>
-  <script src='/us-en/cloud-manager-setup-admin/js/jszip-utils.min.js'></script>
-  <script src='/us-en/cloud-manager-setup-admin/js/jszip.min.js'></script>
-  <!-- <script src='/us-en/cloud-manager-setup-admin/js/pdf-ux.js'></script> -->
+  <script src='/us-en/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/us-en/bluexp-setup-admin/js/jszip.min.js'></script>
+  <!-- <script src='/us-en/bluexp-setup-admin/js/pdf-ux.js'></script> -->
 </head>
 
 
@@ -177,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html&page-title=Manage AWS credentials and subscriptions for BlueXP" class="page-nav-contribute-link" role="button"><img src="/us-en/cloud-manager-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin/blob/main/task-adding-aws-accounts.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/cloud-manager-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/cloud-manager-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html&page-title=Manage AWS credentials and subscriptions for BlueXP" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-adding-aws-accounts.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -238,7 +238,7 @@
           <span class="n-property-bar__menu-toggle-text">Menu</span>
           <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
             <title>bars</title>
-            <use xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#bars"></use>
+            <use xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#bars"></use>
           </svg>
         </a>
       </div>
@@ -247,11 +247,11 @@
           <div class="n-property-bar__logo">
             <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
               <title>netapp-mark</title>
-              <use xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#netapp-mark"></use>
+              <use xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#netapp-mark"></use>
             </svg>
             <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
               <title>netapp-logo</title>
-              <use xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#netapp-logo"></use>
+              <use xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#netapp-logo"></use>
             </svg>
           </div>
         </a>
@@ -263,7 +263,7 @@
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
           <div id="react-search" 
-          data-search-html="/us-en/cloud-manager-setup-admin/search.html"
+          data-search-html="/us-en/bluexp-setup-admin/search.html"
           data-type="widget" 
           data-placeholder="Search Documentation"
           data-no-results-found="No results were found for {query}"
@@ -277,7 +277,7 @@
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#search"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#search"></use>
             </svg>
           </button>
         </div>
@@ -291,29 +291,29 @@
       <span class="lang-name">English</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#globe"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-adding-aws-accounts.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -330,10 +330,10 @@
   <!-- Sidebar Column -->
   
   <div class="col-md-3" id="sidebar-height">
-      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/us-en/cloud-manager-setup-admin/images/collapse.png" alt="Collapse navigation panel"></button>
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/us-en/bluexp-setup-admin/images/collapse.png" alt="Collapse navigation panel"></button>
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>Available PDFs<span>
+    <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>Available PDFs<span>
     </span>
   </a>
 </div>
@@ -342,8 +342,8 @@
         
         
         
-        <a target="_blank" href="/us-en/cloud-manager-setup-admin/pdfs/fullsite-sidebar/BlueXP_setup_and_administration_documentation.pdf" >
-          <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF of this doc site</a>
+        <a target="_blank" href="/us-en/bluexp-setup-admin/pdfs/fullsite-sidebar/BlueXP_setup_and_administration_documentation.pdf" >
+          <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF of this doc site</a>
 
 
 
@@ -355,10 +355,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Release_notes.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Release_notes.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Release notes
           </a>
           
@@ -382,10 +382,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Get_started.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Get started
           </a>
           
@@ -398,10 +398,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Learn_the_basics.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Learn_the_basics.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Learn the basics
           </a>
           
@@ -429,10 +429,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Get_started_with_standard_mode.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_standard_mode.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Get started with standard mode
           </a>
           
@@ -453,10 +453,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Create_a_Connector.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Create_a_Connector.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Create a Connector
           </a>
           
@@ -469,10 +469,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/AWS.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             AWS
           </a>
           
@@ -506,10 +506,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Azure.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Azure
           </a>
           
@@ -543,10 +543,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Google Cloud
           </a>
           
@@ -582,10 +582,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/On_premises.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/On_premises.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             On premises
           </a>
           
@@ -635,10 +635,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Get_started_with_restricted_mode.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_restricted_mode.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Get started with restricted mode
           </a>
           
@@ -670,10 +670,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Get_started_with_private_mode.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Get_started_with_private_mode.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Get started with private mode
           </a>
           
@@ -710,10 +710,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Administer_BlueXP.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Administer_BlueXP.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Administer BlueXP
           </a>
           
@@ -728,10 +728,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/BlueXP_accounts.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/BlueXP_accounts.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             BlueXP accounts
           </a>
           
@@ -759,10 +759,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Connectors.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Connectors.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Connectors
           </a>
           
@@ -792,10 +792,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Credentials.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Credentials.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Credentials
           </a>
           
@@ -808,10 +808,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Manage_AWS_credentials.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Manage_AWS_credentials.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Manage AWS credentials
           </a>
           
@@ -837,10 +837,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Manage_Azure_credentials.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Manage_Azure_credentials.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Manage Azure credentials
           </a>
           
@@ -864,10 +864,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Manage_Google_Cloud_credentials.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Manage_Google_Cloud_credentials.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Manage Google Cloud credentials
           </a>
           
@@ -902,10 +902,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Discovered_cloud_storage.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Discovered_cloud_storage.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Discovered cloud storage
           </a>
           
@@ -938,10 +938,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Reference.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Reference.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Reference
           </a>
           
@@ -954,10 +954,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Permissions.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Permissions.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Permissions
           </a>
           
@@ -985,10 +985,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Ports.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Ports.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Ports
           </a>
           
@@ -1023,10 +1023,10 @@
           
           <a target="_blank" 
             
-              href="/us-en/cloud-manager-setup-admin/pdfs/sidebar/Knowledge_and_support.pdf" 
+              href="/us-en/bluexp-setup-admin/pdfs/sidebar/Knowledge_and_support.pdf" 
             
           >
-            <img src="/us-en/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
             Knowledge and support
           </a>
           
@@ -1045,7 +1045,7 @@
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/us-en/cloud-manager-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <img src="/us-en/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -1079,14 +1079,14 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/us-en/cloud-manager-family/"><img src="/us-en/cloud-manager-setup-admin/images/left_arrow.png" alt=""><pre>All BlueXP documentation</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/us-en/bluexp-family/"><img src="/us-en/bluexp-setup-admin/images/left_arrow.png" alt=""><pre>All BlueXP documentation</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
       data-pdf-filename="Setup and administration docs"
       data-li-level="1#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/index.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/index.html">
         Setup and administration docs
       </a></li><li 
       data-pdf-exists="true" 
@@ -1102,14 +1102,14 @@
       data-pdf-filename="What's new"
       data-li-level="2#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/whats-new.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/whats-new.html">
         What's new
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Limitations"
       data-li-level="2#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-limitations.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-limitations.html">
         Limitations
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1134,28 +1134,28 @@
       data-pdf-filename="BlueXP overview"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-overview.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-overview.html">
         BlueXP overview
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Accounts"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-netapp-accounts.html">
         Accounts
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Connectors"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-connectors.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-connectors.html">
         Connectors
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Deployment modes"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-modes.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-modes.html">
         Deployment modes
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1171,28 +1171,28 @@
       data-pdf-filename="Quick start"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-standard-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Networking for console access"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-networking-saas-console.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
         Networking for console access
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Sign up to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-sign-up-saas.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-sign-up-saas.html">
         Sign up to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Log in to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-logging-in.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-logging-in.html">
         Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
@@ -1217,49 +1217,49 @@
       data-pdf-filename="Quick start"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-install-options-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-install-options-aws.html">
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up networking"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-aws.html">
         Set up networking
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Review host requirements"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-host-requirements-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-aws.html">
         Review host requirements
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up AWS permissions"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-permissions-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-aws.html">
         Set up AWS permissions
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create the Connector"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-connector-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws.html">
         Create the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Provide permissions to BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-provide-permissions-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-aws.html">
         Provide permissions to BlueXP
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1275,49 +1275,49 @@
       data-pdf-filename="Quick start"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-install-options-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-install-options-azure.html">
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up networking"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-azure.html">
         Set up networking
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Review host requirements"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-host-requirements-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-azure.html">
         Review host requirements
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up Azure permissions"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-permissions-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-azure.html">
         Set up Azure permissions
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create the Connector"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-connector-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure.html">
         Create the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Provide permissions to BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-provide-permissions-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-azure.html">
         Provide permissions to BlueXP
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1333,56 +1333,56 @@
       data-pdf-filename="Quick start"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-google.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-install-options-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-install-options-google.html">
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up networking"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-google.html">
         Set up networking
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Review host requirements"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-host-requirements-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-google.html">
         Review host requirements
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up Google Cloud permissions"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-permissions-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-google.html">
         Set up Google Cloud permissions
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Enable Google Cloud APIs"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-enable-apis-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-enable-apis-google.html">
         Enable Google Cloud APIs
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create the Connector"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-connector-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google.html">
         Create the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Provide permissions to BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-provide-permissions-google.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-google.html">
         Provide permissions to BlueXP
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1398,56 +1398,56 @@
       data-pdf-filename="Quick start"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up networking"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html">
         Set up networking
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Review host requirements"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-host-requirements-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-on-prem.html">
         Review host requirements
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Set up cloud permissions"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-set-up-permissions-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-on-prem.html">
         Set up cloud permissions
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create the Connector"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">
         Create the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Provide permissions to BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-provide-permissions-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-on-prem.html">
         Provide permissions to BlueXP
       </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-subscribe-standard-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-subscribe-standard-mode.html">
         Subscribe to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="What you can do next"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-whats-next.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-whats-next.html">
         What you can do next
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1463,42 +1463,42 @@
       data-pdf-filename="Quick start"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-prepare-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-prepare-restricted-mode.html">
         Prepare for deployment
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Deploy the Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-restricted-mode.html">
         Deploy the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Log in to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-log-in-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-restricted-mode.html">
         Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-subscribe-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-subscribe-restricted-mode.html">
         Subscribe to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="What you can do next"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-whats-next-restricted-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
         What you can do next
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1514,35 +1514,35 @@
       data-pdf-filename="Quick start"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-prepare-private-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-prepare-private-mode.html">
         Prepare for deployment
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Deploy the Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-install-private-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-private-mode.html">
         Deploy the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Log in to BlueXP"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-log-in-private-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-private-mode.html">
         Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="What you can do next"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-whats-next-private-mode.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html">
         What you can do next
       </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1558,7 +1558,7 @@
       data-pdf-filename="Identity federation"
       data-li-level="2#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-federation.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-federation.html">
         Identity federation
       </a></li><li 
       data-pdf-exists="true" 
@@ -1574,28 +1574,28 @@
       data-pdf-filename="Manage your account"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html">
         Manage your account
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Monitor operations in your account"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-monitor-cm-operations.html">
         Monitor operations in your account
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create another account"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-create-account.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-create-account.html">
         Create another account
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="User roles"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-user-roles.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-user-roles.html">
         User roles
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1611,35 +1611,35 @@
       data-pdf-filename="Find the system ID for a Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-finding-system-id.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-finding-system-id.html">
         Find the system ID for a Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage existing Connectors"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-managing-connectors.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-managing-connectors.html">
         Manage existing Connectors
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Install an HTTPS certificate"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-installing-https-cert.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-installing-https-cert.html">
         Install an HTTPS certificate
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Configure proxy settings"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-configuring-proxy.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-configuring-proxy.html">
         Configure proxy settings
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Default configuration"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-connector-default-config.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-connector-default-config.html">
         Default configuration
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1664,14 +1664,14 @@
       data-pdf-filename="Overview"
       data-li-level="4#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-accounts-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-accounts-aws.html">
         Overview
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage credentials and subscriptions"
       data-li-level="4#" 
       class="  active "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-adding-aws-accounts.html">
         Manage credentials and subscriptions
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1687,14 +1687,14 @@
       data-pdf-filename="Overview"
       data-li-level="4#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-accounts-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-accounts-azure.html">
         Overview
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage credentials and subscriptions"
       data-li-level="4#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-adding-azure-accounts.html">
         Manage credentials and subscriptions
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1710,28 +1710,28 @@
       data-pdf-filename="Overview"
       data-li-level="4#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/concept-accounts-gcp.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/concept-accounts-gcp.html">
         Overview
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage credentials and subscriptions"
       data-li-level="4#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html">
         Manage credentials and subscriptions
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage NSS credentials associated with a BlueXP account"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-adding-nss-accounts.html">
         Manage NSS credentials associated with a BlueXP account
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Manage credentials associated with your BlueXP login"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-manage-user-credentials.html">
         Manage credentials associated with your BlueXP login
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1747,21 +1747,21 @@
       data-pdf-filename="Manage your Amazon S3 buckets"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-viewing-amazon-s3.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html">
         Manage your Amazon S3 buckets
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="View your Azure Blob accounts"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-viewing-azure-blob.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-viewing-azure-blob.html">
         View your Azure Blob accounts
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="View your Google Cloud Storage buckets"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-viewing-gcp-storage.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-viewing-gcp-storage.html">
         View your Google Cloud Storage buckets
       </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1786,28 +1786,28 @@
       data-pdf-filename="Permissions summary"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-permissions.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-permissions.html">
         Permissions summary
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="AWS permissions for the Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-permissions-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-permissions-aws.html">
         AWS permissions for the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Azure permissions for the Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-permissions-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-permissions-azure.html">
         Azure permissions for the Connector
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Google Cloud permissions for the Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-permissions-gcp.html">
         Google Cloud permissions for the Connector
       </a></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1823,28 +1823,28 @@
       data-pdf-filename="Security group rules in AWS"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-ports-aws.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-ports-aws.html">
         Security group rules in AWS
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Security group rules in Azure"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-ports-azure.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-ports-azure.html">
         Security group rules in Azure
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Firewall rules in Google Cloud"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-ports-gcp.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-ports-gcp.html">
         Firewall rules in Google Cloud
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Ports for the on-prem Connector"
       data-li-level="3#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/reference-ports-on-prem.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-ports-on-prem.html">
         Ports for the on-prem Connector
       </a></li></ul></li></ul></li><li 
       data-pdf-exists="true" 
@@ -1860,21 +1860,21 @@
       data-pdf-filename="Register for support"
       data-li-level="2#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-support-registration.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-support-registration.html">
         Register for support
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Get help"
       data-li-level="2#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/task-get-help.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-get-help.html">
         Get help
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Legal notices"
       data-li-level="1#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/cloud-manager-setup-admin/legal-notices.html">
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/legal-notices.html">
         Legal notices
       </a></li></ul>
 </div>
@@ -1896,7 +1896,7 @@
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
     <!-- Begin of page container --><article class="page-content" id="main">
       <div class="ie-utility">
-  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/us-en/cloud-manager-setup-admin/images/expand.png" alt="Expand navigation panel"></button>
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/us-en/bluexp-setup-admin/images/expand.png" alt="Expand navigation panel"></button>
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
@@ -1911,12 +1911,12 @@
 
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/us-en/cloud-manager-family/">BlueXP</a>
+          <a href="https://docs.netapp.com/us-en/bluexp-family/">BlueXP</a>
         </li>
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/cloud-manager-setup-admin/">Setup&nbsp;and&nbsp;administration</a>
+          <a href="/us-en/bluexp-setup-admin/">Setup&nbsp;and&nbsp;administration</a>
         </li>
 
       </ul>
@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-04-03 22:21:28 +0000">04/03/2023</time>
+    <time datetime="2023-05-10 15:46:36 +0000">05/10/2023</time>
     
   
 
@@ -1970,7 +1970,7 @@
 <li>
 <p>Add AWS credentials to BlueXP for FSx for ONTAP</p>
 <div class="paragraph">
-<p>Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">Learn how to set up permissions for FSx for ONTAP</a></p>
+<p>Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. <a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">Learn how to set up permissions for FSx for ONTAP</a></p>
 </div>
 </li>
 </ul>
@@ -2009,7 +2009,7 @@
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/cloud-manager-setup-admin/images/note.svg" alt="Note">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
 </td>
 <td class="content">
 If you deployed a Connector from BlueXP, BlueXP automatically added AWS credentials for the account in which you deployed the Connector. This initial account is not added if you deployed the Connector from the AWS Marketplace or if you manually installed the Connector software on an existing system. <a href="concept-accounts-aws.html">Learn about AWS credentials and permissions</a>.
@@ -2201,7 +2201,7 @@ If you deployed a Connector from BlueXP, BlueXP automatically added AWS credenti
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">View the permissions needed for FSx for ONTAP</a></p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">View the permissions needed for FSx for ONTAP</a></p>
 </li>
 <li>
 <p><a href="task-set-up-permissions-aws.html">View the Connector deployment policy</a></p>
@@ -2269,7 +2269,7 @@ If you deployed a Connector from BlueXP, BlueXP automatically added AWS credenti
 <h2 id="add-credentials-to-bluexp-for-amazon-fsx-for-ontap">Add credentials to BlueXP for Amazon FSx for ONTAP</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For details, refer to the <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">BlueXP documentation for Amazon FSx for ONTAP</a></p>
+<p>For details, refer to the <a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">BlueXP documentation for Amazon FSx for ONTAP</a></p>
 </div>
 </div>
 </div>
@@ -2376,7 +2376,7 @@ Your browser does not support the video tag.
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/cloud-manager-setup-admin/images/tip.svg" alt="Tip">
+<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="Tip">
 </td>
 <td class="content">
 You can&#8217;t edit the credentials for an instance profile that is associated with a Connector instance.
@@ -2410,7 +2410,7 @@ You can&#8217;t edit the credentials for an instance profile that is associated 
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/cloud-manager-setup-admin/images/tip.svg" alt="Tip">
+<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="Tip">
 </td>
 <td class="content">
 You can&#8217;t delete the credentials for an instance profile that is associated with a Connector instance.
@@ -2484,7 +2484,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
                   <title>blog@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#blog"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#blog"></use>
                 </svg>
               </a>
             </li>
@@ -2495,7 +2495,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
                   <title>community@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#comments"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#comments"></use>
                 </svg>
               </a>
             </li>
@@ -2506,7 +2506,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
                   <title>twitter@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#twitter"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
@@ -2517,7 +2517,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
                   <title>facebook@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#facebook"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
@@ -2528,7 +2528,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
                   <title>linkedin@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#linkedin"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -2539,7 +2539,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
                   <title>youtube@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#youtube"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -2550,7 +2550,7 @@ You can&#8217;t delete the credentials for an instance profile that is associate
                 <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
                   <title>slideshare@</title>
                   <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xlink:href="/us-en/cloud-manager-setup-admin/images/sprite.svg#slideshare"></use>
+                    xlink:href="/us-en/bluexp-setup-admin/images/sprite.svg#slideshare"></use>
                 </svg>
               </a>
             </li>
@@ -2562,11 +2562,11 @@ You can&#8217;t delete the credentials for an instance profile that is associate
 </footer>
 
       </div><!-- Elasticsearch JS -->
-      <script type="text/javascript" src='/us-en/cloud-manager-setup-admin/js/bundle.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
-      <script type="text/javascript" src='/us-en/cloud-manager-setup-admin/js/prism.js'></script>
-      <script type="text/javascript" src='/us-en/cloud-manager-setup-admin/js/prism-curl.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/us-en/bluexp-setup-admin/js/prism-curl.js'></script>
     </div>
     <script>
       document.body.offsetWidth=1903;
@@ -2574,6 +2574,6 @@ You can&#8217;t delete the credentials for an instance profile that is associate
       cookieLaw.euCountry = "US";
       cookieLaw.invoke = function(){return false;}
     </script>
-    <script src='/us-en/cloud-manager-setup-admin/js/tabbed-blocks.js'></script>
-    <script src='/us-en/cloud-manager-setup-admin/js/sidebar.js'></script>
+    <script src='/us-en/bluexp-setup-admin/js/tabbed-blocks.js'></script>
+    <script src='/us-en/bluexp-setup-admin/js/sidebar.js'></script>
   </body></html>

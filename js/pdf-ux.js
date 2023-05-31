@@ -3,7 +3,7 @@ $(document).ready(function () {
     // intialize config variables
     let zipLevel = "";
 
-    let baseUrlSection = "/us-en/cloud-manager-setup-admin/pdfs/";
+    let baseUrlSection = "/us-en/bluexp-setup-admin/pdfs/";
     const flavor = $("body").data("flavor");
     if (flavor) {
       baseUrlSection += flavor + "/";
@@ -13,7 +13,7 @@ $(document).ready(function () {
     let zipFilename = "";
     let zipFileSize = 0;
     zipLevel = zipLevel !== ""?zipLevel:1;
-    zipFilename = zipFilename !== ''?zipFilename:"cloud-manager-setup-admin.zip";
+    zipFilename = zipFilename !== ''?zipFilename:"bluexp-setup-admin.zip";
     
     // remove container class from pdf tree not having any sub child
     $("#toggleContainerPdf li.pdf-ux-container").not(".active").removeClass("pdf-ux-container");
