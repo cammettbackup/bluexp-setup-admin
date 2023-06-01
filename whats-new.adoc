@@ -18,6 +18,44 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 4 June 2023
+
+=== Connector 3.9.30
+
+* When you open a NetApp support case from the Support Dashboard, BlueXP now opens the case using the NetApp Support Site account that is associated with your BlueXP login. BlueXP previously used the NetApp Support Site account associated with the entire BlueXP account.
+
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support[Learn how to create a case with NetApp Support]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html[Learn how to manage credentials associated with your BlueXP login]
+
+* You can now search for documentation from within BlueXP. Search results now provide links to content on docs.netapp.com and kb.netapp.com, which might help answer a question that you have. 
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png[A screenshot of the BlueXP search that is available at the top of the console.]
+
+* The Connector is now supported in the following AWS regions:
+
+** Hyderabad (ap-south-2)
+** Melbourne (ap-southeast-4)
+** Spain (eu-south-2)
+** UAE (me-central-1)
+** Zuric (eu-central-2)
+
+* The Connector is now supported in the following Azure regions:
+
+** Brazil South
+** France South
+** Jio India Central
+** Jio India West
+** Poland Central
+** Qatar Central
+
+* The Connector is now supported in the following Google Cloud regions:
+
+** Columbus (us-east5)
+** Dallas (us-south1)
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supported regions^]
+
 == 7 May 2023
 
 === Connector 3.9.29
@@ -57,6 +95,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn more a
 
 NOTE: The introduction of restricted mode replaces the option to enable or disable the SaaS platform. You can enable restricted mode at the time of account creation. It can't be enabled or disabled later.
 
+//end::whats-new[]
+
 == 3 April 2023
 
 === Connector 3.9.28
@@ -86,7 +126,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
 ** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023[Learn about ONTAP on-prem cluster enhancements^]
-//end::whats-new[]
 
 == 5 March 2023
 
