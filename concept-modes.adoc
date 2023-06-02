@@ -383,6 +383,7 @@ Note that some services might be supported with limitations. For more details ab
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 
+| Search | Yes | No
 | Timeline | Yes | Yes
 
 |===
