@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss
-summary: Provide the credentials for your NetApp Support Site (NSS) accounts to register for support, enable key workflows for Cloud Volumes ONTAP, and more. These NSS credentials are associated with the entire BlueXP account.
+summary: Associate a NetApp Support Site account with your BlueXP account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP account.
 ---
 
 = Manage NSS credentials associated with a BlueXP account
@@ -13,17 +13,13 @@ summary: Provide the credentials for your NetApp Support Site (NSS) accounts to 
 :imagesdir: ./media/
 
 [.lead]
-Provide BlueXP with the credentials for your NetApp Support Site (NSS) accounts to register for support, enable key workflows for Cloud Volumes ONTAP, and more. These NSS credentials are associated with the entire BlueXP account.
+Associate a NetApp Support Site account with your BlueXP account to enable key workflows for Cloud Volumes ONTAP. These NSS credentials are associated with the entire BlueXP account.
 
 NOTE: BlueXP also supports associating one NSS account per BlueXP user. link:task-manage-user-credentials.html[Learn how to manage user-level credentials].
 
 == Overview
 
 Associating NetApp Support Site credentials with your specific BlueXP account ID is required to enable the following tasks in BlueXP:
-
-* Registering for support
-
-* Creating support cases
 
 * Deploying Cloud Volumes ONTAP when you bring your own license (BYOL)
 +
@@ -81,7 +77,7 @@ Using this option prompts you to log in again. Note that the token for these acc
 
 .What's next?
 
-Users can now select the account when creating new Cloud Volumes ONTAP systems, when registering existing Cloud Volumes ONTAP systems, and when registering for support.
+Users can now select the account when creating new Cloud Volumes ONTAP systems and when registering existing Cloud Volumes ONTAP systems.
 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html[Launching Cloud Volumes ONTAP in Azure^]
