@@ -116,7 +116,7 @@ Note the following as you configure the VM:
 
 * Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
 +
-link:reference-host-requirements-azure[Review the VM requirements].
+link:reference-host-requirements-azure.html[Review the VM requirements].
 
 * For the network security group, the Connector requires inbound connections using SSH, HTTP, and HTTPS. A few more rule are required for specific configurations.
 +
@@ -218,6 +218,8 @@ Here's an example of the command using both optional parameters:
 * \http://username:password@address:port
 * \https://address:port
 * \https://username:password@address:port
++
+The user must be a local user. Domain users are not supported.
 
 +
 --cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.
