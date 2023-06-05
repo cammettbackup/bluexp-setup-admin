@@ -23,9 +23,12 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 === Connector 3.9.30
 
 * When you open a NetApp support case from the Support Dashboard, BlueXP now opens the case using the NetApp Support Site account that is associated with your BlueXP login. BlueXP previously used the NetApp Support Site account associated with the entire BlueXP account.
++
+As part of this change, support registration for a BlueXP account is now done through the NetApp Support Site account that's associated with a user's BlueXP login. Previously, support registration was done through an NSS account associated with the entire BlueXP account. As a result, other BlueXP users will not see the same support registration status if they have not associated a NetApp Support Site account with their BlueXP login. If you previously registered your BlueXP account for support, then your registration status is still valid. You just need to add a user-level NSS account to see the status.
 
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support[Learn how to create a case with NetApp Support]
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html[Learn how to manage credentials associated with your BlueXP login]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html[Learn how to register for support]
 
 * You can now search for documentation from within BlueXP. Search results now provide links to content on docs.netapp.com and kb.netapp.com, which might help answer a question that you have. 
 +
