@@ -96,6 +96,8 @@ To complete this step, you need to obtain the following from your AD admin about
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
 
+NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
+
 | 3 | AD admin | Complete the configuration on the identity provider using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
@@ -131,6 +133,8 @@ To complete this step, you need to obtain the following from your AD admin:
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
 
+NOTE: Take note of the secret key expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
+
 | 3 | AD admin | Complete the configuration in Azure AD using the parameters shown on the Federation Setup page after finishing step 2.
 
 | 4 | BlueXP admin | Test and enable the connection from the https://services.cloud.netapp.com/federation-setup[NetApp Federation Setup page^]
@@ -159,6 +163,8 @@ https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-provi
 To complete this step, you need to obtain the following from your AD admin: the URL for the ADFS server or the federation metadata file.
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
+
+NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
 
 | 3 | AD admin | Complete the configuration on the ADFS server using the parameters shown on the Federation Setup page after finishing step 2.
 
@@ -193,6 +199,8 @@ To complete this step, you need to obtain the following from your AD admin:
 * An X509 signing certificate (PEM or CER format)
 
 After you create the connection using this information, the Federation Setup page lists the parameters that you can send to your AD admin to complete the configuration in the next step.
+
+NOTE: Take note of the certificate expiration date. You need to return to the Federation Setup page and update the certificate _before_ it expires. This is your responsibility. BlueXP does not track the expiration date. It's best to work with your AD team to get alerted on time.
 
 | 3 | AD admin | Complete the configuration on the PingFederate server using the parameters shown on the Federation Setup page after finishing step 2.
 

@@ -31,7 +31,7 @@ You can deploy all of your Cloud Volumes ONTAP systems using the initial Azure c
 
 == Additional Azure subscriptions for a managed identity
 
-The system-assigned managed identity assigned to the Connector VM is associated with the subscription in which you launched the Connector. If you want to select a different Azure subscription, then you need to link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity[associate the managed identity with those subscriptions].
+The system-assigned managed identity assigned to the Connector VM is associated with the subscription in which you launched the Connector. If you want to select a different Azure subscription, then you need to link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity[associate the managed identity with those subscriptions].
 
 == Additional Azure credentials
 
@@ -39,7 +39,7 @@ If you want to use different Azure credentials with BlueXP, then you must grant 
 
 image:diagram_permissions_multiple_azure.png["A conceptual image that shows the initial Azure account, which receives permissions through a custom role and managed identity, and two additional accounts that receive permissions through a custom role and service principal."]
 
-You would then link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager[add the account credentials to BlueXP] by providing details about the AD service principal.
+You would then link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp[add the account credentials to BlueXP] by providing details about the AD service principal.
 
 For example, you can switch between credentials when creating a new Cloud Volumes ONTAP working environment:
 
