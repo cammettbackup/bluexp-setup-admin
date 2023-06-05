@@ -40,6 +40,8 @@ image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in 
 .. Select *Enable Proxy*.
 .. Specify the server using the syntax http://_address:port_ or https://_address:port_
 .. Specify a user name and password if basic authentication is required for the server
++
+The user must be a local user. Domain users are not supported.
 .. Select *Save*.
 +
 NOTE: BlueXP doesn't support passwords that include the @ character.
