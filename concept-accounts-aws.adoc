@@ -50,7 +50,7 @@ After you add another set of credentials, you can switch to them when creating a
 
 image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting between cloud provider accounts after clicking Switch Account in the Details & Credentials page.]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to add AWS credentials to an existing Connector.]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to an existing Connector.]
 
 === Add AWS credentials directly to BlueXP
 
@@ -58,7 +58,7 @@ Adding new AWS credentials to BlueXP provides the permissions needed to create a
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector[Learn how to add AWS credentials to BlueXP for Amazon FSx for ONTAP^]
 
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
 
 == What about Marketplace deployments and on-prem deployments?
 
