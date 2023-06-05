@@ -164,7 +164,8 @@ The second policy provides permissions for the following services:
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1023,11 +1024,12 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | s3:ListAllMyBuckets | No | No | No
 | s3:ListBucket | No | Yes | No
 
-.4+| Enable data encryption of Cloud Volumes ONTAP using the AWS Key Management Service (KMS)
+.5+| Enable data encryption of Cloud Volumes ONTAP using the AWS Key Management Service (KMS)
 | kms:List* | Yes | Yes | No
 | kms:ReEncrypt* | Yes | No | No
 | kms:Describe* | Yes | Yes | No
 | kms:CreateGrant | Yes | Yes | No
+| kms:GenerateDataKeyWithoutPlaintext | Yes | Yes | No
 
 .4+| Obtain AWS cost data for Cloud Volumes ONTAP
 | ce:GetReservationUtilization | No | Yes | No
@@ -1088,6 +1090,12 @@ The Connector makes the following API requests to manage tags on AWS resources w
 == Change log
 
 As permissions are added and removed, we'll note them in the sections below.
+
+=== 6 June, 2023
+
+The following permission is now required for Cloud Volumes ONTAP:
+
+kms:GenerateDataKeyWithoutPlaintext
 
 === 14 February, 2023
 
