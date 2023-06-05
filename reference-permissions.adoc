@@ -30,7 +30,7 @@ In order to use the features and services in BlueXP, you'll need to provide perm
 | Connector operation
 | When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
 
-You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-credentials-to-a-connector[add more AWS credentials to a Connector].
+You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
 | link:reference-permissions-aws.html[AWS permissions for the Connector]
