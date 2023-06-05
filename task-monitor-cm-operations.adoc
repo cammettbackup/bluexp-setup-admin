@@ -77,7 +77,7 @@ For example, if you want to see only "Error" and "Warning" notifications for Blu
 //
 // .Steps
 //
-// . In the Notification Center, click image:button_3_vert_dots.png[] and select *Settings*.
+// . In the Notification Center, click image:button_3_vert_dots.png[an icon with three vertical dots] and select *Settings*.
 //
 // image:screenshot_notification_settings.png[A screenshot of the available settings for the Notification Center.]
 //

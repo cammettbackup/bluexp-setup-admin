@@ -116,7 +116,7 @@ Note the following as you configure the VM:
 
 * Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
 +
-link:reference-host-requirements-azure[Review the VM requirements].
+link:reference-host-requirements-azure.html[Review the VM requirements].
 
 * For the network security group, the Connector requires inbound connections using SSH, HTTP, and HTTPS. A few more rule are required for specific configurations.
 +
