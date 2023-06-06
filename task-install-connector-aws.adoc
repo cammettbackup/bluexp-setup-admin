@@ -181,11 +181,7 @@ You have the option to configure a proxy server after installation but doing so 
 
 .About this task
 
-* The installation installs the AWS command line tools (awscli) to enable recovery procedures from NetApp support.
-+
-If you receive a message that installing the awscli failed, you can safely ignore the message. The Connector can operate successfully without the tools.
-
-* The installer that is available on the NetApp Support Site might be an earlier version. After installation, the Connector automatically updates itself if a new version is available.
+The installer that is available on the NetApp Support Site might be an earlier version. After installation, the Connector automatically updates itself if a new version is available.
 
 .Steps
 
