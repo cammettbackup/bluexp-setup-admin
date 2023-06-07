@@ -741,28 +741,6 @@ s3:GetEncryptionConfiguration
 
 === Backup and recovery
 
-The Connector makes the following API requests to deploy the restore instance for BlueXP backup and recovery:
-
-//tag::backup-permissions-restore[]
-* ec2:StartInstances
-* ec2:StopInstances
-* ec2:DescribeInstances
-* ec2:DescribeInstanceStatus
-* ec2:RunInstances
-* ec2:TerminateInstances
-* ec2:DescribeInstanceAttribute
-* ec2:DescribeImages
-* ec2:CreateTags
-* ec2:CreateVolume
-* ec2:CreateSecurityGroup
-* ec2:DescribeSubnets
-* ec2:DescribeVpcs
-* ec2:DescribeRegions
-* cloudformation:CreateStack
-* cloudformation:DeleteStack
-* cloudformation:DescribeStacks
-//end::backup-permissions-restore[]
-
 The Connector makes the following API requests to manage backups in Amazon S3:
 
 //tag::backup-permissions[]
