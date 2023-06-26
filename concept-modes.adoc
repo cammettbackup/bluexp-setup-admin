@@ -378,6 +378,7 @@ Note that some services might be supported with limitations. For more details ab
 | Ransomware protection | No | No
 | Remediation | No | No
 | Replication | Yes | Yes
+| Sustainability | No | No
 | Tiering | No | No
 | Volume caching | No | No
 
