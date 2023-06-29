@@ -65,10 +65,15 @@ If you plan to manually install the Connector on your own Linux host, the instal
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io (not required in Azure Government regions)
-* \https://occmclientinfragov.azurecr.us (only required in Azure Government regions)
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+This endpoint is not required in Azure Government regions.
+
+* \https://occmclientinfragov.azurecr.us
++
+This endpoint is only required in Azure Government regions.
 
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
 
@@ -150,9 +155,11 @@ NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but 
 
 \https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io (not required in Azure Government regions)
+\https://cloudmanagerinfraprod.azurecr.io
+This endpoint is not required in Azure Government regions.
 
-\https://occmclientinfragov.azurecr.us (only required in Azure Government regions)
+\https://occmclientinfragov.azurecr.us
+This endpoint is only required in Azure Government regions.
 
 | To upgrade the Connector and its Docker components.
 

@@ -32,7 +32,7 @@ As a result of this change, a Connector in an Azure Government region no longer 
 
 \https://cloudmanagerinfraprod.azurecr.io
 
-
+Note that this endpoint is still required for all other restricted mode configurations and for standard mode.
 
 == 4 June 2023
 
