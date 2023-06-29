@@ -18,6 +18,22 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 2 July 2023
+
+=== Connector 3.9.31
+
+If you're using the Connector in an Azure Government region, you should ensure that the Connector can contact the following endpoint:
+
+\https://occmclientinfragov.azurecr.us
+
+This endpoint is required to manually install the Connector and to upgrade the Connector and its Docker components.
+
+As a result of this change, a Connector in an Azure Government region no longer contacts the following endpoint:
+
+\https://cloudmanagerinfraprod.azurecr.io
+
+
+
 == 4 June 2023
 
 === Connector 3.9.30
