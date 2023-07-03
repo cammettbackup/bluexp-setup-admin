@@ -22,16 +22,20 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 === Connector 3.9.31
 
-If you're using the Connector in an Azure Government region, you should ensure that the Connector can contact the following endpoint:
+* You can now discover on-premises ONTAP clusters from the *My estate* tab (previously *My Opportunities*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
 
+* If you're using the Connector in an Azure Government region, you should ensure that the Connector can contact the following endpoint:
++
 \https://occmclientinfragov.azurecr.us
-
++
 This endpoint is required to manually install the Connector and to upgrade the Connector and its Docker components.
-
++
 As a result of this change, a Connector in an Azure Government region no longer contacts the following endpoint:
-
++
 \https://cloudmanagerinfraprod.azurecr.io
-
++
 Note that this endpoint is still required for all other restricted mode configurations and for standard mode.
 
 == 4 June 2023
