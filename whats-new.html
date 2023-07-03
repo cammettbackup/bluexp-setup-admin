@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-06 20:07:06 +0000">06/06/2023</time>
+    <time datetime="2023-07-03 14:47:19 +0000">07/03/2023</time>
     
   
 
@@ -1965,6 +1965,42 @@
 <div class="sectionbody">
 <div class="paragraph lead">
 <p>Learn what&#8217;s new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2-july-2023">2 July 2023</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="connector-3-9-31">Connector 3.9.31</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>You can now discover on-premises ONTAP clusters from the <strong>My estate</strong> tab (previously <strong>My Opportunities</strong>)</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster">Learn how to discover clusters from the My estate page</a>.</p>
+</div>
+</li>
+<li>
+<p>If you&#8217;re using the Connector in an Azure Government region, you should ensure that the Connector can contact the following endpoint:</p>
+<div class="paragraph">
+<p>https://occmclientinfragov.azurecr.us</p>
+</div>
+<div class="paragraph">
+<p>This endpoint is required to manually install the Connector and to upgrade the Connector and its Docker components.</p>
+</div>
+<div class="paragraph">
+<p>As a result of this change, a Connector in an Azure Government region no longer contacts the following endpoint:</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div>
+<div class="paragraph">
+<p>Note that this endpoint is still required for all other restricted mode configurations and for standard mode.</p>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>

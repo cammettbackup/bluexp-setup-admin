@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-08 12:54:16 +0000">05/08/2023</time>
+    <time datetime="2023-06-29 17:41:52 +0000">06/29/2023</time>
     
   
 
@@ -2119,13 +2119,22 @@
 <p>https://stream.cloudmanager.cloud.netapp.com</p>
 </li>
 <li>
-<p>https://cloudmanagerinfraprod.azurecr.io</p>
-</li>
-<li>
 <p>https://production-artifacts.cloudmanager.cloud.netapp.com</p>
 </li>
 <li>
 <p>https://*.blob.core.windows.net</p>
+</li>
+<li>
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+<div class="paragraph">
+<p>This endpoint is not required in Azure Government regions.</p>
+</div>
+</li>
+<li>
+<p>https://occmclientinfragov.azurecr.us</p>
+<div class="paragraph">
+<p>This endpoint is only required in Azure Government regions.</p>
+</div>
 </li>
 </ul>
 </div>
@@ -2245,9 +2254,13 @@ The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it wil
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://cloudmanagerinfraprod.azurecr.io<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://*.blob.core.windows.net<br>
 <br>
-https://*.blob.core.windows.net</p></td>
+https://cloudmanagerinfraprod.azurecr.io<br>
+This endpoint is not required in Azure Government regions.<br>
+<br>
+https://occmclientinfragov.azurecr.us<br>
+This endpoint is only required in Azure Government regions.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">To upgrade the Connector and its Docker components.</p></td>
 </tr>
 </tbody>
