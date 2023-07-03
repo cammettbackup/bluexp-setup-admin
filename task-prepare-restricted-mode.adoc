@@ -65,9 +65,15 @@ If you plan to manually install the Connector on your own Linux host, the instal
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+This endpoint is not required in Azure Government regions.
+
+* \https://occmclientinfragov.azurecr.us
++
+This endpoint is only required in Azure Government regions.
 
 The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
 
@@ -145,9 +151,16 @@ a| To provide SaaS features and services within BlueXP.
 
 NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
 
-| \https://cloudmanagerinfraprod.azurecr.io
+| 
 
 \https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+This endpoint is not required in Azure Government regions.
+
+\https://occmclientinfragov.azurecr.us
+This endpoint is only required in Azure Government regions.
+
 | To upgrade the Connector and its Docker components.
 
 |===

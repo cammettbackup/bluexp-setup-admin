@@ -18,6 +18,26 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 //All links and images must use the absolute URL.
 
 //tag::whats-new[]
+== 2 July 2023
+
+=== Connector 3.9.31
+
+* You can now discover on-premises ONTAP clusters from the *My estate* tab (previously *My Opportunities*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster[Learn how to discover clusters from the My estate page].
+
+* If you're using the Connector in an Azure Government region, you should ensure that the Connector can contact the following endpoint:
++
+\https://occmclientinfragov.azurecr.us
++
+This endpoint is required to manually install the Connector and to upgrade the Connector and its Docker components.
++
+As a result of this change, a Connector in an Azure Government region no longer contacts the following endpoint:
++
+\https://cloudmanagerinfraprod.azurecr.io
++
+Note that this endpoint is still required for all other restricted mode configurations and for standard mode.
+
 == 4 June 2023
 
 === Connector 3.9.30
@@ -88,6 +108,8 @@ https://cloud.netapp.com/cloud-volumes-global-regions[View the full list of supp
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023[Learn about Cloud Volumes ONTAP enhancements^]
 
+//end::whats-new[]
+
 == 4 April 2023
 
 === Deployment modes
@@ -101,8 +123,6 @@ BlueXP _deployment modes_ enable you to use BlueXP in a way that meets your busi
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[Learn more about these deployment modes].
 
 NOTE: The introduction of restricted mode replaces the option to enable or disable the SaaS platform. You can enable restricted mode at the time of account creation. It can't be enabled or disabled later.
-
-//end::whats-new[]
 
 == 3 April 2023
 
