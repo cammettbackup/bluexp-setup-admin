@@ -23,7 +23,7 @@ When BlueXP deploys the Connector virtual machine in Azure, it enables a https:/
 
 image:diagram_permissions_initial_azure.png[A conceptual image that shows BlueXP deploying a Connector in an Azure account and subscription. A system-assigned managed identity is enabled and a custom role is assigned to the Connector virtual machine.]
 
-BlueXP selects these Azure credentials by default when you create a new working environment for Cloud Volumes ONTAP:
+If you create a new working environment for Cloud Volumes ONTAP, BlueXP selects these Azure credentials by default:
 
 image:screenshot_accounts_select_azure.gif[A screenshot that shows the Switch Account option in the Details & Credentials page.]
 

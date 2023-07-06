@@ -23,7 +23,7 @@ When BlueXP launches the Connector instance in AWS, it creates an IAM role and a
 
 image:diagram_permissions_initial_aws.png["A conceptual image that shows BlueXP deploying the Connector in an AWS account. An IAM policy is assigned to an IAM role, which is attached to the BlueXP instance."]
 
-BlueXP selects these AWS credentials by default when you create a new working environment for Cloud Volumes ONTAP:
+If you create a new working environment for Cloud Volumes ONTAP, BlueXP selects these AWS credentials by default:
 
 image:screenshot_accounts_select_aws.gif[A screenshot that shows the Switch Account option in the Details & Credentials page.]
 
