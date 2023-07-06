@@ -242,7 +242,7 @@ image:screenshot_azure_service_principal_role.png[A screenshot of the Azure port
 +
 The service principal now has the required Azure permissions to deploy the Connector.
 +
-If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.
+If you want to manage resources in multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. For example, BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.
 
 .Add Windows Azure Service Management API permissions
 
@@ -318,7 +318,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 
 . Modify the JSON file by adding Azure subscription IDs to the assignable scope.
 +
-You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.
+You should add the ID for each Azure subscription that you want to use with BlueXP.
 +
 *Example*
 +
@@ -408,7 +408,7 @@ image:screenshot_azure_service_principal_role.png[A screenshot of the Azure port
 +
 The service principal now has the required Azure permissions to deploy the Connector.
 +
-If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.
+If you want to manage resources in multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. For example, BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.
 
 .Add Windows Azure Service Management API permissions
 
