@@ -125,7 +125,7 @@ image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in 
 
 .. *Marketplace Subscription*: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.
 +
-To pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or with an annual contract, AWS credentials must be associated with a subscription to Cloud Volumes ONTAP from the AWS Marketplace.
+To pay for BlueXP services at an hourly rate (PAYGO) or with an annual contract, AWS credentials must be associated with an AWS Marketplace subscription.
 
 .. *Review*: Confirm the details about the new credentials and select *Add*.
 
