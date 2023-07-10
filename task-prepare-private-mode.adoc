@@ -117,13 +117,13 @@ AWS services (amazonaws.com):
 
 === Proxy server
 
-include::_include/proxy-server.adoc
+include::_include/proxy-server.adoc[]
 
 With private mode, the only time that BlueXP sends outbound traffic is to your cloud provider in order to create a Cloud Volumes ONTAP system.
 
 === Public IP address in Azure
 
-include::_include/public-ip-azure.adoc
+include::_include/public-ip-azure.adoc[]
 
 === Ports
 

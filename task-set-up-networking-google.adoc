@@ -86,12 +86,12 @@ NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but 
 
 == Proxy server
 
-include::_include/proxy-server.adoc
+include::_include/proxy-server.adoc[]
 
 == Ports
 
-include::_include/ports.adoc
+include::_include/ports.adoc[]
 
 == IP address limitation
 
-include::_include/ip-limitation.adoc
+include::_include/ip-limitation.adoc[]

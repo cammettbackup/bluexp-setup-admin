@@ -159,15 +159,15 @@ This endpoint is only required in Azure Government regions.
 
 === Proxy server
 
-include::_include/proxy-server.adoc
+include::_include/proxy-server.adoc[]
 
 === Public IP address in Azure
 
-include::_include/public-ip-azure.adoc
+include::_include/public-ip-azure.adoc[]
 
 === Ports
 
-include::_include/ports.adoc
+include::_include/ports.adoc[]
 
 == Prepare networking for user access to BlueXP console
 

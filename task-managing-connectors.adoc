@@ -19,7 +19,7 @@ link:concept-connectors.html[Learn how Connectors work].
 
 == Operating system and VM maintenance 
 
-include::_include/vm-maintenance.adoc
+include::_include/vm-maintenance.adoc[]
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
 

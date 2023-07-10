@@ -144,7 +144,7 @@ link:task-managing-connectors.html[Learn how to manually upgrade the Connector s
 
 == Operating system and VM maintenance
 
-include::_include/vm-maintenance.adoc
+include::_include/vm-maintenance.adoc[]
 
 <<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>. 
 
