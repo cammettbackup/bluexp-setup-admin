@@ -197,13 +197,13 @@ You now have an IAM role that you can associate with the EC2 instance during dep
 
 .Steps
 
-include::_include/aws-iam-role-steps.adoc[policy]
+include::_include/aws-iam-role-steps.adoc[tag=policy]
 +
 Depending on the BlueXP services that you're planning to use, you might need to create a second policy.
 +
 For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Connector].
 
-include::_include/aws-iam-role-steps.adoc[role]
+include::_include/aws-iam-role-steps.adoc[tag=role]
 
 .Result
 
@@ -226,13 +226,13 @@ If you manually install the Connector software on your own Linux host in AWS, yo
 
 .Steps
 
-include::_include/aws-iam-role-steps.adoc[policy]
+include::_include/aws-iam-role-steps.adoc[tag=policy]
 +
 Depending on the BlueXP services that you're planning to use, you might need to create a second policy.
 +
 For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Connector].
 
-include::_include/aws-iam-role-steps.adoc[role]
+include::_include/aws-iam-role-steps.adoc[tag=role]
 
 .Result
 
