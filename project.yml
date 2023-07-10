@@ -191,7 +191,7 @@ sidebar:
               url: /task-viewing-amazon-s3.html
             - title: Manage your Azure Blob accounts
               url: /task-viewing-azure-blob.html
-            - title: View your Google Cloud Storage buckets
+            - title: Manage your Google Cloud Storage buckets
               url: /task-viewing-gcp-storage.html
     - title: Reference
       entries:
