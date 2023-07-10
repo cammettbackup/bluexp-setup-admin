@@ -41,17 +41,9 @@ link:reference-networking-saas-console.html[View the list of endpoints contacted
 
 === Endpoints contacted during manual installation
 
-If you plan to manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:
+include::_include/endpoints-manual-install.adoc[tag=start]
 
-* \https://support.netapp.com
-* \https://mysupport.netapp.com
-* \https://cloudmanager.cloud.netapp.com/tenancy
-* \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
-* \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-
-The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
+include::_include/endpoints-manual-install.adoc[tag=update]
 
 === Endpoints contacted from the Connector
 
@@ -103,22 +95,12 @@ NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but 
 
 == Proxy server
 
-If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy:
-
-* IP address
-* Credentials
-* HTTPS certificate
+include::_include/proxy-server.adoc
 
 == Ports
 
-There's no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy for AutoSupport messages.
-
-* HTTP (80) and HTTPS (443) provide access to the local UI, which you'll use in rare circumstances.
-
-* SSH (22) is only needed if you need to connect to the host for troubleshooting. 
-
-* Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn't available. If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. The only requirement is to ensure that the Connector's security group allows inbound connections over port 3128. You'll need to open this port after you deploy the Connector.
+include::_include/ports.adoc
 
 == IP address limitation
 
-There's a possible conflict with IP addresses in the 172 range. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html[Learn more about this limitation].
+include::_include/ip-limitation.adoc

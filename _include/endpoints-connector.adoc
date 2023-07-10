@@ -1,0 +1,38 @@
+//tag::aws-endpoints[]
+| AWS services (amazonaws.com):
+
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Identity and Access Management (IAM)
+* Key Management Service (KMS)
+* Security Token Service (STS)
+* Simple Storage Service (S3)
+
+| To manage resources in AWS. The exact endpoint depends on the region in which you deploy the Connector. https://docs.aws.amazon.com/general/latest/gr/rande.html[Refer to AWS documentation for details^]
+//end::aws-endpoints[]
+
+//tag::nss-endpoints[]
+| \https://support.netapp.com | To obtain licensing information and to send AutoSupport messages to NetApp support.
+//end::nss-endpoints[]
+
+//tag::saas-endpoints[]
+| \https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+| To provide SaaS features and services within BlueXP.
+
+NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
+
+//end::saas-endpoints[]
+
+//tag::upgrade-endpoints[]
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net
+| To upgrade the Connector and its Docker components.
+//end::upgrade-endpoints[]
