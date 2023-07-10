@@ -43,44 +43,18 @@ include::_include/endpoints-manual-install.adoc[tag=update]
 
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
 
-[cols=2*,options="header,autowidth"]
+[cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
 | Purpose
 
-| 
-\https://www.googleapis.com/compute/v1/
-\https://compute.googleapis.com/compute/v1
-\https://cloudresourcemanager.googleapis.com/v1/projects
-\https://www.googleapis.com/compute/beta
-\https://storage.googleapis.com/storage/v1
-\https://www.googleapis.com/storage/v1
-\https://iam.googleapis.com/v1
-\https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects
+include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
 
-| To manage resources in Google Cloud.
+include::_include/endpoints-connector.adoc[tag=nss-endpoints]
 
-| \https://support.netapp.com | To obtain licensing information and to send AutoSupport messages to NetApp support.
+include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 
-a| 
-
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-a| To provide SaaS features and services within BlueXP.
-
-NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
-
-| \https://cloudmanagerinfraprod.azurecr.io
-
-\https://*.blob.core.windows.net
-| To upgrade the Connector and its Docker components.
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 

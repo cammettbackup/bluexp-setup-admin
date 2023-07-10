@@ -59,59 +59,20 @@ The Connector must have a network connection to the location where you plan to m
 
 The Connector contacts the following endpoints to manage resources and processes within your public cloud environment.
 
-[cols=2*,options="header,autowidth"]
+[cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
 | Purpose
 
-a|
-AWS services (amazonaws.com):
+include::_include/endpoints-connector.adoc[tag=aws-endpoints]
 
-* CloudFormation
-* Elastic Compute Cloud (EC2)
-* Identity and Access Management (IAM)
-* Key Management Service (KMS)
-* Security Token Service (STS)
-* Simple Storage Service (S3)
+include::_include/endpoints-connector.adoc[tag=azure-public-endpoints]
 
-| To manage resources in AWS. The exact endpoint depends on the region in which you deploy the Connector. https://docs.aws.amazon.com/general/latest/gr/rande.html[Refer to AWS documentation for details^]
+include::_include/endpoints-connector.adoc[tag=azure-il6-endpoints]
 
-| 
-\https://management.azure.com
-\https://login.microsoftonline.com
-\https://blob.core.windows.net
-\https://core.windows.net
+include::_include/endpoints-connector.adoc[tag=azure-china-endpoints]
 
-| To manage resources in Azure public regions.
-
-| 
-\https://management.azure.microsoft.scloud
-\https://login.microsoftonline.microsoft.scloud
-\https://blob.core.microsoft.scloud
-\https://core.microsoft.scloud
-
-| To manage resources in the Azure IL6 region.
-
-| 
-\https://management.chinacloudapi.cn
-\https://login.chinacloudapi.cn
-\https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn
-
-| To manage resources in Azure China regions.
-
-| 
-\https://www.googleapis.com/compute/v1/
-\https://compute.googleapis.com/compute/v1
-\https://cloudresourcemanager.googleapis.com/v1/projects
-\https://www.googleapis.com/compute/beta
-\https://storage.googleapis.com/storage/v1
-\https://www.googleapis.com/storage/v1
-\https://iam.googleapis.com/v1
-\https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects
-
-| To manage resources in Google Cloud.
+include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
 
 |===
 
@@ -150,25 +111,9 @@ Use an IAM role to provide the Connector with permissions. You'll need to manual
 
 .Steps
 
-. Log in to the AWS console and navigate to the IAM service.
+include::_include/aws-permissions.adoc[tag=policy]
 
-. Create a policy:
-
-.. Click *Policies > Create policy*.
-
-.. Select *JSON* and copy and paste the contents of the link:reference-permissions-aws.html[IAM policy for the Connector].
-
-.. Finish the remaining steps to create the policy.
-
-. Create an IAM role:
-
-.. Click *Roles > Create role*.
-
-.. Select *AWS service > EC2*.
-
-.. Add permissions by attaching the policy that you just created.
-
-.. Finish the remaining steps to create the role.
+include::_include/aws-permissions.adoc[tag=role]
 
 .Result
 
@@ -181,24 +126,13 @@ Set up permissions and an access key for an IAM user. You'll need to provide Blu
 
 .Steps
 
-. From the IAM console, create a policy:
-
-.. Click *Policies > Create policy*.
-
-.. Select *JSON* and copy and paste the contents of the link:reference-permissions-aws.html[IAM policy for the Connector].
-
-.. Finish the remaining steps to create the policy.
+include::_include/aws-permissions.adoc[tag=policy]
 +
 Depending on the BlueXP services that you're planning to use, you might need to create a second policy.
 +
 For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Connector].
 
-. Attach the policies to an IAM user.
-+
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html[AWS Documentation: Creating IAM Roles^]
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html[AWS Documentation: Adding and Removing IAM Policies^]
-
-. Ensure that the user has access keys that you can add to BlueXP after you install the Connector.
+include::_include/aws-permissions.adoc[tag=keys]
 
 .Result
 
