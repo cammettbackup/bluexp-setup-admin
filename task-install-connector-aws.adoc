@@ -87,7 +87,9 @@ After the process is complete, the Connector is available for use from BlueXP.
 .AWS Marketplace
 --
 
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * A VPC and subnet that meets networking requirements.
 +
@@ -99,51 +101,13 @@ link:task-set-up-permissions-aws.html[Learn how to set up AWS permissions].
 
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
+* An understanding of CPU and RAM requirements for the instance.
++
+link:reference-host-requirements-aws.html[Review instance requirements].
+
 * A key pair for the EC2 instance.
 
-.Steps
-
-. Go to the https://aws.amazon.com/marketplace/pp/B018REK8QG[BlueXP page on the AWS Marketplace^]
-
-. On the Marketplace page, click *Continue to Subscribe* and then click *Continue to Configuration*.
-+
-image:screenshot-subscribe-aws.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
-
-. Change any of the default options and click *Continue to Launch*.
-
-. Under *Choose Action*, select *Launch through EC2* and then click *Launch*.
-+
-These steps describe how to launch the instance from the EC2 Console because the console enables you to attach an IAM role to the Connector instance. This isn't possible using the *Launch from Website* action.
-
-. Follow the prompts to configure and deploy the instance:
-
-* *Name and tags*: Enter a name and tags for the instance.
-
-* *Application and OS Image*: Skip this section. The Connector AMI is already selected.
-
-* *Instance type*: Depending on region availability, choose one of the supported instance types (t3.xlarge is recommended).
-+
-link:reference-host-requirements-aws.html[Review the instance requirements].
-
-* *Key pair (login)*: Select the key pair that you want to use to securely connect to the instance.
-
-* *Network settings*: Edit the network settings as needed:
-+
-** Choose the desired VPC and subnet.
-** Specify whether the instance should have a public IP address.
-** Specify firewall settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.
-+
-A few more rule are required for specific configurations.
-+
-link:reference-ports-aws.html[View security group rules for AWS].
-
-* *Configure storage*: Keep the default storage options.
-
-* *Advanced details*: Under *IAM instance profile*, choose the IAM role that includes the required permissions for the Connector.
-+
-link:task-set-up-permissions-aws.html[Learn how to set up AWS permissions].
-
-* *Summary*: Review the summary and click *Launch instance*.
+include::_include/aws-marketplace.adoc[]
 
 +
 AWS launches the software with the specified settings. The Connector instance and software should be running in approximately five minutes.

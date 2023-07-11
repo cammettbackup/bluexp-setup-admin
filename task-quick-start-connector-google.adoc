@@ -68,14 +68,7 @@ link:task-set-up-permissions-google.html[Follow step-by-step instructions for ea
 Several APIs are required to deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 
 [role="quick-margin-list"]
-* Cloud Deployment Manager V2 API
-* Cloud Logging API
-* Cloud Resource Manager API
-* Compute Engine API
-* Identity and Access Management (IAM) API
-* Cloud Key Management Service (KMS) API
-+
-(Required only if you are planning to use BlueXP backup and recovery with customer-managed encryption keys (CMEK))
+include::_include/google-cloud-apis.adoc[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Create the Connector
 

@@ -32,52 +32,20 @@ Install the Connector from your cloud provider's marketplace or by manually inst
 * A VPC and subnet that meets networking requirements.
 +
 link:task-prepare-restricted-mode.html[Learn about networking requirements]
+
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up AWS permissions]
+
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
+
+* An understanding of CPU and RAM requirements for the instance.
++
+link:reference-host-requirements-aws.html[Review instance requirements].
 
 * A key pair for the EC2 instance.
 
-.Steps
-
-. Go to the https://aws.amazon.com/marketplace/pp/B018REK8QG[BlueXP page on the AWS Marketplace^]
-
-. On the Marketplace page, click *Continue to Subscribe* and then click *Continue to Configuration*.
-+
-image:screenshot-subscribe-aws.png[A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace.]
-
-. Change any of the default options and click *Continue to Launch*.
-
-. Under *Choose Action*, select *Launch through EC2* and then click *Launch*.
-+
-These steps describe how to launch the instance from the EC2 Console because the console enables you to attach an IAM role to the Connector instance. This isn't possible using the *Launch from Website* action.
-
-. Follow the prompts to configure and deploy the instance:
-
-* *Name and tags*: Enter a name and tags for the instance.
-
-* *Application and OS Image*: Skip this section. The Connector AMI is already selected.
-
-* *Instance type*: Depending on region availability, choose one of the supported instance types (t3.xlarge is recommended).
-+
-link:task-prepare-restricted-mode.html[Review the instance requirements].
-
-* *Key pair (login)*: Select the key pair that you want to use to securely connect to the instance.
-
-* *Network settings*: Edit the network settings as needed:
-+
-** Choose the desired VPC and subnet.
-** Specify whether the instance should have a public IP address.
-** Specify firewall settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.
-
-* *Configure storage*: Keep the default storage options.
-
-* *Advanced details*: Under *IAM instance profile*, choose the IAM role that includes the required permissions for the Connector.
-+
-link:task-prepare-restricted-mode.html[Learn how to set up AWS permissions].
-
-* *Summary*: Review the summary and click *Launch instance*.
+include::_include/aws-marketplace.adoc[]
 
 .Result
 
@@ -181,7 +149,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 * *Network security group*: The Connector requires inbound connections using SSH, HTTP, and HTTPS.
 +
-link:task-prepare-restricted-mode.html[Learn about networking requirements].
+link:reference-ports-azure.html[View security group rules for Azure].
 
 * *Identity*: Under *Management*, select *Enable system assigned managed identity*.
 +
@@ -279,21 +247,7 @@ Attach the IAM role that you previously created to the EC2 instance where you in
 
 These steps apply only if you manually installed the Connector in AWS. For AWS Marketplace deployments, you already associated the Connector instance with an IAM role that includes the required permissions.
 
-.Steps
-
-. Go to the Amazon EC2 console.
-
-. Select *Instances*.
-
-. Select the Connector instance.
-
-. Select *Actions > Security > Modify IAM role*.
-
-. Select the IAM role and click *Update IAM role*.
-
-.Result
-
-BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.
+include::_include/provide-permissions-iam-role.adoc[]
 --
 
 .AWS access key
@@ -302,25 +256,7 @@ Provide BlueXP with the AWS access key for an IAM user that has the required per
 
 .Steps
 
-. Ensure that the correct Connector is currently selected in BlueXP.
-
-. In the upper right of the BlueXP console, click the Settings icon, and select *Credentials*.
-+
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
-
-. Click *Add Credentials* and follow the steps in the wizard.
-
-.. *Credentials Location*: Select *Amazon Web Services > Connector*.
-
-.. *Define Credentials*: Enter an AWS access key and secret key.
-
-.. *Marketplace Subscription*: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.
-
-.. *Review*: Confirm the details about the new credentials and click *Add*.
-
-.Result
-
-BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.
+include::_include/provide-permissions-access-key.adoc[]
 --
 
 .Azure role

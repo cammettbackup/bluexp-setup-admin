@@ -149,38 +149,7 @@ Create an Azure custom role with the required permissions. You'll assign this ro
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
 
-. Copy the contents of the link:reference-permissions-azure.html[custom role permissions for the Connector] and save them in a JSON file.
-
-. Modify the JSON file by adding Azure subscription IDs to the assignable scope.
-+
-You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.
-+
-*Example*
-+
-[source,json]
-"AssignableScopes": [
-"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
-"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
-"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
-
-. Use the JSON file to create a custom role in Azure.
-+
-The following steps describe how to create the role by using Bash in Azure Cloud Shell.
-+
-.. Start https://docs.microsoft.com/en-us/azure/cloud-shell/overview[Azure Cloud Shell^] and choose the Bash environment.
-
-.. Upload the JSON file.
-+
-image:screenshot_azure_shell_upload.png[A screenshot of the Azure Cloud Shell where you can choose the option to upload a file.]
-
-.. Use the Azure CLI to create the custom role:
-+
-[source,azurecli]
-az role definition create --role-definition Connector_Policy.json
-
-.Result
-
-You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.
+include::_include/azure-custom-role.adoc[]
 --
 
 .Azure service principal
@@ -341,11 +310,4 @@ Several APIs are required to deploy Cloud Volumes ONTAP in Google Cloud.
 
 . https://cloud.google.com/apis/docs/getting-started#enabling_apis[Enable the following Google Cloud APIs in your project^]
 +
-* Cloud Deployment Manager V2 API
-* Cloud Logging API
-* Cloud Resource Manager API
-* Compute Engine API
-* Identity and Access Management (IAM) API
-* Cloud Key Management Service (KMS) API
-+
-(Required only if you are planning to use BlueXP backup and recovery with customer-managed encryption keys (CMEK))
+include::_include/google-cloud-apis.adoc[]

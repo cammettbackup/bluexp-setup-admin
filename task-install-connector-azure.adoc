@@ -112,19 +112,17 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 +
 Note the following as you configure the VM:
 
-* The Connector can perform optimally with either HDD or SSD disks.
+* *VM size*: Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
 
-* Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.
-+
-link:reference-host-requirements-azure.html[Review the VM requirements].
+* *Disks*: The Connector can perform optimally with either HDD or SSD disks.
 
-* For the network security group, the Connector requires inbound connections using SSH, HTTP, and HTTPS. A few more rule are required for specific configurations.
+* *Network security group*: The Connector requires inbound connections using SSH, HTTP, and HTTPS.
 +
 link:reference-ports-azure.html[View security group rules for Azure].
 
-* Under *Management*, enable *System assigned managed identity* for the Connector VM by selecting *On*.
+* *Identity*: Under *Management*, select *Enable system assigned managed identity*.
 +
-This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. After you're done,you'll need to assign the custom role that you created to https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
+This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
 
 . On the *Review + create* page, review your selections and click *Create* to start the deployment.
 +
