@@ -19,11 +19,11 @@ Install a Connector on premises and then log in and set it up to work with your 
 
 Download and install the Connector software on an existing Linux host on premises.
 
-include::_include/aws-permissions.adoc[tag=before]
+include::_include/manual-install.adoc[tag=before]
 
-include::_include/aws-permissions.adoc[tag=about]
+include::_include/manual-install.adoc[tag=about]
 
-include::_include/aws-permissions.adoc[tag=main-steps]
+include::_include/manual-install.adoc[tag=main-steps]
 
 .Result
 

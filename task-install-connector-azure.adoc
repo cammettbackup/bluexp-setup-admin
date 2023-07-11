@@ -151,17 +151,17 @@ link:task-provide-permissions-azure.html[Provide BlueXP with the permissions tha
 
 .Manual install
 --
-include::_include/aws-permissions.adoc[tag=before]
+include::_include/manual-install.adoc[tag=before]
 
 * A managed identity enabled on the VM in Azure so that you can provide the required Azure permissions through a custom role.
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
 
-include::_include/aws-permissions.adoc[tag=about]
+include::_include/manual-install.adoc[tag=about]
 
-include::_include/aws-permissions.adoc[tag=main-steps]
+include::_include/manual-install.adoc[tag=main-steps]
 
-include::_include/aws-permissions.adoc[tag=standard-mode-steps-for-cloud]
+include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
 .What's next?
 

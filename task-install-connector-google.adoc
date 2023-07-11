@@ -170,13 +170,13 @@ Open a web browser and go to the https://console.bluexp.netapp.com[BlueXP consol
 
 .Manual install
 --
-include::_include/aws-permissions.adoc[tag=before]
+include::_include/manual-install.adoc[tag=before]
 
-include::_include/aws-permissions.adoc[tag=about]
+include::_include/manual-install.adoc[tag=about]
 
-include::_include/aws-permissions.adoc[tag=main-steps]
+include::_include/manual-install.adoc[tag=main-steps]
 
-include::_include/aws-permissions.adoc[tag=standard-mode-steps-for-cloud]
+include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
 .What's next?
 
