@@ -99,7 +99,7 @@ Create an Azure Active Directory (AD) application and service principal that Blu
 
 .Steps
 
-include::_include/azure-set-up-service-principal.adoc[create-azure-ad-app]
+include::_include/azure-set-up-service-principal.adoc[app]
 
 .Result
 
@@ -111,7 +111,7 @@ You must bind the service principal to one or more Azure subscriptions and assig
 
 .Steps
 
-include::_include/azure-set-up-service-principal.adoc[create-and-assign-role]
+include::_include/azure-set-up-service-principal.adoc[role]
 
 ==== Add Windows Azure Service Management API permissions
 
@@ -119,7 +119,7 @@ The service principal must have "Windows Azure Service Management API" permissio
 
 .Steps
 
-include::_include/azure-set-up-service-principal.adoc[add-api-permissions]
+include::_include/azure-set-up-service-principal.adoc[api]
 
 [[ids]]
 ==== Get the application ID and directory ID
@@ -128,7 +128,7 @@ When you add the Azure account to BlueXP, you need to provide the application (c
 
 .Steps
 
-include::_include/azure-set-up-service-principal.adoc[get-ids]
+include::_include/azure-set-up-service-principal.adoc[ids]
 
 ==== Create a client secret
 
@@ -136,7 +136,7 @@ You need to create a client secret and then provide BlueXP with the value of the
 
 .Steps
 
-include::_include/azure-set-up-service-principal.adoc[create-secret]
+include::_include/azure-set-up-service-principal.adoc[secret]
 
 .Result
 
