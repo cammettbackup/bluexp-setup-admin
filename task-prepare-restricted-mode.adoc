@@ -59,7 +59,7 @@ The Connector must have a network connection to the location where you plan to m
 
 === Outbound internet access for manual installs
 
-include::_include/endpoints-manual-install.adoc[tag=start]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 This endpoint is not required in Azure Government regions.
 
@@ -201,23 +201,23 @@ Create and set up a service principal in Azure Active Directory and obtain the A
 
 .Create an Azure Active Directory application for role-based access control
 
-include::_include/azure-provide-permissions-role.adoc[create-azure-ad-app]
+include::_include/azure-set-up-service-principal.adoc[create-azure-ad-app]
 
 .Assign the application to a role
 
-include::_include/azure-provide-permissions-role.adoc[create-and-assign-role]
+include::_include/azure-set-up-service-principal.adoc[create-and-assign-role]
 
 .Add Windows Azure Service Management API permissions
 
-include::_include/azure-provide-permissions-role.adoc[add-api-permissions]
+include::_include/azure-set-up-service-principal.adoc[add-api-permissions]
 
 .Get the application ID and directory ID for the application
 
-include::_include/azure-provide-permissions-role.adoc[get-ids]
+include::_include/azure-set-up-service-principal.adoc[get-ids]
 
 .Create a client secret
 
-include::_include/azure-provide-permissions-role.adoc[create-secret]
+include::_include/azure-set-up-service-principal.adoc[create-secret]
 
 .Result
 

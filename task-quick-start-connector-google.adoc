@@ -30,7 +30,7 @@ Prepare the following for the Connector:
 
 [role="quick-margin-list"]
 * A VPC and subnet
-include::_include/quick-start-networking.adoc
+include::_include/quick-start-networking.adoc[]
 
 [role="quick-margin-para"]
 link:task-set-up-networking-google.html[Learn more about networking requirements].

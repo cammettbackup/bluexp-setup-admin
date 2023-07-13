@@ -27,7 +27,7 @@ The network location where you deploy the Connector must have an outbound intern
 
 === Endpoints contacted during manual installation
 
-include::_include/endpoints-manual-install.adoc[tag=start]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 
 include::_include/endpoints-manual-install.adoc[tag=update]
 

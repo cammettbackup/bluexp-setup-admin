@@ -41,7 +41,7 @@ link:reference-networking-saas-console.html[View the list of endpoints contacted
 
 === Endpoints contacted during manual installation
 
-include::_include/endpoints-manual-install.adoc[tag=start]
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 
 include::_include/endpoints-manual-install.adoc[tag=update]
 

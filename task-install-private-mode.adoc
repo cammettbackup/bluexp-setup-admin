@@ -139,7 +139,7 @@ BlueXP now has the permissions that it needs to perform actions in Azure on your
 
 .Google Cloud service account
 --
-include::_include/google-provide-permissions[]
+include::_include/google-provide-permissions.adoc[]
 --
 
 ====

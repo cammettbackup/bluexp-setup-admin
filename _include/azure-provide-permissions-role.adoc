@@ -26,7 +26,3 @@ NOTE: BlueXP Operator is the default name provided in the BlueXP policy. If you 
 
 .Result
 BlueXP now has the permissions that it needs to perform actions in Azure on your behalf.
-
-.What's next?
-
-Go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.

@@ -193,10 +193,6 @@ For standard regions, the permissions are spread across two policies. Two polici
 
 You now have an IAM role that you can associate with the EC2 instance during deployment from the AWS Marketplace.
 
-.Result
-
-You now have an IAM role that you can associate with the EC2 instance after you install the Connector. link:task-provide-permissions-aws.html[Learn how to provide these permissions to BlueXP].
-
 == Set up permissions to assign after manual installation
 
 If you manually install the Connector software on your own Linux host in AWS, you can provide permissions in the following ways:

@@ -25,6 +25,10 @@ These steps don't apply if you deployed the Connector directly from BlueXP becau
 .Custom role
 --
 include::_include/azure-provide-permissions-role.adoc[]
+
+.What's next?
+
+Go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
 --
 
 .Service principal

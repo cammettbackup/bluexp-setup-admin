@@ -41,7 +41,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to se
 
 * An understanding of CPU and RAM requirements for the instance.
 +
-link:reference-host-requirements-aws.html[Review instance requirements].
+link:task-prepare-restricted-mode.html#review-host-requirements[Review instance requirements].
 
 * A key pair for the EC2 instance.
 
@@ -279,7 +279,7 @@ BlueXP now has the permissions that it needs to perform actions in Azure on your
 
 .Google Cloud service account
 --
-include::_include/google-provide-permissions[]
+include::_include/google-provide-permissions.adoc[]
 --
 
 ====
