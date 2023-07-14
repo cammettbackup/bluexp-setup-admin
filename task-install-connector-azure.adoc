@@ -22,7 +22,9 @@ Create a Connector directly from the BlueXP web-based console, from the Azure Ma
 
 .BlueXP
 --
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * An Azure subscription.
 

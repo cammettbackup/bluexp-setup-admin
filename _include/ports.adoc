@@ -1,4 +1,4 @@
-There's no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP.
+There's no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.
 
 * HTTP (80) and HTTPS (443) provide access to the local UI, which you'll use in rare circumstances. 
 

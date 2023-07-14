@@ -24,7 +24,7 @@ TIP: Why not Google Cloud? When the Connector is installed on your premises, it 
 
 .AWS
 --
-.Before you get started
+.Before you begin
 
 If you just created these credentials in AWS, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
 
@@ -38,7 +38,7 @@ You can now go to the https://console.bluexp.netapp.com[BlueXP console^] to star
 .Azure
 --
 
-.Before you get started
+.Before you begin
 
 If you just created these credentials in Azure, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
 

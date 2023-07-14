@@ -22,7 +22,9 @@ Create a Connector directly from the BlueXP web-based console, by using gcloud, 
 
 .BlueXP
 --
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
 +
@@ -77,7 +79,9 @@ After the process is complete, the Connector is available for use from BlueXP.
 
 .gcloud
 --
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
 +

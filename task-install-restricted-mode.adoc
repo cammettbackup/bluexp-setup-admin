@@ -27,7 +27,9 @@ Install the Connector from your cloud provider's marketplace or by manually inst
 .AWS Commercial Marketplace
 --
 
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * A VPC and subnet that meets networking requirements.
 +
@@ -59,7 +61,9 @@ Set up BlueXP.
 .AWS Gov Marketplace
 --
 
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * A VPC and subnet that meets networking requirements.
 +
@@ -112,7 +116,9 @@ Set up BlueXP.
 
 .Azure Marketplace
 --
-.What you'll need
+.Before you begin
+
+You should have the following:
 
 * A VNet and subnet that meets networking requirements.
 +

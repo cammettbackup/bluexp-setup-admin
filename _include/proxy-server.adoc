@@ -3,3 +3,5 @@ If your organization requires deployment of a proxy server for all outgoing inte
 * IP address
 * Credentials
 * HTTPS certificate
+
+You'll need to provide this information during installation.
