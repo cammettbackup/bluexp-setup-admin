@@ -25,6 +25,8 @@ You can use the following BlueXP features and services without a Connector:
 +
 While a Connector isn't required to create a working environment, it is required to create and manage volumes, replicate data, and integrate FSx for ONTAP with services such as BlueXP classification and BlueXP copy and sync.
 
+* Automation catalog
+
 * Azure NetApp Files
 +
 While a Connector isn't required to set up and manage Azure NetApp Files, a Connector is required if you want to use BlueXP classification to scan Azure NetApp Files data.
@@ -46,6 +48,8 @@ The only time that a Connector is required to add a license to the digital walle
 While a Connector isn't required for direct discovery of an on-premises ONTAP cluster, a Connector is required if you want to take advantage of additional BlueXP features. 
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html[Learn more about discovery and management options for on-prem ONTAP clusters^]
+
+* Sustainability
 
 == When a Connector is required
 
@@ -144,13 +148,9 @@ link:task-managing-connectors.html[Learn how to manually upgrade the Connector s
 
 == Operating system and VM maintenance
 
-Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
+include::_include/vm-maintenance.adoc[]
 
-Note that you don't need to stop any services on the Connector host when running an OS update.
-
-If you need to stop and then start the Connector VM, you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
-
-<<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>.
+<<Connectors must be operational at all times,Be aware that the Connector must be operational at all times>>. 
 
 == Multiple working environments
 

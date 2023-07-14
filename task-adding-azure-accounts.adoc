@@ -97,26 +97,9 @@ image:diagram_azure_authentication.png["Conceptual image that shows BlueXP obtai
 
 Create an Azure Active Directory (AD) application and service principal that BlueXP can use for role-based access control.
 
-.Before you begin
-
-You must have the right permissions in Azure to create an Active Directory application and to assign the application to a role. For details, refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/[Microsoft Azure Documentation: Required permissions^].
-
 .Steps
-. From the Azure portal, open the *Azure Active Directory* service.
-+
-image:screenshot_azure_ad.gif[Shows the Active Directory service in Microsoft Azure.]
 
-. In the menu, select *App registrations*.
-
-. Select *New registration*.
-
-. Specify details about the application:
-
-* *Name*: Enter a name for the application.
-* *Account type*: Select an account type (any will work with BlueXP).
-* *Redirect URI*: You can leave this field blank.
-
-. Select *Register*.
+include::_include/azure-set-up-service-principal.adoc[tag=app]
 
 .Result
 
@@ -128,69 +111,7 @@ You must bind the service principal to one or more Azure subscriptions and assig
 
 .Steps
 
-. Create a custom role:
-
-.. Copy the contents of the link:reference-permissions-azure.html[custom role permissions for the Connector] and save them in a JSON file.
-
-.. Modify the JSON file by adding Azure subscription IDs to the assignable scope.
-+
-You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.
-+
-*Example*
-+
-[source,json]
-"AssignableScopes": [
-"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
-"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
-"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
-
-.. Use the JSON file to create a custom role in Azure.
-+
-The following steps describe how to create the role by using Bash in Azure Cloud Shell.
-+
-* Start https://docs.microsoft.com/en-us/azure/cloud-shell/overview[Azure Cloud Shell^] and choose the Bash environment.
-
-* Upload the JSON file.
-+
-image:screenshot_azure_shell_upload.png[A screenshot of the Azure Cloud Shell where you can choose the option to upload a file.]
-
-* Use the Azure CLI to create the custom role:
-+
-[source,azurecli]
-az role definition create --role-definition Connector_Policy.json
-+
-You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.
-
-. Assign the application to the role:
-
-.. From the Azure portal, open the *Subscriptions* service.
-
-.. Select the subscription.
-
-.. Select *Access control (IAM) > Add > Add role assignment*.
-
-.. In the *Role* tab, select the *BlueXP Operator* role and select *Next*.
-
-.. In the *Members* tab, complete the following steps:
-
-* Keep *User, group, or service principal* selected.
-* Select *Select members*.
-+
-image:screenshot-azure-service-principal-role.png[A screenshot of the Azure portal that shows the Members tab when adding a role to an application.]
-* Search for the name of the application.
-+
-Here's an example:
-+
-image:screenshot_azure_service_principal_role.png[A screenshot of the Azure portal that shows the Add role assignment form in the Azure portal.]
-
-* Select the application and select *Select*.
-* Select *Next*.
-
-.. Select *Review + assign*.
-+
-The service principal now has the required Azure permissions to deploy the Connector.
-+
-If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.
+include::_include/azure-set-up-service-principal.adoc[tag=role]
 
 ==== Add Windows Azure Service Management API permissions
 
@@ -198,17 +119,7 @@ The service principal must have "Windows Azure Service Management API" permissio
 
 .Steps
 
-. In the *Azure Active Directory* service, select *App registrations* and select the application.
-
-. Select *API permissions > Add a permission*.
-
-. Under *Microsoft APIs*, select *Azure Service Management*.
-+
-image:screenshot_azure_service_mgmt_apis.gif[A screenshot of the Azure portal that shows the Azure Service Management API permissions.]
-
-. Select *Access Azure Service Management as organization users* and then select *Add permissions*.
-+
-image:screenshot_azure_service_mgmt_apis_add.gif[A screenshot of the Azure portal that shows adding the Azure Service Management APIs.]
+include::_include/azure-set-up-service-principal.adoc[tag=api]
 
 [[ids]]
 ==== Get the application ID and directory ID
@@ -217,11 +128,7 @@ When you add the Azure account to BlueXP, you need to provide the application (c
 
 .Steps
 
-. In the *Azure Active Directory* service, select *App registrations* and select the application.
-
-. Copy the *Application (client) ID* and the *Directory (tenant) ID*.
-+
-image:screenshot_azure_app_ids.gif[A screenshot that shows the application (client) ID and directory (tenant) ID for an application in Azure Active Directory.]
+include::_include/azure-set-up-service-principal.adoc[tag=ids]
 
 ==== Create a client secret
 
@@ -229,19 +136,7 @@ You need to create a client secret and then provide BlueXP with the value of the
 
 .Steps
 
-. Open the *Azure Active Directory* service.
-
-. Select *App registrations* and select your application.
-
-. Select *Certificates & secrets > New client secret*.
-
-. Provide a description of the secret and a duration.
-
-. Select *Add*.
-
-. Copy the value of the client secret.
-+
-image:screenshot_azure_client_secret.gif[A screenshot of the Azure portal that shows a client secret for the Azure AD service principal.]
+include::_include/azure-set-up-service-principal.adoc[tags=secret]
 
 .Result
 
@@ -251,35 +146,17 @@ Your service principal is now setup and you should have copied the application (
 
 After you provide an Azure account with the required permissions, you can add the credentials for that account to BlueXP. Completing this step enables you to launch Cloud Volumes ONTAP using different Azure credentials.
 
-.Before you get started
+.Before you begin
 
 If you just created these credentials in your cloud provider, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
 
-.What you'll need
+.Before you begin
 
-You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how].
+You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how to create a Connector].
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
-+
-image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in the upper right of the BlueXP console.]
-
-. On the *Account credentials* page, select *Add Credentials* and follow the steps in the wizard.
-
-.. *Credentials Location*: Select *Microsoft Azure > Connector*.
-
-.. *Define Credentials*: Enter information about the Azure Active Directory service principal that grants the required permissions:
-+
-* Application (client) ID: See <<Get the application ID and directory ID>>.
-* Directory (tenant) ID: See <<Get the application ID and directory ID>>.
-* Client Secret: See <<Create a client secret>>.
-
-.. *Marketplace Subscription*: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.
-+
-To pay for Cloud Volumes ONTAP at an hourly rate (PAYGO), these Azure credentials must be associated with a subscription from the Azure Marketplace.
-
-.. *Review*: Confirm the details about the new credentials and select *Add*.
+include::_include/azure-provide-permissions-service-principal.adoc[]
 
 .Result
 
@@ -301,42 +178,13 @@ There are two scenarios in which you might associate an Azure Marketplace subscr
 * You didn't associate a subscription when you initially added the credentials to BlueXP.
 * You want to replace an existing Azure Marketplace subscription with a new subscription.
 
-.What you'll need
+.Before you begin
 
 You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how].
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
-
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Associate Subscription*.
-+
-image:screenshot_azure_add_subscription.png[A screenshot of the action menu for a set of existing credentials.]
-
-. To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Associate*.
-
-. To associate the credentials with a new subscription, select *Add Subscription > Continue* and follow the steps in the Azure Marketplace:
-
-.. If prompted, log in to your Azure account.
-.. Select *Subscribe*.
-.. Fill out the form and select *Subscribe*.
-.. After the subscription process is complete, select *Configure account now*.
-+
-You'll be redirected to the BlueXP website.
-.. From the *Subscription Assignment* page:
-+
-* Select the BlueXP accounts that you'd like to associate this subscription with.
-* In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one account with this new subscription.
-+
-BlueXP replaces the existing subscription for all credentials in the account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.
-+
-For all other accounts, you'll need to manually associate the subscription by repeating these steps.
-
-* Select *Save*.
-+
-The following video shows the steps to subscribe from the Azure Marketplace:
-+
-video::video_subscribing_azure.mp4[width=848, height=480]
+include::_include/subscribe-azure.adoc[]
 
 === Edit credentials
 

@@ -30,9 +30,7 @@ Prepare the following for the Connector:
 
 [role="quick-margin-list"]
 * A VPC and subnet
-* A network connection to the networks where you're planning to create and manage working environments
-* Outbound internet access to specific endpoints for day-to-day operations
-* The IP address, credentials, and HTTPS certificate of a proxy server, if a proxy server is required for outbound internet
+include::_include/quick-start-networking.adoc[]
 
 [role="quick-margin-para"]
 link:task-set-up-networking-google.html[Learn more about networking requirements].
@@ -70,14 +68,7 @@ link:task-set-up-permissions-google.html[Follow step-by-step instructions for ea
 Several APIs are required to deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 
 [role="quick-margin-list"]
-* Cloud Deployment Manager V2 API
-* Cloud Logging API
-* Cloud Resource Manager API
-* Compute Engine API
-* Identity and Access Management (IAM) API
-* Cloud Key Management Service (KMS) API
-+
-(Required only if you are planning to use BlueXP backup and recovery with customer-managed encryption keys (CMEK))
+include::_include/google-cloud-apis.adoc[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png[Six] Create the Connector
 
