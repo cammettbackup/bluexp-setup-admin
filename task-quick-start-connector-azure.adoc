@@ -30,9 +30,7 @@ Prepare the following for the Connector:
 
 [role="quick-margin-list"]
 * A VNet and subnet
-* A network connection to the networks where you're planning to create and manage working environments
-* Outbound internet access to specific endpoints for day-to-day operations
-* The IP address, credentials, and HTTPS certificate of a proxy server, if a proxy server is required for outbound internet
+include::_include/quick-start-networking.adoc[]
 
 [role="quick-margin-para"]
 link:task-set-up-networking-azure.html[Learn more about networking requirements].
