@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-06 13:49:09 +0000">06/06/2023</time>
+    <time datetime="2023-07-14 17:45:31 +0000">07/14/2023</time>
     
   
 
@@ -1959,8 +1959,11 @@
 <div class="openblock">
 <div class="title">BlueXP</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>An AWS authentication method: either an IAM role or access keys for an IAM user with the required permissions.</p>
@@ -2083,8 +2086,11 @@ If you choose <strong>Assume Role</strong>, you can create the first set of cred
 <div class="openblock">
 <div class="title">AWS Marketplace</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>A VPC and subnet that meets networking requirements.</p>
@@ -2100,6 +2106,12 @@ If you choose <strong>Assume Role</strong>, you can create the first set of cred
 </li>
 <li>
 <p>Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.</p>
+</li>
+<li>
+<p>An understanding of CPU and RAM requirements for the instance.</p>
+<div class="paragraph">
+<p><a href="reference-host-requirements-aws.html">Review instance requirements</a>.</p>
+</div>
 </li>
 <li>
 <p>A key pair for the EC2 instance.</p>
@@ -2138,10 +2150,7 @@ If you choose <strong>Assume Role</strong>, you can create the first set of cred
 <p><strong>Application and OS Image</strong>: Skip this section. The Connector AMI is already selected.</p>
 </li>
 <li>
-<p><strong>Instance type</strong>: Depending on region availability, choose one of the supported instance types (t3.xlarge is recommended).</p>
-<div class="paragraph">
-<p><a href="reference-host-requirements-aws.html">Review the instance requirements</a>.</p>
-</div>
+<p><strong>Instance type</strong>: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.xlarge is recommended).</p>
 </li>
 <li>
 <p><strong>Key pair (login)</strong>: Select the key pair that you want to use to securely connect to the instance.</p>
@@ -2173,9 +2182,6 @@ If you choose <strong>Assume Role</strong>, you can create the first set of cred
 </li>
 <li>
 <p><strong>Advanced details</strong>: Under <strong>IAM instance profile</strong>, choose the IAM role that includes the required permissions for the Connector.</p>
-<div class="paragraph">
-<p><a href="task-set-up-permissions-aws.html">Learn how to set up AWS permissions</a>.</p>
-</div>
 </li>
 <li>
 <p><strong>Summary</strong>: Review the summary and click <strong>Launch instance</strong>.</p>
@@ -2228,8 +2234,11 @@ If you choose <strong>Assume Role</strong>, you can create the first set of cred
 <div class="openblock">
 <div class="title">Manual install</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>Root privileges to install the Connector.</p>

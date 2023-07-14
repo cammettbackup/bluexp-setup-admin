@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-12 13:55:32 +0000">05/12/2023</time>
+    <time datetime="2023-07-14 17:45:31 +0000">07/14/2023</time>
     
   
 
@@ -2032,7 +2032,7 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <li>
 <p>Copy and paste the following policy:</p>
 <div class="paragraph">
-<p>As a reminder, this policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. <a href="reference-permissions-aws.html">View permissions required for the Connector instance</a>.</p>
+<p>As a reminder, this policy contains only the permissions needed to launch the Connector instance in AWS from BlueXP. <a href="reference-permissions-aws.html">View permissions required for the Connector instance itself</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2181,35 +2181,35 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <h2 id="set-up-permissions-for-the-connector-when-deploying-from-the-aws-marketplace">Set up permissions for the Connector when deploying from the AWS Marketplace</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Create IAM policies in AWS and attach them to an IAM role. When you create the Connector from the AWS Marketplace, you&#8217;ll be prompted to select that IAM role.</p>
+<p>To prepare for a marketplace deployment, create IAM policies in AWS and attach them to an IAM role. When you create the Connector from the AWS Marketplace, you&#8217;ll be prompted to select that IAM role.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the IAM console, create a policy:</p>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Click <strong>Policies &gt; Create policy</strong>.</p>
 </li>
 <li>
-<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policies for the Connector</a>.</p>
+<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policy for the Connector</a>.</p>
 </li>
 <li>
 <p>Finish the remaining steps to create the policy.</p>
 <div class="paragraph">
-<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy.</p>
-</div>
-<div class="paragraph">
-<p>For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS.</p>
+<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy. For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
 </div>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Back in the IAM console, create an IAM role:</p>
+<p>Create an IAM role:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2219,7 +2219,7 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <p>Select <strong>AWS service &gt; EC2</strong>.</p>
 </li>
 <li>
-<p>Add permissions by attaching the policies that you created in the previous step.</p>
+<p>Add permissions by attaching the policy that you just created.</p>
 </li>
 <li>
 <p>Finish the remaining steps to create the role.</p>
@@ -2239,7 +2239,7 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <h2 id="set-up-permissions-to-assign-after-manual-installation">Set up permissions to assign after manual installation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you manually install the Connector software on your own Linux host in AWS, you can provide permissions in the following ways:</p>
+<p>If you&#8217;re planning to manually install the Connector software on your own Linux host in AWS, you can provide permissions in the following ways:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2260,7 +2260,10 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the IAM console, create a policy:</p>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2272,17 +2275,14 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <li>
 <p>Finish the remaining steps to create the policy.</p>
 <div class="paragraph">
-<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy.</p>
-</div>
-<div class="paragraph">
-<p>For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
+<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy. For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
 </div>
 </li>
 </ol>
 </div>
 </li>
 <li>
-<p>Back in the IAM console, create an IAM role:</p>
+<p>Create an IAM role:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2292,7 +2292,7 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <p>Select <strong>AWS service &gt; EC2</strong>.</p>
 </li>
 <li>
-<p>Add permissions by attaching the policies that you created in the previous step.</p>
+<p>Add permissions by attaching the policy that you just created.</p>
 </li>
 <li>
 <p>Finish the remaining steps to create the role.</p>
@@ -2315,7 +2315,10 @@ When BlueXP creates the Connector, it applies a new set of permissions to the Co
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the IAM console, create a policy:</p>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>

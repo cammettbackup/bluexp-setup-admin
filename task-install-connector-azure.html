@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-06 18:34:08 +0000">07/06/2023</time>
+    <time datetime="2023-07-14 17:45:31 +0000">07/14/2023</time>
     
   
 
@@ -1959,8 +1959,11 @@
 <div class="openblock">
 <div class="title">BlueXP</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>An Azure subscription.</p>
@@ -2132,24 +2135,21 @@ If you&#8217;re already logged in to an Azure account, then BlueXP will automati
 <div class="ulist">
 <ul>
 <li>
-<p>The Connector can perform optimally with either HDD or SSD disks.</p>
+<p><strong>VM size</strong>: Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.</p>
 </li>
 <li>
-<p>Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.</p>
-<div class="paragraph">
-<p><a href="reference-host-requirements-azure.html">Review the VM requirements</a>.</p>
-</div>
+<p><strong>Disks</strong>: The Connector can perform optimally with either HDD or SSD disks.</p>
 </li>
 <li>
-<p>For the network security group, the Connector requires inbound connections using SSH, HTTP, and HTTPS. A few more rule are required for specific configurations.</p>
+<p><strong>Network security group</strong>: The Connector requires inbound connections using SSH, HTTP, and HTTPS.</p>
 <div class="paragraph">
 <p><a href="reference-ports-azure.html">View security group rules for Azure</a>.</p>
 </div>
 </li>
 <li>
-<p>Under <strong>Management</strong>, enable <strong>System assigned managed identity</strong> for the Connector VM by selecting <strong>On</strong>.</p>
+<p><strong>Identity</strong>: Under <strong>Management</strong>, select <strong>Enable system assigned managed identity</strong>.</p>
 <div class="paragraph">
-<p>This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. After you&#8217;re done,you&#8217;ll need to assign the custom role that you created to <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">Learn more about managed identities for Azure resources</a>.</p>
+<p>This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">Learn more about managed identities for Azure resources</a>.</p>
 </div>
 </li>
 </ul>
@@ -2203,8 +2203,11 @@ If you&#8217;re already logged in to an Azure account, then BlueXP will automati
 <div class="openblock">
 <div class="title">Manual install</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>Root privileges to install the Connector.</p>

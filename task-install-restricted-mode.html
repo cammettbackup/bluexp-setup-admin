@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-06 18:34:08 +0000">07/06/2023</time>
+    <time datetime="2023-07-14 17:45:31 +0000">07/14/2023</time>
     
   
 
@@ -1969,8 +1969,11 @@
 <div class="openblock">
 <div class="title">AWS Commercial Marketplace</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>A VPC and subnet that meets networking requirements.</p>
@@ -1986,6 +1989,12 @@
 </li>
 <li>
 <p>Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.</p>
+</li>
+<li>
+<p>An understanding of CPU and RAM requirements for the instance.</p>
+<div class="paragraph">
+<p><a href="task-prepare-restricted-mode.html#review-host-requirements">Review instance requirements</a>.</p>
+</div>
 </li>
 <li>
 <p>A key pair for the EC2 instance.</p>
@@ -2024,10 +2033,7 @@
 <p><strong>Application and OS Image</strong>: Skip this section. The Connector AMI is already selected.</p>
 </li>
 <li>
-<p><strong>Instance type</strong>: Depending on region availability, choose one of the supported instance types (t3.xlarge is recommended).</p>
-<div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">Review the instance requirements</a>.</p>
-</div>
+<p><strong>Instance type</strong>: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.xlarge is recommended).</p>
 </li>
 <li>
 <p><strong>Key pair (login)</strong>: Select the key pair that you want to use to securely connect to the instance.</p>
@@ -2044,6 +2050,12 @@
 </li>
 <li>
 <p>Specify firewall settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.</p>
+<div class="paragraph">
+<p>A few more rule are required for specific configurations.</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-ports-aws.html">View security group rules for AWS</a>.</p>
+</div>
 </li>
 </ul>
 </div>
@@ -2053,9 +2065,6 @@
 </li>
 <li>
 <p><strong>Advanced details</strong>: Under <strong>IAM instance profile</strong>, choose the IAM role that includes the required permissions for the Connector.</p>
-<div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">Learn how to set up AWS permissions</a>.</p>
-</div>
 </li>
 <li>
 <p><strong>Summary</strong>: Review the summary and click <strong>Launch instance</strong>.</p>
@@ -2078,8 +2087,11 @@
 <div class="openblock">
 <div class="title">AWS Gov Marketplace</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>A VPC and subnet that meets networking requirements.</p>
@@ -2172,8 +2184,11 @@
 <div class="openblock">
 <div class="title">Azure Marketplace</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>A VNet and subnet that meets networking requirements.</p>
@@ -2236,7 +2251,7 @@
 <li>
 <p><strong>Network security group</strong>: The Connector requires inbound connections using SSH, HTTP, and HTTPS.</p>
 <div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">Learn about networking requirements</a>.</p>
+<p><a href="reference-ports-azure.html">View security group rules for Azure</a>.</p>
 </div>
 </li>
 <li>
@@ -2266,8 +2281,11 @@
 <div class="openblock">
 <div class="title">Manual install</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
 <div class="ulist">
-<div class="title">What you&#8217;ll need</div>
 <ul>
 <li>
 <p>Root privileges to install the Connector.</p>
@@ -2368,7 +2386,7 @@ unset https_proxy</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. h</p>
+<p>--cacert specifies a CA-signed certificate to use for HTTPS access between the Connector and the proxy server. This parameter is required only if you specify an HTTPS proxy server or if the proxy is an intercepting proxy.</p>
 </div>
 </li>
 </ol>
@@ -2522,9 +2540,6 @@ If you already have an account and you want to create another one, then you need
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Ensure that the correct Connector is currently selected in BlueXP.</p>
-</li>
-<li>
 <p>In the upper right of the BlueXP console, click the Settings icon, and select <strong>Credentials</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="A screenshot that shows the Settings icon in the upper right of the BlueXP console."></span></p>
@@ -2607,7 +2622,7 @@ BlueXP Operator is the default name provided in the BlueXP policy. If you chose 
 <p>Click <strong>Review + assign</strong>.</p>
 </li>
 <li>
-<p>If you want to manage resources in additional subscriptions, switch to that subscription and then repeat these steps.</p>
+<p>If you want to manage resources in additional Azure subscriptions, switch to that subscription and then repeat these steps.</p>
 </li>
 </ol>
 </div>
@@ -2629,9 +2644,6 @@ BlueXP Operator is the default name provided in the BlueXP policy. If you chose 
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
-<li>
-<p>Go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> and log in.</p>
-</li>
 <li>
 <p>In the upper right of the BlueXP console, click the Settings icon, and select <strong>Credentials</strong>.</p>
 <div class="paragraph">

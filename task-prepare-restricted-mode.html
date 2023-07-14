@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-29 17:41:52 +0000">06/29/2023</time>
+    <time datetime="2023-07-13 20:37:53 +0000">07/13/2023</time>
     
   
 
@@ -2102,7 +2102,7 @@
 <div class="sect2">
 <h3 id="outbound-internet-access-for-manual-installs">Outbound internet access for manual installs</h3>
 <div class="paragraph">
-<p>If you plan to manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:</p>
+<p>When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2185,31 +2185,46 @@
 </li>
 </ul>
 </div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To manage resources in AWS. The exact endpoint depends on the region in which you deploy the Connector. <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">Refer to AWS documentation for details</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in AWS. The exact endpoint depends on the region in which you deploy the Connector. <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">Refer to AWS documentation for details</a></p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://management.azure.com<br>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.azure.com<br>
 https://login.microsoftonline.com<br>
 https://blob.core.windows.net<br>
-https://core.windows.net</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To manage resources in Azure public regions.</p></td>
+https://core.windows.net</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Azure public regions.</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://management.usgovcloudapi.net<br>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.usgovcloudapi.net<br>
 https://login.microsoftonline.us<br>
 https://blob.core.usgovcloudapi.net<br>
-https://core.usgovcloudapi.net</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To manage resources in Azure Government regions.</p></td>
+https://core.usgovcloudapi.net</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Azure Government regions.</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://management.chinacloudapi.cn<br>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://management.chinacloudapi.cn<br>
 https://login.chinacloudapi.cn<br>
 https://blob.core.chinacloudapi.cn<br>
-https://core.chinacloudapi.cn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To manage resources in Azure China regions.</p></td>
+https://core.chinacloudapi.cn</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Azure China regions.</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://www.googleapis.com/compute/v1/<br>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://www.googleapis.com/compute/v1/<br>
 https://compute.googleapis.com/compute/v1<br>
 https://cloudresourcemanager.googleapis.com/v1/projects<br>
 https://www.googleapis.com/compute/beta<br>
@@ -2217,12 +2232,19 @@ https://storage.googleapis.com/storage/v1<br>
 https://www.googleapis.com/storage/v1<br>
 https://iam.googleapis.com/v1<br>
 https://cloudkms.googleapis.com/v1<br>
-https://www.googleapis.com/deploymentmanager/v2/projects</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To manage resources in Google Cloud.</p></td>
+https://www.googleapis.com/deploymentmanager/v2/projects</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in Google Cloud.</p>
+</div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://support.netapp.com</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To obtain licensing information and to send AutoSupport messages to NetApp support.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To obtain licensing information and to send AutoSupport messages to NetApp support.</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -2254,14 +2276,20 @@ The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it wil
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://*.blob.core.windows.net<br>
-<br>
-https://cloudmanagerinfraprod.azurecr.io<br>
-This endpoint is not required in Azure Government regions.<br>
-<br>
-https://occmclientinfragov.azurecr.us<br>
-This endpoint is only required in Azure Government regions.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">To upgrade the Connector and its Docker components.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io<br>
+This endpoint is not required in Azure Government regions.</p>
+</div>
+<div class="paragraph">
+<p>https://occmclientinfragov.azurecr.us<br>
+This endpoint is only required in Azure Government regions.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To upgrade the Connector and its Docker components.</p>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -2284,6 +2312,9 @@ This endpoint is only required in Azure Government regions.</p></td>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>You&#8217;ll need to provide this information during installation.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="public-ip-address-in-azure">Public IP address in Azure</h3>
@@ -2303,13 +2334,23 @@ This endpoint is only required in Azure Government regions.</p></td>
 <div class="sect2">
 <h3 id="ports">Ports</h3>
 <div class="paragraph">
-<p>There&#8217;s no incoming traffic to the Connector, unless you initiate it.</p>
+<p>There&#8217;s no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP (80) and HTTPS (443) provide access to the local UI, which you&#8217;ll use in rare circumstances.</p>
+</li>
+<li>
+<p>SSH (22) is only needed if you need to connect to the host for troubleshooting.</p>
+</li>
+<li>
+<p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn&#8217;t available.</p>
 <div class="paragraph">
-<p>HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting.</p>
+<p>If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
 </div>
-<div class="paragraph">
-<p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn&#8217;t available. If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2434,7 +2475,10 @@ https://services.cloud.netapp.com</p></td>
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>From the IAM console, create a policy:</p>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2469,7 +2513,7 @@ https://services.cloud.netapp.com</p></td>
 </div>
 </li>
 <li>
-<p>Ensure that the user has access keys that you can add to BlueXP after you install the Connector.</p>
+<p>Ensure that the user has an access key that you can add to BlueXP after you install the Connector.</p>
 </li>
 </ol>
 </div>
@@ -2489,7 +2533,7 @@ https://services.cloud.netapp.com</p></td>
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If you&#8217;re planning to manually install the software on your own host, enable a system-assigned managed identity on the so that you can provide the required Azure permissions through a custom role.</p>
+<p>If you&#8217;re planning to manually install the software on your own host, enable a system-assigned managed identity on the VM so that you can provide the required Azure permissions through a custom role.</p>
 <div class="paragraph">
 <p><a href="https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm" target="_blank" rel="noopener">Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal</a></p>
 </div>
@@ -2500,7 +2544,7 @@ https://services.cloud.netapp.com</p></td>
 <li>
 <p>Modify the JSON file by adding Azure subscription IDs to the assignable scope.</p>
 <div class="paragraph">
-<p>You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.</p>
+<p>You should add the ID for each Azure subscription that you want to use with BlueXP.</p>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
@@ -2561,7 +2605,7 @@ https://services.cloud.netapp.com</p></td>
 <li>
 <p>Ensure that you have permissions in Azure to create an Active Directory application and to assign the application to a role.</p>
 <div class="paragraph">
-<p>For details, refer to <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">Microsoft Azure Documentation: Required permissions</a>.</p>
+<p>For details, refer to <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">Microsoft Azure Documentation: Required permissions</a></p>
 </div>
 </li>
 <li>
@@ -2601,8 +2645,69 @@ https://services.cloud.netapp.com</p></td>
 </ol>
 </div>
 <div class="olist arabic">
-<div class="title">Assign the custom role to the application</div>
+<div class="title">Assign the application to a role</div>
 <ol class="arabic">
+<li>
+<p>Create a custom role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Copy the contents of the <a href="reference-permissions-azure.html">custom role permissions for the Connector</a> and save them in a JSON file.</p>
+</li>
+<li>
+<p>Modify the JSON file by adding Azure subscription IDs to the assignable scope.</p>
+<div class="paragraph">
+<p>You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the JSON file to create a custom role in Azure.</p>
+<div class="paragraph">
+<p>The following steps describe how to create the role by using Bash in Azure Cloud Shell.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">Azure Cloud Shell</a> and choose the Bash environment.</p>
+</li>
+<li>
+<p>Upload the JSON file.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="A screenshot of the Azure Cloud Shell where you can choose the option to upload a file."></span></p>
+</div>
+</li>
+<li>
+<p>Use the Azure CLI to create the custom role:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Assign the application to the role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>From the Azure portal, open the <strong>Subscriptions</strong> service.</p>
 </li>
@@ -2617,8 +2722,8 @@ https://services.cloud.netapp.com</p></td>
 </li>
 <li>
 <p>In the <strong>Members</strong> tab, complete the following steps:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>Keep <strong>User, group, or service principal</strong> selected.</p>
 </li>
@@ -2643,7 +2748,7 @@ https://services.cloud.netapp.com</p></td>
 <li>
 <p>Click <strong>Next</strong>.</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
 <li>
@@ -2653,6 +2758,9 @@ https://services.cloud.netapp.com</p></td>
 </div>
 <div class="paragraph">
 <p>If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.</p>
+</div>
+</li>
+</ol>
 </div>
 </li>
 </ol>
