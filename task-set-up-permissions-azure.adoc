@@ -190,7 +190,7 @@ Create and set up a service principal in Azure Active Directory and obtain the A
 
 .Create an Azure Active Directory application for role-based access control
 
-include::_include/azure-set-up-service-principal.adoc[create-azure-ad-app]
+include::_include/azure-set-up-service-principal.adoc[tag=app]
 
 .Assign the custom role to the application
 
@@ -226,15 +226,15 @@ If you want to manage resources in multiple Azure subscriptions, then you must b
 
 .Add Windows Azure Service Management API permissions
 
-include::_include/azure-set-up-service-principal.adoc[add-api-permissions]
+include::_include/azure-set-up-service-principal.adoc[tag=api]
 
 .Get the application ID and directory ID for the application
 
-include::_include/azure-set-up-service-principal.adoc[get-ids]
+include::_include/azure-set-up-service-principal.adoc[tag=ids]
 
 .Create a client secret
 
-include::_include/azure-set-up-service-principal.adoc[create-secret]
+include::_include/azure-set-up-service-principal.adoc[tag=secret]
 
 .Result
 
