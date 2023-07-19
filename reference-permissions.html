@@ -1175,11 +1175,11 @@
         Quick start
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Networking for console access"
+      data-pdf-filename="Prepare networking"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
-        Networking for console access
+        Prepare networking
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Sign up to BlueXP"
@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-05 16:16:28 +0000">06/05/2023</time>
+    <time datetime="2023-07-14 21:01:54 +0000">07/14/2023</time>
     
   
 
@@ -1993,6 +1993,26 @@ You also need to ensure that the policy is up to date as new permissions are add
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP operation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html" target="_blank" rel="noopener">Learn how to set up the IAM roles yourself</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Back up on-premises ONTAP clusters to Amazon S3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When activating backups on your ONTAP volumes, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions" target="_blank" rel="noopener">Set up S3 permissions for backups</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Back up on-premises ONTAP clusters to StorageGRID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When you prepare StorageGRID as a backup target for ONTAP clusters, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target" target="_blank" rel="noopener">Prepare StorageGRID as your backup target</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tier on-premises ONTAP clusters to AWS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When you enable BlueXP tiering to AWS, the wizard prompts you to enter an access key and secret key. These credentials are passed to the ONTAP cluster so that ONTAP can tier data to the S3 bucket.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions" target="_blank" rel="noopener">Set up S3 permissions for tiering</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tier on-premises ONTAP clusters to StorageGRID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When you set up BlueXP tiering to StorageGRID, you need to provide BlueXP tiering with an S3 access key and secret key. BlueXP tiering uses the keys to access your buckets.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target" target="_blank" rel="noopener">Prepare tiering to StorageGRID</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2067,6 +2087,37 @@ You also need to ensure that the policy is up to date as new permissions are add
 <br>
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="reference-permissions-gcp.html">Google Cloud permissions for the Connector</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Back up Cloud Volumes ONTAP to Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>When using BlueXP backup and recovery to back up Cloud Volumes ONTAP, you need to add permissions to the Connector in the following scenarios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You want to use "Search &amp; Restore" functionality</p>
+</li>
+<li>
+<p>You want to use customer-managed encryption keys (CMEK)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector" target="_blank" rel="noopener">Permissions for Search &amp; Restore functionality</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek" target="_blank" rel="noopener">Permissions for CMEKs</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Back up on-premises ONTAP clusters to Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When using BlueXP backup and recovery to back up on-prem ONTAP clusters, you need to add permissions to the Connector in order to use the "Search &amp; Restore" functionality.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector" target="_blank" rel="noopener">Permissions for Search &amp; Restore functionality</a></p></td>
 </tr>
 </tbody>
 </table>
