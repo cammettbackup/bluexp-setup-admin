@@ -778,7 +778,7 @@ The Connector makes the following API requests when you use the Search & Restore
 * s3:PutBucketPublicAccessBlock
 * s3:AbortMultipartUpload
 * s3:ListMultipartUploadParts
-* athena:StartQueryExecutionc
+* athena:StartQueryExecution
 * athena:GetQueryResults
 * athena:GetQueryExecution
 * athena:StopQueryExecution

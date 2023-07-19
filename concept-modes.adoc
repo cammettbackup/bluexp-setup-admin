@@ -252,7 +252,7 @@ image:diagram-private-mode-onprem.png["A conceptual image that shows an on-premi
 BlueXP works as follows in private mode:
 
 Outbound communication::
-No outbound connectivity is required. All packages, dependencies, and essential components are packaged with the Connector and served from the local machine. Connectivity to your cloud provider's publicly available resources is required only if you are deploying Cloud Volumes ONTAP.
+No outbound connectivity is required to the BlueXP SaaS layer. All packages, dependencies, and essential components are packaged with the Connector and served from the local machine. Connectivity to your cloud provider's publicly available resources is required only if you are deploying Cloud Volumes ONTAP.
 
 Supported location for the Connector::
 In private mode, the Connector is supported in the cloud or on premises.
