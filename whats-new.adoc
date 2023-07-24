@@ -207,7 +207,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === Connector 3.9.26
 
-* On the *Log in* page, you're now prompted to enter the email address associated with your login. After you click *Next*, BlueXP then prompts you to authenticate using the authentication method associated with your login:
+* On the *Log in* page, you're now prompted to enter the email address associated with your login. After you select *Next*, BlueXP then prompts you to authenticate using the authentication method associated with your login:
 
 ** The password for your NetApp cloud credentials
 ** Your federated identity credentials

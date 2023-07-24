@@ -163,21 +163,21 @@ Assign the custom role to the user who will deploy the Connector from BlueXP.
 
 . In the Azure portal, open the *Subscriptions* service and select the user's subscription.
 
-. Click *Access control (IAM)*.
+. Select *Access control (IAM)*.
 
-. Click *Add* > *Add role assignment* and then add the permissions:
+. Select *Add* > *Add role assignment* and then add the permissions:
 
-.. Select the *Azure SetupAsService* role and click *Next*.
+.. Select the *Azure SetupAsService* role and select *Next*.
 +
 NOTE: Azure SetupAsService is the default name provided in the Connector deployment policy for Azure. If you chose a different name for the role, then select that name instead.
 
 .. Keep *User, group, or service principal* selected.
 
-.. Click *Select members*, choose your user account, and click *Select*.
+.. Select *Select members*, choose your user account, and select *Select*.
 
-.. Click *Next*.
+.. Select *Next*.
 
-.. Click *Review + assign*.
+.. Select *Review + assign*.
 
 .Result
 
@@ -200,14 +200,14 @@ include::_include/azure-set-up-service-principal.adoc[tag=app]
 
 . Select the subscription.
 
-. Click *Access control (IAM) > Add > Add role assignment*.
+. Select *Access control (IAM) > Add > Add role assignment*.
 
-. In the *Role* tab, select the *BlueXP Operator* role and click *Next*.
+. In the *Role* tab, select the *BlueXP Operator* role and select *Next*.
 
 . In the *Members* tab, complete the following steps:
 
 .. Keep *User, group, or service principal* selected.
-.. Click *Select members*.
+.. Select *Select members*.
 +
 image:screenshot-azure-service-principal-role.png[A screenshot of the Azure portal that shows the Members tab when adding a role to an application.]
 
@@ -217,10 +217,10 @@ Here's an example:
 +
 image:screenshot_azure_service_principal_role.png[A screenshot of the Azure portal that shows the Add role assignment form in the Azure portal.]
 
-.. Select the application and click *Select*.
-.. Click *Next*.
+.. Select the application and select *Select*.
+.. Select *Next*.
 
-. Click *Review + assign*.
+. Select *Review + assign*.
 +
 The service principal now has the required Azure permissions to deploy the Connector.
 +

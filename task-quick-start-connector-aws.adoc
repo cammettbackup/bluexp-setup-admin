@@ -70,7 +70,7 @@ link:task-set-up-permissions-aws.html[Follow step-by-step instructions].
 Create the Connector using one of the available installation options:
 
 [role="quick-margin-list"]
-* *From BlueXP*: Click the Connector drop-down, select *Add Connector* and follow the prompts.
+* *From BlueXP*: Select the Connector drop-down, select *Add Connector* and follow the prompts.
 
 * *From the AWS Marketplace*: Go to the https://aws.amazon.com/marketplace/pp/B018REK8QG[BlueXP page on the AWS Marketplace^] and follow the prompts to launch through EC2 so that you can attach an IAM role.
 
