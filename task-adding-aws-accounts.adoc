@@ -214,7 +214,9 @@ include::_include/subscribe-aws.adoc[]
 
 == Associate an existing subscription with your account
 
-When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to click *Set up your account* so that you can associate the subscription with your BlueXP accounts. If you didn't complete this step, then you can't use the subscription with your BlueXP account. Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
+When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP account. 
+
+Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
 
 .Steps
 
@@ -247,6 +249,8 @@ Note that you might be prompted to log in to BlueXP first.
 . From the *Subscription Assignment* page:
 +
 include::_include/subscribe-aws.adoc[tag=assignment]
++
+image:screenshot-subscription-assignment.png[A screenshot of the Subscription Assignment page that enables you to choose the exact BlueXP accounts to associate with this subscription.]
 
 . Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP account.
 
@@ -254,7 +258,7 @@ include::_include/subscribe-aws.adoc[tag=assignment]
 .. Select *Subscriptions*.
 .. Verify that your BlueXP subscription appears.
 
-. Confirm that the subscription is associated with your AWS credentials:
+. Confirm that the subscription is associated with your AWS credentials.
 
 .. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
 .. On the *Account credentials* page, verify that the subscription is associated with your AWS credentials.
