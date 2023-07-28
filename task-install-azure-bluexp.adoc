@@ -13,7 +13,7 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-lead
+Set up networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.
 
 == Deployment overview
 

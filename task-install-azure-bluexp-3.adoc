@@ -5,7 +5,7 @@ keywords: install connector, azure connector installation, azure connector, inst
 summary: Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
 ---
 
-= Create a Connector in Azure
+= Create a Connector in Azure from BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,9 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-lead
+Set up networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.
 
-== Deployment overview
-
-The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available below.
+The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available in the sections below.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
@@ -97,9 +95,7 @@ include::_include/ip-limitation.adoc[]
 
 == Set up Azure permissions
 
-Set up permissions that enable BlueXP to authenticate with Azure and deploy the VM. BlueXP automatically sets up permissions for the Connector VM during deployment.
-
-To create a Connector from BlueXP, you need to provide BlueXP with a login that has the required permissions to create the Connector VM in Azure. You have two options:
+When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:
 
 . Sign in with your Microsoft account when prompted. This account must have specific Azure permissions. This is the default option.
 
@@ -316,7 +312,7 @@ Your service principal is now setup and you should have copied the application (
 
 == Create the Connector
 
-Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
+Create the Connector directly from the BlueXP web-based console.
 
 .Before you begin
 
