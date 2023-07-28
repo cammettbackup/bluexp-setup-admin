@@ -15,21 +15,17 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 [.lead]
 lead
 
-== Quick start
+== Deployment overview
 
-Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
+The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available below.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
 [role="quick-margin-para"]
-Prepare the following for the Connector:
-
-[role="quick-margin-list"]
-* A VNet and subnet
-include::_include/quick-start-networking.adoc[]
+You need to set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. You'll need a VNet and subnet, a network connection to the locations that BlueXP needs to manage, outbound internet access, and the details about your proxy server (if one is required).
 
 [role="quick-margin-para"]
-link:task-set-up-networking-azure.html[Learn more about networking requirements].
+link:task-set-up-networking-azure.html[Learn about networking requirements].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
 
@@ -45,9 +41,9 @@ link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
 From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
 
 [role="quick-margin-para"]
-link:task-install-connector-azure.html[Follow step-by-step instructions for this option].
+link:task-install-connector-azure.html[Follow step-by-step instructions].
 
-== Set up Azure networking
+== Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -318,7 +314,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Create a Connector in Azure
+== Create the Connector
 
 Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
 

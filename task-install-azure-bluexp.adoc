@@ -47,7 +47,7 @@ lead
 // [role="quick-margin-para"]
 // link:task-install-connector-azure.html[Follow step-by-step instructions for this option].
 
-== Set up Azure networking
+== Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -327,7 +327,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Create a Connector in Azure
+== Create the Connector
 
 Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
 
