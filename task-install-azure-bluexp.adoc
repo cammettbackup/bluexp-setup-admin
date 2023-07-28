@@ -13,11 +13,11 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-Set up networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.
+Set up your networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.
 
 == Deployment overview
 
-The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available below.
+The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available in the sections below.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
@@ -47,34 +47,28 @@ link:task-install-connector-azure.html[Follow step-by-step instructions].
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
-=== Azure region
-
+Azure region::
 If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
-
++
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
 
-=== VNet and subnet 
-
+VNet and subnet::
 When you create the Connector, you need to specify the VNet and subnet where the Connector should reside.
 
-=== Connections to target networks
+Connections to target networks::
+A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
 
-A Connector requires a network connection to the location where you're planning to create and manage working environments.
+Outbound internet access::
+The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
-=== Outbound internet access
-
-The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
-
-==== Endpoints contacted from the BlueXP console
-
+Endpoints contacted from the BlueXP console::
 As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
-
++
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
-==== Endpoints contacted from the Connector
-
+Endpoints contacted from the Connector::
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -92,16 +86,13 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
-=== Proxy server
-
+Proxy server::
 include::_include/proxy-server.adoc[]
 
-=== Ports
-
+Ports::
 include::_include/ports.adoc[]
 
-=== IP address limitation
-
+IP address limitation::
 include::_include/ip-limitation.adoc[]
 
 == Set up Azure permissions
