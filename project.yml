@@ -138,7 +138,7 @@ sidebar:
                     - title: Create from BlueXP
                       url: /task-install-azure-bluexp.html
                     - title: Create from the marketplace
-                      url: /task-install-azure-mp.html
+                      url: /task-install-azure-marketplace.html
                     - title: Install manually
                       url: /task-install-azure-manual.html
                 - title: Google Cloud

@@ -5,7 +5,7 @@ keywords: install connector, azure connector installation, azure connector, inst
 summary: Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
 ---
 
-= Create a Connector in Azure
+= Create a Connector in Azure from BlueXP
 :hardbreaks:
 :nofooter:
 :icons: font
