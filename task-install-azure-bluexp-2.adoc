@@ -13,23 +13,19 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-lead
-
-== Quick start
-
 Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
+
+== Deployment overview
+
+The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available below.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
 [role="quick-margin-para"]
-Prepare the following for the Connector:
-
-[role="quick-margin-list"]
-* A VNet and subnet
-include::_include/quick-start-networking.adoc[]
+You need to set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. You'll need a VNet and subnet, a network connection to the locations that BlueXP needs to manage, outbound internet access, and the details about your proxy server (if one is required).
 
 [role="quick-margin-para"]
-link:task-set-up-networking-azure.html[Learn more about networking requirements].
+link:task-set-up-networking-azure.html[Learn about networking requirements].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
 
@@ -45,7 +41,7 @@ link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
 From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
 
 [role="quick-margin-para"]
-link:task-install-connector-azure.html[Follow step-by-step instructions for this option].
+link:task-install-connector-azure.html[Follow step-by-step instructions].
 
 == Set up Azure networking
 
@@ -69,16 +65,16 @@ A Connector requires a network connection to the location where you're planning 
 +
 The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
 
-==== Endpoints contacted from the BlueXP console
-
+* Endpoints contacted from the BlueXP console
++
 As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
-
++
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
-==== Endpoints contacted from the Connector
-
+* Endpoints contacted from the Connector
++
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -96,16 +92,16 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
-=== Proxy server
-
+* Proxy server
++
 include::_include/proxy-server.adoc[]
 
-=== Ports
-
+* Ports
++
 include::_include/ports.adoc[]
 
-=== IP address limitation
-
+* IP address limitation
++
 include::_include/ip-limitation.adoc[]
 
 == Set up Azure permissions
