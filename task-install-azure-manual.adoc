@@ -1,0 +1,270 @@
+---
+sidebar: sidebar
+permalink: task-install-azure-manual.html
+keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector
+summary: Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
+---
+
+= Create a Connector in Azure
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+lead
+
+== Quick start
+
+Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
+
+[role="quick-margin-para"]
+Prepare the following for the Connector:
+
+[role="quick-margin-list"]
+* A VNet and subnet
+include::_include/quick-start-networking.adoc[]
+
+[role="quick-margin-para"]
+link:task-set-up-networking-azure.html[Learn more about networking requirements].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Review host requirements
+
+[role="quick-margin-para"]
+If you want to manually install the Connector software on your own Linux host, then you should ensure that your host meets specific requirements. If you're creating the Connector from BlueXP or from the Azure Marketplace, then these requirements are taken care of for you because the software is deployed from an image.
+
+[role="quick-margin-para"]
+The key requirements are as follows:
+
+[role="quick-margin-list"]
+include::_include/os-reqs.adoc[tag=quick]
+
+[role="quick-margin-para"]
+link:reference-host-requirements-azure.html[Learn more about these host requirements].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Set up Azure permissions
+
+[role="quick-margin-para"]
+Create a custom role that you can associate with the Connector VM instance or with an Azure AD service principal.
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Create the Connector
+
+[role="quick-margin-para"]
+Download the Connector software from the https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab[NetApp Support Site] and run the installation script.
+
+[role="quick-margin-para"]
+link:task-install-connector-azure.html[Follow step-by-step instructions].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Provide BlueXP with permissions
+
+[role="quick-margin-para"]
+If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up.
+
+[role="quick-margin-para"]
+link:task-provide-permissions-azure.html[Follow step-by-step instructions].
+
+== Review Connector host requirements for Azure installs
+
+The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
+
+When you deploy the Connector from BlueXP or from the Azure Marketplace, the image includes the required OS and software components.
+
+include::_include/os-reqs.adoc[tag=start]
+
+include::_include/os-reqs.adoc[tag=azure-vm]
+
+include::_include/os-reqs.adoc[tag=end]
+
+== Set up Azure networking
+
+Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+
+=== VNet and subnet 
+
+When you create the Connector, you need to specify the VNet and subnet where the Connector should reside.
+
+=== Azure region
+
+If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
+
+=== Connections to target networks
+
+A Connector requires a network connection to the location where you're planning to create and manage working environments.
+
+=== Outbound internet access
+
+The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
+
+==== Endpoints contacted from the BlueXP console
+
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
+
+link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
+
+==== Endpoints contacted during manual installation
+
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
+
+include::_include/endpoints-manual-install.adoc[tag=update]
+
+==== Endpoints contacted from the Connector
+
+The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
+
+[cols="2a,1a",options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+include::_include/endpoints-connector.adoc[tag=azure-public-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=azure-china-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=nss-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=saas-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
+
+|===
+
+=== Proxy server
+
+include::_include/proxy-server.adoc[]
+
+=== Ports
+
+include::_include/ports.adoc[]
+
+=== IP address limitation
+
+include::_include/ip-limitation.adoc[]
+
+== Set up Azure permissions
+
+Set up permissions in Azure so that you can deploy the Connector with the permissions that it needs to manage your data and storage infrastructure. How you set up permissions depends on the installation option that you're planning to use.
+
+Set up an Azure custom role to associate with the Connector VM or with an Azure AD service principal.
+
+If you deploy the Connector from the Azure Marketplace or if you manually install the Connector software on your own Linux host, you can provide permissions in the following ways:
+
+* Option 1: Assign a custom role to the Azure VM using a system-assigned managed identity.
+* Option 2: Provide BlueXP with the credentials for an Azure service principal that has the required permissions.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.Custom role
+--
+Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
+
+.Steps 
+
+. If you're planning to manually install the software on your own host, enable a system-assigned managed identity on the VM so that you can provide the required Azure permissions through a custom role. 
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
+
+include::_include/azure-set-up-role.adoc[]
+
+link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
+--
+
+.Service principal
+--
+Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs.
+
+.Create an Azure Active Directory application for role-based access control
+
+include::_include/azure-set-up-service-principal.adoc[tag=app]
+
+.Assign the application to a role
+ 
+include::_include/azure-set-up-service-principal.adoc[tag=role]
+
+.Add Windows Azure Service Management API permissions
+
+include::_include/azure-set-up-service-principal.adoc[tag=api]
+
+.Get the application ID and directory ID for the application
+
+include::_include/azure-set-up-service-principal.adoc[tag=ids]
+
+.Create a client secret
+
+include::_include/azure-set-up-service-principal.adoc[tags=secret]
+
+.Result
+
+Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you add an Azure account.
+
+link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
+--
+
+====
+// end tabbed area
+
+== Create a Connector in Azure
+
+Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
+
+.Steps
+
+include::_include/manual-install.adoc[tag=before]
+
+* A managed identity enabled on the VM in Azure so that you can provide the required Azure permissions through a custom role.
++
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
+
+include::_include/manual-install.adoc[tag=about]
+
+include::_include/manual-install.adoc[tag=main-steps]
+
+include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
+
+.What's next?
+
+link:task-provide-permissions-azure.html[Provide BlueXP with the permissions that you previously setup].
+
+== Provide Azure permissions to BlueXP
+
+If you created the Connector from the Azure Marketplace or manually installed the software, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
+
+link:task-set-up-permissions-azure.html[Learn how to set up these permissions].
+
+These steps don't apply if you deployed the Connector directly from BlueXP because BlueXP assigns the required permissions during deployment. 
+
+[role="tabbed-block"]
+====
+
+.Custom role
+--
+include::_include/azure-provide-permissions-role.adoc[]
+
+.What's next?
+
+Go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
+--
+
+.Service principal
+--
+.Steps
+
+include::_include/azure-provide-permissions-service-principal.adoc[]
+
+.Result
+
+BlueXP now has the permissions that it needs to perform actions in Azure on your behalf.
+--
+
+====
+// end tabbed area

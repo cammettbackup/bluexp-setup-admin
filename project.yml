@@ -109,6 +109,54 @@ sidebar:
               url: /task-subscribe-standard-mode.html
             - title: What you can do next
               url: /reference-whats-next.html
+        - title: Get started with standard mode --- NEW
+          entries:
+            - title: Quick start
+              url: /task-quick-start-standard-mode.html
+            - title: Prepare networking
+              url: /reference-networking-saas-console.html
+            - title: Sign up to BlueXP
+              url: /task-sign-up-saas.html
+            - title: Log in to BlueXP
+              url: /task-logging-in.html
+            - title: Create a Connector
+              entries:
+                - title: AWS
+                  entries:
+                    - title: Installation options
+                      url: /concept-install-options-aws.html
+                    - title: Create from BlueXP
+                      url: /task-install-aws-bluexp.html
+                    - title: Create from the marketplace
+                      url: /task-install-aws-mp.html
+                    - title: Install manually
+                      url: /task-install-aws-manual.html
+                - title: Azure
+                  entries:
+                    - title: Installation options
+                      url: /concept-install-options-azure.html
+                    - title: Create from BlueXP
+                      url: /task-install-azure-bluexp.html
+                    - title: Create from the marketplace
+                      url: /task-install-azure-mp.html
+                    - title: Install manually
+                      url: /task-install-azure-manual.html
+                - title: Google Cloud
+                  entries:
+                    - title: Installation options
+                      url: /concept-install-options-google.html
+                    - title: Create from BlueXP
+                      url: /task-install-google-bluexp.html
+                    - title: Create using gcloud
+                      url: /task-install-google-gcloud.html
+                    - title: Install manually
+                      url: /task-install-google-manual.html
+                - title: On premises
+                  url: /task-install-on-prem.html
+            - title: Subscribe to BlueXP
+              url: /task-subscribe-standard-mode.html
+            - title: What you can do next
+              url: /reference-whats-next.html
         - title: Get started with restricted mode
           entries:
             - title: Quick start
