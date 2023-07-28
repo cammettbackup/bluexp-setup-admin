@@ -15,58 +15,58 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 [.lead]
 lead
 
-// == Quick start
+== Quick start
 
-// Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
+Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
 
-// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
-// [role="quick-margin-para"]
-// Prepare the following for the Connector:
+[role="quick-margin-para"]
+Prepare the following for the Connector:
 
-// [role="quick-margin-list"]
-// * A VNet and subnet
-// include::_include/quick-start-networking.adoc[]
+[role="quick-margin-list"]
+* A VNet and subnet
+include::_include/quick-start-networking.adoc[]
 
-// [role="quick-margin-para"]
-// link:task-set-up-networking-azure.html[Learn more about networking requirements].
+[role="quick-margin-para"]
+link:task-set-up-networking-azure.html[Learn more about networking requirements].
 
-// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
 
-// [role="quick-margin-para"]
-// Create a custom role and then apply it to your Azure account or an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
+[role="quick-margin-para"]
+Create a custom role and then apply it to your Azure account or an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
-// [role="quick-margin-para"]
-// link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
+[role="quick-margin-para"]
+link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
 
-// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
 
-// [role="quick-margin-para"]
-// From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
+[role="quick-margin-para"]
+From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
 
-// [role="quick-margin-para"]
-// link:task-install-connector-azure.html[Follow step-by-step instructions for this option].
+[role="quick-margin-para"]
+link:task-install-connector-azure.html[Follow step-by-step instructions for this option].
 
 == Set up Azure networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
-=== Azure region
-
+* Azure region
++
 If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
-
++
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
 
-=== VNet and subnet 
-
+* VNet and subnet 
++
 When you create the Connector, you need to specify the VNet and subnet where the Connector should reside.
 
-=== Connections to target networks
-
+* Connections to target networks
++
 A Connector requires a network connection to the location where you're planning to create and manage working environments.
 
-=== Outbound internet access
-
+* Outbound internet access
++
 The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
 
 ==== Endpoints contacted from the BlueXP console

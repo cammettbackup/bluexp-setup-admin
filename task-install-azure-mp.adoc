@@ -15,45 +15,45 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 [.lead]
 lead
 
-== Quick start
+// == Quick start
 
-Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
+// Create a Connector in Azure by choosing an installation option, setting up networking, preparing permissions, and more.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
+// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
-[role="quick-margin-para"]
-Prepare the following for the Connector:
+// [role="quick-margin-para"]
+// Prepare the following for the Connector:
 
-[role="quick-margin-list"]
-* A VNet and subnet
-include::_include/quick-start-networking.adoc[]
+// [role="quick-margin-list"]
+// * A VNet and subnet
+// include::_include/quick-start-networking.adoc[]
 
-[role="quick-margin-para"]
-link:task-set-up-networking-azure.html[Learn more about networking requirements].
+// [role="quick-margin-para"]
+// link:task-set-up-networking-azure.html[Learn more about networking requirements].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
+// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
 
-[role="quick-margin-para"]
-Create a custom role that you can associate with the Connector VM instance or with an Azure AD service principal.
+// [role="quick-margin-para"]
+// Create a custom role that you can associate with the Connector VM instance or with an Azure AD service principal.
 
-[role="quick-margin-para"]
-link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
+// [role="quick-margin-para"]
+// link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
+// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
 
-[role="quick-margin-para"]
-Go to the https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager[NetApp Connector VM page in the Azure Marketplace^] and follow the prompts to create the Connector VM.
+// [role="quick-margin-para"]
+// Go to the https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager[NetApp Connector VM page in the Azure Marketplace^] and follow the prompts to create the Connector VM.
 
-[role="quick-margin-para"]
-link:task-install-connector-azure.html[Follow step-by-step instructions].
+// [role="quick-margin-para"]
+// link:task-install-connector-azure.html[Follow step-by-step instructions].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Provide BlueXP with permissions
+// .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] Provide BlueXP with permissions
 
-[role="quick-margin-para"]
-Provide BlueXP with the permissions that you previously set up.
+// [role="quick-margin-para"]
+// Provide BlueXP with the permissions that you previously set up.
 
-[role="quick-margin-para"]
-link:task-provide-permissions-azure.html[Follow step-by-step instructions].
+// [role="quick-margin-para"]
+// link:task-provide-permissions-azure.html[Follow step-by-step instructions].
 
 == Set up Azure networking
 
@@ -82,12 +82,6 @@ The network location where you deploy the Connector must have an outbound intern
 As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
 
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
-
-==== Endpoints contacted during manual installation
-
-include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-
-include::_include/endpoints-manual-install.adoc[tag=update]
 
 ==== Endpoints contacted from the Connector
 
