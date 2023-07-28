@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-install-azure-bluexp.html
+permalink: task-install-azure-bluexp-2.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector
 summary: Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
 ---
