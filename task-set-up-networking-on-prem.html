@@ -2118,17 +2118,8 @@ https://www.googleapis.com/deploymentmanager/v2/projects</p>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>To provide SaaS features and services within BlueXP.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
-</td>
-<td class="content">
-The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.</p>
 </div></div></td>
 </tr>
 <tr>
@@ -2155,7 +2146,7 @@ The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it wil
 <h2 id="proxy-server">Proxy server</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy:</p>
+<p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You&#8217;ll need to provide this information during installation.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2169,9 +2160,6 @@ The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it wil
 <p>HTTPS certificate</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>You&#8217;ll need to provide this information during installation.</p>
 </div>
 </div>
 </div>
@@ -2192,7 +2180,7 @@ The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it wil
 <li>
 <p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn&#8217;t available.</p>
 <div class="paragraph">
-<p>If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
+<p>If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
 </div>
 </li>
 </ul>
