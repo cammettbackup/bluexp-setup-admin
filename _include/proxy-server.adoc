@@ -1,7 +1,5 @@
-If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy:
+If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You'll need to provide this information during installation.
 
 * IP address
 * Credentials
 * HTTPS certificate
-
-You'll need to provide this information during installation.
