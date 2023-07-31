@@ -7,9 +7,9 @@ For details, refer to https://docs.microsoft.com/en-us/azure/active-directory/de
 +
 image:screenshot_azure_ad.gif[Shows the Active Directory service in Microsoft Azure.]
 
-. In the menu, click *App registrations*.
+. In the menu, select *App registrations*.
 
-. Click *New registration*.
+. Select *New registration*.
 
 . Specify details about the application:
 
@@ -17,7 +17,7 @@ image:screenshot_azure_ad.gif[Shows the Active Directory service in Microsoft Az
 * *Account type*: Select an account type (any will work with BlueXP).
 * *Redirect URI*: You can leave this field blank.
 
-. Click *Register*.
+. Select *Register*.
 +
 You've created the AD application and service principal.
 //end::app[]
@@ -64,14 +64,14 @@ You should now have a custom role called BlueXP Operator that you can assign to 
 
 .. Select the subscription.
 
-.. Click *Access control (IAM) > Add > Add role assignment*.
+.. Select *Access control (IAM) > Add > Add role assignment*.
 
-.. In the *Role* tab, select the *BlueXP Operator* role and click *Next*.
+.. In the *Role* tab, select the *BlueXP Operator* role and select *Next*.
 
 .. In the *Members* tab, complete the following steps:
 
 * Keep *User, group, or service principal* selected.
-* Click *Select members*.
+* Select *Select members*.
 +
 image:screenshot-azure-service-principal-role.png[A screenshot of the Azure portal that shows the Members tab when adding a role to an application.]
 * Search for the name of the application.
@@ -80,10 +80,10 @@ Here's an example:
 +
 image:screenshot_azure_service_principal_role.png[A screenshot of the Azure portal that shows the Add role assignment form in the Azure portal.]
 
-* Select the application and click *Select*.
-* Click *Next*.
+* Select the application and select *Select*.
+* Select *Next*.
 
-.. Click *Review + assign*.
+.. Select *Review + assign*.
 +
 The service principal now has the required Azure permissions to deploy the Connector.
 +
@@ -91,21 +91,21 @@ If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, the
 //end::role[]
 
 //tag::api[]
-. In the *Azure Active Directory* service, click *App registrations* and select the application.
+. In the *Azure Active Directory* service, select *App registrations* and select the application.
 
-. Click *API permissions > Add a permission*.
+. Select *API permissions > Add a permission*.
 
 . Under *Microsoft APIs*, select *Azure Service Management*.
 +
 image:screenshot_azure_service_mgmt_apis.gif[A screenshot of the Azure portal that shows the Azure Service Management API permissions.]
 
-. Click *Access Azure Service Management as organization users* and then click *Add permissions*.
+. Select *Access Azure Service Management as organization users* and then select *Add permissions*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif[A screenshot of the Azure portal that shows adding the Azure Service Management APIs.]
 //end::api[]
 
 //tag::ids[]
-. In the *Azure Active Directory* service, click *App registrations* and select the application.
+. In the *Azure Active Directory* service, select *App registrations* and select the application.
 
 . Copy the *Application (client) ID* and the *Directory (tenant) ID*.
 +
@@ -117,13 +117,13 @@ When you add the Azure account to BlueXP, you need to provide the application (c
 //tag::secret[]
 . Open the *Azure Active Directory* service.
 
-. Click *App registrations* and select your application.
+. Select *App registrations* and select your application.
 
-. Click *Certificates & secrets > New client secret*.
+. Select *Certificates & secrets > New client secret*.
 
 . Provide a description of the secret and a duration.
 
-. Click *Add*.
+. Select *Add*.
 
 . Copy the value of the client secret.
 +

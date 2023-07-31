@@ -85,6 +85,8 @@ The user can no longer access the resources in this BlueXP account.
 
 You can associate and disassociate Workspace Admins with workspaces at any time. Associating the user enables them to create and view the working environments in that workspace.
 
+NOTE: You also need to associate the Connector with workspaces so Workspace Admins can access those workspaces from BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces[Learn how to manage a Connector's workspaces].
+
 .Steps
 
 . From the top of BlueXP, select the *Account* drop-down and select *Manage Account*.
@@ -159,7 +161,7 @@ image:screenshot_service_account_actions.gif[A screenshot that shows the action 
 
 === Recreate keys
 
-Recreating the key will delete the existing key for this service account and then create a new key. You won’t be able to use the previous key.
+Recreating the key will delete the existing key for this service account and then create a new key. You won't be able to use the previous key.
 
 .Steps
 
@@ -206,6 +208,9 @@ Manage your workspaces by creating, renaming, and deleting them. Note that you c
 * Select *Add New Workspace* to create a new workspace.
 * Select *Rename* to rename the workspace.
 * Select *Delete* to delete the workspace.
+
++
+If you created a new workspace, you must also add the Connector to that workspace. If you don't add the Connector, then Workspace Admins can't access any of the resources in the workspace. Refer to the following section for more details.
 
 == Manage a Connector's workspaces
 

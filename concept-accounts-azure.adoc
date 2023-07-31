@@ -43,7 +43,7 @@ You would then link:task-adding-azure-accounts.html#add-additional-azure-credent
 
 For example, you can switch between credentials when creating a new Cloud Volumes ONTAP working environment:
 
-image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after clicking Switch Account in the Details & Credentials page."]
+image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page."]
 
 == What about Marketplace deployments and on-prem deployments?
 

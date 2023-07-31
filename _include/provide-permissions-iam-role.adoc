@@ -8,7 +8,7 @@
 
 . Select *Actions > Security > Modify IAM role*.
 
-. Select the IAM role and click *Update IAM role*.
+. Select the IAM role and select *Update IAM role*.
 
 .Result
 
