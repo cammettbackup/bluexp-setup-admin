@@ -15,14 +15,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html</loc>
       
-      <lastmod>2023-07-06T18:34:08+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-azure.html</loc>
       
-      <lastmod>2023-07-06T18:34:08+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -169,7 +169,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html</loc>
       
-      <lastmod>2023-05-12T13:55:05+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -246,7 +246,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin//search.html</loc>
       
-      <lastmod>2023-07-24T12:35:45+00:00</lastmod>
+      <lastmod>2023-07-31T18:04:10+00:00</lastmod>
       
     </url>
   
@@ -344,28 +344,28 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html</loc>
       
-      <lastmod>2023-07-11T17:47:50+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -379,14 +379,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-private-mode.html</loc>
       
-      <lastmod>2023-07-13T19:24:15+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -449,7 +449,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html</loc>
       
-      <lastmod>2023-06-06T18:05:11+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -463,14 +463,14 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html</loc>
       
-      <lastmod>2023-05-10T15:46:36+00:00</lastmod>
+      <lastmod>2023-07-25T20:38:46+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html</loc>
       
-      <lastmod>2023-07-07T14:07:04+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -519,21 +519,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html</loc>
       
-      <lastmod>2023-07-13T19:24:15+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html</loc>
       
-      <lastmod>2023-07-13T19:24:15+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html</loc>
       
-      <lastmod>2023-07-13T19:24:15+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -596,21 +596,21 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-aws.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-azure.html</loc>
       
-      <lastmod>2023-07-19T19:16:41+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-permissions-google.html</loc>
       
-      <lastmod>2023-07-14T17:45:31+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   
@@ -680,7 +680,7 @@
     <url>
       <loc>https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html</loc>
       
-      <lastmod>2023-07-03T14:47:19+00:00</lastmod>
+      <lastmod>2023-07-24T12:25:44+00:00</lastmod>
       
     </url>
   

@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-10 15:46:36 +0000">05/10/2023</time>
+    <time datetime="2023-07-25 20:38:46 +0000">07/25/2023</time>
     
   
 
@@ -2071,6 +2071,18 @@
 <div class="paragraph">
 <p>You can associate and disassociate Workspace Admins with workspaces at any time. Associating the user enables them to create and view the working environments in that workspace.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
+</td>
+<td class="content">
+You also need to associate the Connector with workspaces so Workspace Admins can access those workspaces from BlueXP. <a href="task-managing-netapp-accounts.html#manage-a-connectors-workspaces">Learn how to manage a Connector&#8217;s workspaces</a>.
+</td>
+</tr>
+</table>
+</div>
 <div class="olist arabic">
 <div class="title">Steps</div>
 <ol class="arabic">
@@ -2189,7 +2201,7 @@
 <div class="sect2">
 <h3 id="recreate-keys">Recreate keys</h3>
 <div class="paragraph">
-<p>Recreating the key will delete the existing key for this service account and then create a new key. You won’t be able to use the previous key.</p>
+<p>Recreating the key will delete the existing key for this service account and then create a new key. You won&#8217;t be able to use the previous key.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -2272,6 +2284,9 @@
 <p>Select <strong>Delete</strong> to delete the workspace.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>If you created a new workspace, you must also add the Connector to that workspace. If you don&#8217;t add the Connector, then Workspace Admins can&#8217;t access any of the resources in the workspace. Refer to the following section for more details.</p>
 </div>
 </li>
 </ol>
