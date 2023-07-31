@@ -172,7 +172,7 @@ The following sections describe how the permissions are used for each BlueXP ser
 
 === Azure NetApp Files
 
-The Connector makes the following API requests to manage Azure NetApp Files working environments:
+The Connector makes the following API requests when you use BlueXP classification to scan Azure NetApp Files data:
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

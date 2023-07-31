@@ -49,7 +49,7 @@ _ipaddress_ can be localhost, a private IP address, or a public IP address, depe
 .. Under *Are you running in a secured environment?* keep restricted mode disabled.
 +
 You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. (In addition, restricted mode isn't supported when the Connector is installed on premises.)
-.. Click *Let's start*.
+.. Select *Let's start*.
 
 .Result
 
