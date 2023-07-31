@@ -22,18 +22,18 @@ The following steps provide a high-level summary of the tasks that you'll comple
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
 
 [role="quick-margin-para"]
-You need to set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. You'll need a VNet and subnet, a network connection to the locations that BlueXP needs to manage, outbound internet access, and the details about your proxy server (if one is required).
+Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need a virtual network that has outbound internet access and network connections to target networks.
 
 [role="quick-margin-para"]
-link:task-set-up-networking-azure.html[Learn about networking requirements].
+<<Set up networking,View the networking requirements>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
 
 [role="quick-margin-para"]
-Create a custom role and then apply it to your Azure account or an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
+Create a custom role and then apply it to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
 [role="quick-margin-para"]
-link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
+<<Set up Azure permissions,Follow step-by-step instructions>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
 
@@ -41,11 +41,11 @@ link:task-set-up-permissions-azure.html[Follow step-by-step instructions].
 From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
 
 [role="quick-margin-para"]
-link:task-install-connector-azure.html[Follow step-by-step instructions].
+<<Create the Connector,Follow step-by-step instructions>>.
 
 == Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Ensure that the network location where you plan to install the Connector supports the following requirements.
 
 Azure region::
 If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
@@ -363,7 +363,7 @@ TIP: If you're already logged in to an Azure account, then BlueXP will automatic
 ** Client Secret
 
 +
-link:task-set-up-permissions-azure.html[Learn how to obtain these values for a service principal].
+<<Set up an authentication method,Learn how to obtain these values for a service principal>>.
 
 . Follow the steps in the wizard to create the Connector:
 
