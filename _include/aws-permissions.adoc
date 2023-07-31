@@ -3,7 +3,7 @@
 
 . Create a policy:
 
-.. Click *Policies > Create policy*.
+.. Select *Policies > Create policy*.
 
 .. Select *JSON* and copy and paste the contents of the link:reference-permissions-aws.html[IAM policy for the Connector].
 
@@ -13,7 +13,7 @@
 //tag::role[]
 . Create an IAM role:
 
-.. Click *Roles > Create role*.
+.. Select *Roles > Create role*.
 
 .. Select *AWS service > EC2*.
 

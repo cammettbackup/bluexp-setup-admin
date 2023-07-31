@@ -48,7 +48,7 @@ You would then add the account credentials to BlueXP by specifying the Amazon Re
 
 After you add another set of credentials, you can switch to them when creating a new working environment:
 
-image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting between cloud provider accounts after clicking Switch Account in the Details & Credentials page.]
+image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page.]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to an existing Connector.]
 
