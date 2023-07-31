@@ -38,7 +38,7 @@ link:task-set-up-networking-google.html[Learn about networking requirements]
 
 .Steps
 
-. Click the *Connector* drop-down and select *Add Connector*.
+. Select the *Connector* drop-down and select *Add Connector*.
 +
 image:screenshot_connector_add.gif[A screenshot that shows the Connector icon in the header and the Add Connector action.]
 
@@ -46,9 +46,9 @@ image:screenshot_connector_add.gif[A screenshot that shows the Connector icon in
 
 . On the *Deploying a Connector* page, review the details about what you'll need. You have two options:
 
-.. Click *Continue* to prepare for deployment by using the in-product guide. Each step in the in-product guide includes the information that's contained on this page of the documentation.
+.. Select *Continue* to prepare for deployment by using the in-product guide. Each step in the in-product guide includes the information that's contained on this page of the documentation.
 
-.. Click *Skip to Deployment* if you already prepared by following the steps on this page.
+.. Select *Skip to Deployment* if you already prepared by following the steps on this page.
 
 . Follow the steps in the wizard to create the Connector:
 
@@ -68,7 +68,7 @@ link:reference-ports-gcp.html[Firewall rules in Google Cloud]
 
 * *Review*: Review your selections to verify that your set up is correct.
 
-. Click *Add*.
+. Select *Add*.
 +
 The instance should be ready in about 7 minutes. You should stay on the page until the process is complete.
 
