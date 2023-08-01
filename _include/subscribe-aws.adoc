@@ -31,6 +31,6 @@ For all other accounts, you'll need to manually associate the subscription by re
 
 * Select *Save*.
 +
-The following video shows the steps to subscribe from the AWS Marketplace.
+The following video shows how to associate the credentials with a new subscription.
 +
-video::aa562370-b58d-41d0-8c61-b05100ffe66a[panopto, title="Subscribe to BlueXP from the AWS Marketplace"]
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto, title="Subscribe to BlueXP from the AWS Marketplace"]
