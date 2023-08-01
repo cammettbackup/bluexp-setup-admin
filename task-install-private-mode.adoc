@@ -68,7 +68,7 @@ You should see the following screen.
 +
 image:screenshot-onprem-darksite-welcome.png[A screenshot of the Welcome page that appears after you enter the IP address of the Connector into your web browser.]
 
-. Click *Set Up New BlueXP* and follow the prompts to set up the system.
+. Select *Set Up New BlueXP* and follow the prompts to set up the system.
 
 * *System Details*: Enter a name for the Connector and your company name.
 +
@@ -78,7 +78,7 @@ image:screenshot-onprem-darksite-details.png[A screenshot of the System Details 
 +
 This user account runs locally on the system. There's no connection to the auth0 service available through BlueXP.
 
-* *Review*: Review the details, accept the license agreement, and then click *Set Up*.
+* *Review*: Review the details, accept the license agreement, and then select *Set Up*.
 
 . Log in to BlueXP using the admin user that you just created.
 

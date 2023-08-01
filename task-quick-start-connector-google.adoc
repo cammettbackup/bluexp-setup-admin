@@ -76,7 +76,7 @@ include::_include/google-cloud-apis.adoc[]
 Create the Connector using one of the available installation options:
 
 [role="quick-margin-list"]
-* *From BlueXP*: Click the Connector drop-down, select *Add Connector* and follow the prompts.
+* *From BlueXP*: Select the Connector drop-down, select *Add Connector* and follow the prompts.
 
 * *Using gloud*: Use the `gcloud compute instances create` command.
 
