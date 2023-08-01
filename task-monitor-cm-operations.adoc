@@ -38,7 +38,7 @@ The following table provides a comparison of the Notification Center and the Tim
 Notifications track the progress of operations that you've initiated in BlueXP so you can verify whether the operation was successful or not. They enable you to view the status for many BlueXP actions that you initiated during your current login session. Not all BlueXP services report information into the Notification Center at this time.
 // Notifications can even prompt you to retry a failed operation.
 
-You can display the notifications by clicking the notification bell (image:icon_bell.png[notification bell]) in the menu bar. The color of the little bubble in the bell indicates the highest level severity notification that is active. So if you see a red bubble, it means there's an important notification that you should look at.
+You can display the notifications by selecting the notification bell (image:icon_bell.png[notification bell]) in the menu bar. The color of the little bubble in the bell indicates the highest level severity notification that is active. So if you see a red bubble, it means there's an important notification that you should look at.
 
 image:screenshot_notification_full.png[A screenshot showing the a list of current notifications in the Notification Center.]
 
@@ -77,7 +77,7 @@ For example, if you want to see only "Error" and "Warning" notifications for Blu
 //
 // .Steps
 //
-// . In the Notification Center, click image:button_3_vert_dots.png[an icon with three vertical dots] and select *Settings*.
+// . In the Notification Center, select image:button_3_vert_dots.png[an icon with three vertical dots] and select *Settings*.
 //
 // image:screenshot_notification_settings.png[A screenshot of the available settings for the Notification Center.]
 //

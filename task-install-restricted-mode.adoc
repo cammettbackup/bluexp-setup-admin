@@ -85,7 +85,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to se
 +
 image:screenshot-gov-cloud-mktp.png[A screenshot that shows the BlueXP offering after searching for it in the AWS Marketplace]
 
-.. Click *Continue*.
+.. Select *Continue*.
 
 . Follow the prompts to configure and deploy the instance:
 
@@ -103,7 +103,7 @@ image:screenshot_aws_iam_role.gif[A screenshot that shows fields on the Configur
 
 * *Configure Security Group*: Specify the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.
 
-* *Review*: Review your selections and click *Launch*.
+* *Review*: Review your selections and select *Launch*.
 
 .Result
 
@@ -135,9 +135,9 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to se
 * https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager[Azure Marketplace page for commercial regions^]
 * https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol[Azure Marketplace page for Azure Government regions^]
 
-. Click *Get it now* and then click *Continue*.
+. Select *Get it now* and then select *Continue*.
 
-. From the Azure portal, click *Create* and follow the steps to configure the virtual machine.
+. From the Azure portal, select *Create* and follow the steps to configure the virtual machine.
 +
 Note the following as you configure the VM:
 
@@ -161,7 +161,7 @@ link:reference-ports-azure.html[View security group rules for Azure].
 +
 This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview[Learn more about managed identities for Azure resources^].
 
-. On the *Review + create* page, review your selections and click *Create* to start the deployment.
+. On the *Review + create* page, review your selections and select *Create* to start the deployment.
 
 .Result
 
@@ -224,7 +224,7 @@ If you deployed the Connector in a Government region, the checkbox is already en
 +
 image:screenshot-restricted-mode.png["A screenshot that shows the welcome page where you need to enter a Connector name, account name, and can enable restricted mode on this account."]
 
-.. Click *Let's start*.
+.. Select *Let's start*.
 
 .Result
 

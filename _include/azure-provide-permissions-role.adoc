@@ -4,9 +4,9 @@ Go to the Azure portal and assign the Azure custom role to the Connector virtual
 
 . From the Azure Portal, open the *Subscriptions* service and select your subscription.
 
-. Click *Access control (IAM)* > *Add* > *Add role assignment*.
+. Select *Access control (IAM)* > *Add* > *Add role assignment*.
 
-. In the *Role* tab, select the *BlueXP Operator* role and click *Next*.
+. In the *Role* tab, select the *BlueXP Operator* role and select *Next*.
 +
 NOTE: BlueXP Operator is the default name provided in the BlueXP policy. If you chose a different name for the role, then select that name instead.
 
@@ -14,13 +14,13 @@ NOTE: BlueXP Operator is the default name provided in the BlueXP policy. If you 
 
 .. Assign access to a *Managed identity*.
 
-.. Click *Select members*, select the subscription in which the Connector virtual machine was created, choose *Virtual machine*, and then select the Connector virtual machine.
+.. Select *Select members*, select the subscription in which the Connector virtual machine was created, choose *Virtual machine*, and then select the Connector virtual machine.
 
-.. Click *Select*.
+.. Select *Select*.
 
-.. Click *Next*.
+.. Select *Next*.
 
-.. Click *Review + assign*.
+.. Select *Review + assign*.
 
 .. If you want to manage resources in additional Azure subscriptions, switch to that subscription and then repeat these steps.
 
