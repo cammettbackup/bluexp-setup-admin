@@ -56,3 +56,7 @@ include::_include/subscribe-google.adoc[]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html[Manage AWS credentials and subscriptions for BlueXP]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage Azure credentials and subscriptions for BlueXP]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html[Manage Google Cloud credentials and subscriptions for BlueXP]
+
+.AWS video
+
+video::id=aa562370-b58d-41d0-8c61-b05100ffe66a[panopto, title="Subscribe to BlueXP from the AWS Marketplace"]
