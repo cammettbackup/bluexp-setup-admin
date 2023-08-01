@@ -212,6 +212,61 @@ You need to create a Connector before you can change BlueXP settings. link:conce
 
 include::_include/subscribe-aws.adoc[]
 
+== Associate an existing subscription with your account
+
+When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP account. 
+
+Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
+
+.Steps
+
+. Go to the BlueXP digital wallet to confirm that you didn't associate your subscription with your BlueXP account.
+
+.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. Select *Subscriptions*.
+.. Verify that your BlueXP subscription doesn't appear.
++
+You'll only see the subscriptions that are associated with the account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
+
+. Log in to the AWS Console and navigate to *AWS Marketplace Subscriptions*.
+
+. Find the NetApp BlueXP subscription.
++
+image:screenshot-aws-marketplace-bluexp-subscription.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription.]
+
+. Select *Set up product*.
++
+The subscription offer page should load in a new browser tab or window.
+
+. Select *Set up your account*.
++
+image:screenshot-aws-marketplace-set-up-account.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription and the Set up your account option that appears in the top right of the page.]
++
+The *Subscription Assignment* page on netapp.com should load in a new browser tab or window.
++
+Note that you might be prompted to log in to BlueXP first.
+
+. From the *Subscription Assignment* page:
++
+include::_include/subscribe-aws.adoc[tag=assignment]
++
+image:screenshot-subscription-assignment.png[A screenshot of the Subscription Assignment page that enables you to choose the exact BlueXP accounts to associate with this subscription.]
+
+. Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP account.
+
+.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. Select *Subscriptions*.
+.. Verify that your BlueXP subscription appears.
+
+. Confirm that the subscription is associated with your AWS credentials.
+
+.. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+.. On the *Account credentials* page, verify that the subscription is associated with your AWS credentials.
++
+Here's an example.
++
+image:screenshot-credentials-with-subscription.png[A screenshot of the BlueXP Account credentials page that shows AWS credentials that includes a subscription field which identifies the name of the subscription that is associated with the credentials.]
+
 == Edit credentials
 
 Edit your AWS credentials in BlueXP by changing the account type (AWS keys or assume role), by editing the name, or by updating the credentials themselves (the keys or the role ARN).
