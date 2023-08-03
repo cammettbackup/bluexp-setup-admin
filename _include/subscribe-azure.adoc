@@ -29,6 +29,6 @@ For all other accounts, you'll need to manually associate the subscription by re
 
 * Select *Save*.
 +
-The following video shows how to associate the credentials with a new subscription.
+The following video shows the steps to subscribe from the Azure Marketplace:
 +
-video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto, title="Subscribe to BlueXP from the Azure Marketplace"]
+video::video_subscribing_azure.mp4[width=848, height=480]
