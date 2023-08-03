@@ -26,3 +26,7 @@ video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto, title="Subscribe to BlueXP 
 == Google Cloud
 
 video::373b96de-3691-4d84-b3f3-b05101161638[panopto, title="Subscribe to BlueXP from the Google Cloud Marketplace"]
+
+== My folder
+
+video::8d5e054b-f40b-451f-a0e7-870454f1376e[panopto, title="Subscribe to BlueXP from the Google Cloud Marketplace"]
