@@ -159,10 +159,6 @@ The second policy provides permissions for the following services:
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -491,10 +487,6 @@ The second policy provides permissions for the following services:
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1008,12 +1000,6 @@ The Connector makes the following API requests to deploy and manage Cloud Volume
 | kms:Describe* | Yes | Yes | No
 | kms:CreateGrant | Yes | Yes | No
 | kms:GenerateDataKeyWithoutPlaintext | Yes | Yes | No
-
-.4+| Obtain AWS cost data for Cloud Volumes ONTAP
-| ce:GetReservationUtilization | No | Yes | No
-| ce:GetDimensionValues | No | Yes | No
-| ce:GetCostAndUsage | No | Yes | No
-| ce:GetTags | No | Yes | No
 
 .2+| Create and manage an AWS spread placement group for two HA nodes and the mediator in a single AWS Availability Zone
 | ec2:CreatePlacementGroup | Yes | No | No
