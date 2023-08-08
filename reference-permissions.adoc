@@ -64,7 +64,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 | Connector operation
 a| When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.
 
-You need to set up the custom role yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager[add more Azure credentials to a Connector].
+You need to set up the custom role yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp[add more Azure credentials to a Connector].
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
 a| link:reference-permissions-azure.html[Azure permissions for the Connector]

@@ -218,7 +218,7 @@ You need to associate the Connector with workspaces so Workspace Admins can acce
 
 If you only have Account Admins, then associating the Connector with workspaces isn't required. Account Admins have the ability to access all workspaces in BlueXP by default.
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors[Learn more about users, workspaces, and Connectors].
+link:concept-netapp-accounts.html[Learn more about users, workspaces, and Connectors].
 
 .Steps
 

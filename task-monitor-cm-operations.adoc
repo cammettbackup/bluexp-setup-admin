@@ -128,7 +128,7 @@ image:screenshot-change-notifications.png[A screenshot showing how to change not
 
 === Add additional email recipients
 
-The users who appear in the _Account Users_ tab are populated automatically from the users in your BlueXP account (from the link:task-managing-netapp-accounts.html#creating-and-managing-users[Manage Account page]). You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
+The users who appear in the _Account Users_ tab are populated automatically from the users in your BlueXP account (from the link:task-managing-netapp-accounts.html#create-and-manage-users[Manage Account page]). You can add email addresses in the _Additional Recipients_ tab for other people, or groups, who do not have access to BlueXP, but who need to be notified about certain types of alerts and notifications.
 
 .Steps
 
