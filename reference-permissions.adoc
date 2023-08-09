@@ -121,7 +121,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 == Azure permissions
 
-The following sections describe the Azure permissions that BlueXP requires for the Connector and for individual services.
+BlueXP requires Azure permissions for the Connector and for individual services.
 
 === Connector
 
@@ -161,7 +161,7 @@ a| link:reference-permissions-azure.html[View Azure permissions for the Connecto
 	
 == Google Cloud permissions
 
-The following sections describe the Google Cloud permissions that BlueXP requires for the Connector and for individual services.
+BlueXP requires Google Cloud permissions for the Connector and for individual services.
 
 === Connector
 
@@ -216,8 +216,7 @@ a|
 | Link
 
 | Deploy the data broker in Google Cloud
-| Ensure that the Google Cloud user who deploys the data broker has the following permissions:
-When you deploy the data broker, you need to select a service account that has the following permissions:
+| Ensure that the Google Cloud user who deploys the data broker has the required permissions.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud[Permissions required to deploy the data broker in Google Cloud^]
 
 | Sync relationship for Google Cloud Storage with a manually installed data broker
@@ -242,7 +241,7 @@ When you deploy the data broker, you need to select a service account that has t
 
 == StorageGRID permissions
 
-The following sections describe the StorageGRID permissions that BlueXP requires for the Connector and for individual services.
+BlueXP requires StorageGRID permissions for two services.
 
 === Backup and recovery
 
