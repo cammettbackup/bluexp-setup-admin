@@ -21,7 +21,7 @@ You can add AWS credentials to an existing Connector or directly to BlueXP:
 
 * Add additional AWS credentials to an existing Connector
 +
-Adding AWS credentials to an existing Connector provides the permissions needed to manage resources and processes within your public cloud environment. <<Add credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
+Adding AWS credentials to an existing Connector provides the permissions needed to manage resources and processes within your public cloud environment. <<Add additional credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
 
 * Add AWS credentials to BlueXP for creating a Connector
 +
