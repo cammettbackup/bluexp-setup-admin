@@ -8,16 +8,16 @@
     <description>The latest updates from NetApp Documentation</description>
     <language>en-us</language>
     <ttl>60</ttl>
-    <pubDate>Tue, 08 Aug 2023 23:11:35 +0000</pubDate>
-    <lastBuildDate>Tue, 08 Aug 2023 23:11:35 +0000</lastBuildDate>
+    <pubDate>Wed, 09 Aug 2023 13:10:00 +0000</pubDate>
+    <lastBuildDate>Wed, 09 Aug 2023 13:10:00 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>What&amp;#8217;s new (24 Jul 2023)</title>
-      <pubDate>Mon, 24 Jul 2023 12:25:44 +0000</pubDate>
-      <link>https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html?time=1690201544</link>
-      <guid isPermaLink="false">Mon, 24 Jul 2023 12:25:44 +0000</guid>
+      <title>What&amp;#8217;s new (8 Aug 2023)</title>
+      <pubDate>Tue, 08 Aug 2023 17:57:33 +0000</pubDate>
+      <link>https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html?time=1691517453</link>
+      <guid isPermaLink="false">Tue, 08 Aug 2023 17:57:33 +0000</guid>
       <description><![CDATA[ Learn what's new with BlueXP administration features: BlueXP accounts, Connectors, cloud provider credentials, and more. ]]></description>
     </item>
     
