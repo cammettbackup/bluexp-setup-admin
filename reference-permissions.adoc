@@ -15,6 +15,8 @@ summary: To use BlueXP features and services, you'll need to provide permissions
 [.lead]
 To use BlueXP features and services, you'll need to provide permissions so that BlueXP can perform operations in your cloud environment. Use the links on this page to quickly access the permissions that you need based on your goal.
 
+== Current
+
 == AWS permissions
 
 [cols=3*,options="header",cols="25,60,40"]
@@ -120,3 +122,145 @@ a|
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target[Prepare tiering to StorageGRID^]
 
 |===
+
+== New
+
+== AWS permissions
+
+=== Connector deployment from BlueXP
+
+The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.
+
+link:task-set-up-permissions-aws.html[Set up AWS permissions]
+
+=== Connector operation
+
+When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
+
+You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
+
+You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
+
+link:reference-permissions-aws.html[AWS permissions for the Connector]
+	
+=== Backup and recovery
+
+When activating backups on your ONTAP volumes to Amazon S3, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
+	
+=== Copy and sync
+
+Three sets of permissions are required:
+
+* The AWS user account that you use to deploy the data broker must have specific permissions.
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws[Learn how to provide the required permissions^]
+
+* When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Is this the right link?^]
+
+* If you plan to use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an AWS user that has programmatic access and specific permissions.
++
+https://asdfasdf.com[Some link^]
+	
+=== Cloud Volumes ONTAP
+
+An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
+		
+=== FSx for ONTAP
+
+To create or manage an Amazon FSx for NetApp ONTAP working environment, you need to add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create an FSx for ONTAP working environment.
+
+https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up AWS credentials for FSx^]
+	
+=== Tiering
+
+When you enable BlueXP tiering from an on-premises ONTAP cluster to Amazon S3, the wizard prompts you to enter an access key and secret key. These credentials are passed to the ONTAP cluster so that ONTAP can tier data to the S3 bucket.
+
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions[Set up S3 permissions for tiering^]
+
+== AWS permissions
+
+=== Connector deployment from BlueXP
+
+Description:: The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.
+
+Link:: link:task-set-up-permissions-aws.html[Set up AWS permissions]
+
+=== Connector operation
+
+Description:: When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
++
+You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
++
+You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
+
+Link:: link:reference-permissions-aws.html[AWS permissions for the Connector]
+	
+=== Backup and recovery
+
+Description:: When activating backups on your ONTAP volumes to Amazon S3, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.
+
+Link:: https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
+	
+=== Copy and sync
+
+Description:: Three sets of permissions are required:
++
+* The AWS user account that you use to deploy the data broker must have specific permissions.
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws[Learn how to provide the required permissions^]
+
+* When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Is this the right link?^]
+
+* If you plan to use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an AWS user that has programmatic access and specific permissions.
++
+https://asdfasdf.com[Some link^]
+	
+=== Cloud Volumes ONTAP
+
+Description:: An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.
+
+Link:: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
+		
+=== FSx for ONTAP
+
+Description:: To create or manage an Amazon FSx for NetApp ONTAP working environment, you need to add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create an FSx for ONTAP working environment.
+
+Link:: https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up AWS credentials for FSx^]
+	
+=== Tiering
+
+Description:: When you enable BlueXP tiering from an on-premises ONTAP cluster to Amazon S3, the wizard prompts you to enter an access key and secret key. These credentials are passed to the ONTAP cluster so that ONTAP can tier data to the S3 bucket.
+
+Link:: https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions[Set up S3 permissions for tiering^]
+
+== Azure permissions
+
+=== Connector
+	
+=== Cloud Sync
+	
+== Google Cloud permissions
+
+=== Connector
+	
+=== Backup and recovery
+	
+=== Cloud Sync
+
+=== Cloud Volumes Service for Google Cloud
+	
+=== Tiering
+	
+== StorageGRID permissions
+
+=== Backup and recovery
+	
+=== Tiering
