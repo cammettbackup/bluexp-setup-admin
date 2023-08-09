@@ -46,7 +46,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 // End snippet
 
 // Start snippet: collapsible block (open on page load)
-.Connectors
+.Backup and recovery
 [%collapsible]
 ====
 [cols=3*,options="header",cols="20,60,20"]
@@ -62,11 +62,9 @@ You also need to ensure that the policy is up to date as new permissions are add
 |===
 ====
 // End snippet
-	
-=== Copy and sync
 
 // Start snippet: collapsible block (open on page load)
-.Title
+.Copy and sync
 [%collapsible]
 ====
 [cols=3*,options="header",cols="20,60,20"]
@@ -91,10 +89,8 @@ You also need to ensure that the policy is up to date as new permissions are add
 ====
 // End snippet
 
-=== Cloud Volumes ONTAP
-
 // Start snippet: collapsible block (open on page load)
-.Title
+.Cloud Volumes ONTAP
 [%collapsible]
 ====
 [cols=3*,options="header",cols="20,60,20"]
@@ -111,10 +107,8 @@ You also need to ensure that the policy is up to date as new permissions are add
 ====
 // End snippet
 
-=== FSx for ONTAP
-
 // Start snippet: collapsible block (open on page load)
-.Title
+.FSx for ONTAP
 [%collapsible]
 ====
 [cols=3*,options="header",cols="20,60,20"]
@@ -131,10 +125,8 @@ You also need to ensure that the policy is up to date as new permissions are add
 ====
 // End snippet
 
-=== Tiering
-
 // Start snippet: collapsible block (open on page load)
-.Title
+.Tiering
 [%collapsible]
 ====
 [cols=3*,options="header",cols="20,60,20"]
