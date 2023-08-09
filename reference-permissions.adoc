@@ -17,33 +17,33 @@ To use BlueXP features and services, you'll need to provide permissions so that 
 
 == AWS permissions
 
-The following sections describe the AWS permissions that BlueXP requires for the Connector and for individual services.
+BlueXP requires AWS permissions for the Connector and for individual services.
 
 === Connectors
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Connector deployment from BlueXP
+| Deploy the Connector from BlueXP
 | The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.
 | link:task-set-up-permissions-aws.html[Set up AWS permissions]
 
-| Connector operation
+| Permissions for the Connector instance
 | When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
 
-You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
+You need to set up the policy yourself if you launch a Connector from the AWS Marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
-| link:reference-permissions-aws.html[AWS permissions for the Connector]
+| link:reference-permissions-aws.html[View AWS permissions for the Connector]
 
 |===
 
 === Backup and recovery
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
@@ -57,35 +57,35 @@ You also need to ensure that the policy is up to date as new permissions are add
 	
 === Copy and sync
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Data broker deployment
+| Deploy the data broker in AWS
 | The AWS user account that you use to deploy the data broker must have specific permissions.
-| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws[Learn how to provide the required permissions^]
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws[Permissions required to deploy the data broker in AWS^]
 
-| Data broker operations
+| Permissions for the data broker instance
 | When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
-| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Is this the right link?^]
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker[Requirements to use your own IAM role with the AWS data broker^]
 
-| S3 sync relationships
-| If you plan to use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an AWS user that has programmatic access and specific permissions.
-| https://asdfasdf.com[Some link^]
+| Sync relationship for S3 bucket with a manually installed data broker
+| If you use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an IAM user that has programmatic access and specific permissions.
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Enabling access to AWS^]
 
 |===
 	
 === Cloud Volumes ONTAP
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Cloud Volumes ONTAP operation
+| Permissions for Cloud Volumes ONTAP nodes
 | An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.
 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
 
@@ -93,21 +93,21 @@ You also need to ensure that the policy is up to date as new permissions are add
 		
 === FSx for ONTAP
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| ?
-| To create or manage an Amazon FSx for NetApp ONTAP working environment, you need to add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create an FSx for ONTAP working environment.
+| Create and manage FSx for ONTAP
+| To create or manage an Amazon FSx for NetApp ONTAP working environment, you need to add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create the working environment.
 | https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up AWS credentials for FSx^]
 
 |===
 	
 === Tiering
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
@@ -125,37 +125,37 @@ The following sections describe the Azure permissions that BlueXP requires for t
 
 === Connector
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Connector deployment from BlueXP
+| Deploy the Connector from BlueXP
 | When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector VM in Azure.
 | link:task-set-up-permissions-azure.html[Set up Azure permissions]
 
-| Connector operation
+| Permissions for the Connector VM
 a| When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.
 
 You need to set up the custom role yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp[add more Azure credentials to a Connector].
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
-a| link:reference-permissions-azure.html[Azure permissions for the Connector]
+a| link:reference-permissions-azure.html[View Azure permissions for the Connector]
 
 |===
 	
 === Cloud Sync
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Data broker deployment
-| Ensure that the Azure user account that you use to deploy the data broker has the required permissions.
-| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure
+| Deploy the data broker in Azure
+| The Azure user account that you use to deploy the data broker must have the required permissions.
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure[Permissions required to deploy the data broker in Azure^]
 
 |===
 	
@@ -165,16 +165,18 @@ The following sections describe the Google Cloud permissions that BlueXP require
 
 === Connector
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| Connector deployment | The Google Cloud user who deploys a Connector from BlueXP needs specific permissions to deploy the Connector in Google Cloud.
+| Deploy the Connector from BlueXP 
+| The Google Cloud user who deploys a Connector from BlueXP needs specific permissions to deploy the Connector in Google Cloud.
 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud[Set up permissions to deploy the Connector]
 
-| Connector operation | The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector when you deploy it from BlueXP.
+| Permissions for the Connector VM 
+| The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector when you deploy it from BlueXP.
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
 | link:reference-permissions-gcp.html[Google Cloud permissions for the Connector]
@@ -183,7 +185,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 	
 === Backup and recovery
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
@@ -207,34 +209,34 @@ a|
 	
 === Cloud Sync
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| ?
+| Deploy the data broker in Google Cloud
 | Ensure that the Google Cloud user who deploys the data broker has the following permissions:
 When you deploy the data broker, you need to select a service account that has the following permissions:
-| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud[Permissions required to deploy the data broker in Google Cloud^]
 
-| ?
-| If you plan to use the data broker with a sync relationship that includes a Google Cloud Storage bucket, then you should prepare the Linux host for Google Cloud access. When you install the data broker, you’ll need to provide a key for a service account that has specific permissions.
-| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud
+| Sync relationship for Google Cloud Storage with a manually installed data broker
+| If you plan to use the data broker with a sync relationship that includes a Google Cloud Storage bucket, then you should prepare the Linux host for Google Cloud access. When you install the data broker, you'll need to provide a key for a service account that has specific permissions.
+| https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud[Enabling access to Google Cloud^]
 
 |===
 
 === Cloud Volumes Service for Google Cloud
 	
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
 | Link
 
-| ?
+| Discover Cloud Volumes Service for Google Cloud
 | BlueXP needs access to the Cloud Volumes Service API and the right permissions through a Google Cloud service account.
-| https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html
+| https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html[Set up a service account^]
 
 |===
 
@@ -244,7 +246,7 @@ The following sections describe the StorageGRID permissions that BlueXP requires
 
 === Backup and recovery
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
@@ -258,7 +260,7 @@ The following sections describe the StorageGRID permissions that BlueXP requires
 	
 === Tiering
 
-[cols=3*,options="header",cols="25,60,40"]
+[cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
 | Description
