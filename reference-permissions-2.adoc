@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: reference-permissions.html
+permalink: reference-permissions-2.html
 keywords: permissions, actions
 summary: To use BlueXP features and services, you'll need to provide permissions so that BlueXP can perform operations in your cloud environment. Use the links on this page to quickly access the permissions that you need based on your goal.
 ---
@@ -19,8 +19,10 @@ To use BlueXP features and services, you'll need to provide permissions so that 
 
 BlueXP requires AWS permissions for the Connector and for individual services.
 
-=== Connectors
-
+// Start snippet: collapsible block (open on page load)
+.Connectors
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -40,9 +42,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | link:reference-permissions-aws.html[View AWS permissions for the Connector]
 
 |===
+====
+// End snippet
 
-=== Backup and recovery
-
+// Start snippet: collapsible block (open on page load)
+.Backup and recovery
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -54,9 +60,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
 
 |===
-	
-=== Copy and sync
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Copy and sync
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -76,9 +86,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Enabling access to AWS^]
 
 |===
-	
-=== Cloud Volumes ONTAP
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Cloud Volumes ONTAP
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -90,9 +104,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
 
 |===
-		
-=== FSx for ONTAP
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.FSx for ONTAP
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -104,9 +122,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up AWS credentials for FSx^]
 
 |===
-	
-=== Tiering
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Tiering
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -118,13 +140,17 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions[Set up S3 permissions for tiering^]
 
 |===
+====
+// End snippet
 
 == Azure permissions
 
 BlueXP requires Azure permissions for the Connector and for individual services.
 
-=== Connector
-
+// Start snippet: collapsible block (open on page load)
+.Connector
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -144,9 +170,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 a| link:reference-permissions-azure.html[View Azure permissions for the Connector]
 
 |===
-	
-=== Cloud Sync
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Cloud Sync
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -158,13 +188,17 @@ a| link:reference-permissions-azure.html[View Azure permissions for the Connecto
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure[Permissions required to deploy the data broker in Azure^]
 
 |===
-	
+====
+// End snippet
+
 == Google Cloud permissions
 
 BlueXP requires Google Cloud permissions for the Connector and for individual services.
 
-=== Connector
-
+// Start snippet: collapsible block (open on page load)
+.Connector
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -182,9 +216,13 @@ You also need to ensure that the policy is up to date as new permissions are add
 | link:reference-permissions-gcp.html[Google Cloud permissions for the Connector]
 
 |===
-	
-=== Backup and recovery
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Backup and recovery
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -206,9 +244,13 @@ a|
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector[Permissions for Search & Restore functionality^]
 
 |===
-	
-=== Cloud Sync
+====
+// End snippet
 
+// Start snippet: collapsible block (open on page load)
+.Cloud Sync
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -224,9 +266,13 @@ a|
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud[Enabling access to Google Cloud^]
 
 |===
+====
+// End snippet
 
-=== Cloud Volumes Service for Google Cloud
-	
+// Start snippet: collapsible block (open on page load)
+.Cloud Volumes Service for Google Cloud
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -238,13 +284,17 @@ a|
 | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html[Set up a service account^]
 
 |===
-
+====
+// End snippet
+	
 == StorageGRID permissions
 
 BlueXP requires StorageGRID permissions for two services.
 
-=== Backup and recovery
-
+// Start snippet: collapsible block (open on page load)
+.Backup and recovery
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -256,9 +306,13 @@ BlueXP requires StorageGRID permissions for two services.
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target[Prepare StorageGRID as your backup target^]
 
 |===
+====
+// End snippet
 	
-=== Tiering
-
+// Start snippet: collapsible block (open on page load)
+.Tiering
+[%collapsible]
+====
 [cols=3*,options="header",cols="20,60,20"]
 |===
 | Purpose
@@ -270,3 +324,5 @@ BlueXP requires StorageGRID permissions for two services.
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target[Prepare tiering to StorageGRID^]
 
 |===
+====
+// End snippet
