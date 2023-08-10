@@ -1933,7 +1933,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-08-08 17:57:33 +0000">08/08/2023</time>
+    <time datetime="2023-08-10 15:45:12 +0000">08/10/2023</time>
     
   
 
@@ -1961,44 +1961,164 @@
 <div class="sect1">
 <h2 id="aws-permissions">AWS permissions</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP requires AWS permissions for the Connector and for individual services.</p>
+</div>
+<div class="sect2">
+<h3 id="connectors">Connectors</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
-<col style="width: 48%;">
-<col style="width: 32%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Goal</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector deployment from BlueXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the Connector from BlueXP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="task-set-up-permissions-aws.html">Set up AWS permissions</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide permissions for the Connector</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.<br>
 <br>
-You need to set up the policy yourself if you launch a Connector from the marketplace, manually install the Connector, or if you <a href="task-adding-aws-accounts.html#add-additional-credentials-to-a-connector">add more AWS credentials to a Connector</a>.<br>
+You need to set up the policy yourself if you launch a Connector from the AWS Marketplace, if you manually install the Connector, or if you <a href="task-adding-aws-accounts.html#add-additional-credentials-to-a-connector">add more AWS credentials to a Connector</a>.<br>
 <br>
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="reference-permissions-aws.html">AWS permissions for the Connector</a></p></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="backup-and-recovery">Backup and recovery</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP operation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html" target="_blank" rel="noopener">Learn how to set up the IAM roles yourself</a></p></td>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Back up on-premises ONTAP clusters to Amazon S3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">When activating backups on your ONTAP volumes, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions" target="_blank" rel="noopener">Set up S3 permissions for backups</a></p></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide permissions for Cloud Volumes ONTAP nodes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own when creating the working environment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html" target="_blank" rel="noopener">Learn how to set up the IAM roles yourself</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="copy-and-sync">Copy and sync</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the data broker in AWS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The AWS user account that you use to deploy the data broker must have specific permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws" target="_blank" rel="noopener">Permissions required to deploy the data broker in AWS</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide permissions for the data broker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker" target="_blank" rel="noopener">Requirements to use your own IAM role with the AWS data broker</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable AWS access for a manually installed data broker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you&#8217;ll need to provide AWS keys for an IAM user that has programmatic access and specific permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws" target="_blank" rel="noopener">Enabling access to AWS</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="fsx-for-ontap">FSx for ONTAP</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create and manage FSx for ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">To create or manage an Amazon FSx for NetApp ONTAP working environment, you need to add AWS credentials to BlueXP by providing the ARN of an IAM role that gives BlueXP the permissions needed to create the working environment.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html" target="_blank" rel="noopener">Learn how to set up AWS credentials for FSx</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="tiering">Tiering</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier on-premises ONTAP clusters to Amazon S3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">When you enable BlueXP tiering to AWS, the wizard prompts you to enter an access key and secret key. These credentials are passed to the ONTAP cluster so that ONTAP can tier data to the S3 bucket.</p></td>
@@ -2008,35 +2128,41 @@ You also need to ensure that the policy is up to date as new permissions are add
 </table>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="azure-permissions">Azure permissions</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP requires Azure permissions for the Connector and for individual services.</p>
+</div>
+<div class="sect2">
+<h3 id="connector">Connector</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
-<col style="width: 48%;">
-<col style="width: 32%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Goal</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector deployment from BlueXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the Connector from BlueXP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector VM in Azure.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="task-set-up-permissions-azure.html">Set up Azure permissions</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector operation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide permissions for the Connector</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.</p>
 </div>
 <div class="paragraph">
-<p>You need to set up the custom role yourself if you launch a Connector from the marketplace, manually install the Connector, or if you <a href="task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp">add more Azure credentials to a Connector</a>.</p>
+<p>You need to set up the custom role yourself if you launch a Connector from the marketplace, if you manually install the Connector, or if you <a href="task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp">add more Azure credentials to a Connector</a>.</p>
 </div>
 <div class="paragraph">
 <p>You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.</p>
@@ -2048,36 +2174,85 @@ You also need to ensure that the policy is up to date as new permissions are add
 </tbody>
 </table>
 </div>
-</div>
-<div class="sect1">
-<h2 id="google-cloud-permissions">Google Cloud permissions</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="copy-and-sync-2">Copy and sync</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
-<col style="width: 48%;">
-<col style="width: 32%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Goal</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Link</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector deployment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the data broker in Azure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Azure user account that you use to deploy the data broker must have the required permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure" target="_blank" rel="noopener">Permissions required to deploy the data broker in Azure</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="google-cloud-permissions">Google Cloud permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP requires Google Cloud permissions for the Connector and for individual services.</p>
+</div>
+<div class="sect2">
+<h3 id="connector-2">Connector</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the Connector from BlueXP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The Google Cloud user who deploys a Connector from BlueXP needs specific permissions to deploy the Connector in Google Cloud.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud">Set up permissions to deploy the Connector</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Connector operation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector when you deploy it from BlueXP.<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provide permissions for the Connector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector during deployment.<br>
 <br>
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="reference-permissions-gcp.html">Google Cloud permissions for the Connector</a></p></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="backup-and-recovery-2">Backup and recovery</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Back up Cloud Volumes ONTAP to Google Cloud</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -2112,19 +2287,78 @@ You also need to ensure that the policy is up to date as new permissions are add
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="cloud-volumes-service-for-google-cloud">Cloud Volumes Service for Google Cloud</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discover Cloud Volumes Service for Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BlueXP needs access to the Cloud Volumes Service API and the right permissions through a Google Cloud service account.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html" target="_blank" rel="noopener">Set up a service account</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="copy-and-sync-3">Copy and sync</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Deploy the data broker in Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ensure that the Google Cloud user who deploys the data broker has the required permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud" target="_blank" rel="noopener">Permissions required to deploy the data broker in Google Cloud</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable Google Cloud access for a manually installed data broker</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If you plan to use the data broker with a sync relationship that includes a Google Cloud Storage bucket, then you should prepare the Linux host for Google Cloud access. When you install the data broker, you&#8217;ll need to provide a key for a service account that has specific permissions.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud" target="_blank" rel="noopener">Enabling access to Google Cloud</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 <div class="sect1">
 <h2 id="storagegrid-permissions">StorageGRID permissions</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP requires StorageGRID permissions for two services.</p>
+</div>
+<div class="sect2">
+<h3 id="backup-and-recovery-3">Backup and recovery</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 20%;">
-<col style="width: 48%;">
-<col style="width: 32%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Goal</th>
 <th class="tableblock halign-left valign-top">Description</th>
 <th class="tableblock halign-left valign-top">Link</th>
 </tr>
@@ -2135,6 +2369,25 @@ You also need to ensure that the policy is up to date as new permissions are add
 <td class="tableblock halign-left valign-top"><p class="tableblock">When you prepare StorageGRID as a backup target for ONTAP clusters, BlueXP backup and recovery prompts you to enter an access key and secret for an IAM user that has specific permissions.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target" target="_blank" rel="noopener">Prepare StorageGRID as your backup target</a></p></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="tiering-2">Tiering</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 60%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Goal</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Link</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tier on-premises ONTAP clusters to StorageGRID</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">When you set up BlueXP tiering to StorageGRID, you need to provide BlueXP tiering with an S3 access key and secret key. BlueXP tiering uses the keys to access your buckets.</p></td>
@@ -2142,6 +2395,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 
