@@ -23,7 +23,7 @@ BlueXP requires AWS permissions for the Connector and for individual services.
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -31,7 +31,7 @@ BlueXP requires AWS permissions for the Connector and for individual services.
 | The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.
 | link:task-set-up-permissions-aws.html[Set up AWS permissions]
 
-| Permissions for the Connector instance
+| Provide permissions for the Connector
 | When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
 
 You need to set up the policy yourself if you launch a Connector from the AWS Marketplace, manually install the Connector, or if you link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[add more AWS credentials to a Connector].
@@ -45,7 +45,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -54,12 +54,26 @@ You also need to ensure that the policy is up to date as new permissions are add
 | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions[Set up S3 permissions for backups^]
 
 |===
+
+=== Cloud Volumes ONTAP
+
+[cols=3*,options="header",cols="20,60,20"]
+|===
+| Goal
+| Description
+| Link
+
+| Provide permissions for Cloud Volumes ONTAP nodes
+| An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.
+| https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
+
+|===
 	
 === Copy and sync
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -67,35 +81,21 @@ You also need to ensure that the policy is up to date as new permissions are add
 | The AWS user account that you use to deploy the data broker must have specific permissions.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws[Permissions required to deploy the data broker in AWS^]
 
-| Permissions for the data broker instance
+| Provide permissions for the data broker
 | When BlueXP copy and sync deploys the data broker, it creates an IAM role for the data broker instance. You can deploy the data broker using your own IAM role, if you prefer. You might use this option if your organization has strict security policies.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker[Requirements to use your own IAM role with the AWS data broker^]
 
-| Sync relationship for S3 bucket with a manually installed data broker
+| Enable AWS access for a manually installed data broker
 | If you use the data broker with a sync relationship that includes an S3 bucket, then you should prepare the Linux host for AWS access. When you install the data broker, you'll need to provide AWS keys for an IAM user that has programmatic access and specific permissions.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws[Enabling access to AWS^]
 
 |===
-	
-=== Cloud Volumes ONTAP
 
-[cols=3*,options="header",cols="20,60,20"]
-|===
-| Purpose
-| Description
-| Link
-
-| Permissions for Cloud Volumes ONTAP nodes
-| An IAM role must be attached to each Cloud Volumes ONTAP node in AWS. The same is true for the HA mediator. The default option is to let BlueXP create the IAM roles for you, but you can use your own.
-| https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html[Learn how to set up the IAM roles yourself^]
-
-|===
-		
 === FSx for ONTAP
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -109,7 +109,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -127,7 +127,7 @@ BlueXP requires Azure permissions for the Connector and for individual services.
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -135,7 +135,7 @@ BlueXP requires Azure permissions for the Connector and for individual services.
 | When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector VM in Azure.
 | link:task-set-up-permissions-azure.html[Set up Azure permissions]
 
-| Permissions for the Connector VM
+| Provide permissions for the Connector
 a| When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.
 
 You need to set up the custom role yourself if you launch a Connector from the marketplace, manually install the Connector, or if you link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp[add more Azure credentials to a Connector].
@@ -149,7 +149,7 @@ a| link:reference-permissions-azure.html[View Azure permissions for the Connecto
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -167,7 +167,7 @@ BlueXP requires Google Cloud permissions for the Connector and for individual se
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -175,7 +175,7 @@ BlueXP requires Google Cloud permissions for the Connector and for individual se
 | The Google Cloud user who deploys a Connector from BlueXP needs specific permissions to deploy the Connector in Google Cloud.
 | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud[Set up permissions to deploy the Connector]
 
-| Permissions for the Connector VM 
+| Provide permissions for the Connector 
 | The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector when you deploy it from BlueXP.
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
@@ -187,7 +187,7 @@ You also need to ensure that the policy is up to date as new permissions are add
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -211,7 +211,7 @@ a|
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -219,7 +219,7 @@ a|
 | Ensure that the Google Cloud user who deploys the data broker has the required permissions.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud[Permissions required to deploy the data broker in Google Cloud^]
 
-| Sync relationship for Google Cloud Storage with a manually installed data broker
+| Enable Google Cloud access for a manually installed data broker
 | If you plan to use the data broker with a sync relationship that includes a Google Cloud Storage bucket, then you should prepare the Linux host for Google Cloud access. When you install the data broker, you'll need to provide a key for a service account that has specific permissions.
 | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud[Enabling access to Google Cloud^]
 
@@ -229,7 +229,7 @@ a|
 	
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -247,7 +247,7 @@ BlueXP requires StorageGRID permissions for two services.
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
@@ -261,7 +261,7 @@ BlueXP requires StorageGRID permissions for two services.
 
 [cols=3*,options="header",cols="20,60,20"]
 |===
-| Purpose
+| Goal
 | Description
 | Link
 
