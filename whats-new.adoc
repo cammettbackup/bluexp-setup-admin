@@ -24,7 +24,7 @@ Learn what's new with BlueXP administration features: BlueXP accounts, Connector
 
 * You can now use the BlueXP audit service API to export audit logs.
 +
-The audit service records information about the operations performed by BlueXP services. This includes the originating IP addresses, workspaces, Connectors used, and other telemetry data. You can use this data to determine what actions were performed, who performed them, and when they occurred.
+The audit service records information about the operations performed by BlueXP services. This includes workspaces, Connectors used, and other telemetry data. You can use this data to determine what actions were performed, who performed them, and when they occurred.
 +
 https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html[Learn more about using the audit service API^]
 +
