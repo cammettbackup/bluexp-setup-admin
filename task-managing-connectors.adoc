@@ -65,12 +65,12 @@ image:screenshot-connector-autosupport.png[A screenshot of the Support Dashboard
 If you need to connect to the Linux VM that the Connector runs on, you can do so by using the connectivity options available from your cloud provider.
 
 AWS::
-When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance.
+When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
 Azure::
-When you created the Connector VM in Azure, you chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
+When you created the Connector VM in Azure, you specified a user name and chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
 +
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm[Azure Docs: SSH into your VM^]
 
