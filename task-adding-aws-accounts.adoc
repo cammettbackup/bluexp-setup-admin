@@ -21,7 +21,7 @@ You can add AWS credentials to an existing Connector or directly to BlueXP:
 
 * Add additional AWS credentials to an existing Connector
 +
-Adding AWS credentials to an existing Connector provides the permissions needed to manage resources and processes within your public cloud environment. <<Add credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
+Adding AWS credentials to an existing Connector provides the permissions needed to manage resources and processes within your public cloud environment. <<Add additional credentials to a Connector,Learn how to add AWS credentials to a Connector>>.
 
 * Add AWS credentials to BlueXP for creating a Connector
 +
@@ -29,7 +29,7 @@ Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to crea
 
 * Add AWS credentials to BlueXP for FSx for ONTAP
 +
-Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
+Adding new AWS credentials to BlueXP gives BlueXP the permissions needed to create and manage FSx for ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[Learn how to set up permissions for FSx for ONTAP^]
 
 == How to rotate credentials
 
@@ -105,7 +105,7 @@ The account now has the required permissions. <<add-the-credentials,You can now 
 
 After you provide an AWS account with the required permissions, you can add the credentials for that account to an existing Connector. This enables you to launch Cloud Volumes ONTAP systems in that account using the same Connector.
 
-.Before you get started
+.Before you begin
 
 If you just created these credentials in your cloud provider, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
 
@@ -125,7 +125,7 @@ image:screenshot_settings_icon.gif[A screenshot that shows the Settings icon in 
 
 .. *Marketplace Subscription*: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.
 +
-To pay for Cloud Volumes ONTAP at an hourly rate (PAYGO) or with an annual contract, AWS credentials must be associated with a subscription to Cloud Volumes ONTAP from the AWS Marketplace.
+To pay for BlueXP services at an hourly rate (PAYGO) or with an annual contract, AWS credentials must be associated with an AWS Marketplace subscription.
 
 .. *Review*: Confirm the details about the new credentials and select *Add*.
 
@@ -155,7 +155,7 @@ Be sure to do the following:
 * Select *Another AWS account* and enter the ID of the BlueXP SaaS: 952013314444
 * Create a policy that includes the permissions required to create a Connector.
 +
-** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
+** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
 ** link:task-set-up-permissions-aws.html[View the Connector deployment policy]
 
 . Copy the Role ARN of the IAM role so that you can paste it in BlueXP in the next step.
@@ -168,7 +168,7 @@ The IAM role now has the required permissions. <<add-the-credentials-2,You can n
 
 After you provide the IAM role with the required permissions, add the role ARN to BlueXP.
 
-.Before you get started
+.Before you begin
 
 If you just created the IAM role, it might take a few minutes until they are available for use. Wait a few minutes before you add the credentials to BlueXP.
 
@@ -192,7 +192,7 @@ You can now use the credentials when creating a new Connector.
 
 == Add credentials to BlueXP for Amazon FSx for ONTAP
 
-For details, refer to the https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[BlueXP documentation for Amazon FSx for ONTAP^]
+For details, refer to the https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[BlueXP documentation for Amazon FSx for ONTAP^]
 
 [[subscribe]]
 == Associate an AWS subscription
@@ -204,41 +204,68 @@ There are two scenarios in which you might associate an AWS Marketplace subscrip
 * You didn't associate a subscription when you initially added the credentials to BlueXP.
 * You want to replace an existing AWS Marketplace subscription with a new subscription.
 
-.What you'll need
+.Before you begin
 
 You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how to create a Connector].
 
 .Steps
 
-. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+include::_include/subscribe-aws.adoc[]
 
-. On the *Account credentials* page, select the action menu for a set of credentials and then select *Associate Subscription*.
-+
-image:screenshot_associate_subscription.png[A screenshot of the action menu for a set of existing credentials.]
+== Associate an existing subscription with your account
 
-. To associate the credentials with an existing subscription, select the subscription from the down-down list and select *Associate*.
+When you subscribe to BlueXP from the AWS Marketplace, the last step in the process is to associate the subscription with your BlueXP accounts from the BlueXP website. If you didn't complete this step, then you can't use the subscription with your BlueXP account. 
 
-. To associate the credentials with a new subscription, select *Add Subscription > Continue* and follow the steps in the AWS Marketplace:
+Follow the steps below if you subscribed to BlueXP from the AWS Marketplace, but you missed the step to associate the subscription with your account.
 
-.. Select *View purchase options*.
-.. Select *Subscribe*.
-.. Select *Set up your account*.
-+
-You'll be redirected to the BlueXP website.
-.. From the *Subscription Assignment* page:
-+
-* Select the BlueXP accounts that you'd like to associate this subscription with.
-* In the *Replace existing subscription* field, choose whether you'd like to automatically replace the existing subscription for one account with this new subscription.
-+
-BlueXP replaces the existing subscription for all credentials in the account with this new subscription. If a set of credentials wasn't ever associated with a subscription, then this new subscription won't be associated with those credentials.
-+
-For all other accounts, you'll need to manually associate the subscription by repeating these steps.
+.Steps
 
-* Select *Save*.
+. Go to the BlueXP digital wallet to confirm that you didn't associate your subscription with your BlueXP account.
+
+.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. Select *Subscriptions*.
+.. Verify that your BlueXP subscription doesn't appear.
 +
-The following video shows the steps to subscribe from the Google Cloud Marketplace:
+You'll only see the subscriptions that are associated with the account that you're currently viewing. If you don't see your subscription, proceed with the following steps.
+
+. Log in to the AWS Console and navigate to *AWS Marketplace Subscriptions*.
+
+. Find the NetApp BlueXP subscription.
 +
-video::video_subscribing_aws.mp4[width=848, height=480]
+image:screenshot-aws-marketplace-bluexp-subscription.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription.]
+
+. Select *Set up product*.
++
+The subscription offer page should load in a new browser tab or window.
+
+. Select *Set up your account*.
++
+image:screenshot-aws-marketplace-set-up-account.png[A screenshot of the AWS Marketplace showing a NetApp BlueXP subscription and the Set up your account option that appears in the top right of the page.]
++
+The *Subscription Assignment* page on netapp.com should load in a new browser tab or window.
++
+Note that you might be prompted to log in to BlueXP first.
+
+. From the *Subscription Assignment* page:
++
+include::_include/subscribe-aws.adoc[tag=assignment]
++
+image:screenshot-subscription-assignment.png[A screenshot of the Subscription Assignment page that enables you to choose the exact BlueXP accounts to associate with this subscription.]
+
+. Go to the BlueXP digital wallet to confirm that the subscription is associated with your BlueXP account.
+
+.. From the BlueXP navigation menu, select *Governance > Digital wallet*.
+.. Select *Subscriptions*.
+.. Verify that your BlueXP subscription appears.
+
+. Confirm that the subscription is associated with your AWS credentials.
+
+.. In the upper right of the BlueXP console, select the Settings icon, and select *Credentials*.
+.. On the *Account credentials* page, verify that the subscription is associated with your AWS credentials.
++
+Here's an example.
++
+image:screenshot-credentials-with-subscription.png[A screenshot of the BlueXP Account credentials page that shows AWS credentials that includes a subscription field which identifies the name of the subscription that is associated with the credentials.]
 
 == Edit credentials
 

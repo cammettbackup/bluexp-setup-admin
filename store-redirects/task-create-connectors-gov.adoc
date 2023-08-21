@@ -1,4 +1,4 @@
 ---
 permalink: task-create-connectors-gov.html
-redirect: cloud-manager-setup-admin/task-quick-start-restricted-mode.html
+redirect: bluexp-setup-admin/task-quick-start-restricted-mode.html
 ---
