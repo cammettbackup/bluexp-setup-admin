@@ -27,84 +27,32 @@ The network location where you deploy the Connector must have an outbound intern
 
 === Endpoints contacted during manual installation
 
-When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 
-* \https://support.netapp.com
-* \https://mysupport.netapp.com
-* \https://cloudmanager.cloud.netapp.com/tenancy
-* \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
-* \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-
-The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.
+include::_include/endpoints-manual-install.adoc[tag=update]
 
 === Endpoints contacted from the Connector
 
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
 
-[cols=2*,options="header,autowidth"]
+[cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
 | Purpose
 
-a|
-AWS services (amazonaws.com):
+include::_include/endpoints-connector.adoc[tag=aws-endpoints]
 
-* CloudFormation
-* Elastic Compute Cloud (EC2)
-* Identity and Access Management (IAM)
-* Key Management Service (KMS)
-* Security Token Service (STS)
-* Simple Storage Service (S3)
+include::_include/endpoints-connector.adoc[tag=azure-public-endpoints]
 
-| To manage resources in AWS. The exact endpoint depends on the region in which you deploy the Connector. https://docs.aws.amazon.com/general/latest/gr/rande.html[Refer to AWS documentation for details^]
+include::_include/endpoints-connector.adoc[tag=azure-china-endpoints]
 
-| 
-\https://management.azure.com
-\https://login.microsoftonline.com
+include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
 
-| To manage resources in Azure public regions.
+include::_include/endpoints-connector.adoc[tag=nss-endpoints]
 
-| 
-\https://management.chinacloudapi.cn
-\https://login.chinacloudapi.cn
+include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 
-| To manage resources in Azure China regions.
-
-| 
-\https://www.googleapis.com/compute/v1/
-\https://compute.googleapis.com/compute/v1
-\https://cloudresourcemanager.googleapis.com/v1/projects
-\https://www.googleapis.com/compute/beta
-\https://storage.googleapis.com/storage/v1
-\https://www.googleapis.com/storage/v1
-\https://iam.googleapis.com/v1
-\https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects
-
-| To manage resources in Google Cloud.
-
-| \https://support.netapp.com | To obtain licensing information and to send AutoSupport messages to NetApp support.
-
-a| 
-
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-a| To provide SaaS features and services within BlueXP.
-
-NOTE: The Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.
-
-| \https://cloudmanagerinfraprod.azurecr.io
-
-\https://*.blob.core.windows.net
-| To upgrade the Connector and its Docker components.
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
@@ -114,22 +62,12 @@ link:reference-networking-saas-console.html[Prepare networking for user access t
 
 == Proxy server
 
-If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy:
-
-* IP address
-* Credentials
-* HTTPS certificate
+include::_include/proxy-server.adoc[]
 
 == Ports
 
-There's no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy for AutoSupport messages.
-
-* HTTP (80) and HTTPS (443) provide access to the local UI, which you'll use in rare circumstances.
-
-* SSH (22) is only needed if you need to connect to the host for troubleshooting. 
-
-* Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn't available. If Cloud Volumes ONTAP systems don't have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those Cloud Volumes ONTAP systems to use a proxy server that's included with the Connector. The only requirement is to ensure that the Connector's security group allows inbound connections over port 3128. You'll need to open this port after you deploy the Connector.
+include::_include/ports.adoc[]
 
 == IP address limitation
 
-There's a possible conflict with IP addresses in the 172 range. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html[Learn more about this limitation].
+include::_include/ip-limitation.adoc[]

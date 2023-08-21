@@ -23,7 +23,7 @@ When BlueXP deploys the Connector virtual machine in Azure, it enables a https:/
 
 image:diagram_permissions_initial_azure.png[A conceptual image that shows BlueXP deploying a Connector in an Azure account and subscription. A system-assigned managed identity is enabled and a custom role is assigned to the Connector virtual machine.]
 
-BlueXP selects these Azure credentials by default when you create a new working environment for Cloud Volumes ONTAP:
+If you create a new working environment for Cloud Volumes ONTAP, BlueXP selects these Azure credentials by default:
 
 image:screenshot_accounts_select_azure.gif[A screenshot that shows the Switch Account option in the Details & Credentials page.]
 
@@ -31,7 +31,7 @@ You can deploy all of your Cloud Volumes ONTAP systems using the initial Azure c
 
 == Additional Azure subscriptions for a managed identity
 
-The system-assigned managed identity assigned to the Connector VM is associated with the subscription in which you launched the Connector. If you want to select a different Azure subscription, then you need to link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity[associate the managed identity with those subscriptions].
+The system-assigned managed identity assigned to the Connector VM is associated with the subscription in which you launched the Connector. If you want to select a different Azure subscription, then you need to link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity[associate the managed identity with those subscriptions].
 
 == Additional Azure credentials
 
@@ -39,11 +39,11 @@ If you want to use different Azure credentials with BlueXP, then you must grant 
 
 image:diagram_permissions_multiple_azure.png["A conceptual image that shows the initial Azure account, which receives permissions through a custom role and managed identity, and two additional accounts that receive permissions through a custom role and service principal."]
 
-You would then link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager[add the account credentials to BlueXP] by providing details about the AD service principal.
+You would then link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp[add the account credentials to BlueXP] by providing details about the AD service principal.
 
 For example, you can switch between credentials when creating a new Cloud Volumes ONTAP working environment:
 
-image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after clicking Switch Account in the Details & Credentials page."]
+image:screenshot_accounts_switch_azure.gif["A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page."]
 
 == What about Marketplace deployments and on-prem deployments?
 

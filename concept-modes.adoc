@@ -252,7 +252,7 @@ image:diagram-private-mode-onprem.png["A conceptual image that shows an on-premi
 BlueXP works as follows in private mode:
 
 Outbound communication::
-No outbound connectivity is required. All packages, dependencies, and essential components are packaged with the Connector and served from the local machine. Connectivity to your cloud provider's publicly available resources is required only if you are deploying Cloud Volumes ONTAP.
+No outbound connectivity is required to the BlueXP SaaS layer. All packages, dependencies, and essential components are packaged with the Connector and served from the local machine. Connectivity to your cloud provider's publicly available resources is required only if you are deploying Cloud Volumes ONTAP.
 
 Supported location for the Connector::
 In private mode, the Connector is supported in the cloud or on premises.
@@ -305,17 +305,17 @@ BlueXP supports the following storage and data services with private mode when t
 | Backup and recovery
 | Only back up and restore of on-prem ONTAP volumes to StorageGRID systems is supported.
 
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html[Learn how to back up on-prem ONTAP data to StorageGRID^]
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html[Learn how to back up on-prem ONTAP data to StorageGRID^]
 
 | Classification
 a| 
 * The only supported data sources are the ones that you can discover locally.
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources[View the sources that you can discover locally^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#supported-data-sources[View the sources that you can discover locally^]
 
 * Features that require outbound internet access are not supported.
 + 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations[View the feature limitations^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#limitations[View the feature limitations^]
 
 | Digital wallet | You can use the digital wallet with the supported licensing options listed below for private mode.
 
@@ -330,7 +330,7 @@ Only BYOL is supported with private mode.
 +
 For Cloud Volumes ONTAP BYOL, only node-based licensing is supported. Capacity-based licensing is not supported. Because an outbound internet connection isn't available, you will need to manually upload your Cloud Volumes ONTAP licensing file in the BlueXP digital wallet.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses[Learn how to add licenses to the BlueXP digital wallet^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses[Learn how to add licenses to the BlueXP digital wallet^]
 
 How to get started with private mode::
 Private mode is available by downloading the "offline" installer from the NetApp Support Site.
@@ -364,7 +364,7 @@ Note that some services might be supported with limitations. For more details ab
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.13+| *Services*
+.16+| *Services*
 | Backup and recovery | Yes | Yes 
 | Classification | Yes | Yes
 | Cloud ops | No | No
@@ -374,16 +374,20 @@ Note that some services might be supported with limitations. For more details ab
 | Disaster recovery | No | No
 | Economic efficiency | No | No
 | Edge caching | No | No
+| Migration reports | No | No
 | Operational resiliency | No | No
 | Ransomware protection | No | No
 | Remediation | No | No
 | Replication | Yes | Yes
+| Sustainability | No | No
 | Tiering | No | No
+| Volume caching | No | No
 
-.4+| *Features*
+.5+| *Features*
 | Credentials | Yes | Yes 
 | NSS accounts | Yes | No 
 | Notifications | Yes | No 
+| Search | Yes | No
 | Timeline | Yes | Yes
 
 |===
