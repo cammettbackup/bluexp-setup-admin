@@ -371,6 +371,7 @@ Note that some services might be supported with limitations. For more details ab
 | Copy and sync | No | No
 | Digital advisor | No | No 
 | Digital wallet | Yes | Yes
+| Disaster recovery | No | No
 | Economic efficiency | No | No
 | Edge caching | No | No
 | Migration reports | No | No
