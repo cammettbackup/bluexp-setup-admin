@@ -33,7 +33,7 @@ sidebar:
           entries:
             - title: Quick start
               url: /task-quick-start-standard-mode.html
-            - title: Networking for console access
+            - title: Prepare networking
               url: /reference-networking-saas-console.html
             - title: Sign up to BlueXP
               url: /task-sign-up-saas.html
@@ -189,9 +189,9 @@ sidebar:
           entries:
             - title: Manage your Amazon S3 buckets
               url: /task-viewing-amazon-s3.html
-            - title: View your Azure Blob accounts
+            - title: Manage your Azure Blob accounts
               url: /task-viewing-azure-blob.html
-            - title: View your Google Cloud Storage buckets
+            - title: Manage your Google Cloud Storage buckets
               url: /task-viewing-gcp-storage.html
     - title: Reference
       entries:
@@ -225,7 +225,7 @@ sidebar:
       url: /legal-notices.html
 product-family:
   name: BlueXP
-  repo: cloud-manager-family
+  repo: bluexp-family
   sidebar_label: All BlueXP documentation
 homepage:
   tiles:
@@ -291,4 +291,3 @@ homepage:
           url: https://bluexp.netapp.com/blog
         - title: Cloud webinars
           url: https://bluexp.netapp.com/events
-

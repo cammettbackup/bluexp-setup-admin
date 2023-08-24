@@ -19,11 +19,7 @@ link:concept-connectors.html[Learn how Connectors work].
 
 == Operating system and VM maintenance 
 
-Maintaining the operating system on the Connector host is your responsibility. For example, you should apply security updates to the operating system on the Connector host by following your company's standard procedures for operating system distribution.
-
-Note that you don't need to stop any services on the Connector host when running an OS update.
-
-If you need to stop and then start the Connector VM, you should do so from your cloud provider's console or by using the standard procedures for on-premises management.
+include::_include/vm-maintenance.adoc[]
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times[Be aware that the Connector must be operational at all times].
 
@@ -69,12 +65,12 @@ image:screenshot-connector-autosupport.png[A screenshot of the Support Dashboard
 If you need to connect to the Linux VM that the Connector runs on, you can do so by using the connectivity options available from your cloud provider.
 
 AWS::
-When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance.
+When you created the Connector instance in AWS, you provided an AWS access key and secret key. You can use this key pair to SSH to the instance. The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html[AWS Docs: Connect to your Linux instance^]
 
 Azure::
-When you created the Connector VM in Azure, you chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
+When you created the Connector VM in Azure, you specified a user name and chose to authenticate with a password or SSH public key. Use the authentication method that you chose to connect to the VM.
 +
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm[Azure Docs: SSH into your VM^]
 
@@ -166,7 +162,7 @@ The value for _maxDownloadSessions_ can be 1 or any integer greater than 1. If t
 +
 Note that 32 is an example value. The value that you should use depends on your NAT configuration and the number of sessions that you can have simultaneously.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig[Learn more about the /occm/config API call^]
+https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#occmconfig[Learn more about the /occm/config API call^]
 
 == Remove Connectors from BlueXP
 

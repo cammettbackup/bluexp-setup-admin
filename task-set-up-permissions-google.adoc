@@ -138,15 +138,15 @@ A service account is required to provide the Connector with the permissions that
 +
 The following example creates a role named "connector" at the project level:
 +
-gcloud iam roles create connector --project=myproject --file=connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud[Google Cloud docs: Creating and managing custom roles^]
 
 . Create a service account in Google Cloud:
 
-.. From the IAM & Admin service, click *Service Accounts > Create Service Account*.
+.. From the IAM & Admin service, select *Service Accounts > Create Service Account*.
 
-.. Enter service account details and click *Create and Continue*.
+.. Enter service account details and select *Create and Continue*.
 
 .. Select the role that you just created.
 
@@ -172,7 +172,7 @@ For example, let's say the Connector is in project 1 and you want to create Clou
 +
 * Enter the email of the Connector's service account.
 * Select the Connector's custom role.
-* Click *Save*.
+* Select *Save*.
 
 For more details, refer to https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role[Google Cloud documentation^]
 

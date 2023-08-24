@@ -23,7 +23,7 @@ When BlueXP launches the Connector instance in AWS, it creates an IAM role and a
 
 image:diagram_permissions_initial_aws.png["A conceptual image that shows BlueXP deploying the Connector in an AWS account. An IAM policy is assigned to an IAM role, which is attached to the BlueXP instance."]
 
-BlueXP selects these AWS credentials by default when you create a new working environment for Cloud Volumes ONTAP:
+If you create a new working environment for Cloud Volumes ONTAP, BlueXP selects these AWS credentials by default:
 
 image:screenshot_accounts_select_aws.gif[A screenshot that shows the Switch Account option in the Details & Credentials page.]
 
@@ -48,9 +48,9 @@ You would then add the account credentials to BlueXP by specifying the Amazon Re
 
 After you add another set of credentials, you can switch to them when creating a new working environment:
 
-image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting between cloud provider accounts after clicking Switch Account in the Details & Credentials page.]
+image:screenshot_accounts_switch_aws.png[A screenshot that shows selecting between cloud provider accounts after selecting Switch Account in the Details & Credentials page.]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to add AWS credentials to an existing Connector.]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to an existing Connector.]
 
 === Add AWS credentials directly to BlueXP
 
@@ -58,7 +58,7 @@ Adding new AWS credentials to BlueXP provides the permissions needed to create a
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector[Learn how to add AWS credentials to BlueXP for Amazon FSx for ONTAP^]
 
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector[Learn how to add AWS credentials to BlueXP for creating a Connector]
 
 == What about Marketplace deployments and on-prem deployments?
 
