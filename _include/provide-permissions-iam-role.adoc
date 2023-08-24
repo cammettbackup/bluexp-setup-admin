@@ -1,0 +1,15 @@
+.Steps
+
+. Go to the Amazon EC2 console.
+
+. Select *Instances*.
+
+. Select the Connector instance.
+
+. Select *Actions > Security > Modify IAM role*.
+
+. Select the IAM role and select *Update IAM role*.
+
+.Result
+
+BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.

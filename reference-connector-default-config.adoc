@@ -27,7 +27,7 @@ If you deployed the Connector from BlueXP or from the cloud provider's marketpla
 * The operating system for the image is Ubuntu 22.04.
 +
 The operating system does not include a GUI. You must use a terminal to access the system.
-* The user name for the EC2 Linux instance is ec2-user.
+* The user name for the EC2 Linux instance is ubuntu (for Connectors created prior to May 2023, the user name was ec2-user).
 * The default system disk is a 100 GiB gp2 disk.
 
 === Azure details

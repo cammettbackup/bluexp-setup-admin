@@ -15,7 +15,7 @@ summary: By default, BlueXP uses a self-signed certificate for HTTPS access to t
 [.lead]
 By default, BlueXP uses a self-signed certificate for HTTPS access to the web console. If required by your business, you can install a certificate signed by a certificate authority (CA), which provides better security protection than a self-signed certificate.
 
-== Before you get started
+== Before you begin
 
 You need to create a Connector before you can change BlueXP settings. link:concept-connectors.html#how-to-create-a-connector[Learn how].
 
