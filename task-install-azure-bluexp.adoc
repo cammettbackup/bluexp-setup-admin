@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-install-azure-bluexp.html
-keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector
-summary: Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.
+keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector
+summary: To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 ---
 
 = Create a Connector in Azure from BlueXP
@@ -13,39 +13,11 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-Set up your networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.
+To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 
-== Deployment overview
+== Step 1: Set up networking
 
-The following steps provide a high-level summary of the tasks that you'll complete on this page. Additional details about each of these steps are available in the sections below.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Set up networking
-
-[role="quick-margin-para"]
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need a virtual network that has outbound internet access and network connections to target networks.
-
-[role="quick-margin-para"]
-<<Set up networking,View the networking requirements>>.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Azure permissions
-
-[role="quick-margin-para"]
-Create a custom role and then apply it to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
-
-[role="quick-margin-para"]
-<<Set up Azure permissions,Follow step-by-step instructions>>.
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Create the Connector
-
-[role="quick-margin-para"]
-From BlueXP, click the Connector drop-down, select *Add Connector* and follow the prompts.
-
-[role="quick-margin-para"]
-<<Create the Connector,Follow step-by-step instructions>>.
-
-== Set up networking
-
-Ensure that the network location where you plan to install the Connector supports the following requirements.
+Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
 Azure region::
 If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azure region as the Cloud Volumes ONTAP systems that it manages, or in the https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies[Azure region pair^] for the Cloud Volumes ONTAP systems. This requirement ensures that an Azure Private Link connection is used between Cloud Volumes ONTAP and its associated storage accounts.
@@ -95,19 +67,9 @@ include::_include/ports.adoc[]
 IP address limitation::
 include::_include/ip-limitation.adoc[]
 
-== Set up Azure permissions
+== Step 2: Create a custom role
 
-When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:
-
-. Sign in with your Microsoft account when prompted. This account must have specific Azure permissions. This is the default option.
-
-. Provide details about an Azure AD service principal. This service principal also requires specific permissions.
-
-With both options, the first step is create a custom role.
-
-=== Create a custom role
-
-Create a custom role that you can assign to your Azure account or to a service principal.
+Create a custom role that you can assign to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 
@@ -212,9 +174,13 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 You should now have a custom role called _Azure SetupAsService_. You can now apply this custom role to your user account or to a service principal.
 
-=== Set up an authentication method
+== Step 3: Set up an authentication method
 
-To deploy the Connector, BlueXP needs to authenticate with Azure. You can choose between two Azure authentication methods.
+When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:
+
+. Sign in with your Microsoft account when prompted. This account must have specific Azure permissions. This is the default option.
+
+. Provide details about an Azure AD service principal. This service principal also requires specific permissions.
 
 // start tabbed area
 
@@ -312,7 +278,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Create the Connector
+== Step 4: Create the Connector
 
 Create the Connector directly from the BlueXP web-based console.
 
