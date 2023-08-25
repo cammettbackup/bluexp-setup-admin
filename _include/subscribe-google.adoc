@@ -47,7 +47,7 @@ For all other accounts, you'll need to manually associate the subscription by re
 +
 The following video shows the steps to subscribe from the Google Cloud Marketplace:
 +
-video::video-subscribing-google-cloud.mp4[width=848, height=480]
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto, title="Subscribe to BlueXP from the Google Cloud Marketplace"]
 
 .. Once this process is complete, navigate back to the Credentials page in BlueXP and select this new subscription.
 +
