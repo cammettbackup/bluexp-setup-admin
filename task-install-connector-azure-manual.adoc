@@ -158,14 +158,12 @@ include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 .What's next?
 
 link:task-provide-permissions-azure.html[Provide BlueXP with the permissions that you previously setup].
---
-
-====
-// end tabbed area
 
 == Step 5: Provide permissions to BlueXP
 
 Now that you've installed the Connector, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
+
+// start tabbed area
 
 [role="tabbed-block"]
 ====
