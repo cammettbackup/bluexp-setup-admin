@@ -161,6 +161,7 @@ link:task-provide-permissions-azure.html[Provide BlueXP with the permissions tha
 --
 
 ====
+// end tabbed area
 
 == Step 5: Provide permissions to BlueXP
 
