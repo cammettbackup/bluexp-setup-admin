@@ -43,68 +43,40 @@ sidebar:
               entries:
                 - title: AWS
                   entries:
-                    - title: Quick start
-                      url: /task-quick-start-connector-aws.html
                     - title: Installation options
                       url: /concept-install-options-aws.html
-                    - title: Set up networking
-                      url: /task-set-up-networking-aws.html
-                    - title: Review host requirements
-                      url: /reference-host-requirements-aws.html
-                    - title: Set up AWS permissions
-                      url: /task-set-up-permissions-aws.html
-                    - title: Create the Connector
-                      url: /task-install-connector-aws.html
-                    - title: Provide permissions to BlueXP
-                      url: /task-provide-permissions-aws.html
+                    - title: Create from BlueXP
+                      url: /task-install-aws-bluexp.html
+                    - title: Create from the marketplace
+                      url: /task-install-aws-mp.html
+                    - title: Install manually
+                      url: /task-install-aws-manual.html
                 - title: Azure
                   entries:
-                    - title: Quick start
-                      url: /task-quick-start-connector-azure.html
                     - title: Installation options
                       url: /concept-install-options-azure.html
-                    - title: Set up networking
-                      url: /task-set-up-networking-azure.html
-                    - title: Review host requirements
-                      url: /reference-host-requirements-azure.html
-                    - title: Set up Azure permissions
-                      url: /task-set-up-permissions-azure.html
-                    - title: Create the Connector
-                      url: /task-install-connector-azure.html
-                    - title: Provide permissions to BlueXP
-                      url: /task-provide-permissions-azure.html
+                    - title: Create from BlueXP
+                      url: /task-install-connector-azure-bluexp.html
+                    - title: Create from the marketplace
+                      url: /task-install-connector-azure-marketplace.html
+                    - title: Install manually
+                      url: /task-install-connector-azure-manual.html
                 - title: Google Cloud
                   entries:
-                    - title: Quick start
-                      url: /task-quick-start-connector-google.html
                     - title: Installation options
                       url: /concept-install-options-google.html
-                    - title: Set up networking
-                      url: /task-set-up-networking-google.html
-                    - title: Review host requirements
-                      url: /reference-host-requirements-google.html
-                    - title: Set up Google Cloud permissions
-                      url: /task-set-up-permissions-google.html
-                    - title: Enable Google Cloud APIs
-                      url: /task-enable-apis-google.html
-                    - title: Create the Connector
-                      url: /task-install-connector-google.html
-                    - title: Provide permissions to BlueXP
-                      url: /task-provide-permissions-google.html
+                    - title: Create from BlueXP
+                      url: /task-install-google-bluexp.html
+                    - title: Create using gcloud
+                      url: /task-install-google-gcloud.html
+                    - title: Install manually
+                      url: /task-install-google-manual.html
                 - title: On premises
-                  entries:
-                    - title: Quick start
-                      url: /task-quick-start-connector-on-prem.html
-                    - title: Set up networking
-                      url: /task-set-up-networking-on-prem.html
-                    - title: Review host requirements
-                      url: /reference-host-requirements-on-prem.html
-                    - title: Set up cloud permissions
-                      url: /task-set-up-permissions-on-prem.html
-                    - title: Create the Connector
-                      url: /task-install-connector-on-prem.html
-                    - title: Provide permissions to BlueXP
-                      url: /task-provide-permissions-on-prem.html
+                  url: /task-install-on-prem.html
+            - title: Subscribe to BlueXP
+              url: /task-subscribe-standard-mode.html
+            - title: What you can do next
+              url: /reference-whats-next.html
             - title: Subscribe to BlueXP
               url: /task-subscribe-standard-mode.html
             - title: What you can do next

@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: task-install-azure-bluexp.html
+permalink: task-install-connector-azure-bluexp.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector
 summary: To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 ---
 
-= Create a Connector in Azure from BlueXP
+= Manually install the Connector in Azure
 :hardbreaks:
 :nofooter:
 :icons: font
