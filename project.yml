@@ -77,10 +77,6 @@ sidebar:
               url: /task-subscribe-standard-mode.html
             - title: What you can do next
               url: /reference-whats-next.html
-            - title: Subscribe to BlueXP
-              url: /task-subscribe-standard-mode.html
-            - title: What you can do next
-              url: /reference-whats-next.html
         - title: Get started with restricted mode
           entries:
             - title: Quick start
