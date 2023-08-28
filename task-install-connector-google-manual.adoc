@@ -15,7 +15,19 @@ summary: Create a Connector directly from the BlueXP web-based console, by using
 [.lead]
 Words
 
-== Step 1: Set up networking
+== Step 1: Review host requirements
+
+The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
+
+When you deploy the Connector from BlueXP or by using glcoud, the image includes the required OS and software components.
+
+include::_include/os-reqs.adoc[tag=start]
+
+include::_include/os-reqs.adoc[tag=google-machine]
+
+include::_include/os-reqs.adoc[tag=end]
+
+== Step 2: Set up networking
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
@@ -74,7 +86,7 @@ IP address limitation::
 
 include::_include/ip-limitation.adoc[]
 
-== Step 2: Set up Google Cloud permissions
+== Step 3: Set up Google Cloud permissions
 
 === Set up permissions for the Connector
 
@@ -187,7 +199,7 @@ Notes:
 
 . For data tiering, the tiering service account must have the serviceAccount.user role on the service account, not just at the project level. Currently if you assign serviceAccount.user at the project level, the permissions don't show when you query the service account with getIAMPolicy.
 
-== Step 3: Enable Google Cloud APIs
+== Step 4: Enable Google Cloud APIs
 
 Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 
@@ -199,7 +211,7 @@ include::_include/google-cloud-apis.adoc[]
 
 https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud documentation: Enabling APIs^]
 
-== Step 4: Install the Connector
+== Step 5: Install the Connector
 
 Create a Connector directly from the BlueXP web-based console, by using gcloud, or by installing the software on your own Linux host.
 
@@ -217,7 +229,7 @@ link:task-provide-permissions-google.html[Provide BlueXP with the permissions th
 
 // end tabbed area
 
-== Step 5: Provide Google Cloud permissions to BlueXP
+== Step 6: Provide Google Cloud permissions to BlueXP
 
 If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Google Cloud.
 
