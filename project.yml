@@ -66,11 +66,11 @@ sidebar:
                     - title: Installation options
                       url: /concept-install-options-google.html
                     - title: Create from BlueXP
-                      url: /task-install-google-bluexp.html
+                      url: /task-install-connector-google-bluexp.html
                     - title: Create using gcloud
-                      url: /task-install-google-gcloud.html
+                      url: /task-install-connector-google-gcloud.html
                     - title: Install manually
-                      url: /task-install-google-manual.html
+                      url: /task-install-connector-google-manual.html
                 - title: On premises
                   url: /task-install-connector-on-prem.html
             - title: Subscribe to BlueXP
