@@ -46,11 +46,11 @@ sidebar:
                     - title: Installation options
                       url: /concept-install-options-aws.html
                     - title: Create from BlueXP
-                      url: /task-install-aws-bluexp.html
+                      url: /task-install-connector-aws-bluexp.html
                     - title: Create from the marketplace
-                      url: /task-install-aws-mp.html
+                      url: /task-install-connector-aws-marketplace.html
                     - title: Install manually
-                      url: /task-install-aws-manual.html
+                      url: /task-install-connector-aws-manual.html
                 - title: Azure
                   entries:
                     - title: Installation options

@@ -5,7 +5,7 @@ keywords: install connector, azure connector installation, azure connector, inst
 summary: To create a Connector in Azure from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 ---
 
-= Create a Connector in Azure from the Azure Marketplace
+= Create a Connector from the Azure Marketplace
 :hardbreaks:
 :nofooter:
 :icons: font

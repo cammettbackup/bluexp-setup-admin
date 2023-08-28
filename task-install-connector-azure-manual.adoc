@@ -5,7 +5,7 @@ keywords: install connector, azure connector installation, azure connector, inst
 summary: To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare Azure permissions, install the Connector, and then provide the permissions that you prepared.
 ---
 
-= Create a Connector in Azure from BlueXP
+= Manually install the Connector in Azure
 :hardbreaks:
 :nofooter:
 :icons: font
