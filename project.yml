@@ -72,7 +72,7 @@ sidebar:
                     - title: Install manually
                       url: /task-install-google-manual.html
                 - title: On premises
-                  url: /task-install-on-prem.html
+                  url: /task-install-connector-on-prem.html
             - title: Subscribe to BlueXP
               url: /task-subscribe-standard-mode.html
             - title: What you can do next
