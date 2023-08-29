@@ -44,7 +44,7 @@ Outbound internet access::
 The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted from the BlueXP console::
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks.
 +
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
@@ -79,7 +79,7 @@ include::_include/ip-limitation.adoc[]
 
 == Step 3: Set up permissions
 
-You can provide permissions in the following ways:
+You need to provide Azure permissions to BlueXP by using one of the following options:
 
 * Option 1: Assign a custom role to the Azure VM using a system-assigned managed identity.
 
@@ -155,13 +155,9 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
-.What's next?
-
-link:task-provide-permissions-azure.html[Provide BlueXP with the permissions that you previously setup].
-
 == Step 5: Provide permissions to BlueXP
 
-Now that you've installed the Connector, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
+Now that you've installed the Connector, you need to provide BlueXP with the Azure permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
 
 // start tabbed area
 

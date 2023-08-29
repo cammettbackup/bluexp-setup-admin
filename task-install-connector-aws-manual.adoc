@@ -5,7 +5,7 @@ keywords: install connector, aws connector installation, aws connector, install 
 summary: Create a Connector directly from the BlueXP web-based console, from the AWS Marketplace, or by installing the software on your own Linux host.
 ---
 
-= Create a Connector in AWS from BlueXP
+= Manually install the Connector in AWS
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,13 +13,11 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
 
-== Step 1: Review Connector host requirements
+== Step 1: Review host requirements
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
-
-When you deploy the Connector from BlueXP or from the AWS Marketplace, the image includes the required OS and software components.
 
 include::_include/os-reqs.adoc[tag=start]
 
@@ -29,21 +27,21 @@ include::_include/os-reqs.adoc[tag=aws-key-pair]
 
 include::_include/os-reqs.adoc[tag=end]
 
-== Step 2: Set up AWS networking
+== Step 2: Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
 VPC and subnet::
 When you create the Connector, you need to specify the VPC and subnet where the Connector should reside.
 
 Connections to target networks::
-A Connector requires a network connection to the location where you're planning to create and manage working environments.
+A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
 
 Outbound internet access::
-The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
+The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted from the BlueXP console::
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks.
 +
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
@@ -55,7 +53,7 @@ include::_include/endpoints-manual-install.adoc[tag=update]
 
 Endpoints contacted from the Connector::
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -83,12 +81,12 @@ IP address limitation::
 
 include::_include/ip-limitation.adoc[]
 
-== Step 3: Set up AWS permissions
+== Step 3: Set up permissions
 
-If you're planning to manually install the Connector software on your own Linux host in AWS, you can provide permissions in the following ways:
+You need to provide AWS permissions to BlueXP by using one of the following options:
 
 * Option 1: Create IAM policies and attach the policies to an IAM role that you can associate with the EC2 instance.
-* Option 2: Provide BlueXP with AWS access keys for an IAM user who has the required permissions.
+* Option 2: Provide BlueXP with the AWS access key for an IAM user who has the required permissions.
 
 // start tabbed area
 
@@ -134,7 +132,7 @@ You now have an IAM user that has the required permissions and an access key tha
 
 == Step 4: Install the Connector
 
-Create a Connector directly from the BlueXP web-based console.
+After the pre-requisites are complete, you can manually install the software on your own Linux host.
 
 include::_include/manual-install.adoc[tag=before]
 
@@ -144,13 +142,9 @@ include::_include/manual-install.adoc[tag=main-steps]
 
 include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
 
-.What's next?
+== Step 5: Provide permissions to BlueXP
 
-link:task-provide-permissions-aws.html[Provide BlueXP with the permissions that you previously setup].
-
-== Step 5: Provide AWS permissions to BlueXP
-
-If you manually installed the Connector software on your own Linux host, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
+Now that you've installed the Connector, you need to provide BlueXP with the AWS permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
 
 // start tabbed area
 

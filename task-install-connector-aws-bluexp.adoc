@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-install-connector-aws-bluexp.html
-keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector
-summary: Create a Connector directly from the BlueXP web-based console, from the AWS Marketplace, or by installing the software on your own Linux host.
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, create connector
+summary: To create a Connector in AWS from BlueXP, you need to set up your networking, prepare AWS permissions, and then create the Connector.
 ---
 
 = Create a Connector in AWS from BlueXP
@@ -13,35 +13,29 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+To create a Connector in AWS from BlueXP, you need to set up your networking, prepare AWS permissions, and then create the Connector.
 
-== Step 1: Set up AWS networking
+== Step 1: Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
 VPC and subnet::
 When you create the Connector, you need to specify the VPC and subnet where the Connector should reside.
 
 Connections to target networks::
-A Connector requires a network connection to the location where you're planning to create and manage working environments.
+A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
 
 Outbound internet access::
-The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
+The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted from the BlueXP console::
 As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
 +
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
-Endpoints contacted during manual installation::
-
-include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-
-include::_include/endpoints-manual-install.adoc[tag=update]
-
 Endpoints contacted from the Connector::
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -201,21 +195,17 @@ As a reminder, this policy contains only the permissions needed to launch the Co
 
 You should now have an IAM role that has the required permissions or an IAM user that has the required permissions. When you create the Connector from BlueXP, you can provide information about the role or access keys.
 
-== Step 3: Install the Connector
+== Step 3: Create the Connector
 
-Create a Connector directly from the BlueXP web-based console.
+Create the Connector directly from the BlueXP web-based console.
 
 .Before you begin
 
 You should have the following:
 
 * An AWS authentication method: either an IAM role or access keys for an IAM user with the required permissions.
-+
-link:task-set-up-permissions-aws.html[Learn how to set up AWS permissions]
 
 * A VPC and subnet that meets networking requirements.
-+
-link:task-set-up-networking-aws.html[Learn about networking requirements]
 
 * A key pair for the EC2 instance.
 

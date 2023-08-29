@@ -30,12 +30,17 @@ Set up your networking so the Connector can manage resources and processes withi
 Connections to target networks::
 
 A Connector requires a network connection to the type of working environment that you're creating and the services that you're planning to enable.
-
++
 For example, if you want to launch Cloud Volumes ONTAP in the cloud, then you must set up a VPN connection from your corporate network to the virtual network where you plan to launch Cloud Volumes ONTAP.
 
 Outbound internet access::
 
-The network location where you deploy the Connector must have an outbound internet connection.
+The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
+
+Endpoints contacted from the BlueXP console::
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks.
++
+link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
 Endpoints contacted during manual installation::
 
@@ -68,10 +73,6 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
-.Related link
-
-link:reference-networking-saas-console.html[Prepare networking for user access to the BlueXP console]
-
 Proxy server::
 
 include::_include/proxy-server.adoc[]
@@ -88,7 +89,7 @@ include::_include/ip-limitation.adoc[]
 
 If you want to use BlueXP services in AWS or Azure with an on-premises Connector, then you need to set up permissions in your cloud provider so that you can add the credentials to the Connector after you install it.
 
-TIP: Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. The Connector must be installed in Google Cloud to manage any resources that resides there.
+TIP: Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. The Connector must be installed in Google Cloud to manage any resources that reside there.
 
 // start tabbed area
 
@@ -114,8 +115,6 @@ include::_include/aws-permissions.adoc[tag=keys]
 .Result
 
 You should now have access keys for an IAM user who has the required permissions. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.
-
-link:task-provide-permissions-on-prem.html[Learn how to provide these permissions to BlueXP].
 --
 
 .Azure
@@ -145,8 +144,6 @@ include::_include/azure-set-up-service-principal.adoc[tags=secret]
 .Result
 
 Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. After you install the Connector, you'll need to associate these credentials with the Connector from BlueXP.
-
-link:task-provide-permissions-on-prem.html[Learn how to provide these permissions to BlueXP].
 --
 
 ====
@@ -199,8 +196,6 @@ link:task-provide-permissions-on-prem.html[Provide BlueXP with the permissions t
 == Step 6: Provide permissions to BlueXP
 
 After you install and set up the Connector, you need to add your cloud credentials so that BlueXP has the required permissions to perform actions in AWS or Azure.
-
-TIP: Why not Google Cloud? When the Connector is installed on your premises, it can't manage your resources in Google Cloud. The Connector must be installed in Google Cloud to manage any resources that resides there.
 
 // start tabbed area
 

@@ -13,35 +13,29 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, and then create the Connector.
 
-== Step 1: Set up AWS networking
+== Step 1: Set up networking
 
-Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
 VPC and subnet::
 When you create the Connector, you need to specify the VPC and subnet where the Connector should reside.
 
 Connections to target networks::
-A Connector requires a network connection to the location where you're planning to create and manage working environments.
+A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
 
 Outbound internet access::
-The network location where you deploy the Connector must have an outbound internet connection. Outbound internet access is also required from your web browser when deploying the Connector from the BlueXP console.
+The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted from the BlueXP console::
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks.
 +
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
-Endpoints contacted during manual installation::
-
-include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-
-include::_include/endpoints-manual-install.adoc[tag=update]
-
 Endpoints contacted from the Connector::
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -85,9 +79,9 @@ include::_include/aws-permissions.adoc[tag=role]
 
 You now have an IAM role that you can associate with the EC2 instance during deployment from the AWS Marketplace.
 
-== Step 3: Install the Connector
+== Step 3: Create the Connector
 
-Create a Connector directly from the BlueXP web-based console.
+Launch the Connector from the AWS Marketplace.
 
 .Before you begin
 

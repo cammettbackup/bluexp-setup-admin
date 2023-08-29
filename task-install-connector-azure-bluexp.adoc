@@ -69,7 +69,7 @@ include::_include/ip-limitation.adoc[]
 
 == Step 2: Create a custom role
 
-Create a custom role that you can assign to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
+Create an Azure custom role that you can assign to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.
 
 Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role[Azure documentation^]
 
@@ -174,7 +174,7 @@ az role definition create --role-definition Policy_for_Setup_As_Service_Azure.js
 +
 You should now have a custom role called _Azure SetupAsService_. You can now apply this custom role to your user account or to a service principal.
 
-== Step 3: Set up an authentication method
+== Step 3: Set up authentication
 
 When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:
 
@@ -306,7 +306,7 @@ These permissions are for the Connector instance itself. It's a different set of
 
 .Steps
 
-. If you're creating your first Working Environment, click *Add Working Environment* and follow the prompts. Otherwise, click the *Connector* drop-down and select *Add Connector*.
+. Select the *Connector* drop-down and select *Add Connector*.
 +
 image:screenshot_connector_add.gif[A screenshot that shows the Connector icon in the header and the Add Connector action.]
 

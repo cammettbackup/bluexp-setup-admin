@@ -13,7 +13,7 @@ summary: To create a Connector in Azure from the Azure Marketplace, you need to 
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector in Azure from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 
 == Step 1: Set up networking
 
@@ -34,7 +34,7 @@ Outbound internet access::
 The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted from the BlueXP console::
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks.
 +
 link:reference-networking-saas-console.html[View the list of endpoints contacted from the BlueXP console].
 
@@ -91,8 +91,6 @@ Note that you can create an Azure custom role using the Azure portal, Azure Powe
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
 
 include::_include/azure-set-up-role.adoc[]
-
-link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
 --
 
 .Service principal
@@ -122,8 +120,6 @@ include::_include/azure-set-up-service-principal.adoc[tags=secret]
 .Result
 
 Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you add an Azure account.
-
-link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
 --
 
 ====
@@ -131,7 +127,7 @@ link:task-provide-permissions-azure.html[Learn how to provide these permissions 
 
 == Step 3: Create the Connector
 
-Create the Connector directly from the BlueXP web-based console.
+Launch the Connector from the Azure Marketplace.
 
 .Before you begin
 
