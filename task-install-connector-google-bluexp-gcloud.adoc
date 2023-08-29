@@ -68,7 +68,7 @@ IP address limitation::
 
 include::_include/ip-limitation.adoc[]
 
-== Step 2: Set up permissions to create the Connector from BlueXP or gcloud
+== Step 2: Set up permissions to create the Connector
 
 Before you can deploy a Connector from BlueXP or by using gcloud, you need to set up permissions for the Google Cloud user who will deploy the Connector VM.
 
@@ -222,7 +222,7 @@ If you are using a shared VPC to deploy resources into a service project, then y
 
 This table is for reference and your environment should reflect the permissions table when IAM configuration is complete.
 
-[cols="10,10,10,20,20,30",options="header"]
+[cols=6*,options="header"]
 |===
 
 | Identity
