@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking
-summary: When getting started with BlueXP, ensure that your networking allows access to specific endpoints from the BlueXP console. Depending on how you plan to use BlueXP, you might also need to set up networking for a Connector and for specific BlueXP services.
+summary: As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints when completing a few administrative tasks. Computers that access the BlueXP console should have connections to these endpoints.
 ---
 
-= Prepare your networking
+= Prepare networking for using the BlueXP console
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,9 @@ summary: When getting started with BlueXP, ensure that your networking allows ac
 :imagesdir: ./media/
 
 [.lead]
-When getting started with BlueXP, ensure that your networking allows access to specific endpoints from the BlueXP console. Depending on how you plan to use BlueXP, you might also need to set up networking for a Connector and for specific BlueXP services.
+As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints when completing a few administrative tasks. Computers that access the BlueXP console should have connections to these endpoints.
 
-== Prepare networking for user access to the BlueXP console
-
-As you use the BlueXP web-based console that's provided through the SaaS layer, it contacts several endpoints to complete data management tasks. The machine running the web browser must have connections to these endpoints.
+These endpoints are contacted from a user's computer when completing specific actions from the BlueXP console. You should also refer to networking requirements for the Connector and for specific BlueXP services. For details, refer to the related links at the end of this page.
 
 [cols=2*,options="header,autowidth"]
 |===
@@ -84,17 +82,17 @@ AWS services (amazonaws.com):
 
 Beyond these endpoints, you also need to ensure that the Connector has outbound internet access to contact specific endpoints for day-to-day operations. You can find the list of these endpoints by following the links in the next section below.
 
-== Prepare networking for a Connector
+.Related links
 
-How you prepare your networking for a Connector depends on where you plan to install the Connector, which can be in the cloud or on your premises. For details about Connector networking requirements, refer to the following pages:
+* Prepare networking for the Connector
 
-* link:task-set-up-networking-aws.html[Set up AWS networking]
-* link:task-set-up-networking-azure.html[Set up Azure networking]
-* link:task-set-up-networking-google.html[Set up Google Cloud networking]
-* link:task-set-up-networking-on-prem.html[Set up on-prem networking]
+** link:task-set-up-networking-aws.html[Set up AWS networking]
+** link:task-set-up-networking-azure.html[Set up Azure networking]
+** link:task-set-up-networking-google.html[Set up Google Cloud networking]
+** link:task-set-up-networking-on-prem.html[Set up on-prem networking]
 
-== Prepare networking for BlueXP services
-
-As you get started with BlueXP, you should ensure that you've met the networking requirements for the BlueXP services that you plan to use. For details, refer to the documentation for each service.
-
+* Prepare networking for BlueXP services
++
+Refer to the documentation for each BlueXP service.
++
 https://docs.netapp.com/us-en/bluexp-family/[BlueXP documentation^]

@@ -15,7 +15,7 @@ summary: When you use BlueXP in private mode, you need to log in to the BlueXP c
 [.lead]
 When you use BlueXP in private mode, you need to log in to the BlueXP console from the user interface that runs locally on the Connector.
 
-.Log in options
+.About this task
 
 Private mode supports local user management and access. Authentication is not provided through BlueXP's cloud service.
 

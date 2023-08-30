@@ -352,12 +352,21 @@ After the process is complete, the Connector is available for use from BlueXP.
 You should have the following:
 
 * The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
-+
-link:task-set-up-permissions-google.html[Learn how to set up Google Cloud permissions]
 
 * A VPC and subnet that meets networking requirements.
+
+* An understanding of VM instance requirements.
 +
-link:task-set-up-networking-google.html[Learn about networking requirements]
+CPU::
+4 cores or 4 vCPUs
++
+RAM::
+14 GB
++
+Google Cloud machine type::
+An instance type that meets the CPU and RAM requirements above. We recommend n2-standard-4.
++
+The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features
 
 .Steps
 

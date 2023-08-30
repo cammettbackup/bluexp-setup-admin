@@ -62,7 +62,17 @@ include::_include/ports.adoc[]
 IP address limitation::
 include::_include/ip-limitation.adoc[]
 
-== Step 2: Set up permissions
+== Step 2: Review VM requirements
+
+When you create the Connector, you need to choose a virtual machine type that meets the following requirements.
+
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+include::_include/os-reqs.adoc[tag=azure-vm]
+
+== Step 3: Set up permissions
 
 You can provide permissions in the following ways:
 
@@ -120,7 +130,7 @@ Your service principal is now setup and you should have copied the application (
 ====
 // end tabbed area
 
-== Step 3: Create the Connector
+== Step 4: Create the Connector
 
 Launch the Connector from the Azure Marketplace.
 
@@ -188,7 +198,7 @@ You should keep restricted mode disabled because these steps describe how to use
 
 The Connector is now installed and is set up with your BlueXP account.
 
-== Step 4: Provide permissions to BlueXP
+== Step 5: Provide permissions to BlueXP
 
 Now that you've created the Connector, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.
 

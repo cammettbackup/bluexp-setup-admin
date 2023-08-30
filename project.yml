@@ -33,12 +33,10 @@ sidebar:
           entries:
             - title: Getting started workflow
               url: /task-quick-start-standard-mode.html
-            - title: Prepare networking
+            - title: Prepare networking for using the BlueXP console
               url: /reference-networking-saas-console.html
             - title: Sign up to BlueXP
               url: /task-sign-up-saas.html
-            - title: Log in to BlueXP
-              url: /task-logging-in.html
             - title: Create a Connector
               entries:
                 - title: AWS
@@ -83,8 +81,6 @@ sidebar:
               url: /task-prepare-restricted-mode.html
             - title: Deploy the Connector
               url: /task-install-restricted-mode.html
-            - title: Log in to BlueXP
-              url: /task-log-in-restricted-mode.html
             - title: Subscribe to BlueXP
               url: /task-subscribe-restricted-mode.html
             - title: What you can do next
@@ -97,12 +93,12 @@ sidebar:
               url: /task-prepare-private-mode.html
             - title: Deploy the Connector
               url: /task-install-private-mode.html
-            - title: Log in to BlueXP
-              url: /task-log-in-private-mode.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html
     - title: Administer BlueXP
       entries:
+        - title: Log in to BlueXP
+          url: /task-logging-in.html
         - title: Identity federation
           url: /concept-federation.html
         - title: BlueXP accounts

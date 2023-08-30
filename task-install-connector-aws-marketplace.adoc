@@ -74,7 +74,17 @@ include::_include/aws-permissions.adoc[tag=role]
 
 You now have an IAM role that you can associate with the EC2 instance during deployment from the AWS Marketplace.
 
-== Step 3: Create the Connector
+== Step 3: Review instance requirements
+
+When you create the Connector, you need to choose an EC2 instance type that meets the following requirements.
+
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+include::_include/os-reqs.adoc[tag=aws-ec2]
+
+== Step 4: Create the Connector
 
 Launch the Connector from the AWS Marketplace.
 

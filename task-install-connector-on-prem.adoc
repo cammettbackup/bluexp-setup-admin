@@ -19,9 +19,17 @@ Install a Connector on premises and then log in and set it up to work with your 
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. Ensure that your host meets these requirements before you install the Connector.
 
-include::_include/os-reqs.adoc[tag=start]
+include::_include/os-reqs.adoc[tag=dedicated]
 
-include::_include/os-reqs.adoc[tag=end]
+include::_include/os-reqs.adoc[tag=os]
+
+include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+include::_include/os-reqs.adoc[tag=disk-space]
+
+include::_include/os-reqs.adoc[tag=docker]
 
 == Step 2: Set up networking
 

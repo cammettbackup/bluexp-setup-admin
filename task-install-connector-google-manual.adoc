@@ -19,11 +19,19 @@ To manually install the Connector on your own Linux host, you need to review hos
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
 
-include::_include/os-reqs.adoc[tag=start]
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=os]
+
+include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=google-machine]
 
-include::_include/os-reqs.adoc[tag=end]
+include::_include/os-reqs.adoc[tag=disk-space]
+
+include::_include/os-reqs.adoc[tag=docker]
 
 == Step 2: Set up networking
 

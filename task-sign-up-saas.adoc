@@ -15,7 +15,7 @@ summary: BlueXP is accessible from a web-based console. When you get started wit
 [.lead]
 BlueXP is accessible from a web-based console. When you get started with BlueXP, your first step is to sign up using your existing NetApp Support Site credentials or by creating a NetApp cloud login.
 
-.Sign up options
+.About this task
 
 You can sign up to BlueXP using one of the following options:
 
