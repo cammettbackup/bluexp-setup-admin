@@ -34,9 +34,6 @@ If you use Cloud Volumes ONTAP, the Connector should be deployed in the same Azu
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html[Learn how Cloud Volumes ONTAP uses an Azure Private Link^]
 
-VNet and subnet::
-When you create the Connector, you need to specify the VNet and subnet where the Connector should reside.
-
 Connections to target networks::
 A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
 
@@ -101,8 +98,6 @@ Note that you can create an Azure custom role using the Azure portal, Azure Powe
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm[Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal^]
 
 include::_include/azure-set-up-role.adoc[]
-
-link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
 --
 
 .Service principal
@@ -132,8 +127,6 @@ include::_include/azure-set-up-service-principal.adoc[tags=secret]
 .Result
 
 Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you add an Azure account.
-
-link:task-provide-permissions-azure.html[Learn how to provide these permissions to BlueXP].
 --
 
 ====

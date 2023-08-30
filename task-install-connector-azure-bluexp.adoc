@@ -178,7 +178,7 @@ You should now have a custom role called _Azure SetupAsService_. You can now app
 
 When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:
 
-. Sign in with your Microsoft account when prompted. This account must have specific Azure permissions. This is the default option.
+. Sign in with your Azure account when prompted. This account must have specific Azure permissions. This is the default option.
 
 . Provide details about an Azure AD service principal. This service principal also requires specific permissions.
 
@@ -187,7 +187,7 @@ When creating the Connector from BlueXP, you need to provide a login that enable
 [role="tabbed-block"]
 ====
 
-.Azure user account
+.Azure account
 --
 Assign the custom role to the user who will deploy the Connector from BlueXP.
 

@@ -5,7 +5,7 @@ keywords: quick start, standard mode quick start
 summary: Get started with BlueXP in standard mode by signing up from the BlueXP console, optionally creating a Connector, and subscribing to BlueXP.
 ---
 
-= Quick start for BlueXP in standard mode
+= Getting started with standard mode summary
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,16 +15,13 @@ summary: Get started with BlueXP in standard mode by signing up from the BlueXP 
 [.lead]
 Get started with BlueXP in standard mode by signing up from the BlueXP console, optionally creating a Connector, and subscribing to BlueXP.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Sign up and create an account
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-sign-up-saas.html[Sign up and create an account]
 
 [role="quick-margin-para"]
 Go to the https://console.bluexp.netapp.com[BlueXP console^] and sign up. You'll be given the option to create an account, but you can skip that step if you're being invited to an existing account.
 
 [role="quick-margin-para"]
 At this point, you're logged in and can start using several BlueXP services like Digital Advisor, Amazon FSx for ONTAP, Azure NetApp Files, and more. link:concept-connectors.html[Learn what you can do without a Connector].
-
-[role="quick-margin-para"]
-link:task-sign-up-saas.html[Learn how to sign up and create an account].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Create a Connector
 
@@ -44,10 +41,7 @@ A BlueXP Account Admin can create a Connector in your cloud or on-premises netwo
 [role="quick-margin-para"]
 Note that if you want to use BlueXP services to manage storage and data in Google Cloud, then the Connector must be running in Google Cloud.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Subscribe to BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:task-subscribe-standard-mode.html[Subscribe to BlueXP]
 
 [role="quick-margin-para"]
 Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract.
-
-[role="quick-margin-para"]
-link:task-subscribe-standard-mode.html[Learn how to subscribe to BlueXP].

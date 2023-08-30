@@ -162,7 +162,7 @@ The Google Cloud user now has the permissions required to create the Connector.
 
 == Step 3: Set up permissions for the Connector
 
-Set up permissions by creating a role and granting the role to a service account. A service account is required to provide the Connector with the permissions that BlueXP needs to manage resources in Google Cloud. When you create the Connector, you'll need to associate this service account with the Connector VM.
+A Google Cloud service account is required to provide the Connector with the permissions that BlueXP needs to manage resources in Google Cloud. When you create the Connector, you'll need to associate this service account with the Connector VM.
 
 .Steps
 
@@ -182,7 +182,7 @@ The following example creates a role named "connector" at the project level:
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud[Google Cloud docs: Creating and managing custom roles^]
 
-. Create a service account in Google Cloud:
+. Create a service account in Google Cloud and assign the role to the service account:
 
 .. From the IAM & Admin service, select *Service Accounts > Create Service Account*.
 
@@ -194,35 +194,32 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 +
 https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account[Google Cloud docs: Creating a service account^]
 
-.Result
-
-The service account for the Connector VM is set up.
-
-== Step 4: Set up permissions across projects
-
-If you plan to deploy Cloud Volumes ONTAP systems in different projects than the project where the Connector resides, then you'll need to provide the Connector's service account with access to those projects.
-
+. If you plan to deploy Cloud Volumes ONTAP systems in different projects than the project where the Connector resides, then you'll need to provide the Connector's service account with access to those projects.
++
 For example, let's say the Connector is in project 1 and you want to create Cloud Volumes ONTAP systems in project 2. You'll need to grant access to the service account in project 2.
 
-.Steps
+.. From the IAM & Admin service, select the Google Cloud project where you want to create Cloud Volumes ONTAP systems.
 
-. In the Google Cloud console, go to the IAM service and select the project where you want to create Cloud Volumes ONTAP systems.
-
-. On the *IAM* page, select *Grant Access* and provide the required details.
+.. On the *IAM* page, select *Grant Access* and provide the required details.
 +
 * Enter the email of the Connector's service account.
 * Select the Connector's custom role.
 * Select *Save*.
 
++
 For more details, refer to https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role[Google Cloud documentation^]
 
-== Step 5: Set up shared VPC permissions
+.Result
+
+The service account for the Connector VM is set up.
+
+== Step 4: Set up shared VPC permissions
 
 If you are using a shared VPC to deploy resources into a service project, then you'll need to prepare your permissions. 
 
 This table is for reference and your environment should reflect the permissions table when IAM configuration is complete.
 
-[cols=6*,options="header"]
+[cols="10,10,10,18,18,34",options="header"]
 |===
 
 | Identity
@@ -239,14 +236,17 @@ a| compute.networkUser
 
 | Connector service account | Custom | Service project a|
 link:reference-permissions-gcp.html[Connector service account policy]
-a|
-* compute.networkUser
-* deploymentmanager.editor
+|
+compute.networkUser
+
+deploymentmanager.editor
 | Deploying and maintaining Cloud Volumes ONTAP and services in the service project
 
-| Cloud Volumes ONTAP service account | Custom | Service project a|
-* storage.admin
-* member: BlueXP service account as serviceAccount.user
+| Cloud Volumes ONTAP service account | Custom | Service project
+|
+storage.admin
+
+member: BlueXP service account as serviceAccount.user
 | N/A | (Optional) For data tiering and BlueXP backup and recovery
 
 | Google APIs service agent | Google Cloud | Service project a|
@@ -271,7 +271,7 @@ Notes:
 
 . For data tiering, the tiering service account must have the serviceAccount.user role on the service account, not just at the project level. Currently if you assign serviceAccount.user at the project level, the permissions don't show when you query the service account with getIAMPolicy.
 
-== Step 6: Enable Google Cloud APIs
+== Step 5: Enable Google Cloud APIs
 
 Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
 
@@ -283,7 +283,7 @@ include::_include/google-cloud-apis.adoc[]
 
 https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud documentation: Enabling APIs^]
 
-== Step 7: Install the Connector
+== Step 6: Create the Connector
 
 Create a Connector directly from the BlueXP web-based console or by using gcloud.
 
@@ -299,12 +299,8 @@ Create a Connector directly from the BlueXP web-based console or by using gcloud
 You should have the following:
 
 * The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
-+
-link:task-set-up-permissions-google.html[Learn how to set up Google Cloud permissions]
 
 * A VPC and subnet that meets networking requirements.
-+
-link:task-set-up-networking-google.html[Learn about networking requirements]
 
 * Details about a proxy server, if a proxy is required for internet access from the Connector.
 

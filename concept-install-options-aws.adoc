@@ -23,7 +23,7 @@ This action launches an EC2 instance running Linux and the Connector software in
 
 * link:task-install-connector-aws-marketplace.html[Create a Connector from the AWS Marketplace]
 +
-This action also launches an EC2 instance running Linux and the Connector software.
+This action also launches an EC2 instance running Linux and the Connector software, but the deployment is initiated directly from the AWS Marketplace, rather than from BlueXP.
 
 * link:task-install-connector-aws-manual.html[Download and manually install the software on your own Linux host]
 

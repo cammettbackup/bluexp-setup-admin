@@ -23,7 +23,7 @@ This action launches a VM instance running Linux and the Connector software in a
 
 * link:task-install-connector-google-bluexp-gcloud.html[Create the Connector using gcloud]
 +
-This action also launches a VM instance running Linux and the Connector software.
+This action also launches a VM instance running Linux and the Connector software, but the deployment is initiated directly from Google Cloud, rather than from BlueXP.
 
 * link:task-install-connector-google-manual.html[Download and manually install the software on your own Linux host]
 

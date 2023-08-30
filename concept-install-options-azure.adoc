@@ -23,7 +23,7 @@ This action launches a VM running Linux and the Connector software in a VNet of 
 
 * link:task-install-connector-azure-marketplace.html[Create a Connector from the Azure Marketplace]
 +
-This action also launches a VM running Linux and the Connector software.
+This action also launches a VM running Linux and the Connector software, but the deployment is initiated directly from the Azure Marketplace, rather than from BlueXP.
 
 * link:task-install-connector-azure-manual.html[Download and manually install the software on your own Linux host]
 

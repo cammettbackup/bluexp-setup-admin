@@ -5,7 +5,7 @@ keywords: quick start, restricted mode quick start
 summary: Get started with BlueXP in restricted mode in a few steps.
 ---
 
-= Quick start for BlueXP in restricted mode
+= Getting started with restricted mode summary
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,7 @@ summary: Get started with BlueXP in restricted mode in a few steps.
 [.lead]
 Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for deployment
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-restricted-mode.html[Prepare for deployment]
 
 [role="quick-margin-list"]
 .. Prepare a dedicated Linux host that meets requirements for CPU, RAM, disk space, Docker Engine, and more.
@@ -24,10 +24,7 @@ Get started with BlueXP in restricted mode by preparing your environment, deploy
 
 .. Set up permissions in your cloud provider so that you can associate those permissions with the Connector instance after you deploy it.
 
-[role="quick-margin-para"]
-link:task-prepare-restricted-mode.html[Learn how to prepare for deployment].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Deploy the Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] link:task-install-restricted-mode.html[Deploy the Connector]
 
 [role="quick-margin-list"]
 .. Install the Connector from your cloud provider's marketplace or by manually installing the software on your own Linux host.
@@ -36,13 +33,7 @@ link:task-prepare-restricted-mode.html[Learn how to prepare for deployment].
 
 .. Provide BlueXP with the permissions that you previously set up.
 
-[role="quick-margin-para"]
-link:task-install-restricted-mode.html[Learn how to deploy the Connector].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Subscribe to BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] link:task-subscribe-restricted-mode.html[Subscribe to BlueXP]
 
 [role="quick-margin-para"]
 Subscribe to BlueXP from your cloud provider's marketplace to pay for BlueXP services at an hourly rate (PAYGO) or through an annual contract.
-
-[role="quick-margin-para"]
-link:task-subscribe-restricted-mode.html[Learn how to subscribe to BlueXP].
