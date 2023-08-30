@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-quick-start-restricted-mode.html
 keywords: quick start, restricted mode quick start
-summary: Get started with BlueXP in restricted mode in a few steps.
+summary: Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
 ---
 
 = Getting started with restricted mode summary
