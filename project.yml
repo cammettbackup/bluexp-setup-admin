@@ -31,7 +31,7 @@ sidebar:
               url: /concept-modes.html
         - title: Get started with standard mode
           entries:
-            - title: Quick start
+            - title: Getting started workflow
               url: /task-quick-start-standard-mode.html
             - title: Prepare networking
               url: /reference-networking-saas-console.html
@@ -77,7 +77,7 @@ sidebar:
               url: /reference-whats-next.html
         - title: Get started with restricted mode
           entries:
-            - title: Quick start
+            - title: Getting started workflow
               url: /task-quick-start-restricted-mode.html
             - title: Prepare for deployment
               url: /task-prepare-restricted-mode.html
@@ -91,7 +91,7 @@ sidebar:
               url: /reference-whats-next-restricted-mode.html
         - title: Get started with private mode
           entries:
-            - title: Quick start
+            - title: Getting started workflow
               url: /task-quick-start-private-mode.html
             - title: Prepare for deployment
               url: /task-prepare-private-mode.html

@@ -5,7 +5,7 @@ keywords: quick start, standard mode quick start
 summary: Get started with BlueXP in standard mode by signing up from the BlueXP console, optionally creating a Connector, and subscribing to BlueXP.
 ---
 
-= Getting started with standard mode summary
+= Getting started with standard mode workflow
 :hardbreaks:
 :nofooter:
 :icons: font

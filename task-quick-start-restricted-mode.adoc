@@ -5,7 +5,7 @@ keywords: quick start, restricted mode quick start
 summary: Get started with BlueXP in restricted mode by preparing your environment, deploying the Connector, and subscribing to BlueXP.
 ---
 
-= Getting started with restricted mode summary
+= Getting started with restricted mode workflow
 :hardbreaks:
 :nofooter:
 :icons: font
