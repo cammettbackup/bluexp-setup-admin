@@ -219,6 +219,11 @@ If you are using a shared VPC to deploy resources into a service project, then y
 
 This table is for reference and your environment should reflect the permissions table when IAM configuration is complete.
 
+// Start snippet: collapsible block (open on page load)
+.View shared VPC permissions
+[%collapsible]
+====
+
 [cols="10,10,10,18,18,34",options="header"]
 |===
 
@@ -270,6 +275,8 @@ Notes:
 . firewall.create and firewall.delete are only required if you are not passing firewall rules to the deployment and are choosing to let BlueXP create them for you. These permissions reside in the BlueXP account .yaml file. If you are deploying an HA pair using a shared VPC, these permissions will be used to create the firewall rules for VPC1, 2 and 3. For all other deployments, these permissions will also be used to create rules for VPC0.
 
 . For data tiering, the tiering service account must have the serviceAccount.user role on the service account, not just at the project level. Currently if you assign serviceAccount.user at the project level, the permissions don't show when you query the service account with getIAMPolicy.
+====
+// End collapsible block
 
 == Step 5: Enable Google Cloud APIs
 
