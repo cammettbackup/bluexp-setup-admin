@@ -294,6 +294,10 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud do
 
 Create a Connector directly from the BlueXP web-based console or by using gcloud.
 
+.About this task
+
+Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+
 // start tabbed area
 
 [role="tabbed-block"]

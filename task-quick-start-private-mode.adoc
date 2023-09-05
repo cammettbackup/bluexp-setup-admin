@@ -15,6 +15,8 @@ summary: Get started with BlueXP in private mode by preparing your environment a
 [.lead]
 Get started with BlueXP in private mode by preparing your environment and deploying the Connector.
 
+Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
+
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-private-mode.html[Prepare for deployment]
 
 [role="quick-margin-list"]

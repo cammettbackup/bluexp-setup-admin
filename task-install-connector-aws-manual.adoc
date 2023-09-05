@@ -15,6 +15,10 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 [.lead]
 To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
 
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
 == Step 1: Review host requirements
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.

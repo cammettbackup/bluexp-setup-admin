@@ -15,6 +15,10 @@ summary: To create a Connector in AWS from BlueXP, you need to set up your netwo
 [.lead]
 To create a Connector in AWS from BlueXP, you need to set up your networking, prepare AWS permissions, and then create the Connector.
 
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
 == Step 1: Set up networking
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
@@ -198,6 +202,10 @@ You should now have an IAM role that has the required permissions or an IAM user
 == Step 3: Create the Connector
 
 Create the Connector directly from the BlueXP web-based console.
+
+.About this task
+
+Creating the Connector from BlueXP deploys an EC2 instance in AWS using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
 
 .Before you begin
 

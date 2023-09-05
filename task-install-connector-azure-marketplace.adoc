@@ -132,7 +132,11 @@ Your service principal is now setup and you should have copied the application (
 
 == Step 4: Create the Connector
 
-Launch the Connector from the Azure Marketplace.
+Launch the Connector directly from the Azure Marketplace.
+
+.About this task
+
+Creating the Connector from the Azure Marketplace deploys a virtual machine in Azure using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
 
 .Before you begin
 

@@ -282,6 +282,10 @@ Your service principal is now setup and you should have copied the application (
 
 Create the Connector directly from the BlueXP web-based console.
 
+.About this task
+
+Creating the Connector from BlueXP deploys a virtual machine in Azure using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+
 .Before you begin
 
 You should have the following:
