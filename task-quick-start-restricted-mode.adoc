@@ -25,7 +25,7 @@ You should have an understanding of the following:
 
 .Steps
 
-Test
+Follow these steps to get started.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-restricted-mode.html[Prepare for deployment]
 
