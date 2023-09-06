@@ -74,6 +74,8 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
+Test
+
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
 
