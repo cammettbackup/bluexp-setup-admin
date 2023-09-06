@@ -101,14 +101,14 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-restricted-mode
 
 |===
 
-Proxy server::
-include::_include/proxy-server.adoc[]
+//Azure public IP
+include::_include/networking.adoc[tag=azure-public-ip]
 
-Public IP address in Azure::
-include::_include/public-ip-azure.adoc[]
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
 
-Ports::
-include::_include/ports.adoc[]
+//Ports
+include::_include/networking.adoc[tag=ports]
 
 Prepare networking for user access to BlueXP console::
 In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. The machine running the web browser must have connections to the following endpoints.

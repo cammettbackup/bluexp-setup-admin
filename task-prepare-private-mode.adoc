@@ -82,13 +82,13 @@ include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
 
 |===
 
-Proxy server::
-include::_include/proxy-server.adoc[]
+//Azure public IP
+include::_include/networking.adoc[tag=azure-public-ip]
+
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
 +
 With private mode, the only time that BlueXP sends outbound traffic is to your cloud provider in order to create a Cloud Volumes ONTAP system.
-
-Public IP address in Azure::
-include::_include/public-ip-azure.adoc[]
 
 Ports::
 There's no incoming traffic to the Connector, unless you initiate it.
