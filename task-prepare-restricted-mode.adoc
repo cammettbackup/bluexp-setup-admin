@@ -62,11 +62,9 @@ include::_include/os-reqs.adoc[tag=docker]
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.
 
 Connections to target networks::
-
 The Connector must have a network connection to the location where you plan to manage storage. For example, the VPC or VNet where you plan to deploy Cloud Volumes ONTAP, or the data center where your on-premises ONTAP clusters reside.
 
 Outbound internet access for manual installs::
-
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 This endpoint is not required in Azure Government regions.
@@ -78,7 +76,6 @@ This endpoint is only required in Azure Government regions.
 include::_include/endpoints-manual-install.adoc[tag=update]
 
 Outbound internet access for day-to-day operations::
-
 The network location where you deploy the Connector must have an outbound internet connection. The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment.
 +
 [cols="2a,1a",options="header,autowidth"]
@@ -105,21 +102,17 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-restricted-mode
 |===
 
 Proxy server::
-
 include::_include/proxy-server.adoc[]
 
 Public IP address in Azure::
-
 include::_include/public-ip-azure.adoc[]
 
 Ports::
-
 include::_include/ports.adoc[]
 
 Prepare networking for user access to BlueXP console::
-
 In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. The machine running the web browser must have connections to the following endpoints.
-
++
 [cols=2*,options="header,autowidth"]
 |===
 | Endpoints

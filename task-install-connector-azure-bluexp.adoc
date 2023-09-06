@@ -15,6 +15,10 @@ summary: To create a Connector in Azure from BlueXP, you need to set up your net
 [.lead]
 To create a Connector in Azure from BlueXP, you need to set up your networking, prepare Azure permissions, and then create the Connector.
 
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
 == Step 1: Set up networking
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
@@ -63,9 +67,6 @@ include::_include/proxy-server.adoc[]
 
 Ports::
 include::_include/ports.adoc[]
-
-IP address limitation::
-include::_include/ip-limitation.adoc[]
 
 == Step 2: Create a custom role
 

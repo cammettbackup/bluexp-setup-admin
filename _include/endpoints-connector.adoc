@@ -1,3 +1,8 @@
+//tag::intro[]
+Endpoints contacted from the Connector::
+The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
+//end::intro[]
+
 //tag::aws-endpoints[]
 | AWS services (amazonaws.com):
 

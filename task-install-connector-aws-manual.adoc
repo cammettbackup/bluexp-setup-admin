@@ -43,20 +43,19 @@ include::_include/os-reqs.adoc[tag=docker]
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
-Connections to target networks::
-A Connector requires a network connection to the location where you're planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.
+//Connections to target networks
+include::_include/networking.adoc[tag=networks]
 
-Outbound internet access::
-The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
+//Outbound internet access
+include::_include/networking.adoc[tag=outbound]
 
-Endpoints contacted during manual installation::
-
+//Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-
++
 include::_include/endpoints-manual-install.adoc[tag=update]
 
-Endpoints contacted from the Connector::
-The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
+//Endpoints contacted from the Connector
+include::_include/endpoints-connector.adoc[intro]
 +
 [cols="2a,1a",options="header,autowidth"]
 |===
@@ -73,17 +72,11 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
-Proxy server::
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
 
-include::_include/proxy-server.adoc[]
-
-Ports::
-
-include::_include/ports.adoc[]
-
-IP address limitation::
-
-include::_include/ip-limitation.adoc[]
+//Ports
+include::_include/networking.adoc[tag=ports]
 
 == Step 3: Set up permissions
 

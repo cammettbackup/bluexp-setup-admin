@@ -51,15 +51,12 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 |===
 
 Proxy server::
-
 include::_include/proxy-server.adoc[]
 
 Ports::
-
 include::_include/ports.adoc[]
 
 IP address limitation::
-
 include::_include/ip-limitation.adoc[]
 
 == Step 2: Set up AWS permissions

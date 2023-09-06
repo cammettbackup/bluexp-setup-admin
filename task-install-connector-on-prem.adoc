@@ -15,6 +15,10 @@ summary: Install a Connector on premises and then log in and set it up to work w
 [.lead]
 Install a Connector on premises and then log in and set it up to work with your BlueXP account.
 
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
 == Step 1: Review host requirements
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. Ensure that your host meets these requirements before you install the Connector.
@@ -36,25 +40,21 @@ include::_include/os-reqs.adoc[tag=docker]
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
 Connections to target networks::
-
 A Connector requires a network connection to the type of working environment that you're creating and the services that you're planning to enable.
 +
 For example, if you want to launch Cloud Volumes ONTAP in the cloud, then you must set up a VPN connection from your corporate network to the virtual network where you plan to launch Cloud Volumes ONTAP.
 
 Outbound internet access::
-
 The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
 
 Endpoints contacted during manual installation::
-
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
-
++
 include::_include/endpoints-manual-install.adoc[tag=update]
 
 Endpoints contacted from the Connector::
-
 The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -77,16 +77,10 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 |===
 
 Proxy server::
-
 include::_include/proxy-server.adoc[]
 
 Ports::
-
 include::_include/ports.adoc[]
-
-IP address limitation::
-
-include::_include/ip-limitation.adoc[]
 
 == Step 3: Set up cloud permissions
 
