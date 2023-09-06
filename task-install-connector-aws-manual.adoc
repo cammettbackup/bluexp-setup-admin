@@ -55,9 +55,7 @@ include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 include::_include/endpoints-manual-install.adoc[tag=update]
 
 //Endpoints contacted from the Connector 
-include::_include/endpoints-connector.adoc[intro]
-+
-test
+include::_include/endpoints-connector.adoc[tag=intro]
 +
 [cols="2a,1a",options="header,autowidth"]
 |===
@@ -73,8 +71,6 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
-
-Test
 
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
