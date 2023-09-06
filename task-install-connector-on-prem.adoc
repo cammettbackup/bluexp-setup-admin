@@ -39,21 +39,19 @@ include::_include/os-reqs.adoc[tag=docker]
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
-Connections to target networks::
-A Connector requires a network connection to the type of working environment that you're creating and the services that you're planning to enable.
-+
-For example, if you want to launch Cloud Volumes ONTAP in the cloud, then you must set up a VPN connection from your corporate network to the virtual network where you plan to launch Cloud Volumes ONTAP.
+//Connections to target networks
+include::_include/networking.adoc[tag=networks]
 
-Outbound internet access::
-The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.
+//Outbound internet access
+include::_include/networking.adoc[tag=outbound]
 
-Endpoints contacted during manual installation::
+//Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 include::_include/endpoints-manual-install.adoc[tag=update]
 
-Endpoints contacted from the Connector::
-The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.
+//Endpoints contacted from the Connector 
+include::_include/endpoints-connector.adoc[tag=intro]
 +
 [cols="2a,1a",options="header,autowidth"]
 |===
@@ -76,11 +74,11 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
 
-Proxy server::
-include::_include/proxy-server.adoc[]
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
 
-Ports::
-include::_include/ports.adoc[]
+//Ports
+include::_include/networking.adoc[tag=ports]
 
 == Step 3: Set up cloud permissions
 
