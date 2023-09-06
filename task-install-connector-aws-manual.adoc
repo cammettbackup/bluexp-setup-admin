@@ -54,8 +54,10 @@ include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 include::_include/endpoints-manual-install.adoc[tag=update]
 
-//Endpoints contacted from the Connector
+//Endpoints contacted from the Connector 
 include::_include/endpoints-connector.adoc[intro]
++
+test
 +
 [cols="2a,1a",options="header,autowidth"]
 |===
