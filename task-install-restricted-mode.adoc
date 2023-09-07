@@ -37,13 +37,13 @@ link:task-prepare-restricted-mode.html[Learn about networking requirements]
 
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up AWS permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissionss[Learn how to set up AWS permissions]
 
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
 * An understanding of CPU and RAM requirements for the instance.
 +
-link:task-prepare-restricted-mode.html#review-host-requirements[Review instance requirements].
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements[Review instance requirements].
 
 * A key pair for the EC2 instance.
 
@@ -70,7 +70,7 @@ You should have the following:
 link:task-prepare-restricted-mode.html[Learn about networking requirements]
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up AWS permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up AWS permissions]
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
 * A key pair for the EC2 instance.
@@ -126,7 +126,7 @@ link:task-prepare-restricted-mode.html[Learn about networking requirements]
 
 * An Azure custom role that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up Azure permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up Azure permissions]
 
 .Steps
 
@@ -240,7 +240,7 @@ If you deployed the Connector from the Azure Marketplace or if you manually inst
 
 These steps don't apply if you deployed the Connector from the AWS Marketplace because you chose the required IAM role during deployment. 
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to prepare cloud permissions].
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to prepare cloud permissions].
 
 // start tabbed area
 
