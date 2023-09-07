@@ -37,7 +37,7 @@ link:task-prepare-restricted-mode.html[Learn about networking requirements]
 
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissionss[Learn how to set up AWS permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up AWS permissions]
 
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
