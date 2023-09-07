@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-aws-manual.html
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector
-summary: Create a Connector directly from the BlueXP web-based console, from the AWS Marketplace, or by installing the software on your own Linux host.
+summary: To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
 ---
 
 = Manually install the Connector in AWS
@@ -21,7 +21,7 @@ You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Review host requirements
 
-The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
+The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
@@ -84,6 +84,8 @@ You need to provide AWS permissions to BlueXP by using one of the following opti
 
 * Option 1: Create IAM policies and attach the policies to an IAM role that you can associate with the EC2 instance.
 * Option 2: Provide BlueXP with the AWS access key for an IAM user who has the required permissions.
+
+Follow the steps to prepare permissions for BlueXP.
 
 // start tabbed area
 

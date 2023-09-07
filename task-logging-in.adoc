@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-logging-in.html
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account
-summary: After you sign up to BlueXP, you can log in from the web-based console to start managing your data and storage infrastructure.
+summary: How you log in to BlueXP depends on the BlueXP deployment mode that you're using for your account.
 ---
 
 = Log in to BlueXP
@@ -13,7 +13,7 @@ summary: After you sign up to BlueXP, you can log in from the web-based console 
 :imagesdir: ./media/
 
 [.lead]
-How users log in to BlueXP depends on the BlueXP deployment mode that you're using for your account.
+How you log in to BlueXP depends on the BlueXP deployment mode that you're using for your account.
 
 // start tabbed area
 

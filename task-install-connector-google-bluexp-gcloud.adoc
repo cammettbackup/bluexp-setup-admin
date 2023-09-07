@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-google-bluexp-gcloud.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector
-summary: To create a Connector in Google Cloud from BlueXP, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
+summary: To create a Connector in Google Cloud from BlueXP or by using gcloud, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
 ---
 
 = Create a Connector in Google Cloud from BlueXP or gcloud
@@ -32,9 +32,6 @@ include::_include/networking.adoc[tag=networks]
 //Outbound internet access
 include::_include/networking.adoc[tag=outbound]
 
-//Outbound internet access
-include::_include/networking.adoc[tag=endpoints-console]
-
 //Endpoints contacted from the Connector 
 include::_include/endpoints-connector.adoc[tag=intro]
 +
@@ -52,6 +49,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
+
+//Console endpoints
+include::_include/networking.adoc[tag=endpoints-console]
 
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
@@ -249,16 +249,11 @@ You should have the following:
 
 * An understanding of VM instance requirements.
 +
-CPU::
-4 cores or 4 vCPUs
+** *CPU*: 4 cores or 4 vCPUs
+** *RAM*: 14 GB
+** *Machine type*: We recommend n2-standard-4.
 +
-RAM::
-14 GB
-+
-Google Cloud machine type::
-An instance type that meets the CPU and RAM requirements above. We recommend n2-standard-4.
-+
-The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features
+The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features.
 
 .Steps
 

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-google-manual.html
 keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector
-summary: To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare Google Cloud permissions, install the Connector, and then provide the permissions that you prepared.
+summary: To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, install the Connector, and then provide the permissions that you prepared.
 ---
 
 = Manually install the Connector in Google Cloud
@@ -13,7 +13,7 @@ summary: To manually install the Connector on your own Linux host, you need to r
 :imagesdir: ./media/
 
 [.lead]
-To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare Google Cloud permissions, install the Connector, and then provide the permissions that you prepared.
+To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, install the Connector, and then provide the permissions that you prepared.
 
 .Before you begin
 
@@ -21,7 +21,7 @@ You should review link:reference-limitations.html[Connector limitations].
 
 == Step 1: Review host requirements
 
-The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on. If you plan to manually install the Connector, you should ensure that your host meets these requirements.
+The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
 
 include::_include/os-reqs.adoc[tag=dedicated]
 
@@ -98,7 +98,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud do
 
 == Step 6: Install the Connector
 
-Create a Connector directly from the BlueXP web-based console, by using gcloud, or by installing the software on your own Linux host.
+After the pre-requisites are complete, you can manually install the software on your own Linux host.
 
 include::_include/manual-install.adoc[tag=before]
 

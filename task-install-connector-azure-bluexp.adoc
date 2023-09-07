@@ -35,9 +35,6 @@ include::_include/networking.adoc[tag=networks]
 //Outbound internet access
 include::_include/networking.adoc[tag=outbound]
 
-//Outbound internet access
-include::_include/networking.adoc[tag=endpoints-console]
-
 //Endpoints contacted from the Connector 
 include::_include/endpoints-connector.adoc[tag=intro]
 +
@@ -57,6 +54,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
+
+//Console endpoints
+include::_include/networking.adoc[tag=endpoints-console]
 
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
@@ -178,6 +178,8 @@ When creating the Connector from BlueXP, you need to provide a login that enable
 . Sign in with your Azure account when prompted. This account must have specific Azure permissions. This is the default option.
 
 . Provide details about an Azure AD service principal. This service principal also requires specific permissions.
+
+Follow the steps to prepare one of these authentication methods for use with BlueXP.
 
 // start tabbed area
 

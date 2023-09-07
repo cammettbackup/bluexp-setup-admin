@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-azure-marketplace.html
 keywords: install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace
-summary: To create a Connector in Azure from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+summary: To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, review instance requirements, and then create the Connector.
 ---
 
 = Create a Connector from the Azure Marketplace
@@ -13,7 +13,7 @@ summary: To create a Connector in Azure from the Azure Marketplace, you need to 
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, and then create the Connector.
+To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, review instance requirements, and then create the Connector.
 
 .Before you begin
 
@@ -65,8 +65,6 @@ include::_include/networking.adoc[tag=ports]
 
 When you create the Connector, you need to choose a virtual machine type that meets the following requirements.
 
-include::_include/os-reqs.adoc[tag=dedicated]
-
 include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=azure-vm]
@@ -78,6 +76,8 @@ You can provide permissions in the following ways:
 * Option 1: Assign a custom role to the Azure VM using a system-assigned managed identity.
 
 * Option 2: Provide BlueXP with the credentials for an Azure service principal that has the required permissions.
+
+Follow these steps to set up permissions for BlueXP.
 
 // start tabbed area
 

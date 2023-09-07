@@ -160,7 +160,7 @@ The Connector is now installed. At the end of the installation, the Connector se
 
 == Step 5: Set up the Connector
 
-Sign up or log in and then set up the Connector to work with your account.
+Sign up or log in and then set up the Connector to work with your BlueXP account.
 
 .Steps
 
@@ -186,7 +186,7 @@ BlueXP is now set up with the Connector that you just installed.
 
 == Step 6: Provide permissions to BlueXP
 
-After you install and set up the Connector, you need to add your cloud credentials so that BlueXP has the required permissions to perform actions in AWS or Azure.
+After you install and set up the Connector, add your cloud credentials so that BlueXP has the required permissions to perform actions in AWS or Azure.
 
 // start tabbed area
 

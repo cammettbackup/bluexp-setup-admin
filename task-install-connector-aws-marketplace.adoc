@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-install-connector-aws-marketplace.html
 keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector
-summary: Create a Connector directly from the BlueXP web-based console, from the AWS Marketplace, or by installing the software on your own Linux host.
+summary: To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create the Connector.
 ---
 
 = Create a Connector from the AWS Marketplace
@@ -13,7 +13,7 @@ summary: Create a Connector directly from the BlueXP web-based console, from the
 :imagesdir: ./media/
 
 [.lead]
-To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, and then create the Connector.
+To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create the Connector.
 
 .Before you begin
 
@@ -75,8 +75,6 @@ You now have an IAM role that you can associate with the EC2 instance during dep
 == Step 3: Review instance requirements
 
 When you create the Connector, you need to choose an EC2 instance type that meets the following requirements.
-
-include::_include/os-reqs.adoc[tag=dedicated]
 
 include::_include/os-reqs.adoc[tag=cpu-ram]
 

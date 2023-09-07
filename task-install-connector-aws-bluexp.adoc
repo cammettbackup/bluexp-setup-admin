@@ -23,7 +23,7 @@ You should review link:reference-limitations.html[Connector limitations].
 
 Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
 
-//Connections to target networks
+//VPC and subnet
 include::_include/networking.adoc[tag=vpc]
 
 //Connections to target networks
@@ -31,9 +31,6 @@ include::_include/networking.adoc[tag=networks]
 
 //Outbound internet access
 include::_include/networking.adoc[tag=outbound]
-
-//Outbound internet access
-include::_include/networking.adoc[tag=endpoints-console]
 
 //Endpoints contacted from the Connector 
 include::_include/endpoints-connector.adoc[tag=intro]
@@ -52,6 +49,9 @@ include::_include/endpoints-connector.adoc[tag=saas-endpoints]
 include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
 
 |===
+
+//Console endpoints
+include::_include/networking.adoc[tag=endpoints-console]
 
 //Proxy server
 include::_include/networking.adoc[tag=proxy]
