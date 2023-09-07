@@ -57,14 +57,38 @@ include::_include/os-reqs.adoc[tag=disk-space]
 
 include::_include/os-reqs.adoc[tag=docker]
 
-== Step 4: Prepare networking for the Connector
+== Step 4: Prepare networking
 
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.
 
 Connections to target networks::
 The Connector must have a network connection to the location where you plan to manage storage. For example, the VPC or VNet where you plan to deploy Cloud Volumes ONTAP, or the data center where your on-premises ONTAP clusters reside.
 
-Outbound internet access for manual installs::
+Prepare networking for user access to BlueXP console::
+In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. These endpoints are contacted from a user's computer when completing specific actions from the BlueXP console.
++
+[cols=2*,options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+| \https://signin.b2c.netapp.com
+| Required to update NetApp Support Site (NSS) credentials or to add new NSS credentials to BlueXP.
+
+|
+\https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com
+| Your web browser connects to these endpoints for centralized user authentication through BlueXP.
+
+| \https://widget.intercom.io
+| For in-product chat that enables you to talk to NetApp cloud experts.
+
+|===
+
+//Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 This endpoint is not required in Azure Government regions.
@@ -73,6 +97,7 @@ This endpoint is not required in Azure Government regions.
 +
 This endpoint is only required in Azure Government regions.
 
++
 include::_include/endpoints-manual-install.adoc[tag=update]
 
 Outbound internet access for day-to-day operations::
@@ -109,30 +134,6 @@ include::_include/networking.adoc[tag=proxy]
 
 //Ports
 include::_include/networking.adoc[tag=ports]
-
-Prepare networking for user access to BlueXP console::
-In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. The machine running the web browser must have connections to the following endpoints.
-+
-[cols=2*,options="header,autowidth"]
-|===
-| Endpoints
-| Purpose
-
-| \https://signin.b2c.netapp.com
-| Required to update NetApp Support Site (NSS) credentials or to add new NSS credentials to BlueXP.
-
-|
-\https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com
-| Your web browser connects to these endpoints for centralized user authentication through BlueXP.
-
-| \https://widget.intercom.io
-| For in-product chat that enables you to talk to NetApp cloud experts.
-
-|===
 
 == Step: 5 Prepare cloud permissions
 

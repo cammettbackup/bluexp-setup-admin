@@ -44,9 +44,6 @@ Ensure that the network location where you plan to install the Connector support
 //Azure regions
 include::_include/networking.adoc[tag=azure-region]
 
-//VNet and subnet
-include::_include/networking.adoc[tag=vnet]
-
 //Connections to target networks
 include::_include/networking.adoc[tag=networks]
 

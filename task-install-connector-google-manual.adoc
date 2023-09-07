@@ -41,9 +41,6 @@ include::_include/os-reqs.adoc[tag=docker]
 
 Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
 
-//VPC and subnet
-include::_include/networking.adoc[tag=vpc]
-
 //Connections to target networks
 include::_include/networking.adoc[tag=networks]
 

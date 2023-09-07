@@ -1,4 +1,4 @@
 ---
-permalink: task-creating-connectors-azure.html
+permalink: task-quick-start-connector-azure.html
 redirect: bluexp-setup-admin/concept-install-options-azure.html
 ---

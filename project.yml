@@ -95,10 +95,10 @@ sidebar:
               url: /task-install-private-mode.html
             - title: What you can do next
               url: /reference-whats-next-private-mode.html
-    - title: Administer BlueXP
-      entries:
         - title: Log in to BlueXP
           url: /task-logging-in.html
+    - title: Administer BlueXP
+      entries:
         - title: Identity federation
           url: /concept-federation.html
         - title: BlueXP accounts
@@ -216,13 +216,13 @@ homepage:
         - title: Learn about Connectors
           url: concept-connectors.html
         - title: Create a Connector in AWS (standard mode)
-          url: task-quick-start-connector-aws.html
+          url: task-install-connector-aws-bluexp.html
         - title: Create a Connector in Azure (standard mode)
-          url: task-quick-start-connector-azure.html
+          url: task-install-connector-azure-bluexp.html
         - title: Create a Connector in Google Cloud (standard mode)
-          url: task-quick-start-connector-google.html
+          url: task-install-connector-google-bluexp-gcloud.html
         - title: Create a Connector on premises (standard mode)
-          url: task-quick-start-connector-on-prem.html
+          url: task-install-connector-on-prem.html
         - title: Manage Connectors
           url: task-managing-connectors.html
     - title: Permissions

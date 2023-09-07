@@ -86,10 +86,10 @@ Beyond these endpoints, you also need to ensure that the Connector has outbound 
 
 * Prepare networking for the Connector
 
-** link:task-set-up-networking-aws.html[Set up AWS networking]
-** link:task-set-up-networking-azure.html[Set up Azure networking]
-** link:task-set-up-networking-google.html[Set up Google Cloud networking]
-** link:task-set-up-networking-on-prem.html[Set up on-prem networking]
+** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking[Set up AWS networking]
+** link:task-install-connector-azure-bluexp.html#step-1-set-up-networking[Set up Azure networking]
+** link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking[Set up Google Cloud networking]
+** link:task-install-connector-on-prem.html#step-2-set-up-networking[Set up on-prem networking]
 
 * Prepare networking for BlueXP services
 +

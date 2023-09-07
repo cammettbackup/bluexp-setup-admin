@@ -156,7 +156,7 @@ Be sure to do the following:
 * Create a policy that includes the permissions required to create a Connector.
 +
 ** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html[View the permissions needed for FSx for ONTAP^]
-** link:task-set-up-permissions-aws.html[View the Connector deployment policy]
+** link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[View the Connector deployment policy]
 
 . Copy the Role ARN of the IAM role so that you can paste it in BlueXP in the next step.
 

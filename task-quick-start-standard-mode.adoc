@@ -40,10 +40,10 @@ A BlueXP Account Admin can create a Connector in your cloud or on-premises netwo
 
 [role="quick-margin-list"]
 * link:concept-connectors.html[Learn more about when Connectors are required and how they work]
-* link:task-quick-start-connector-aws.html[Learn how to create a Connector in AWS]
-* link:task-quick-start-connector-azure.html[Learn how to create a Connector in Azure]
-* link:task-quick-start-connector-google.html[Learn how to create a Connector in Google Cloud]
-* link:task-quick-start-connector-on-prem.html[Learn how to create a Connector on premises]
+* link:concept-install-options-aws.html[Learn how to create a Connector in AWS]
+* link:concept-install-options-azure.html[Learn how to create a Connector in Azure]
+* link:concept-install-options-google.html[Learn how to create a Connector in Google Cloud]
+* link:task-install-connector-on-prem.html[Learn how to create a Connector on premises]
 
 [role="quick-margin-para"]
 Note that if you want to use BlueXP services to manage storage and data in Google Cloud, then the Connector must be running in Google Cloud.

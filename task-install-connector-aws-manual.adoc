@@ -103,7 +103,7 @@ include::_include/aws-permissions.adoc[tag=role]
 
 .Result
 
-You now have an IAM role that you can associate with the EC2 instance after you install the Connector. link:task-provide-permissions-aws.html[Learn how to provide these permissions to BlueXP].
+You now have an IAM role that you can associate with the EC2 instance after you install the Connector.
 --
 
 .AWS access key
@@ -121,7 +121,7 @@ include::_include/aws-permissions.adoc[tag=keys]
 
 .Result
 
-You now have an IAM user that has the required permissions and an access key that you can provide to BlueXP. link:task-provide-permissions-aws.html[Learn how to provide these permissions to BlueXP].
+You now have an IAM user that has the required permissions and an access key that you can provide to BlueXP.
 --
 
 ====

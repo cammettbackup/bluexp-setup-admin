@@ -123,15 +123,17 @@ A BlueXP Account Admin can create a Connector directly from BlueXP, from your cl
 
 Specific permissions are needed to create the Connector directly from BlueXP and another set of permissions are needed for the Connector instance itself. If you create the Connector in AWS or Azure directly from BlueXP, then BlueXP creates the Connector with the permissions that it needs.
 
-To learn how to set up permissions, refer to the following pages:
+When using BlueXP in standard mode, how you provide permissions depends on how you plan to create the Connector.
+
+To learn how to set up permissions, refer to the following:
 
 * Standard mode
-** link:task-set-up-permissions-aws.html[Set up AWS permissions]
-** link:task-set-up-permissions-azure.html[Set up Azure permissions]
-** link:task-set-up-permissions-google.html[Set up Google Cloud permissions]
-** link:task-set-up-permissions-on-prem.html[Set up cloud permissions for on-prem deployments]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Set up cloud permissions for restricted mode]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions[Set up cloud permissions for private mode]
+** link:concept-install-options-aws.html[Connector installation options in AWS]
+** link:concept-install-options-azure.html[Connector installation options in Azure]
+** link:concept-install-options-google.html[Connector installation options in Google Cloud]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up cloud permissions for on-prem deployments]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 To view the exact permissions that the Connector needs, refer to the following pages:
 

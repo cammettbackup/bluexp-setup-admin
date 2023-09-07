@@ -1,4 +1,4 @@
 ---
-permalink: task-creating-connectors-gcp.html
+permalink: task-quick-start-connector-google.html
 redirect: bluexp-setup-admin/concept-install-options-google.html
 ---
