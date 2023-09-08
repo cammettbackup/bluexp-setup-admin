@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Create a Connector in Google Cloud | NetApp Documentation</title>
+  <title>Manually install the Connector in AWS | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Create a Connector in Google Cloud | NetApp Documentation" />
+  <meta property="og:title" content="Manually install the Connector in AWS | NetApp Documentation" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html" />
-	<meta property="og:description" content="Create a Connector directly from the BlueXP web-based console, by using gcloud, or by installing the software on your own Linux host." />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+	<meta property="og:description" content="To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the ..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Create a Connector directly from the BlueXP web-based console, by using gcloud, or by installing the software on your own Linux host.">
-  <meta name="keywords" content=" install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the ...">
+  <meta name="keywords" content=" install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector"><!-- Icons -->
   <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -32,17 +32,17 @@
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
-  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google.html" />
-  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google.html" />
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-aws-manual.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-aws-manual.html" />
   <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -177,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html&page-title=Create a Connector in Google Cloud" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-google.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html&page-title=Manually install the Connector in AWS" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-aws-manual.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -297,23 +297,23 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-aws-manual.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -443,8 +443,6 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -482,12 +480,8 @@
 
 
 
-
-
-
-
-
-
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
         </li>
@@ -513,12 +507,6 @@
             Azure
           </a>
           
-
-
-
-
-
-
 
 
 
@@ -556,18 +544,6 @@
 
 
 
-
-
-
-
-
-
-    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
-  
-
-
-
-
         </li>
       </ul>
     
@@ -575,39 +551,6 @@
   
 
 
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/us-en/bluexp-setup-admin/pdfs/sidebar/On_premises.pdf" 
-            
-          >
-            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
-            On premises
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-        </li>
-      </ul>
-    
-
-  
 
 
         </li>
@@ -654,8 +597,6 @@
 
 
 
-
-
         </li>
       </ul>
     
@@ -687,13 +628,13 @@
 
 
 
-
-
         </li>
       </ul>
     
 
   
+
+
 
 
         </li>
@@ -1168,18 +1109,18 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Prepare networking"
+      data-pdf-filename="Prepare networking for using the BlueXP console"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
-        Prepare networking
+        Prepare networking for using the BlueXP console
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Sign up to BlueXP"
@@ -1187,13 +1128,6 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-sign-up-saas.html">
         Sign up to BlueXP
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-logging-in.html">
-        Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create a Connector"
@@ -1214,13 +1148,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1228,39 +1155,25 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-aws.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Create from BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Create from the marketplace"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-aws.html">
-        Review host requirements
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Create from the marketplace
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up AWS permissions"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-aws.html">
-        Set up AWS permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-aws.html">
-        Provide permissions to BlueXP
+      class="  active "
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Azure"
@@ -1272,13 +1185,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1286,39 +1192,25 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-azure.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Create from BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Create from the marketplace"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-azure.html">
-        Review host requirements
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Create from the marketplace
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up Azure permissions"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-azure.html">
-        Set up Azure permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-azure.html">
-        Provide permissions to BlueXP
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Google Cloud"
@@ -1330,13 +1222,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-google.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1344,98 +1229,26 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP or using gcloud"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-google.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Create from BlueXP or using gcloud
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-google.html">
-        Review host requirements
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up Google Cloud permissions"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-google.html">
-        Set up Google Cloud permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Enable Google Cloud APIs"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-enable-apis-google.html">
-        Enable Google Cloud APIs
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class="  active "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-google.html">
-        Provide permissions to BlueXP
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="On premises"
-      data-li-level="4" 
-      class="subfolders "
-    ><a href="#">
-        <div class="na-navbar-padding"> On premises</div>
-      </a>
-      <ul style="display: none;">
-        <li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html">
-        Set up networking
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-on-prem.html">
-        Review host requirements
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up cloud permissions"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-on-prem.html">
-        Set up cloud permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
+      data-li-level="4#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-on-prem.html">
-        Provide permissions to BlueXP
-      </a></li></ul></li></ul></li><li 
+        On premises
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
       data-li-level="3#" 
@@ -1460,11 +1273,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
@@ -1479,13 +1292,6 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-restricted-mode.html">
         Deploy the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-restricted-mode.html">
-        Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
@@ -1511,11 +1317,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
@@ -1532,19 +1338,19 @@
         Deploy the Connector
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-private-mode.html">
-        Log in to BlueXP
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="What you can do next"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html">
         What you can do next
-      </a></li></ul></li></ul></li><li 
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Log in to BlueXP"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-logging-in.html">
+        Log in to BlueXP
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Administer BlueXP"
       data-li-level="1" 
@@ -1926,14 +1732,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Create a Connector in Google Cloud</h1>
+  <h1 class="n-doc__component-detail-heading">Manually install the Connector in AWS</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2023-07-24 12:25:44 +0000">07/24/2023</time>
+    <time datetime="2023-09-07 19:00:59 +0000">09/07/2023</time>
     
   
 
@@ -1951,250 +1757,353 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>Create a Connector directly from the BlueXP web-based console, by using gcloud, or by installing the software on your own Linux host.</p>
+<p>To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.</p>
 </div>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">BlueXP</div>
-<div class="content">
 <div class="paragraph">
 <div class="title">Before you begin</div>
-<p>You should have the following:</p>
+<p>You should review <a href="reference-limitations.html">Connector limitations</a>.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>The required Google Cloud permissions to create the Connector and a service account for the Connector VM.</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-review-host-requirements">Step 1: Review host requirements</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p><a href="task-set-up-permissions-google.html">Learn how to set up Google Cloud permissions</a></p>
-</div>
-</li>
-<li>
-<p>A VPC and subnet that meets networking requirements.</p>
-<div class="paragraph">
-<p><a href="task-set-up-networking-google.html">Learn about networking requirements</a></p>
-</div>
-</li>
-<li>
-<p>Details about a proxy server, if a proxy is required for internet access from the Connector.</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Select the <strong>Connector</strong> drop-down and select <strong>Add Connector</strong>.</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_connector_add.gif" alt="A screenshot that shows the Connector icon in the header and the Add Connector action."></span></p>
-</div>
-</li>
-<li>
-<p>Choose <strong>Google Cloud Platform</strong> as your cloud provider.</p>
-</li>
-<li>
-<p>On the <strong>Deploying a Connector</strong> page, review the details about what you&#8217;ll need. You have two options:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Select <strong>Continue</strong> to prepare for deployment by using the in-product guide. Each step in the in-product guide includes the information that&#8217;s contained on this page of the documentation.</p>
-</li>
-<li>
-<p>Select <strong>Skip to Deployment</strong> if you already prepared by following the steps on this page.</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Follow the steps in the wizard to create the Connector:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>If you&#8217;re prompted, log in to your Google account, which should have the required permissions to create the virtual machine instance.</p>
-<div class="paragraph">
-<p>The form is owned and hosted by Google. Your credentials are not provided to NetApp.</p>
-</div>
-</li>
-<li>
-<p><strong>Details</strong>: Enter a name for the virtual machine instance, specify tags, select a project, and then select the service account that has the required permissions (refer to the section above for details).</p>
-</li>
-<li>
-<p><strong>Location</strong>: Specify a region, zone, VPC, and subnet for the instance.</p>
-</li>
-<li>
-<p><strong>Network</strong>: Choose whether to enable a public IP address and optionally specify a proxy configuration.</p>
-</li>
-<li>
-<p><strong>Firewall Policy</strong>: Choose whether to create a new firewall policy or whether to select an existing firewall policy that allows the required inbound and outbound rules.</p>
-<div class="paragraph">
-<p><a href="reference-ports-gcp.html">Firewall rules in Google Cloud</a></p>
-</div>
-</li>
-<li>
-<p><strong>Review</strong>: Review your selections to verify that your set up is correct.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Select <strong>Add</strong>.</p>
-<div class="paragraph">
-<p>The instance should be ready in about 7 minutes. You should stay on the page until the process is complete.</p>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<div class="title">Result</div>
-<p>After the process is complete, the Connector is available for use from BlueXP.</p>
-</div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">gcloud</div>
-<div class="content">
-<div class="paragraph">
-<div class="title">Before you begin</div>
-<p>You should have the following:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The required Google Cloud permissions to create the Connector and a service account for the Connector VM.</p>
-<div class="paragraph">
-<p><a href="task-set-up-permissions-google.html">Learn how to set up Google Cloud permissions</a></p>
-</div>
-</li>
-<li>
-<p>A VPC and subnet that meets networking requirements.</p>
-<div class="paragraph">
-<p><a href="task-set-up-networking-google.html">Learn about networking requirements</a></p>
-</div>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>Log in to the gcloud SDK using your preferred methodology.</p>
-<div class="paragraph">
-<p>In our examples, we&#8217;ll use a local shell with the gcloud SDK installed, but you could use the native Google Cloud Shell in the Google Cloud console.</p>
-</div>
-<div class="paragraph">
-<p>For more information about the Google Cloud SDK, visit the <a href="https://cloud.google.com/sdk" target="_blank" rel="noopener">Google Cloud SDK documentation page</a>.</p>
-</div>
-</li>
-<li>
-<p>Verify that you are logged in as a user who has the required permissions that are defined in the section above:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud auth list</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The output should show the following where the * user account is the desired user account to be logged in as:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>Credentialed Accounts
-ACTIVE  ACCOUNT
-     some_user_account@domain.com
-*    desired_user_account@domain.com
-To set the active account, run:
- $ gcloud config set account `ACCOUNT`
-Updates are available for some Cloud SDK components. To install them,
-please run:
-$ gcloud components update</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Run the <code>gcloud compute instances create</code> command:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud compute instances create &lt;instance-name&gt;
-  --machine-type=n2-standard-4
-  --image-project=netapp-cloudmanager
-  --image-family=cloudmanager
-  --scopes=cloud-platform
-  --project=&lt;project&gt;
-  --service-account=&lt;service-account&gt;
-  --zone=&lt;zone&gt;
-  --no-address
-  --tags &lt;network-tag&gt;
-  --network &lt;network-path&gt;
-  --subnet &lt;subnet-path&gt;
-  --boot-disk-kms-key &lt;kms-key-path&gt;</code></pre>
-</div>
+<p>The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.</p>
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">instance-name</dt>
+<dt class="hdlist1">Dedicated host</dt>
 <dd>
-<p>The desired instance name for the VM instance.</p>
+<p>The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.</p>
 </dd>
-<dt class="hdlist1">project</dt>
+<dt class="hdlist1">Supported operating systems</dt>
 <dd>
-<p>(Optional) The project where you want to deploy the VM.</p>
-</dd>
-<dt class="hdlist1">service-account</dt>
-<dd>
-<p>The service account specified in the output from step 2.</p>
-</dd>
-<dt class="hdlist1">zone</dt>
-<dd>
-<p>The zone where you want to deploy the VM</p>
-</dd>
-<dt class="hdlist1">no-address</dt>
-<dd>
-<p>(Optional) No external IP address is used (you need a cloud NAT or proxy to route traffic to the public internet)</p>
-</dd>
-<dt class="hdlist1">network-tag</dt>
-<dd>
-<p>(Optional) Add network tagging to link a firewall rule using tags to the Connector instance</p>
-</dd>
-<dt class="hdlist1">network-path</dt>
-<dd>
-<p>(Optional) Add the name of the network to deploy the Connector into (for a Shared VPC, you need the full path)</p>
-</dd>
-<dt class="hdlist1">subnet-path</dt>
-<dd>
-<p>(Optional) Add the name of the subnet to deploy the Connector into (for a Shared VPC, you need the full path)</p>
-</dd>
-<dt class="hdlist1">kms-key-path</dt>
-<dd>
-<p>(Optional) Add a KMS key to encrypt the Connector&#8217;s disks (IAM permissions also need to be applied)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ubuntu 22.04</p>
+</li>
+<li>
+<p>CentOS 7.6, 7.7, 7.8, and 7.9</p>
+</li>
+<li>
+<p>Red Hat Enterprise Linux 7.6, 7.7, 7.8, and 7.9</p>
 <div class="paragraph">
-<p>For more information about these flags, visit the <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" target="_blank" rel="noopener">Google Cloud compute SDK documentation</a>.</p>
+<p>The host must be registered with Red Hat Subscription Management. If it&#8217;s not registered, the host can&#8217;t access repositories to update required 3rd-party software during Connector installation.</p>
+</div>
+<div class="paragraph">
+<p>The Connector is supported on English-language versions of these operating systems.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Hypervisor</dt>
+<dd>
+<p>A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.</p>
+<div class="paragraph">
+<p><a href="https://access.redhat.com/certified-hypervisors" target="_blank" rel="noopener">Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?</a></p>
+</div>
+</dd>
+<dt class="hdlist1">CPU</dt>
+<dd>
+<p>4 cores or 4 vCPUs</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>14 GB</p>
+</dd>
+<dt class="hdlist1">AWS EC2 instance type</dt>
+<dd>
+<p>An instance type that meets the CPU and RAM requirements above. We recommend t3.xlarge.</p>
+</dd>
+<dt class="hdlist1">Key pair</dt>
+<dd>
+<p>When you create the Connector, you&#8217;ll need to select an EC2 key pair to use with the instance.</p>
+</dd>
+<dt class="hdlist1">Disk space in /opt</dt>
+<dd>
+<p>100 GiB of space must be available</p>
+</dd>
+<dt class="hdlist1">Disk space in /var</dt>
+<dd>
+<p>20 GiB of space must be available</p>
+</dd>
+<dt class="hdlist1">Docker Engine</dt>
+<dd>
+<p>Docker Engine version 19.3.1 or later is required on the host before you install the Connector. <a href="https://docs.docker.com/engine/install/" target="_blank" rel="noopener">View installation instructions</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-set-up-networking">Step 2: Set up networking</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Connections to target networks</dt>
+<dd>
+<p>A Connector requires a network connection to the location where you&#8217;re planning to create and manage working environments. For example, the network where you plan to create Cloud Volumes ONTAP systems or a storage system in your on-premises environment.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Outbound internet access</dt>
+<dd>
+<p>The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints.</p>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Endpoints contacted during manual installation</dt>
+<dd>
+<p>When you manually install the Connector on your own Linux host, the installer for the Connector requires access to the following URLs during the installation process:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>https://support.netapp.com</p>
+</li>
+<li>
+<p>https://mysupport.netapp.com</p>
+</li>
+<li>
+<p>https://cloudmanager.cloud.netapp.com/tenancy</p>
+</li>
+<li>
+<p>https://stream.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://production-artifacts.cloudmanager.cloud.netapp.com</p>
+</li>
+<li>
+<p>https://*.blob.core.windows.net</p>
+</li>
+<li>
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+<div class="paragraph">
+<p>The host might try to update operating system packages during installation. The host can contact different mirroring sites for these OS packages.</p>
+</div>
+</li>
+</ul>
 </div>
 </dd>
 </dl>
 </div>
-<div class="paragraph">
-<p>Running the command deploys the Connector using the NetApp golden image. The Connector instance and software should be running in approximately five minutes.</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Endpoints contacted from the Connector</dt>
+<dd>
+<p>The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.</p>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Endpoints</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>AWS services (amazonaws.com):</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>CloudFormation</p>
 </li>
 <li>
-<p>Open a web browser from a host that has a connection to the Connector instance and enter the following URL:</p>
-<div class="paragraph">
-<p>https://<em>ipaddress</em></p>
-</div>
+<p>Elastic Compute Cloud (EC2)</p>
 </li>
 <li>
-<p>After you log in, set up the Connector:</p>
+<p>Identity and Access Management (IAM)</p>
+</li>
+<li>
+<p>Key Management Service (KMS)</p>
+</li>
+<li>
+<p>Security Token Service (STS)</p>
+</li>
+<li>
+<p>Simple Storage Service (S3)</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in AWS. The exact endpoint depends on the AWS region that you&#8217;re using. <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">Refer to AWS documentation for details</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To obtain licensing information and to send AutoSupport messages to NetApp support.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To provide SaaS features and services within BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To upgrade the Connector and its Docker components.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Proxy server</dt>
+<dd>
+<p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You&#8217;ll need to provide this information during installation.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IP address</p>
+</li>
+<li>
+<p>Credentials</p>
+</li>
+<li>
+<p>HTTPS certificate</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Ports</dt>
+<dd>
+<p>There&#8217;s no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP (80) and HTTPS (443) provide access to the local UI, which you&#8217;ll use in rare circumstances.</p>
+</li>
+<li>
+<p>SSH (22) is only needed if you need to connect to the host for troubleshooting.</p>
+</li>
+<li>
+<p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn&#8217;t available.</p>
+<div class="paragraph">
+<p>If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-set-up-permissions">Step 3: Set up permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You need to provide AWS permissions to BlueXP by using one of the following options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Option 1: Create IAM policies and attach the policies to an IAM role that you can associate with the EC2 instance.</p>
+</li>
+<li>
+<p>Option 2: Provide BlueXP with the AWS access key for an IAM user who has the required permissions.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Follow the steps to prepare permissions for BlueXP.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">IAM role</div>
+<div class="content">
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Specify the BlueXP account to associate with the Connector.</p>
+<p>Select <strong>Policies &gt; Create policy</strong>.</p>
+</li>
+<li>
+<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policy for the Connector</a>.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the policy.</p>
 <div class="paragraph">
-<p><a href="concept-netapp-accounts.html">Learn about BlueXP accounts</a>.</p>
+<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy. For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
+</div>
+</li>
+</ol>
 </div>
 </li>
 <li>
-<p>Enter a name for the system.</p>
+<p>Create an IAM role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Roles &gt; Create role</strong>.</p>
+</li>
+<li>
+<p>Select <strong>AWS service &gt; EC2</strong>.</p>
+</li>
+<li>
+<p>Add permissions by attaching the policy that you just created.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the role.</p>
 </li>
 </ol>
 </div>
@@ -2203,16 +2112,75 @@ $ gcloud components update</pre>
 </div>
 <div class="paragraph">
 <div class="title">Result</div>
-<p>The Connector is now installed and set up with your BlueXP account.</p>
-</div>
-<div class="paragraph">
-<p>Open a web browser and go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+<p>You now have an IAM role that you can associate with the EC2 instance after you install the Connector.</p>
 </div>
 </div>
 </div>
 <div class="openblock">
-<div class="title">Manual install</div>
+<div class="title">AWS access key</div>
 <div class="content">
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Policies &gt; Create policy</strong>.</p>
+</li>
+<li>
+<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policy for the Connector</a>.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the policy.</p>
+<div class="paragraph">
+<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy.</p>
+</div>
+<div class="paragraph">
+<p>For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Attach the policies to an IAM user.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html" target="_blank" rel="noopener">AWS Documentation: Creating IAM Roles</a></p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html" target="_blank" rel="noopener">AWS Documentation: Adding and Removing IAM Policies</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ensure that the user has an access key that you can add to BlueXP after you install the Connector.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>You now have an IAM user that has the required permissions and an access key that you can provide to BlueXP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-4-install-the-connector">Step 4: Install the Connector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After the pre-requisites are complete, you can manually install the software on your own Linux host.</p>
+</div>
 <div class="paragraph">
 <div class="title">Before you begin</div>
 <p>You should have the following:</p>
@@ -2361,9 +2329,98 @@ unset https_proxy</code></pre>
 <div class="title">Result</div>
 <p>The Connector is now installed and is set up with your BlueXP account.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-5-provide-permissions-to-bluexp">Step 5: Provide permissions to BlueXP</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<div class="title">What&#8217;s next?</div>
-<p><a href="task-provide-permissions-google.html">Provide BlueXP with the permissions that you previously setup</a>.</p>
+<p>Now that you&#8217;ve installed the Connector, you need to provide BlueXP with the AWS permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">IAM role</div>
+<div class="content">
+<div class="paragraph">
+<p>Attach the IAM role that you previously created to the Connector EC2 instance.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Go to the Amazon EC2 console.</p>
+</li>
+<li>
+<p>Select <strong>Instances</strong>.</p>
+</li>
+<li>
+<p>Select the Connector instance.</p>
+</li>
+<li>
+<p>Select <strong>Actions &gt; Security &gt; Modify IAM role</strong>.</p>
+</li>
+<li>
+<p>Select the IAM role and select <strong>Update IAM role</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.</p>
+</div>
+<div class="paragraph">
+<p>Go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">AWS access key</div>
+<div class="content">
+<div class="paragraph">
+<p>Provide BlueXP with the AWS access key for an IAM user that has the required permissions.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Ensure that the correct Connector is currently selected in BlueXP.</p>
+</li>
+<li>
+<p>In the upper right of the BlueXP console, select the Settings icon, and select <strong>Credentials</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="A screenshot that shows the Settings icon in the upper right of the BlueXP console."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Add Credentials</strong> and follow the steps in the wizard.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Credentials Location</strong>: Select <strong>Amazon Web Services &gt; Connector</strong>.</p>
+</li>
+<li>
+<p><strong>Define Credentials</strong>: Enter an AWS access key and secret key.</p>
+</li>
+<li>
+<p><strong>Marketplace Subscription</strong>: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.</p>
+</li>
+<li>
+<p><strong>Review</strong>: Confirm the details about the new credentials and select <strong>Add</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP now has the permissions that it needs to perform actions in AWS on your behalf.</p>
+</div>
+<div class="paragraph">
+<p>Go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
 </div>
 </div>
 </div>

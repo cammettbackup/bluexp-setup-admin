@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Create another BlueXP account | NetApp Documentation</title>
+  <title>Create a Connector from the AWS Marketplace | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Create another BlueXP account | NetApp Documentation" />
+  <meta property="og:title" content="Create a Connector from the AWS Marketplace | NetApp Documentation" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html" />
-	<meta property="og:description" content="When you sign up to BlueXP, you're prompted to create an account for your organization. This account might be all that you need, but if your business require..." />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+	<meta property="og:description" content="To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create th..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="When you sign up to BlueXP, you're prompted to create an account for your organization. This account might be all that you need, but if your business require...">
-  <meta name="keywords" content=" create account, account, create, create another account, tenancy account, tenancy, tenancy account creation"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create th...">
+  <meta name="keywords" content=" install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector"><!-- Icons -->
   <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -32,17 +32,17 @@
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
-  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-create-account.html" />
-  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-create-account.html" />
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-aws-marketplace.html" />
   <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -177,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html&page-title=Create another BlueXP account" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-create-account.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html&page-title=Create a Connector from the AWS Marketplace" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-aws-marketplace.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -297,23 +297,23 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-create-account.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-aws-marketplace.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -478,6 +478,8 @@
 
 
 
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -680,8 +682,6 @@
 
 
 
-    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
-  
 
 
 
@@ -1164,7 +1164,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Create from the marketplace"
       data-li-level="5#" 
-      class=" "
+      class="  active "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
         Create from the marketplace
       </a></li><li 
@@ -1393,7 +1393,7 @@
       data-pdf-exists="true" 
       data-pdf-filename="Create another account"
       data-li-level="3#" 
-      class="  active "
+      class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-create-account.html">
         Create another account
       </a></li><li 
@@ -1732,14 +1732,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Create another BlueXP account</h1>
+  <h1 class="n-doc__component-detail-heading">Create a Connector from the AWS Marketplace</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2023-07-24 12:26:38 +0000">07/24/2023</time>
+    <time datetime="2023-09-07 19:00:59 +0000">09/07/2023</time>
     
   
 
@@ -1757,50 +1757,415 @@
 
 </p>
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>When you sign up to BlueXP, you&#8217;re prompted to create an account for your organization. This account might be all that you need, but if your business requires multiple accounts, then you&#8217;ll need to create additional accounts by using the Tenancy API.</p>
+<p>To create a Connector from the AWS Marketplace, you need to set up your networking, prepare AWS permissions, review instance requirements, and then create the Connector.</p>
 </div>
 <div class="paragraph">
-<p>Use the following API call to create an additional BlueXP account:</p>
+<div class="title">Before you begin</div>
+<p>You should review <a href="reference-limitations.html">Connector limitations</a>.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-1-set-up-networking">Step 1: Set up networking</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>POST <code>/tenancy/account/{accountName}</code></p>
+<p>Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.</p>
 </div>
-<div class="paragraph">
-<p>If you want to enable restricted mode, you need to include the following in the request body:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">VPC and subnet</dt>
+<dd>
+<p>When you create the Connector, you need to specify the VPC and subnet where the Connector should reside.</p>
+</dd>
+</dl>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-JSON" data-lang="JSON">{
-  "isSaasDisabled": true
-}</code></pre>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Connections to target networks</dt>
+<dd>
+<p>A Connector requires a network connection to the location where you&#8217;re planning to create and manage working environments. For example, the network where you plan to create Cloud Volumes ONTAP systems or a storage system in your on-premises environment.</p>
+</dd>
+</dl>
 </div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Outbound internet access</dt>
+<dd>
+<p>The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints.</p>
+</dd>
+</dl>
 </div>
-<div class="admonitionblock note">
-<table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Endpoints contacted from the Connector</dt>
+<dd>
+<p>The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.</p>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
 <tr>
-<td class="icon">
-<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
-</td>
-<td class="content">
-You can&#8217;t change the restricted mode setting after BlueXP creates the account. You can&#8217;t enable restricted mode later and you can&#8217;t disable it later. It must be set at time of account creation.
-</td>
+<th class="tableblock halign-left valign-top">Endpoints</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
 </tr>
-</table>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html" target="_blank" rel="noopener">Learn how to use this API call</a></p>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>AWS services (amazonaws.com):</p>
 </div>
 <div class="ulist">
-<div class="title">Related links</div>
 <ul>
 <li>
-<p><a href="concept-netapp-accounts.html">Learn about BlueXP accounts</a></p>
+<p>CloudFormation</p>
 </li>
 <li>
-<p><a href="concept-modes.html">Learn about BlueXP deployment modes</a></p>
+<p>Elastic Compute Cloud (EC2)</p>
+</li>
+<li>
+<p>Identity and Access Management (IAM)</p>
+</li>
+<li>
+<p>Key Management Service (KMS)</p>
+</li>
+<li>
+<p>Security Token Service (STS)</p>
+</li>
+<li>
+<p>Simple Storage Service (S3)</p>
 </li>
 </ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To manage resources in AWS. The exact endpoint depends on the AWS region that you&#8217;re using. <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html" target="_blank" rel="noopener">Refer to AWS documentation for details</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To obtain licensing information and to send AutoSupport messages to NetApp support.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To provide SaaS features and services within BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Note that the Connector is currently contacting "cloudmanager.cloud.netapp.com" but it will start contacting "api.bluexp.netapp.com" in an upcoming release.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>To upgrade the Connector and its Docker components.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Proxy server</dt>
+<dd>
+<p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You&#8217;ll need to provide this information during installation.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>IP address</p>
+</li>
+<li>
+<p>Credentials</p>
+</li>
+<li>
+<p>HTTPS certificate</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Ports</dt>
+<dd>
+<p>There&#8217;s no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP (80) and HTTPS (443) provide access to the local UI, which you&#8217;ll use in rare circumstances.</p>
+</li>
+<li>
+<p>SSH (22) is only needed if you need to connect to the host for troubleshooting.</p>
+</li>
+<li>
+<p>Inbound connections over port 3128 are required if you deploy Cloud Volumes ONTAP systems in a subnet where an outbound internet connection isn&#8217;t available.</p>
+<div class="paragraph">
+<p>If Cloud Volumes ONTAP systems don&#8217;t have an outbound internet connection to send AutoSupport messages, BlueXP automatically configures those systems to use a proxy server that&#8217;s included with the Connector. The only requirement is to ensure that the Connector&#8217;s security group allows inbound connections over port 3128. You&#8217;ll need to open this port after you deploy the Connector.</p>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-set-up-aws-permissions">Step 2: Set up AWS permissions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To prepare for a marketplace deployment, create IAM policies in AWS and attach them to an IAM role. When you create the Connector from the AWS Marketplace, you&#8217;ll be prompted to select that IAM role.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Log in to the AWS console and navigate to the IAM service.</p>
+</li>
+<li>
+<p>Create a policy:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Policies &gt; Create policy</strong>.</p>
+</li>
+<li>
+<p>Select <strong>JSON</strong> and copy and paste the contents of the <a href="reference-permissions-aws.html">IAM policy for the Connector</a>.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the policy.</p>
+<div class="paragraph">
+<p>Depending on the BlueXP services that you&#8217;re planning to use, you might need to create a second policy. For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. <a href="reference-permissions-aws.html">Learn more about IAM policies for the Connector</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Create an IAM role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Select <strong>Roles &gt; Create role</strong>.</p>
+</li>
+<li>
+<p>Select <strong>AWS service &gt; EC2</strong>.</p>
+</li>
+<li>
+<p>Add permissions by attaching the policy that you just created.</p>
+</li>
+<li>
+<p>Finish the remaining steps to create the role.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>You now have an IAM role that you can associate with the EC2 instance during deployment from the AWS Marketplace.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-3-review-instance-requirements">Step 3: Review instance requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you create the Connector, you need to choose an EC2 instance type that meets the following requirements.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">CPU</dt>
+<dd>
+<p>4 cores or 4 vCPUs</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>14 GB</p>
+</dd>
+<dt class="hdlist1">AWS EC2 instance type</dt>
+<dd>
+<p>An instance type that meets the CPU and RAM requirements above. We recommend t3.xlarge.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-4-create-the-connector">Step 4: Create the Connector</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create the Connector directly from the AWS Marketplace.</p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p>Creating the Connector from the AWS Marketplace deploys an EC2 instance in AWS using a default configuration. <a href="reference-connector-default-config.html">Learn about the default configuration for the Connector</a>.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should have the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A VPC and subnet that meets networking requirements.</p>
+</li>
+<li>
+<p>An IAM role with an attached policy that includes the required permissions for the Connector.</p>
+</li>
+<li>
+<p>Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.</p>
+</li>
+<li>
+<p>An understanding of CPU and RAM requirements for the instance.</p>
+</li>
+<li>
+<p>A key pair for the EC2 instance.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>Go to the <a href="https://aws.amazon.com/marketplace/pp/B018REK8QG" target="_blank" rel="noopener">BlueXP page on the AWS Marketplace</a></p>
+</li>
+<li>
+<p>On the Marketplace page, select <strong>Continue to Subscribe</strong> and then select <strong>Continue to Configuration</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot-subscribe-aws.png" alt="A screenshot that shows the Continue to Subscribe and Continue to Configuration buttons on the AWS Marketplace."></span></p>
+</div>
+</li>
+<li>
+<p>Change any of the default options and select <strong>Continue to Launch</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Choose Action</strong>, select <strong>Launch through EC2</strong> and then select <strong>Launch</strong>.</p>
+<div class="paragraph">
+<p>These steps describe how to launch the instance from the EC2 Console because the console enables you to attach an IAM role to the Connector instance. This isn&#8217;t possible using the <strong>Launch from Website</strong> action.</p>
+</div>
+</li>
+<li>
+<p>Follow the prompts to configure and deploy the instance:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name and tags</strong>: Enter a name and tags for the instance.</p>
+</li>
+<li>
+<p><strong>Application and OS Image</strong>: Skip this section. The Connector AMI is already selected.</p>
+</li>
+<li>
+<p><strong>Instance type</strong>: Depending on region availability, choose an instance type that meets RAM and CPU requirements (t3.xlarge is recommended).</p>
+</li>
+<li>
+<p><strong>Key pair (login)</strong>: Select the key pair that you want to use to securely connect to the instance.</p>
+</li>
+<li>
+<p><strong>Network settings</strong>: Edit the network settings as needed:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Choose the desired VPC and subnet.</p>
+</li>
+<li>
+<p>Specify whether the instance should have a public IP address.</p>
+</li>
+<li>
+<p>Specify firewall settings that enable the required connection methods for the Connector instance: SSH, HTTP, and HTTPS.</p>
+<div class="paragraph">
+<p>A few more rule are required for specific configurations.</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-ports-aws.html">View security group rules for AWS</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Configure storage</strong>: Keep the default storage options.</p>
+</li>
+<li>
+<p><strong>Advanced details</strong>: Under <strong>IAM instance profile</strong>, choose the IAM role that includes the required permissions for the Connector.</p>
+</li>
+<li>
+<p><strong>Summary</strong>: Review the summary and select <strong>Launch instance</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>AWS launches the software with the specified settings. The Connector instance and software should be running in approximately five minutes.</p>
+</div>
+</li>
+<li>
+<p>Open a web browser from a host that has a connection to the Connector virtual machine and enter the following URL:</p>
+<div class="paragraph">
+<p>https://<em>ipaddress</em></p>
+</div>
+</li>
+<li>
+<p>After you log in, set up the Connector:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Specify the BlueXP account to associate with the Connector.</p>
+</li>
+<li>
+<p>Enter a name for the system.</p>
+</li>
+<li>
+<p>Under <strong>Are you running in a secured environment?</strong> keep restricted mode disabled.</p>
+<div class="paragraph">
+<p>You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that&#8217;s the case, <a href="task-quick-start-restricted-mode.html">follow steps to get started with BlueXP in restricted mode</a>.</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Let&#8217;s start</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>The Connector is now installed and set up with your BlueXP account.</p>
+</div>
+<div class="paragraph">
+<p>Open a web browser and go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
 </div>
 
     </article>

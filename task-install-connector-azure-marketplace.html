@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="at-element-marker">
-  <title>Create a Connector in Azure from BlueXP | NetApp Documentation</title>
+  <title>Create a Connector from the Azure Marketplace | NetApp Documentation</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Create a Connector in Azure from BlueXP | NetApp Documentation" />
+  <meta property="og:title" content="Create a Connector from the Azure Marketplace | NetApp Documentation" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html" />
-	<meta property="og:description" content="Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host." />
+	<meta property="og:url" content="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+	<meta property="og:description" content="To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, review instance requirements, and then creat..." />
   <meta property="og:image" content="https://docs.netapp.com/us-en/bluexp-setup-admin/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Create a Connector directly from the BlueXP web-based console, from the Azure Marketplace, or by installing the software on your own Linux host.">
-  <meta name="keywords" content=" install connector, azure connector installation, azure connector, install connector in azure, bluexp, azure marketplace, manual install, create connector"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, review instance requirements, and then creat...">
+  <meta name="keywords" content=" install connector, azure connector installation, azure connector, install connector in azure, bluexp, create connector, marketplace, azure marketplace"><!-- Icons -->
   <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -32,17 +32,17 @@
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/bluexp-setup-admin/css/tabbed-blocks.css" type="text/css">
   <!-- Canonical url -->
-  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-azure-bluexp.html" />
-  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-azure-bluexp.html" />
+  <link rel="canonical" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-azure-marketplace.html" />
   <link rel='stylesheet' href='/us-en/bluexp-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
     function addAdobeLaunch(adobeId) {
       var head = document.getElementsByTagName('head')[0];
@@ -177,7 +177,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html&page-title=Create a Connector in Azure from BlueXP" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-azure-bluexp.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html&page-title=Create a Connector from the Azure Marketplace" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-azure-marketplace.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/bluexp-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/bluexp-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -297,23 +297,23 @@
       </div>
 
       <ul class="custom-dropdown-menu"><li>
-          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+          <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">English</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+          <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+          <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+          <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+          <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+          <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+          <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+          <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
         </li><li>
-          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-azure-bluexp.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+          <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-azure-marketplace.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
         </li></ul>
     </div>
     <!-- End Language Selector -->
@@ -443,8 +443,6 @@
 
 
 
-
-
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
@@ -484,12 +482,6 @@
 
 
 
-
-
-
-
-
-
         </li>
       </ul>
     
@@ -517,12 +509,8 @@
 
 
 
-
-
-
-
-
-
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
 
 
 
@@ -556,16 +544,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
         </li>
       </ul>
     
@@ -573,39 +551,6 @@
   
 
 
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          
-          
-          
-          <a target="_blank" 
-            
-              href="/us-en/bluexp-setup-admin/pdfs/sidebar/On_premises.pdf" 
-            
-          >
-            <img src="/us-en/bluexp-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
-            On premises
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-        </li>
-      </ul>
-    
-
-  
 
 
         </li>
@@ -652,8 +597,6 @@
 
 
 
-
-
         </li>
       </ul>
     
@@ -685,13 +628,13 @@
 
 
 
-
-
         </li>
       </ul>
     
 
   
+
+
 
 
         </li>
@@ -1166,18 +1109,18 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Prepare networking"
+      data-pdf-filename="Prepare networking for using the BlueXP console"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-networking-saas-console.html">
-        Prepare networking
+        Prepare networking for using the BlueXP console
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Sign up to BlueXP"
@@ -1185,13 +1128,6 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-sign-up-saas.html">
         Sign up to BlueXP
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-logging-in.html">
-        Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Create a Connector"
@@ -1212,13 +1148,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1226,39 +1155,25 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-aws.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Create from BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Create from the marketplace"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-aws.html">
-        Review host requirements
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Create from the marketplace
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up AWS permissions"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-aws.html">
-        Set up AWS permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-aws.html">
-        Provide permissions to BlueXP
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Azure"
@@ -1270,13 +1185,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1284,39 +1192,25 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-azure.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Create from BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Create from the marketplace"
       data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-azure.html">
-        Review host requirements
+      class="  active "
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Create from the marketplace
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up Azure permissions"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-azure.html">
-        Set up Azure permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-azure.html">
-        Provide permissions to BlueXP
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Google Cloud"
@@ -1328,13 +1222,6 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-google.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="Installation options"
       data-li-level="5#" 
       class=" "
@@ -1342,98 +1229,26 @@
         Installation options
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
+      data-pdf-filename="Create from BlueXP or using gcloud"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-google.html">
-        Set up networking
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Create from BlueXP or using gcloud
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
+      data-pdf-filename="Install manually"
       data-li-level="5#" 
       class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-google.html">
-        Review host requirements
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up Google Cloud permissions"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-google.html">
-        Set up Google Cloud permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Enable Google Cloud APIs"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-enable-apis-google.html">
-        Enable Google Cloud APIs
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-google.html">
-        Provide permissions to BlueXP
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Install manually
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="On premises"
-      data-li-level="4" 
-      class="subfolders "
-    ><a href="#">
-        <div class="na-navbar-padding"> On premises</div>
-      </a>
-      <ul style="display: none;">
-        <li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html">
-        Quick start
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up networking"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html">
-        Set up networking
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Review host requirements"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-host-requirements-on-prem.html">
-        Review host requirements
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Set up cloud permissions"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-set-up-permissions-on-prem.html">
-        Set up cloud permissions
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Create the Connector"
-      data-li-level="5#" 
+      data-li-level="4#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-connector-on-prem.html">
-        Create the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Provide permissions to BlueXP"
-      data-li-level="5#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-provide-permissions-on-prem.html">
-        Provide permissions to BlueXP
-      </a></li></ul></li></ul></li><li 
+        On premises
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
       data-li-level="3#" 
@@ -1458,11 +1273,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-restricted-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
@@ -1477,13 +1292,6 @@
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-install-restricted-mode.html">
         Deploy the Connector
-      </a></li><li 
-      data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-restricted-mode.html">
-        Log in to BlueXP
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Subscribe to BlueXP"
@@ -1509,11 +1317,11 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Quick start"
+      data-pdf-filename="Getting started workflow"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-quick-start-private-mode.html">
-        Quick start
+        Getting started workflow
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Prepare for deployment"
@@ -1530,19 +1338,19 @@
         Deploy the Connector
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Log in to BlueXP"
-      data-li-level="3#" 
-      class=" "
-    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-log-in-private-mode.html">
-        Log in to BlueXP
-      </a></li><li 
-      data-pdf-exists="true" 
       data-pdf-filename="What you can do next"
       data-li-level="3#" 
       class=" "
     ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/reference-whats-next-private-mode.html">
         What you can do next
-      </a></li></ul></li></ul></li><li 
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Log in to BlueXP"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/us-en/bluexp-setup-admin/task-logging-in.html">
+        Log in to BlueXP
+      </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Administer BlueXP"
       data-li-level="1" 
@@ -1924,14 +1732,14 @@
 </div>
 
       <div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Create a Connector in Azure from BlueXP</h1>
+  <h1 class="n-doc__component-detail-heading">Create a Connector from the Azure Marketplace</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2023-07-31 19:02:50 +0000">07/31/2023</time>
+    <time datetime="2023-09-07 19:00:59 +0000">09/07/2023</time>
     
   
 
@@ -1952,44 +1760,19 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Set up your networking, prepare Azure permissions, and then create a Connector in Azure from BlueXP.</p>
+<p>To create a Connector from the Azure Marketplace, you need to set up your networking, prepare Azure permissions, review instance requirements, and then create the Connector.</p>
+</div>
+<div class="paragraph">
+<div class="title">Before you begin</div>
+<p>You should review <a href="reference-limitations.html">Connector limitations</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="deployment-overview">Deployment overview</h2>
+<h2 id="step-1-set-up-networking">Step 1: Set up networking</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The following steps provide a high-level summary of the tasks that you&#8217;ll complete on this page. Additional details about each of these steps are available in the sections below.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png" alt="One"></span> Set up networking</div>
-<p>Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need a virtual network that has outbound internet access and network connections to target networks.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<p><a href="#set-up-networking">View the networking requirements</a>.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png" alt="Two"></span> Set up Azure permissions</div>
-<p>Create a custom role and then apply it to your Azure account or to an Azure AD service principal. BlueXP authenticates with Azure and uses these permissions to create the Connector instance on your behalf.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<p><a href="#set-up-azure-permissions">Follow step-by-step instructions</a>.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png" alt="Three"></span> Create the Connector</div>
-<p>From BlueXP, click the Connector drop-down, select <strong>Add Connector</strong> and follow the prompts.</p>
-</div>
-<div class="paragraph quick-margin-para">
-<p><a href="#create-the-connector">Follow step-by-step instructions</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="set-up-networking">Set up networking</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Ensure that the network location where you plan to install the Connector supports the following requirements.</p>
+<p>Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.</p>
 </div>
 <div class="dlist">
 <dl>
@@ -2000,25 +1783,34 @@
 <p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html" target="_blank" rel="noopener">Learn how Cloud Volumes ONTAP uses an Azure Private Link</a></p>
 </div>
 </dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">VNet and subnet</dt>
 <dd>
 <p>When you create the Connector, you need to specify the VNet and subnet where the Connector should reside.</p>
 </dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Connections to target networks</dt>
 <dd>
-<p>A Connector requires a network connection to the location where you&#8217;re planning to create and manage working environments. For example, the VNet where you plan to create Cloud Volumes ONTAP systems or the storage in your on-premises environment.</p>
+<p>A Connector requires a network connection to the location where you&#8217;re planning to create and manage working environments. For example, the network where you plan to create Cloud Volumes ONTAP systems or a storage system in your on-premises environment.</p>
 </dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Outbound internet access</dt>
 <dd>
-<p>The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints, as described in the following sections.</p>
+<p>The network location where you deploy the Connector must have an outbound internet connection to contact specific endpoints.</p>
 </dd>
-<dt class="hdlist1">Endpoints contacted from the BlueXP console</dt>
-<dd>
-<p>As you use the BlueXP web-based console that&#8217;s provided through the SaaS layer, it contacts several endpoints to complete data management tasks. This includes endpoints that are contacted to deploy the Connector from the BlueXP console.</p>
-<div class="paragraph">
-<p><a href="reference-networking-saas-console.html">View the list of endpoints contacted from the BlueXP console</a>.</p>
+</dl>
 </div>
-</dd>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Endpoints contacted from the Connector</dt>
 <dd>
 <p>The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment for day-to-day operations.</p>
@@ -2101,6 +1893,10 @@ https://core.chinacloudapi.cn</p>
 </tbody>
 </table>
 </dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Proxy server</dt>
 <dd>
 <p>If your organization requires deployment of a proxy server for all outgoing internet traffic, obtain the following information about your HTTP or HTTPS proxy. You&#8217;ll need to provide this information during installation.</p>
@@ -2118,6 +1914,10 @@ https://core.chinacloudapi.cn</p>
 </ul>
 </div>
 </dd>
+</dl>
+</div>
+<div class="dlist">
+<dl>
 <dt class="hdlist1">Ports</dt>
 <dd>
 <p>There&#8217;s no incoming traffic to the Connector, unless you initiate it or if the Connector is used as a proxy to send AutoSupport messages from Cloud Volumes ONTAP to NetApp Support.</p>
@@ -2138,38 +1938,58 @@ https://core.chinacloudapi.cn</p>
 </ul>
 </div>
 </dd>
-<dt class="hdlist1">IP address limitation</dt>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-2-review-vm-requirements">Step 2: Review VM requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you create the Connector, you need to choose a virtual machine type that meets the following requirements.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">CPU</dt>
 <dd>
-<p>There&#8217;s a possible conflict with IP addresses in the 172 range. <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html">Learn more about this limitation</a>.</p>
+<p>4 cores or 4 vCPUs</p>
+</dd>
+<dt class="hdlist1">RAM</dt>
+<dd>
+<p>14 GB</p>
+</dd>
+<dt class="hdlist1">Azure VM size</dt>
+<dd>
+<p>An instance type that meets the CPU and RAM requirements above. We recommend DS3 v2.</p>
 </dd>
 </dl>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="set-up-azure-permissions">Set up Azure permissions</h2>
+<h2 id="step-3-set-up-permissions">Step 3: Set up permissions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When creating the Connector from BlueXP, you need to provide a login that enables BlueXP to authenticate with Azure and deploy the VM. You have two options:</p>
+<p>You can provide permissions in the following ways:</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
-<p>Sign in with your Microsoft account when prompted. This account must have specific Azure permissions. This is the default option.</p>
+<p>Option 1: Assign a custom role to the Azure VM using a system-assigned managed identity.</p>
 </li>
 <li>
-<p>Provide details about an Azure AD service principal. This service principal also requires specific permissions.</p>
+<p>Option 2: Provide BlueXP with the credentials for an Azure service principal that has the required permissions.</p>
 </li>
-</ol>
+</ul>
 </div>
 <div class="paragraph">
-<p>With both options, the first step is create a custom role.</p>
+<p>Follow these steps to set up permissions for BlueXP.</p>
 </div>
-<div class="sect2">
-<h3 id="create-a-custom-role">Create a custom role</h3>
-<div class="paragraph">
-<p>Create a custom role that you can assign to your Azure account or to a service principal.</p>
-</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Custom role</div>
+<div class="content">
 <div class="paragraph">
 <p>Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role" target="_blank" rel="noopener">Azure documentation</a></p>
 </div>
@@ -2177,100 +1997,28 @@ https://core.chinacloudapi.cn</p>
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>Copy the required permissions for a new custom role in Azure and save them in a JSON file.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
-</td>
-<td class="content">
-This custom role contains only the permissions needed to launch the Connector VM in Azure from BlueXP. Don&#8217;t use this policy for other situations. When BlueXP creates the Connector, it applies a new set of permissions to the Connector VM that enables the Connector to manage the resources in your public cloud environment.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-json" data-lang="json">{
-    "Name": "Azure SetupAsService",
-    "Actions": [
-        "Microsoft.Compute/disks/delete",
-        "Microsoft.Compute/disks/read",
-        "Microsoft.Compute/disks/write",
-        "Microsoft.Compute/locations/operations/read",
-        "Microsoft.Compute/operations/read",
-        "Microsoft.Compute/virtualMachines/instanceView/read",
-        "Microsoft.Compute/virtualMachines/read",
-        "Microsoft.Compute/virtualMachines/write",
-        "Microsoft.Compute/virtualMachines/delete",
-        "Microsoft.Compute/virtualMachines/extensions/write",
-        "Microsoft.Compute/virtualMachines/extensions/read",
-        "Microsoft.Compute/availabilitySets/read",
-        "Microsoft.Network/locations/operationResults/read",
-        "Microsoft.Network/locations/operations/read",
-        "Microsoft.Network/networkInterfaces/join/action",
-        "Microsoft.Network/networkInterfaces/read",
-        "Microsoft.Network/networkInterfaces/write",
-        "Microsoft.Network/networkInterfaces/delete",
-        "Microsoft.Network/networkSecurityGroups/join/action",
-        "Microsoft.Network/networkSecurityGroups/read",
-        "Microsoft.Network/networkSecurityGroups/write",
-        "Microsoft.Network/virtualNetworks/checkIpAddressAvailability/read",
-        "Microsoft.Network/virtualNetworks/read",
-        "Microsoft.Network/virtualNetworks/subnets/join/action",
-        "Microsoft.Network/virtualNetworks/subnets/read",
-        "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
-        "Microsoft.Network/virtualNetworks/virtualMachines/read",
-        "Microsoft.Network/publicIPAddresses/write",
-        "Microsoft.Network/publicIPAddresses/read",
-        "Microsoft.Network/publicIPAddresses/delete",
-        "Microsoft.Network/networkSecurityGroups/securityRules/read",
-        "Microsoft.Network/networkSecurityGroups/securityRules/write",
-        "Microsoft.Network/networkSecurityGroups/securityRules/delete",
-        "Microsoft.Network/publicIPAddresses/join/action",
-        "Microsoft.Network/locations/virtualNetworkAvailableEndpointServices/read",
-        "Microsoft.Network/networkInterfaces/ipConfigurations/read",
-        "Microsoft.Resources/deployments/operations/read",
-        "Microsoft.Resources/deployments/read",
-        "Microsoft.Resources/deployments/delete",
-        "Microsoft.Resources/deployments/cancel/action",
-        "Microsoft.Resources/deployments/validate/action",
-        "Microsoft.Resources/resources/read",
-        "Microsoft.Resources/subscriptions/operationresults/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/delete",
-        "Microsoft.Resources/subscriptions/resourceGroups/read",
-        "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
-        "Microsoft.Resources/subscriptions/resourceGroups/write",
-        "Microsoft.Authorization/roleDefinitions/write",
-        "Microsoft.Authorization/roleAssignments/write",
-        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/read",
-        "Microsoft.MarketplaceOrdering/offertypes/publishers/offers/plans/agreements/write",
-        "Microsoft.Network/networkSecurityGroups/delete",
-        "Microsoft.Storage/storageAccounts/delete",
-        "Microsoft.Storage/storageAccounts/write",
-        "Microsoft.Resources/deployments/write",
-        "Microsoft.Resources/deployments/operationStatuses/read",
-        "Microsoft.Authorization/roleAssignments/read"
-    ],
-    "NotActions": [],
-    "AssignableScopes": [],
-    "Description": "Azure SetupAsService",
-    "IsCustom": "true"
-}</code></pre>
-</div>
+<p>If you&#8217;re planning to manually install the software on your own host, enable a system-assigned managed identity on the VM so that you can provide the required Azure permissions through a custom role.</p>
+<div class="paragraph">
+<p><a href="https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm" target="_blank" rel="noopener">Microsoft Azure documentation: Configure managed identities for Azure resources on a VM using the Azure portal</a></p>
 </div>
 </li>
 <li>
-<p>Modify the JSON by adding your Azure subscription ID to the assignable scope.</p>
+<p>Copy the contents of the <a href="reference-permissions-azure.html">custom role permissions for the Connector</a> and save them in a JSON file.</p>
+</li>
+<li>
+<p>Modify the JSON file by adding Azure subscription IDs to the assignable scope.</p>
+<div class="paragraph">
+<p>You should add the ID for each Azure subscription that you want to use with BlueXP.</p>
+</div>
 <div class="paragraph">
 <p><strong>Example</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
-"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz"
-],</code></pre>
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
 </div>
 </div>
 </li>
@@ -2291,74 +2039,12 @@ This custom role contains only the permissions needed to launch the Connector VM
 </div>
 </li>
 <li>
-<p>Enter the following Azure CLI command:</p>
+<p>Use the Azure CLI to create the custom role:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Policy_for_Setup_As_Service_Azure.json</code></pre>
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
 </div>
 </div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>You should now have a custom role called <em>Azure SetupAsService</em>. You can now apply this custom role to your user account or to a service principal.</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="set-up-an-authentication-method">Set up an authentication method</h3>
-<div class="paragraph">
-<p>To deploy the Connector, BlueXP needs to authenticate with Azure. You can choose between two Azure authentication methods.</p>
-</div>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">Azure user account</div>
-<div class="content">
-<div class="paragraph">
-<p>Assign the custom role to the user who will deploy the Connector from BlueXP.</p>
-</div>
-<div class="olist arabic">
-<div class="title">Steps</div>
-<ol class="arabic">
-<li>
-<p>In the Azure portal, open the <strong>Subscriptions</strong> service and select the user&#8217;s subscription.</p>
-</li>
-<li>
-<p>Click <strong>Access control (IAM)</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Add</strong> &gt; <strong>Add role assignment</strong> and then add the permissions:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Select the <strong>Azure SetupAsService</strong> role and click <strong>Next</strong>.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
-</td>
-<td class="content">
-Azure SetupAsService is the default name provided in the Connector deployment policy for Azure. If you chose a different name for the role, then select that name instead.
-</td>
-</tr>
-</table>
-</div>
-</li>
-<li>
-<p>Keep <strong>User, group, or service principal</strong> selected.</p>
-</li>
-<li>
-<p>Click <strong>Select members</strong>, choose your user account, and click <strong>Select</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Next</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Review + assign</strong>.</p>
 </li>
 </ol>
 </div>
@@ -2367,16 +2053,13 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 </div>
 <div class="paragraph">
 <div class="title">Result</div>
-<p>The Azure user now has the permissions required to deploy the Connector from BlueXP.</p>
+<p>You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.</p>
 </div>
 </div>
 </div>
 <div class="openblock">
 <div class="title">Service principal</div>
 <div class="content">
-<div class="paragraph">
-<p>Rather than logging in with your Azure account, you can provide BlueXP with the credentials for an Azure service principal that has the required permissions.</p>
-</div>
 <div class="paragraph">
 <p>Create and set up a service principal in Azure Active Directory and obtain the Azure credentials that BlueXP needs.</p>
 </div>
@@ -2426,8 +2109,72 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 </ol>
 </div>
 <div class="olist arabic">
-<div class="title">Assign the custom role to the application</div>
+<div class="title">Assign the application to a role</div>
 <ol class="arabic">
+<li>
+<p>Create a custom role:</p>
+<div class="paragraph">
+<p>Note that you can create an Azure custom role using the Azure portal, Azure PowerShell, Azure CLI, or REST API. The following steps show how to create the role using the Azure CLI. If you would prefer to use a different method, refer to <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role" target="_blank" rel="noopener">Azure documentation</a></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Copy the contents of the <a href="reference-permissions-azure.html">custom role permissions for the Connector</a> and save them in a JSON file.</p>
+</li>
+<li>
+<p>Modify the JSON file by adding Azure subscription IDs to the assignable scope.</p>
+<div class="paragraph">
+<p>You should add the ID for each Azure subscription from which users will create Cloud Volumes ONTAP systems.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Use the JSON file to create a custom role in Azure.</p>
+<div class="paragraph">
+<p>The following steps describe how to create the role by using Bash in Azure Cloud Shell.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">Azure Cloud Shell</a> and choose the Bash environment.</p>
+</li>
+<li>
+<p>Upload the JSON file.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="A screenshot of the Azure Cloud Shell where you can choose the option to upload a file."></span></p>
+</div>
+</li>
+<li>
+<p>Use the Azure CLI to create the custom role:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should now have a custom role called BlueXP Operator that you can assign to the Connector virtual machine.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Assign the application to the role:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>From the Azure portal, open the <strong>Subscriptions</strong> service.</p>
 </li>
@@ -2435,20 +2182,20 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 <p>Select the subscription.</p>
 </li>
 <li>
-<p>Click <strong>Access control (IAM) &gt; Add &gt; Add role assignment</strong>.</p>
+<p>Select <strong>Access control (IAM) &gt; Add &gt; Add role assignment</strong>.</p>
 </li>
 <li>
-<p>In the <strong>Role</strong> tab, select the <strong>BlueXP Operator</strong> role and click <strong>Next</strong>.</p>
+<p>In the <strong>Role</strong> tab, select the <strong>BlueXP Operator</strong> role and select <strong>Next</strong>.</p>
 </li>
 <li>
 <p>In the <strong>Members</strong> tab, complete the following steps:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>Keep <strong>User, group, or service principal</strong> selected.</p>
 </li>
 <li>
-<p>Click <strong>Select members</strong>.</p>
+<p>Select <strong>Select members</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot-azure-service-principal-role.png" alt="A screenshot of the Azure portal that shows the Members tab when adding a role to an application."></span></p>
 </div>
@@ -2463,21 +2210,24 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 </div>
 </li>
 <li>
-<p>Select the application and click <strong>Select</strong>.</p>
+<p>Select the application and select <strong>Select</strong>.</p>
 </li>
 <li>
-<p>Click <strong>Next</strong>.</p>
+<p>Select <strong>Next</strong>.</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
 <li>
-<p>Click <strong>Review + assign</strong>.</p>
+<p>Select <strong>Review + assign</strong>.</p>
 <div class="paragraph">
 <p>The service principal now has the required Azure permissions to deploy the Connector.</p>
 </div>
 <div class="paragraph">
-<p>If you want to manage resources in multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. For example, BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.</p>
+<p>If you want to deploy Cloud Volumes ONTAP from multiple Azure subscriptions, then you must bind the service principal to each of those subscriptions. BlueXP enables you to select the subscription that you want to use when deploying Cloud Volumes ONTAP.</p>
+</div>
+</li>
+</ol>
 </div>
 </li>
 </ol>
@@ -2553,8 +2303,7 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 </div>
 <div class="paragraph">
 <div class="title">Result</div>
-<p>Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you create the Connector.</p>
-</div>
+<p>Your service principal is now setup and you should have copied the application (client) ID, the directory (tenant) ID, and the value of the client secret. You need to enter this information in BlueXP when you add an Azure account.</p>
 </div>
 </div>
 </div>
@@ -2563,10 +2312,14 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 </div>
 </div>
 <div class="sect1">
-<h2 id="create-the-connector">Create the Connector</h2>
+<h2 id="step-4-create-the-connector">Step 4: Create the Connector</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Create the Connector directly from the BlueXP web-based console.</p>
+<p>Launch the Connector directly from the Azure Marketplace.</p>
+</div>
+<div class="paragraph">
+<div class="title">About this task</div>
+<p>Creating the Connector from the Azure Marketplace deploys a virtual machine in Azure using a default configuration. <a href="reference-connector-default-config.html">Learn about the default configuration for the Connector</a>.</p>
 </div>
 <div class="paragraph">
 <div class="title">Before you begin</div>
@@ -2614,42 +2367,179 @@ Azure SetupAsService is the default name provided in the Connector deployment po
 <div class="title">Steps</div>
 <ol class="arabic">
 <li>
-<p>If you&#8217;re creating your first Working Environment, click <strong>Add Working Environment</strong> and follow the prompts. Otherwise, click the <strong>Connector</strong> drop-down and select <strong>Add Connector</strong>.</p>
+<p>Go to the NetApp Connector VM page in the Azure Marketplace.</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_connector_add.gif" alt="A screenshot that shows the Connector icon in the header and the Add Connector action."></span></p>
+<p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager" target="_blank" rel="noopener">Azure Marketplace page for commercial regions</a></p>
 </div>
 </li>
 <li>
-<p>Choose <strong>Microsoft Azure</strong> as your cloud provider.</p>
+<p>Select <strong>Get it now</strong> and then select <strong>Continue</strong>.</p>
 </li>
 <li>
-<p>On the <strong>Deploying a Connector</strong> page:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Under <strong>Authentication</strong>, select the authentication option that matches how you set up Azure permissions:</p>
+<p>From the Azure portal, select <strong>Create</strong> and follow the steps to configure the virtual machine.</p>
+<div class="paragraph">
+<p>Note the following as you configure the VM:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Select <strong>Azure user account</strong> to log in to your Microsoft account, which should have the required permissions.</p>
+<p><strong>VM size</strong>: Choose a VM size that meets CPU and RAM requirements. We recommend DS3 v2.</p>
+</li>
+<li>
+<p><strong>Disks</strong>: The Connector can perform optimally with either HDD or SSD disks.</p>
+</li>
+<li>
+<p><strong>Network security group</strong>: The Connector requires inbound connections using SSH, HTTP, and HTTPS.</p>
 <div class="paragraph">
-<p>The form is owned and hosted by Microsoft. Your credentials are not provided to NetApp.</p>
+<p><a href="reference-ports-azure.html">View security group rules for Azure</a>.</p>
 </div>
-<div class="admonitionblock tip">
+</li>
+<li>
+<p><strong>Identity</strong>: Under <strong>Management</strong>, select <strong>Enable system assigned managed identity</strong>.</p>
+<div class="paragraph">
+<p>This setting is important because a managed identity allows the Connector virtual machine to identify itself to Azure Active Directory without providing any credentials. <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">Learn more about managed identities for Azure resources</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>On the <strong>Review + create</strong> page, review your selections and select <strong>Create</strong> to start the deployment.</p>
+<div class="paragraph">
+<p>Azure deploys the virtual machine with the specified settings. The virtual machine and Connector software should be running in approximately five minutes.</p>
+</div>
+</li>
+<li>
+<p>Open a web browser from a host that has a connection to the Connector virtual machine and enter the following URL:</p>
+<div class="paragraph">
+<p>https://<em>ipaddress</em></p>
+</div>
+</li>
+<li>
+<p>After you log in, set up the Connector:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Specify the BlueXP account to associate with the Connector.</p>
+</li>
+<li>
+<p>Enter a name for the system.</p>
+</li>
+<li>
+<p>Under <strong>Are you running in a secured environment?</strong> keep restricted mode disabled.</p>
+<div class="paragraph">
+<p>You should keep restricted mode disabled because these steps describe how to use BlueXP in standard mode. You should enable restricted mode only if you have a secure environment and want to disconnect this account from BlueXP backend services. If that&#8217;s the case, <a href="task-quick-start-restricted-mode.html">follow steps to get started with BlueXP in restricted mode</a>.</p>
+</div>
+</li>
+<li>
+<p>Select <strong>Let&#8217;s start</strong>.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The Connector is now installed and is set up with your BlueXP account.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step-5-provide-permissions-to-bluexp">Step 5: Provide permissions to BlueXP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now that you&#8217;ve created the Connector, you need to provide BlueXP with the permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in Azure.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Custom role</div>
+<div class="content">
+<div class="paragraph">
+<p>Go to the Azure portal and assign the Azure custom role to the Connector virtual machine for one or more subscriptions.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>From the Azure Portal, open the <strong>Subscriptions</strong> service and select your subscription.</p>
+</li>
+<li>
+<p>Select <strong>Access control (IAM)</strong> &gt; <strong>Add</strong> &gt; <strong>Add role assignment</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Role</strong> tab, select the <strong>BlueXP Operator</strong> role and select <strong>Next</strong>.</p>
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/bluexp-setup-admin/images/tip.svg" alt="Tip">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
 </td>
 <td class="content">
-If you&#8217;re already logged in to an Azure account, then BlueXP will automatically use that account. If you have multiple accounts, then you might need to log out first to ensure that you&#8217;re using the right account.
+BlueXP Operator is the default name provided in the BlueXP policy. If you chose a different name for the role, then select that name instead.
 </td>
 </tr>
 </table>
 </div>
 </li>
 <li>
-<p>Select <strong>Active Directory service principal</strong> to enter information about the Azure Active Directory service principal that grants the required permissions:</p>
+<p>In the <strong>Members</strong> tab, complete the following steps:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Assign access to a <strong>Managed identity</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Select members</strong>, select the subscription in which the Connector virtual machine was created, choose <strong>Virtual machine</strong>, and then select the Connector virtual machine.</p>
+</li>
+<li>
+<p>Select <strong>Select</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Next</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Review + assign</strong>.</p>
+</li>
+<li>
+<p>If you want to manage resources in additional Azure subscriptions, switch to that subscription and then repeat these steps.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Result</div>
+<p>BlueXP now has the permissions that it needs to perform actions in Azure on your behalf.</p>
+</div>
+<div class="paragraph">
+<div class="title">What&#8217;s next?</div>
+<p>Go to the <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">BlueXP console</a> to start using the Connector with BlueXP.</p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Service principal</div>
+<div class="content">
+<div class="olist arabic">
+<div class="title">Steps</div>
+<ol class="arabic">
+<li>
+<p>In the upper right of the BlueXP console, select the Settings icon, and select <strong>Credentials</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="A screenshot that shows the Settings icon in the upper right of the BlueXP console."></span></p>
+</div>
+</li>
+<li>
+<p>Select <strong>Add Credentials</strong> and follow the steps in the wizard.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p><strong>Credentials Location</strong>: Select <strong>Microsoft Azure &gt; Connector</strong>.</p>
+</li>
+<li>
+<p><strong>Define Credentials</strong>: Enter information about the Azure Active Directory service principal that grants the required permissions:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2664,60 +2554,24 @@ If you&#8217;re already logged in to an Azure account, then BlueXP will automati
 </ul>
 </div>
 </li>
-</ul>
-</div>
+<li>
+<p><strong>Marketplace Subscription</strong>: Associate a Marketplace subscription with these credentials by subscribing now or by selecting an existing subscription.</p>
+</li>
+<li>
+<p><strong>Review</strong>: Confirm the details about the new credentials and select <strong>Add</strong>.</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><a href="#set-up-an-authentication-method">Learn how to obtain these values for a service principal</a>.</p>
-</div>
-</li>
-<li>
-<p>Follow the steps in the wizard to create the Connector:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>VM Authentication</strong>: Choose an Azure subscription, a location, a new resource group or an existing resource group, and then choose an authentication method for the Connector virtual machine that you&#8217;re creating.</p>
-<div class="paragraph">
-<p>The authentication method for the virtual machine can be a password or an SSH public key.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux" target="_blank" rel="noopener">Learn about connecting to a Linux VM in Azure</a></p>
-</div>
-</li>
-<li>
-<p><strong>Details</strong>: Enter a name for the instance, specify tags, and choose whether you want BlueXP to create a new role that has the required permissions, or if you want to select an existing role that you set up with <a href="reference-permissions-azure.html">the required permissions</a>.</p>
-<div class="paragraph">
-<p>Note that you can choose the Azure subscriptions associated with this role. Each subscription that you choose provides the Connector permissions to manage resources in that subscription (for example, Cloud Volumes ONTAP).</p>
-</div>
-</li>
-<li>
-<p><strong>Network</strong>: Choose a VNet and subnet, whether to enable a public IP address, and optionally specify a proxy configuration.</p>
-</li>
-<li>
-<p><strong>Security Group</strong>: Choose whether to create a new security group or whether to select an existing security group that allows the required inbound and outbound rules.</p>
-<div class="paragraph">
-<p><a href="reference-ports-azure.html">View security group rules for Azure</a>.</p>
-</div>
-</li>
-<li>
-<p><strong>Review</strong>: Review your selections to verify that your set up is correct.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Click <strong>Add</strong>.</p>
-<div class="paragraph">
-<p>The virtual machine should be ready in about 7 minutes. You should stay on the page until the process is complete.</p>
 </div>
 </li>
 </ol>
 </div>
 <div class="paragraph">
 <div class="title">Result</div>
-<p>After the process is complete, the Connector is available for use from BlueXP.</p>
+<p>BlueXP now has the permissions that it needs to perform actions in Azure on your behalf.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
