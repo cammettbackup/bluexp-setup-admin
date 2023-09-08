@@ -17,7 +17,7 @@ Prepare your environment before you deploy BlueXP in private mode. For example, 
 
 NOTE: If you want to use BlueXP in the https://aws.amazon.com/federal/us-intelligence-community/[AWS Commercial Cloud Services (C2S) environment^] then you should follow separate instructions that describe how to prepare, install the Connector, and launch Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html[Learn how to get started with Cloud Volumes ONTAP in the AWS C2S environment^]
 
-== Understand how private mode works
+== Step 1: Understand how private mode works
 
 Before you get started, you should have an understanding of how BlueXP works in private mode. 
 
@@ -27,17 +27,23 @@ In addition, not all BlueXP services are available.
 
 link:concept-modes.html[Learn how private mode works].
 
-== Review installation options
+== Step 2: Review installation options
 
 In private mode, you can install the Connector on premises or in the cloud by manually installing the Connector on your own Linux host.
 
 If you want to create a Cloud Volumes ONTAP system in Google Cloud, then the Connector must be running in Google Cloud--it can't be running on premises.
 
-== Review host requirements
+== Step 3: Review host requirements
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
 
-include::_include/os-reqs.adoc[tag=start]
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=os]
+
+include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=aws-ec2]
 
@@ -45,20 +51,20 @@ include::_include/os-reqs.adoc[tag=azure-vm]
 
 include::_include/os-reqs.adoc[tag=google-machine]
 
-include::_include/os-reqs.adoc[tag=end]
+include::_include/os-reqs.adoc[tag=disk-space]
 
-== Prepare networking for the Connector
+include::_include/os-reqs.adoc[tag=docker]
+
+== Step 4: Prepare networking for the Connector
 
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.
 
-=== Connections to target networks
-
+Connections to target networks::
 The Connector must have a network connection to the location where you plan to manage storage. For example, the VPC or VNet where you plan to deploy Cloud Volumes ONTAP, or the data center where your on-premises ONTAP clusters reside.
 
-=== Endpoints for day-to-day operations
-
+Endpoints for day-to-day operations::
 The Connector contacts the following endpoints to manage resources and processes within your public cloud environment.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -76,23 +82,20 @@ include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
 
 |===
 
-=== Proxy server
+//Azure public IP
+include::_include/networking.adoc[tag=azure-public-ip]
 
-include::_include/proxy-server.adoc[]
-
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
++
 With private mode, the only time that BlueXP sends outbound traffic is to your cloud provider in order to create a Cloud Volumes ONTAP system.
 
-=== Public IP address in Azure
-
-include::_include/public-ip-azure.adoc[]
-
-=== Ports
-
+Ports::
 There's no incoming traffic to the Connector, unless you initiate it.
-
++
 HTTP (80) and HTTPS (443) provide access to the BlueXP console. SSH (22) is only needed if you need to connect to the host for troubleshooting. 
 
-== Prepare cloud permissions
+== Step 5: Prepare cloud permissions
 
 If you are planning to create Cloud Volumes ONTAP systems, then BlueXP requires permissions from your cloud provider. You need to set up permissions in your cloud provider and then associate those permission with the Connector instance after you install it.
 
@@ -191,7 +194,7 @@ include::_include/google-set-up-service-account.adoc[]
 ====
 // end tabbed area
 
-== Enable Google Cloud APIs
+== Step 6: Enable Google Cloud APIs
 
 Several APIs are required to deploy Cloud Volumes ONTAP in Google Cloud.
 

@@ -1,0 +1,341 @@
+---
+sidebar: sidebar
+permalink: task-install-connector-google-bluexp-gcloud.html
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector
+summary: To create a Connector in Google Cloud from BlueXP or by using gcloud, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
+---
+
+= Create a Connector in Google Cloud from BlueXP or gcloud
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+To create a Connector in Google Cloud from BlueXP or by using gcloud, you need to set up your networking, prepare Google Cloud permissions, enable Google Cloud APIs, and then create the Connector.
+
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
+== Step 1: Set up networking
+
+Set up your networking so the Connector can manage resources and processes within your hybrid cloud environment. For example, you need to ensure that connections are available to target networks and that outbound internet access is available.
+
+//VPC and subnet
+include::_include/networking.adoc[tag=vpc]
+
+//Connections to target networks
+include::_include/networking.adoc[tag=networks]
+
+//Outbound internet access
+include::_include/networking.adoc[tag=outbound]
+
+//Endpoints contacted from the Connector 
+include::_include/endpoints-connector.adoc[tag=intro]
++
+[cols="2a,1a",options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+include::_include/endpoints-connector.adoc[tag=google-cloud-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=nss-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=saas-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
+
+|===
+
+//Console endpoints
+include::_include/networking.adoc[tag=endpoints-console]
+
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
+
+//Ports
+include::_include/networking.adoc[tag=ports]
+
+== Step 2: Set up permissions to create the Connector
+
+Before you can deploy a Connector from BlueXP or by using gcloud, you need to set up permissions for the Google Cloud user who will deploy the Connector VM.
+
+.Steps
+
+. Create a custom role in Google Cloud:
+
+.. Create a YAML file that includes the following permissions:
++
+[source,yaml]
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+
+.. From Google Cloud, activate cloud shell.
+
+.. Upload the YAML file that includes the required permissions.
+
+.. Create a custom role by using the `gcloud iam roles create` command.
++
+The following example creates a role named "connectorDeployment" at the project level:
++
+gcloud iam roles create connectorDeployment --project=myproject --file=connector-deployment.yaml
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud[Google Cloud docs: Creating and managing custom roles^]
+
+. Assign this custom role to the user who will deploy the Connector from BlueXP or by using gcloud.
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role[Google Cloud docs: Grant a single role^]
+
+.Result
+
+The Google Cloud user now has the permissions required to create the Connector.
+
+== Step 3: Set up permissions for the Connector
+
+include::_include/google-set-up-connector-permissions.adoc[]
+
+== Step 4: Set up shared VPC permissions
+
+include::_include/google-shared-vpc-permissions.adoc[]
+
+== Step 5: Enable Google Cloud APIs
+
+Several Google Cloud APIs must be enabled before you can deploy the Connector and Cloud Volumes ONTAP in Google Cloud.
+
+.Step
+
+. Enable the following Google Cloud APIs in your project:
++
+include::_include/google-cloud-apis.adoc[]
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis[Google Cloud documentation: Enabling APIs^]
+
+== Step 6: Create the Connector
+
+Create a Connector directly from the BlueXP web-based console or by using gcloud.
+
+.About this task
+
+Creating the Connector deploys a virtual machine instance in Google Cloud using a default configuration. link:reference-connector-default-config.html[Learn about the default configuration for the Connector]. 
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.BlueXP
+--
+.Before you begin
+
+You should have the following:
+
+* The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
+
+* A VPC and subnet that meets networking requirements.
+
+* Details about a proxy server, if a proxy is required for internet access from the Connector.
+
+.Steps
+
+. Select the *Connector* drop-down and select *Add Connector*.
++
+image:screenshot_connector_add.gif[A screenshot that shows the Connector icon in the header and the Add Connector action.]
+
+. Choose *Google Cloud Platform* as your cloud provider.
+
+. On the *Deploying a Connector* page, review the details about what you'll need. You have two options:
+
+.. Select *Continue* to prepare for deployment by using the in-product guide. Each step in the in-product guide includes the information that's contained on this page of the documentation.
+
+.. Select *Skip to Deployment* if you already prepared by following the steps on this page.
+
+. Follow the steps in the wizard to create the Connector:
+
+* If you're prompted, log in to your Google account, which should have the required permissions to create the virtual machine instance.
++
+The form is owned and hosted by Google. Your credentials are not provided to NetApp.
+
+* *Details*: Enter a name for the virtual machine instance, specify tags, select a project, and then select the service account that has the required permissions (refer to the section above for details).
+
+* *Location*: Specify a region, zone, VPC, and subnet for the instance.
+
+* *Network*: Choose whether to enable a public IP address and optionally specify a proxy configuration.
+
+* *Firewall Policy*: Choose whether to create a new firewall policy or whether to select an existing firewall policy that allows the required inbound and outbound rules.
++
+link:reference-ports-gcp.html[Firewall rules in Google Cloud]
+
+* *Review*: Review your selections to verify that your set up is correct.
+
+. Select *Add*.
++
+The instance should be ready in about 7 minutes. You should stay on the page until the process is complete.
+
+.Result
+
+After the process is complete, the Connector is available for use from BlueXP.
+--
+
+.gcloud
+--
+.Before you begin
+
+You should have the following:
+
+* The required Google Cloud permissions to create the Connector and a service account for the Connector VM.
+
+* A VPC and subnet that meets networking requirements.
+
+* An understanding of VM instance requirements.
++
+** *CPU*: 4 cores or 4 vCPUs
+** *RAM*: 14 GB
+** *Machine type*: We recommend n2-standard-4.
++
+The Connector is supported in Google Cloud on a VM instance with an OS that supports Shielded VM features.
+
+.Steps
+
+. Log in to the gcloud SDK using your preferred methodology.
++
+In our examples, we'll use a local shell with the gcloud SDK installed, but you could use the native Google Cloud Shell in the Google Cloud console.
++
+For more information about the Google Cloud SDK, visit the link:https://cloud.google.com/sdk[Google Cloud SDK documentation page^].
+
+. Verify that you are logged in as a user who has the required permissions that are defined in the section above:
++
+[source,bash]
+gcloud auth list
+
++
+The output should show the following where the * user account is the desired user account to be logged in as:
++
+----
+Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update
+----
+
+. Run the `gcloud compute instances create` command:
++
+[source,bash]
+gcloud compute instances create <instance-name>
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=<project>
+  --service-account=<service-account>
+  --zone=<zone>
+  --no-address
+  --tags <network-tag>
+  --network <network-path>
+  --subnet <subnet-path>
+  --boot-disk-kms-key <kms-key-path>
+
++
+instance-name:: The desired instance name for the VM instance.
+project:: (Optional) The project where you want to deploy the VM.
+service-account:: The service account specified in the output from step 2.
+zone:: The zone where you want to deploy the VM
+no-address:: (Optional) No external IP address is used (you need a cloud NAT or proxy to route traffic to the public internet)
+network-tag:: (Optional) Add network tagging to link a firewall rule using tags to the Connector instance
+network-path:: (Optional) Add the name of the network to deploy the Connector into (for a Shared VPC, you need the full path)
+subnet-path:: (Optional) Add the name of the subnet to deploy the Connector into (for a Shared VPC, you need the full path)
+kms-key-path:: (Optional) Add a KMS key to encrypt the Connector's disks (IAM permissions also need to be applied)
+
++
+For more information about these flags, visit the link:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create[Google Cloud compute SDK documentation^].
+
++
+Running the command deploys the Connector using the NetApp golden image. The Connector instance and software should be running in approximately five minutes.
+
+. Open a web browser from a host that has a connection to the Connector instance and enter the following URL:
++
+https://_ipaddress_
+
+. After you log in, set up the Connector:
+
+.. Specify the BlueXP account to associate with the Connector.
++
+link:concept-netapp-accounts.html[Learn about BlueXP accounts].
+
+.. Enter a name for the system.
+
+.Result
+
+The Connector is now installed and set up with your BlueXP account.
+
+Open a web browser and go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
+--
+
+====
+
+// end tabbed area

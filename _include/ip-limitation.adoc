@@ -1,1 +1,0 @@
-There's a possible conflict with IP addresses in the 172 range. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html[Learn more about this limitation].

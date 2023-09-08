@@ -17,7 +17,7 @@ Learn how BlueXP uses AWS credentials and permissions to perform actions on your
 
 == Initial AWS credentials
 
-When you deploy a Connector from BlueXP, you need to provide the ARN of an IAM role or access keys for an IAM user. The authentication method that you use must have the required permissions to deploy the Connector instance in AWS. The required permissions are listed in the link:task-set-up-permissions-aws.html[Connector deployment policy for AWS].
+When you deploy a Connector from BlueXP, you need to provide the ARN of an IAM role or access keys for an IAM user. The authentication method that you use must have the required permissions to deploy the Connector instance in AWS. The required permissions are listed in the link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Connector deployment policy for AWS].
 
 When BlueXP launches the Connector instance in AWS, it creates an IAM role and an instance profile for the instance. It also attaches a policy that provides the Connector with permissions to manage resources and processes within that AWS account. link:reference-permissions-aws.html[Review how BlueXP uses the permissions].
 
@@ -71,10 +71,10 @@ For on-premises deployments, you can't set up an IAM role for the BlueXP system,
 To learn how to set up permissions, refer to the following pages:
 
 * Standard mode
-** link:task-set-up-permissions-aws.html[Set up AWS permissions]
-** link:task-set-up-permissions-on-prem.html[Set up cloud permissions for on-prem deployments]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Set up cloud permissions for restricted mode]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions[Set up cloud permissions for private mode]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions[Set up permissions for an AWS Marketplace deployment]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 == How can I securely rotate my AWS credentials?
 

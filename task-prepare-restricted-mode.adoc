@@ -15,7 +15,7 @@ summary: Prepare your environment before you deploy BlueXP in restricted mode. F
 [.lead]
 Prepare your environment before you deploy BlueXP in restricted mode. For example, you need to review host requirements, prepare networking, set up permissions, and more.
 
-== Understand how restricted mode works
+== Step 1: Understand how restricted mode works
 
 Before you get started, you should have an understanding of how BlueXP works in restricted mode.
 
@@ -25,7 +25,7 @@ In addition, not all BlueXP services are available.
 
 link:concept-modes.html[Learn how restricted mode works].
 
-== Review installation options
+== Step 2: Review installation options
 
 In restricted mode, you can only install the Connector in the cloud. The following installation options are available:
 
@@ -33,13 +33,19 @@ In restricted mode, you can only install the Connector in the cloud. The followi
 * From the Azure Marketplace
 * Manually installing the Connector on your own Linux host that's running in AWS, Azure, or Google Cloud
 
-== Review host requirements
+== Step 3: Review host requirements
 
 The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
 
 When you deploy the Connector from the AWS or Azure Marketplace, the image includes the required OS and software components. You simply need to choose an instance type that meets CPU and RAM requirements.
 
-include::_include/os-reqs.adoc[tag=start]
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=os]
+
+include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
 
 include::_include/os-reqs.adoc[tag=aws-ec2]
 
@@ -47,18 +53,42 @@ include::_include/os-reqs.adoc[tag=azure-vm]
 
 include::_include/os-reqs.adoc[tag=google-machine]
 
-include::_include/os-reqs.adoc[tag=end]
+include::_include/os-reqs.adoc[tag=disk-space]
 
-== Prepare networking for the Connector
+include::_include/os-reqs.adoc[tag=docker]
+
+== Step 4: Prepare networking
 
 Set up your networking so the Connector can manage resources and processes within your public cloud environment. Other than having a virtual network and subnet for the Connector, you'll need to ensure that the following requirements are met.
 
-=== Connections to target networks
-
+Connections to target networks::
 The Connector must have a network connection to the location where you plan to manage storage. For example, the VPC or VNet where you plan to deploy Cloud Volumes ONTAP, or the data center where your on-premises ONTAP clusters reside.
 
-=== Outbound internet access for manual installs
+Prepare networking for user access to BlueXP console::
+In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. These endpoints are contacted from a user's computer when completing specific actions from the BlueXP console.
++
+[cols=2*,options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
 
+| \https://signin.b2c.netapp.com
+| Required to update NetApp Support Site (NSS) credentials or to add new NSS credentials to BlueXP.
+
+|
+\https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com
+| Your web browser connects to these endpoints for centralized user authentication through BlueXP.
+
+| \https://widget.intercom.io
+| For in-product chat that enables you to talk to NetApp cloud experts.
+
+|===
+
+//Endpoints contacted during manual installation
 include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
 +
 This endpoint is not required in Azure Government regions.
@@ -67,12 +97,12 @@ This endpoint is not required in Azure Government regions.
 +
 This endpoint is only required in Azure Government regions.
 
++
 include::_include/endpoints-manual-install.adoc[tag=update]
 
-=== Outbound internet access for day-to-day operations
-
+Outbound internet access for day-to-day operations::
 The network location where you deploy the Connector must have an outbound internet connection. The Connector requires outbound internet access to contact the following endpoints in order to manage resources and processes within your public cloud environment.
-
++
 [cols="2a,1a",options="header,autowidth"]
 |===
 | Endpoints
@@ -96,44 +126,16 @@ include::_include/endpoints-connector.adoc[tag=upgrade-endpoints-restricted-mode
 
 |===
 
-=== Proxy server
+//Azure public IP
+include::_include/networking.adoc[tag=azure-public-ip]
 
-include::_include/proxy-server.adoc[]
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
 
-=== Public IP address in Azure
+//Ports
+include::_include/networking.adoc[tag=ports]
 
-include::_include/public-ip-azure.adoc[]
-
-=== Ports
-
-include::_include/ports.adoc[]
-
-== Prepare networking for user access to BlueXP console
-
-In restricted mode, the BlueXP user interface is accessible from the Connector. As you use the BlueXP user interface, it contacts a few endpoints to complete data management tasks. The machine running the web browser must have connections to the following endpoints.
-
-[cols=2*,options="header,autowidth"]
-|===
-| Endpoints
-| Purpose
-
-| \https://signin.b2c.netapp.com
-| Required to update NetApp Support Site (NSS) credentials or to add new NSS credentials to BlueXP.
-
-|
-\https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com
-| Your web browser connects to these endpoints for centralized user authentication through BlueXP.
-
-| \https://widget.intercom.io
-| For in-product chat that enables you to talk to NetApp cloud experts.
-
-|===
-
-== Prepare cloud permissions
+== Step: 5 Prepare cloud permissions
 
 BlueXP requires permissions from your cloud provider to deploy Cloud Volumes ONTAP in a virtual network and to use BlueXP data services. You need to set up permissions in your cloud provider and then associate those permissions with the Connector.
 
@@ -234,7 +236,7 @@ include::_include/google-set-up-service-account.adoc[]
 ====
 // end tabbed area
 
-== Enable Google Cloud APIs
+== Step 6: Enable Google Cloud APIs
 
 Several APIs are required to deploy Cloud Volumes ONTAP in Google Cloud.
 
