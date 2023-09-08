@@ -15,7 +15,7 @@ summary: Deploy the Connector in restricted mode so that you can use BlueXP with
 [.lead]
 Deploy the Connector in restricted mode so that you can use BlueXP with limited outbound connectivity to the BlueXP SaaS layer. To get started, install the Connector, set up BlueXP by accessing the user interface that's running on the Connector, and then provide the cloud permissions that you previously set up.
 
-== Install the Connector
+== Step 1: Install the Connector
 
 Install the Connector from your cloud provider's marketplace or by manually installing the software on your own Linux host.
 
@@ -37,13 +37,13 @@ link:task-prepare-restricted-mode.html[Learn about networking requirements]
 
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up AWS permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up AWS permissions]
 
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
 * An understanding of CPU and RAM requirements for the instance.
 +
-link:task-prepare-restricted-mode.html#review-host-requirements[Review instance requirements].
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements[Review instance requirements].
 
 * A key pair for the EC2 instance.
 
@@ -70,7 +70,7 @@ You should have the following:
 link:task-prepare-restricted-mode.html[Learn about networking requirements]
 * An IAM role with an attached policy that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up AWS permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up AWS permissions]
 * Permissions to subscribe and unsubscribe from the AWS Marketplace for your IAM user.
 
 * A key pair for the EC2 instance.
@@ -126,7 +126,7 @@ link:task-prepare-restricted-mode.html[Learn about networking requirements]
 
 * An Azure custom role that includes the required permissions for the Connector.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to set up Azure permissions]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to set up Azure permissions]
 
 .Steps
 
@@ -192,7 +192,7 @@ Set up BlueXP.
 ====
 // end tabbed area
 
-== Set up BlueXP
+== Step 2: Set up BlueXP
 
 When you access the BlueXP console for the first time, you'll be prompted to choose an account to associate the Connector with and you'll need to enable restricted mode.
 
@@ -234,13 +234,13 @@ The Connector is now installed and set up with your BlueXP account. All users ne
 
 Provide BlueXP with the permissions that you previously set up.
 
-== Provide permissions to BlueXP
+== Step 3: Provide permissions to BlueXP
 
 If you deployed the Connector from the Azure Marketplace or if you manually installed the Connector software, you need to provide the permissions that you previously set up so that you can use BlueXP services.
 
 These steps don't apply if you deployed the Connector from the AWS Marketplace because you chose the required IAM role during deployment. 
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Learn how to prepare cloud permissions].
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Learn how to prepare cloud permissions].
 
 // start tabbed area
 

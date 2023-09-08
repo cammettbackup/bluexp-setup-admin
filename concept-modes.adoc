@@ -107,9 +107,9 @@ BlueXP works as follows in standard mode:
 Outbound communication::
 Connectivity is required from the Connector to the BlueXP SaaS layer, to your cloud provider's publicly available resources, and to other essential components for day-to-day operations.
 +
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector[Endpoints that the Connector contacts in AWS]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector[Endpoints that the Connector contacts in Azure]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector[Endpoints that the Connector contacts in Google Cloud]
+* link:task-install-connector-aws-bluexp.html#step-1-set-up-networking[Endpoints that the Connector contacts in AWS]
+* link:task-install-connector-azure-bluexp.html#step-1-set-up-networking[Endpoints that the Connector contacts in Azure]
+* link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking[Endpoints that the Connector contacts in Google Cloud]
 
 Supported location for the Connector::
 In standard mode, the Connector is supported in the cloud or on your premises.

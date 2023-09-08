@@ -1,14 +1,9 @@
-//tag::quick[]
-* A dedicated host running Ubuntu 22.04, CentOS 7.6 to 7.9, or RHEL 7.6 to 7.9
-* 4 CPUs
-* 14 GB of RAM
-* Docker Engine 19.3.1 or later
-//end::quick[]
-
-//tag::start[]
+//tag::dedicated[]
 Dedicated host::
 The Connector is not supported on a host that is shared with other applications. The host must be a dedicated host.
+//end::dedicated[]
 
+//tag::os[]
 Supported operating systems::
 * Ubuntu 22.04
 * CentOS 7.6, 7.7, 7.8, and 7.9
@@ -17,16 +12,20 @@ Supported operating systems::
 The host must be registered with Red Hat Subscription Management. If it's not registered, the host can't access repositories to update required 3rd-party software during Connector installation.
 +
 The Connector is supported on English-language versions of these operating systems.
+//end::os[]
 
+//tag::hypervisor[]
 Hypervisor::
 A bare metal or hosted hypervisor that is certified to run Ubuntu, CentOS, or Red Hat Enterprise Linux is required.
 +
 https://access.redhat.com/certified-hypervisors[Red Hat Solution: Which hypervisors are certified to run Red Hat Enterprise Linux?^]
+//end::hypervisor[]
 
+//tag::cpu-ram[]
 CPU:: 4 cores or 4 vCPUs
 
 RAM:: 14 GB
-//end::start[]
+//end::cpu-ram[]
 
 //tag::aws-ec2[]
 AWS EC2 instance type::
@@ -35,7 +34,7 @@ An instance type that meets the CPU and RAM requirements above. We recommend t3.
 
 //tag::aws-key-pair[]
 Key pair::
-When you create the Connector from BlueXP or from the AWS Marketplace, you'll need to select an EC2 key pair to use with the instance.
+When you create the Connector, you'll need to select an EC2 key pair to use with the instance.
 //end::aws-key-pair[]
 
 //tag::azure-vm[]
@@ -50,10 +49,12 @@ An instance type that meets the CPU and RAM requirements above. We recommend n2-
 The Connector is supported in Google Cloud on a VM instance with an OS that supports https://cloud.google.com/compute/shielded-vm/docs/shielded-vm[Shielded VM features^]
 //end::google-machine[]
 
-//tag::end[]
+//tag::disk-space[]
 Disk space in /opt:: 100 GiB of space must be available
 
 Disk space in /var:: 20 GiB of space must be available
+//end::disk-space[]
 
+//tag::docker[]
 Docker Engine:: Docker Engine version 19.3.1 or later is required on the host before you install the Connector. https://docs.docker.com/engine/install/[View installation instructions^]
-//end::end[]
+//end::docker[]

@@ -23,10 +23,12 @@ When you create a Connector directly from BlueXP, BlueXP automatically applies t
 
 If you deploy the Connector from the Azure Marketplace or if you manually install the Connector on a Linux host, then you'll need to set up the custom role yourself.
 
-* link:task-set-up-permissions-azure.html[Set up permissions for Connector installation in Azure (standard mode)]
-* link:task-set-up-permissions-on-prem.html[Set up permissions for Connector installation on premises (standard mode)]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions[Set up permissions for restricted mode]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions[Set up permissions for private mode]
+To view step-by-step instructions for using these policies, refer to the following pages:
+
+* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions[Set up permissions for an Azure Marketplace deployment]
+* link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions[Set up permissions for on-prem deployments]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions[Set up permissions for restricted mode]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions[Set up permissions for private mode]
 
 You also need to ensure that the role is up to date as new permissions are added in subsequent releases.
 

@@ -29,7 +29,7 @@ BlueXP requires AWS permissions for the Connector and for individual services.
 
 | Deploy the Connector from BlueXP
 | The user who creates a Connector from BlueXP needs specific permissions to deploy the instance in AWS.
-| link:task-set-up-permissions-aws.html[Set up AWS permissions]
+| link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions[Set up AWS permissions]
 
 | Provide permissions for the Connector
 | When BlueXP launches the Connector, it attaches a policy to the instance that provides the permissions required to manage resources and processes in your AWS account.
@@ -133,7 +133,7 @@ BlueXP requires Azure permissions for the Connector and for individual services.
 
 | Deploy the Connector from BlueXP
 | When you deploy a Connector from BlueXP, you need to use an Azure account or service principal that has permissions to deploy the Connector VM in Azure.
-| link:task-set-up-permissions-azure.html[Set up Azure permissions]
+| link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role[Set up Azure permissions]
 
 | Provide permissions for the Connector
 a| When BlueXP deploys the Connector VM in Azure, it creates a custom role that provides the permissions required to manage resources and processes within that Azure subscription.
@@ -173,13 +173,13 @@ BlueXP requires Google Cloud permissions for the Connector and for individual se
 
 | Deploy the Connector from BlueXP 
 | The Google Cloud user who deploys a Connector from BlueXP needs specific permissions to deploy the Connector in Google Cloud.
-| link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud[Set up permissions to deploy the Connector]
+| link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector[Set up permissions to create the Connector]
 
 | Provide permissions for the Connector 
 | The service account for the Connector VM instance must have specific permissions for day-to-day operations. You need to associate the service account with the Connector during deployment.
 
 You also need to ensure that the policy is up to date as new permissions are added in subsequent releases.
-| link:reference-permissions-gcp.html[Google Cloud permissions for the Connector]
+| link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector[Set up permissions for the Connector]
 
 |===
 	

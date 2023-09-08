@@ -1,0 +1,176 @@
+---
+sidebar: sidebar
+permalink: task-install-connector-aws-manual.html
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector
+summary: To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
+---
+
+= Manually install the Connector in AWS
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+To manually install the Connector on your own Linux host, you need to review host requirements, set up your networking, prepare AWS permissions, install the Connector, and then provide the permissions that you prepared.
+
+.Before you begin
+
+You should review link:reference-limitations.html[Connector limitations].
+
+== Step 1: Review host requirements
+
+The Connector software must run on a host that meets specific operating system requirements, RAM requirements, port requirements, and so on.
+
+include::_include/os-reqs.adoc[tag=dedicated]
+
+include::_include/os-reqs.adoc[tag=os]
+
+include::_include/os-reqs.adoc[tag=hypervisor]
+
+include::_include/os-reqs.adoc[tag=cpu-ram]
+
+include::_include/os-reqs.adoc[tag=aws-ec2]
+
+include::_include/os-reqs.adoc[tag=aws-key-pair]
+
+include::_include/os-reqs.adoc[tag=disk-space]
+
+include::_include/os-reqs.adoc[tag=docker]
+
+== Step 2: Set up networking
+
+Ensure that the network location where you plan to install the Connector supports the following requirements. Meeting these requirements enables the Connector to manage resources and processes within your hybrid cloud environment.
+
+//Connections to target networks
+include::_include/networking.adoc[tag=networks]
+
+//Outbound internet access
+include::_include/networking.adoc[tag=outbound]
+
+//Endpoints contacted during manual installation
+include::_include/endpoints-manual-install.adoc[tag=endpoint-list]
++
+include::_include/endpoints-manual-install.adoc[tag=update]
+
+//Endpoints contacted from the Connector 
+include::_include/endpoints-connector.adoc[tag=intro]
++
+[cols="2a,1a",options="header,autowidth"]
+|===
+| Endpoints
+| Purpose
+
+include::_include/endpoints-connector.adoc[tag=aws-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=nss-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=saas-endpoints]
+
+include::_include/endpoints-connector.adoc[tag=upgrade-endpoints]
+
+|===
+
+//Proxy server
+include::_include/networking.adoc[tag=proxy]
+
+//Ports
+include::_include/networking.adoc[tag=ports]
+
+== Step 3: Set up permissions
+
+You need to provide AWS permissions to BlueXP by using one of the following options:
+
+* Option 1: Create IAM policies and attach the policies to an IAM role that you can associate with the EC2 instance.
+* Option 2: Provide BlueXP with the AWS access key for an IAM user who has the required permissions.
+
+Follow the steps to prepare permissions for BlueXP.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.IAM role
+--
+
+.Steps
+
+include::_include/aws-permissions.adoc[tag=policy]
++
+Depending on the BlueXP services that you're planning to use, you might need to create a second policy. For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Connector].
+
+include::_include/aws-permissions.adoc[tag=role]
+
+.Result
+
+You now have an IAM role that you can associate with the EC2 instance after you install the Connector.
+--
+
+.AWS access key
+--
+
+.Steps
+
+include::_include/aws-permissions.adoc[tag=policy]
++
+Depending on the BlueXP services that you're planning to use, you might need to create a second policy.
++
+For standard regions, the permissions are spread across two policies. Two policies are required due to a maximum character size limit for managed policies in AWS. link:reference-permissions-aws.html[Learn more about IAM policies for the Connector].
+
+include::_include/aws-permissions.adoc[tag=keys]
+
+.Result
+
+You now have an IAM user that has the required permissions and an access key that you can provide to BlueXP.
+--
+
+====
+// end tabbed area
+
+== Step 4: Install the Connector
+
+After the pre-requisites are complete, you can manually install the software on your own Linux host.
+
+include::_include/manual-install.adoc[tag=before]
+
+include::_include/manual-install.adoc[tag=about]
+
+include::_include/manual-install.adoc[tag=main-steps]
+
+include::_include/manual-install.adoc[tag=standard-mode-steps-for-cloud]
+
+== Step 5: Provide permissions to BlueXP
+
+Now that you've installed the Connector, you need to provide BlueXP with the AWS permissions that you previously set up. Providing the permissions enables BlueXP to manage your data and storage infrastructure in AWS.
+
+// start tabbed area
+
+[role="tabbed-block"]
+====
+
+.IAM role
+--
+Attach the IAM role that you previously created to the Connector EC2 instance.
+
+include::_include/provide-permissions-iam-role.adoc[]
+
+Go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
+--
+
+.AWS access key
+--
+Provide BlueXP with the AWS access key for an IAM user that has the required permissions.
+
+.Steps
+
+. Ensure that the correct Connector is currently selected in BlueXP.
+
+include::_include/provide-permissions-access-key.adoc[]
+
+Go to the https://console.bluexp.netapp.com[BlueXP console^] to start using the Connector with BlueXP.
+--
+
+====
+// end tabbed area

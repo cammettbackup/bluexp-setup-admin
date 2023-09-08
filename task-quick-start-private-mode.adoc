@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-quick-start-private-mode.html
 keywords: private mode quick start, quick start
-summary: Get started with BlueXP in private mode in a few steps.
+summary: Get started with BlueXP in private mode by preparing your environment and deploying the Connector.
 ---
 
-= Quick start for BlueXP in private mode
+= Getting started workflow (private mode)
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -15,7 +15,9 @@ summary: Get started with BlueXP in private mode in a few steps.
 [.lead]
 Get started with BlueXP in private mode by preparing your environment and deploying the Connector.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Prepare for deployment
+Before you get started, you should have an understanding of link:concept-netapp-accounts.html[BlueXP accounts], link:concept-connectors.html[Connectors], and link:concept-modes.html[deployment modes].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] link:task-prepare-private-mode.html[Prepare for deployment]
 
 [role="quick-margin-list"]
 .. Prepare a dedicated Linux host that meets requirements for CPU, RAM, disk space, Docker Engine, and more.
@@ -24,10 +26,7 @@ Get started with BlueXP in private mode by preparing your environment and deploy
 
 .. For cloud deployments, set up permissions in your cloud provider so that you can associate those permissions with the Connector after you install the software.
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html[Learn how to prepare for deployment].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Deploy the Connector
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] link:task-install-private-mode.html[Deploy the Connector]
 
 [role="quick-margin-list"]
 .. Install the Connector software on your own Linux host.
@@ -35,6 +34,3 @@ link:task-prepare-private-mode.html[Learn how to prepare for deployment].
 .. Set up BlueXP by opening a web browser and entering the Linux host's IP address.
 
 .. For cloud deployments, provide BlueXP with the permissions that you previously set up.
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html[Learn how to deploy the Connector].
