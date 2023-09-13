@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP offers multiple deployment modes that enable you to use BlueXP in a way that meets your business and security requirements. Standard mode leverages th...">
-  <meta name="keywords" content=" dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region"><!-- Icons -->
+  <meta name="keywords" content=" dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret"><!-- Icons -->
   <link rel="icon" href="/us-en/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/us-en/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -1739,7 +1739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-09-07 16:23:03 +0000">09/07/2023</time>
+    <time datetime="2023-09-13 17:01:35 +0000">09/13/2023</time>
     
   
 
@@ -1796,7 +1796,7 @@
 <dd>
 <p>A BlueXP Connector is installed on premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has <em>no</em> connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that&#8217;s available from the Connector, not from the SaaS layer.</p>
 <div class="paragraph">
-<p>A secure region includes <a href="https://aws.amazon.com/federal/us-intelligence-community/" target="_blank" rel="noopener">AWS C2S and SC2S</a> and <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">Azure IL6</a></p>
+<p>A secure region includes <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">AWS Secret Cloud</a>, <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">AWS Top Secret Cloud</a>, and <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">Azure IL6</a></p>
 </div>
 </dd>
 </dl>
@@ -2201,11 +2201,11 @@ When you discover an on-prem cluster with a Connector, the Advanced view (System
 <td class="tableblock halign-left valign-top"><p class="tableblock">Backup and recovery</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Supported in AWS and Azure commercial regions.<br>
 <br>
-Not supported in Google Cloud or in <a href="https://aws.amazon.com/federal/us-intelligence-community/" target="_blank" rel="noopener">AWS C2S/SC2S</a> or <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">Azure IL6</a></p></td>
+Not supported in Google Cloud or in <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">AWS Secret Cloud</a>, <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">AWS Top Secret Cloud</a>, or <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">Azure IL6</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Because there&#8217;s no internet access, the following features aren&#8217;t available: automated software upgrades, AutoSupport, and AWS cost information.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Because there&#8217;s no internet access, the following features aren&#8217;t available: automated software upgrades and AutoSupport.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Digital wallet</p></td>
@@ -2290,6 +2290,18 @@ Discovery without a Connector (direct discovery) is not supported.</p></td>
 <p>Private mode is available by downloading the "offline" installer from the NetApp Support Site.</p>
 <div class="paragraph">
 <p><a href="task-quick-start-private-mode.html">Learn how to get started with private mode</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-setup-admin/images/note.svg" alt="Note">
+</td>
+<td class="content">
+If you want to use BlueXP in the <a href="https://aws.amazon.com/federal/secret-cloud/" target="_blank" rel="noopener">AWS Secret Cloud</a> or the <a href="https://aws.amazon.com/federal/top-secret-cloud/" target="_blank" rel="noopener">AWS Top Secret Cloud</a>, then you should follow separate instructions to get started in those environments. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html" target="_blank" rel="noopener">Learn how to get started with Cloud Volumes ONTAP in the AWS Secret Cloud or Top Secret Cloud</a>
+</td>
+</tr>
+</table>
 </div>
 </dd>
 </dl>
