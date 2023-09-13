@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-modes.html
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret
 summary: BlueXP offers multiple deployment modes that enable you to use BlueXP in a way that meets your business and security requirements. Standard mode leverages the BlueXP SaaS layer to provide full functionality, while restricted mode and private mode are available for organizations that have connectivity restrictions.
 ---
 
@@ -36,7 +36,7 @@ This mode is typically used by state and local governments and regulated compani
 Private mode::
 A BlueXP Connector is installed on premises or in the cloud (in a secure region, sovereign cloud region, or commercial region) and has _no_ connectivity to the BlueXP SaaS layer. Users access BlueXP locally from the web-based console that's available from the Connector, not from the SaaS layer.
 +
-A secure region includes https://aws.amazon.com/federal/us-intelligence-community/[AWS C2S and SC2S^] and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
+A secure region includes https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], and https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
 The following table provides a comparison of these modes.
 
@@ -282,9 +282,9 @@ BlueXP supports the following storage and data services with private mode when t
 
 | Backup and recovery | Supported in AWS and Azure commercial regions. 
 
-Not supported in Google Cloud or in https://aws.amazon.com/federal/us-intelligence-community/[AWS C2S/SC2S^] or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
+Not supported in Google Cloud or in https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^], https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], or https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6[Azure IL6^]
 
-| Cloud Volumes ONTAP | Because there's no internet access, the following features aren't available: automated software upgrades, AutoSupport, and AWS cost information.
+| Cloud Volumes ONTAP | Because there's no internet access, the following features aren't available: automated software upgrades and AutoSupport.
 
 | Digital wallet | You can use the digital wallet with the supported licensing options listed below for private mode.
 
@@ -336,6 +336,8 @@ How to get started with private mode::
 Private mode is available by downloading the "offline" installer from the NetApp Support Site.
 +
 link:task-quick-start-private-mode.html[Learn how to get started with private mode].
++
+NOTE: If you want to use BlueXP in the https://aws.amazon.com/federal/secret-cloud/[AWS Secret Cloud^] or the https://aws.amazon.com/federal/top-secret-cloud/[AWS Top Secret Cloud^], then you should follow separate instructions to get started in those environments. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html[Learn how to get started with Cloud Volumes ONTAP in the AWS Secret Cloud or Top Secret Cloud^]
 
 == Service and feature comparison
 
