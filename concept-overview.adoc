@@ -57,7 +57,6 @@ Use tools to monitor, map, and optimize your data storage and infrastructure.
 ** https://bluexp.netapp.com/digital-advisor[Digital advisor^]
 ** https://bluexp.netapp.com/digital-advisor[Economic efficiency^]
 ** https://bluexp.netapp.com/digital-advisor[Operational resiliency^]
-** https://bluexp.netapp.com/ransomware-protection[Ransomware protection^]
 
 https://bluexp.netapp.com/[Learn more about how you can use BlueXP to help your organization^]
 

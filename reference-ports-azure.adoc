@@ -67,7 +67,7 @@ NOTE: The source IP address is the Connector host.
 | Destination
 | Purpose
 
-| API calls and AutoSupport | HTTPS | 443 | Outbound internet and ONTAP cluster management LIF | API calls to Azure, to ONTAP, to BlueXP classification, to BlueXP ransomware protection, and sending AutoSupport messages to NetApp
+| API calls and AutoSupport | HTTPS | 443 | Outbound internet and ONTAP cluster management LIF | API calls to Azure, to ONTAP, to BlueXP classification, and sending AutoSupport messages to NetApp
 | API calls | TCP | 8080 | BlueXP classification | Probe to BlueXP classification instance during deployment
 | DNS | UDP | 53 | DNS | Used for DNS resolve by BlueXP
 
