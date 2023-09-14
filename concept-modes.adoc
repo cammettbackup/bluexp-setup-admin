@@ -366,7 +366,7 @@ Note that some services might be supported with limitations. For more details ab
 | E-Series | No | No
 | StorageGRID | No | No 
 
-.17+| *Services*
+.16+| *Services*
 | Backup and recovery | Yes | Yes 
 | Classification | Yes | Yes
 | Cloud ops | No | No
@@ -378,7 +378,6 @@ Note that some services might be supported with limitations. For more details ab
 | Edge caching | No | No
 | Migration reports | No | No
 | Operational resiliency | No | No
-| Ransomware protection | No | No
 | Remediation | No | No
 | Replication | Yes | Yes
 | Sustainability | No | No
