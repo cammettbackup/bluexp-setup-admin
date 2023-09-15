@@ -32,7 +32,9 @@ A few more rule are required for specific configurations.
 +
 link:reference-ports-aws.html[View security group rules for AWS].
 
-* *Configure storage*: Keep the default storage options.
+* *Configure storage*: Keep the default size and disk type for the root volume.
++
+If you want to enable Amazon EBS encryption on the root volume, select *Advanced*, expand *Volume 1*, select *Encrypted*, and then choose a KMS key.
 
 * *Advanced details*: Under *IAM instance profile*, choose the IAM role that includes the required permissions for the Connector.
 
